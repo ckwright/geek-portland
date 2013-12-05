@@ -1,8 +1,8 @@
 ; Project-specific installation profile
 
-name = PROJECTNAME
-distribution_name = PROJECTNAME
-description = DESCRIPTION
+name = geek portland
+distribution_name = geek portland
+description = geek portland
 core = 7.x
 theme = bartik
 
@@ -53,7 +53,7 @@ dependencies[] = os_base
 ;
 users[admin][uid] = 1
 users[admin][name] = admin
-users[admin][mail] = admin@os_project.example.com
+users[admin][mail] = admin@my_profile.example.com
 users[admin][status] = 1
 users[admin][data][overlay] = 0
 
@@ -62,8 +62,8 @@ users[admin][data][overlay] = 0
 ;
 ;variables[site_frontpage] = TODO
 ;variables[site_404] =
-variables[site_mail] = admin@os_project.dev
-variables[site_name] = PROJECTNAME
+variables[site_mail] = admin@my_profile.dev
+variables[site_name] = geek portland
 variables[admin_theme] = seven
 variables[node_admin_theme] = 1
 variables[site_default_country] = US

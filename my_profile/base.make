@@ -13,6 +13,8 @@ projects[ctools][patch][] = "http://drupal.org/files/page-manager-admin-paths-11
 ; https://drupal.org/node/1417630#comment-6810906
 projects[ctools][patch][] = "https://drupal.org/files/ctools-views-content-custom-url-1417630-06.patch"
 
+projects[date][version] = "2.6"
+
 projects[entitycache][version] = "1.2"
 
 projects[elements][version] = "1.4"
@@ -37,6 +39,8 @@ projects[footable][download][revision] = "a52b6dc"
 ; https://drupal.org/node/1924942#comment-7098614
 projects[footable][patch][] = "https://drupal.org/files/footable-hook-requirements-install-1924942-02.patch"
 
+;projects[fullcalendar][version] = "2.0"
+
 projects[google_analytics][version] = "1.3"
 
 projects[html5_tools][download][branch] = "7.x-1.x"
@@ -53,6 +57,8 @@ projects[menu_position][version] = "1.1"
 
 projects[redirect][version] = "1.0-rc1"
 
+projects[panels][version] = "3.3"
+
 projects[pathauto][version] = "1.2"
 
 projects[strongarm][version] = "2.0"
@@ -60,6 +66,8 @@ projects[strongarm][version] = "2.0"
 projects[token][version] = "1.5"
 
 projects[views][version] = "3.7"
+
+;projects[views_bulk_operations][version] = "3.1" 
 
 projects[wysiwyg][version] = "2.2"
 ; Select theme css patch: http://drupal.org/node/1309040#comment-6107956
