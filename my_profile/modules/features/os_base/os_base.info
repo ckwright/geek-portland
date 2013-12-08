@@ -4,6 +4,7 @@ core = 7.x
 package = OpenSourcery
 version = 7.x-2.0-alpha1
 project = os_base
+dependencies[] = chosen
 dependencies[] = contextual
 dependencies[] = ctools
 dependencies[] = features
