@@ -32,6 +32,22 @@ includes[images] = "images.make"
 
 ; Project-specific modules, and overrides.
 
+; OS Event
+projects[os_event][type] = "module"
+projects[os_event][subdir] = "features"
+projects[os_event][download][type] = "git"
+projects[os_event][download][revision] = "1a9aca8"
+projects[os_event][download][branch] = "7.x-2.x"
+projects[os_event][download][url] = "https://github.com/opensourcery/os_event.git"
+
+; OS Blog
+projects[os_blog][type] = "module"
+projects[os_blog][subdir] = "features"
+projects[os_blog][download][type] = "git"
+projects[os_blog][download][revision] = "c038c2f"
+projects[os_blog][download][branch] = "7.x-2.x"
+projects[os_blog][download][url] = "https://github.com/opensourcery/os_blog.git"
+
 ; Follow
 projects[follow][version] = "2.0-alpha1"
 
@@ -47,3 +63,8 @@ projects[libraries][version] = "2.1"
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta2.tar.gz"
 
+;
+; Theme
+;
+projects[adaptivetheme][version] = "3.1"
+projects[corolla][version] = "3.0-rc1"
