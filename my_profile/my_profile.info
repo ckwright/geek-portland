@@ -37,6 +37,7 @@ dependencies[] = footable
 dependencies[] = elements
 dependencies[] = fences
 dependencies[] = html5_tools
+dependencies[] = jquery_update
 dependencies[] = libraries
 dependencies[] = linkchecker
 dependencies[] = pathauto

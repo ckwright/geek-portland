@@ -57,6 +57,9 @@ projects[follow][version] = "2.0-alpha1"
 ; Full Calendar
 projects[fullcalendar][version] = "2.0"
 
+; JQuery Update
+projects[jquery_update][version] = "2.3"
+
 ; Mollom
 projects[mollom][version] = "2.7"
 
