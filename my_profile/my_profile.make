@@ -36,7 +36,7 @@ includes[images] = "images.make"
 projects[os_event][type] = "module"
 projects[os_event][subdir] = "features"
 projects[os_event][download][type] = "git"
-projects[os_event][download][revision] = "1a9aca8"
+projects[os_event][download][revision] = "9490095"
 projects[os_event][download][branch] = "7.x-2.x"
 projects[os_event][download][url] = "https://github.com/opensourcery/os_event.git"
 
