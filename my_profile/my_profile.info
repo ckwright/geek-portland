@@ -49,6 +49,7 @@ dependencies[] = wysiwyg
 dependencies[] = os_base
 dependencies[] = os_blog
 dependencies[] = os_event
+dependencies[] = adaptive_theme_helper
 
 ;
 ; Users

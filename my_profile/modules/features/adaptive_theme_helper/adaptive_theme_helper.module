@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the adaptive_theme_helper feature.
+ */
+
+include_once 'adaptive_theme_helper.features.inc';
+
+/**
+ * Implements hook_init().
+ *
+ * Adds a few styles to the default.
+ */
+function adaptive_theme_helper_init() {
+  drupal_add_css(drupal_get_path('module', 'adaptive_theme_helper') . '/css/alterations.css');
+}

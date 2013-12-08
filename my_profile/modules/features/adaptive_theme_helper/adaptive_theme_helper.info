@@ -1,0 +1,10 @@
+name = Geek Portland Theme Helper
+description = Permissions and settings associated with the website's theme.
+core = 7.x
+package = geek portland
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = theme_corolla_files_directory
+features[variable][] = theme_corolla_settings
