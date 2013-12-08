@@ -27,6 +27,13 @@ function my_profile_install() {
     ->condition('name', 'seven')
     ->execute();
 
+  // Disable bartik.
+  db_update('system')
+    ->fields(array('status' => 0))
+    ->condition('type', 'theme')
+    ->condition('name', 'bartik')
+    ->execute();
+
   // Set theme.
   $config = profiler_v2_load_config('my_profile');
   $theme_name = $config['theme'];
