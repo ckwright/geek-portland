@@ -48,8 +48,14 @@ projects[os_blog][download][revision] = "c038c2f"
 projects[os_blog][download][branch] = "7.x-2.x"
 projects[os_blog][download][url] = "https://github.com/opensourcery/os_blog.git"
 
+; Entity
+projects[entity][version] = "1.2"
+
 ; Follow
 projects[follow][version] = "2.0-alpha1"
+
+; Full Calendar
+projects[fullcalendar][version] = "2.0"
 
 ; Mollom
 projects[mollom][version] = "2.7"
@@ -57,11 +63,19 @@ projects[mollom][version] = "2.7"
 ; Libraries.
 projects[libraries][version] = "2.1"
 
+; Views Bulk Operations
+projects[views_bulk_operations][version] = "3.1"
+
 ; Libraries
 
 ; Profiler
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta2.tar.gz"
+
+
+; Full Calendar (js)
+libraries[fullcalendar][download][type] = "get"
+libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
 
 ;
 ; Theme
