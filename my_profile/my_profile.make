@@ -60,6 +60,12 @@ projects[follow][version] = "2.0-alpha1"
 ; Full Calendar
 projects[fullcalendar][version] = "2.0"
 
+projects[geocoder][version] = "1.2"
+
+projects[geofield][version] = "2.1"
+
+projects[geophp][version] = "1.7"
+
 ; JQuery Update
 projects[jquery_update][version] = "2.3"
 
@@ -68,6 +74,9 @@ projects[mollom][version] = "2.7"
 
 ; Libraries.
 projects[libraries][version] = "2.1"
+
+; Location
+projects[location][version] = "3.1"
 
 ; Link
 projects[link][version] = "1.2"
