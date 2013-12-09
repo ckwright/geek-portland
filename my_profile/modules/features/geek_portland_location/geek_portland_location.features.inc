@@ -19,7 +19,7 @@ function geek_portland_location_ctools_plugin_api($module = NULL, $api = NULL) {
 function geek_portland_location_node_info() {
   $items = array(
     'location' => array(
-      'name' => t('Location'),
+      'name' => t('Venue'),
       'base' => 'node_content',
       'description' => t('Locations will be geocoded and display a map.'),
       'has_title' => '1',

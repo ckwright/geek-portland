@@ -48,6 +48,9 @@ projects[os_blog][download][revision] = "c038c2f"
 projects[os_blog][download][branch] = "7.x-2.x"
 projects[os_blog][download][url] = "https://github.com/opensourcery/os_blog.git"
 
+; Address Field
+projects[addressfield][version] = "1.0-beta5"
+
 ; Entity
 projects[entity][version] = "1.2"
 
@@ -65,6 +68,9 @@ projects[mollom][version] = "2.7"
 
 ; Libraries.
 projects[libraries][version] = "2.1"
+
+; Link
+projects[link][version] = "1.2"
 
 ; Views Bulk Operations
 projects[views_bulk_operations][version] = "3.1"
