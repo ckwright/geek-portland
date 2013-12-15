@@ -10,7 +10,7 @@
 # Deploy to typical shared hosting.
 USER=devgp
 HOST=spalding.dreamhost.com
-INSTALLROOT=/home/$USER/
+INSTALLROOT=/home/$USER
 DOCUMENTROOT=/home/$USER/devgp
 
 ##### Things below here generally won't need to be changed #####
