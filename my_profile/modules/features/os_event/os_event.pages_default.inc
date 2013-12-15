@@ -16,7 +16,10 @@ function os_event_default_page_manager_pages() {
   $page->admin_title = 'Events';
   $page->admin_description = '';
   $page->path = 'events/list';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'default tab',
     'title' => 'Events',
@@ -105,7 +108,10 @@ function os_event_default_page_manager_pages() {
   $page->admin_title = 'Events: Calendar';
   $page->admin_description = '';
   $page->path = 'events/calendar';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'tab',
     'title' => 'Calendar',
@@ -340,7 +346,10 @@ function os_event_default_page_manager_pages() {
   $page->admin_title = 'Past Events';
   $page->admin_description = '';
   $page->path = 'events/past';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'tab',
     'title' => 'Past Events',

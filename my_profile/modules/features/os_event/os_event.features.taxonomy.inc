@@ -56,7 +56,7 @@ function os_event_taxonomy_default_vocabularies() {
       ),
     ),
     'event_categories' => array(
-      'name' => 'Event Categories',
+      'name' => 'Geeky interests',
       'machine_name' => 'event_categories',
       'description' => 'Categories for events',
       'hierarchy' => 0,
