@@ -109,3 +109,25 @@ variables[pathauto_node_pattern] = ''
 ;nodes[about][menu][weight] = 0
 ;nodes[about][path][alias] = about
 ;nodes[about][path][pathauto] = 0
+
+;
+; Terms
+;
+
+; Age
+terms[age][name] = "21+"
+terms[age][vocabulary_machine_name] = "twenty_one"
+
+terms[age][name] = "All ages"
+terms[age][vocabulary_machine_name] = "all_ages"
+
+; Admission
+terms[admission][name] = "Entrance fee"
+terms[admission][vocabulary_machine_name] = "entrance_fee"
+
+terms[admission][name] = "Free"
+terms[admission][vocabulary_machine_name] = "free"
+
+; Geeky interests
+terms[event_categories][name] = "Performance"
+terms[event_categories][vocabulary_machine_name] = "performance"
