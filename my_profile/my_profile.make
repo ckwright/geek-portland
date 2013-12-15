@@ -32,22 +32,6 @@ includes[images] = "images.make"
 
 ; Project-specific modules, and overrides.
 
-; OS Event
-projects[os_event][type] = "module"
-projects[os_event][subdir] = "features"
-projects[os_event][download][type] = "git"
-projects[os_event][download][revision] = "9490095"
-projects[os_event][download][branch] = "7.x-2.x"
-projects[os_event][download][url] = "https://github.com/opensourcery/os_event.git"
-
-; OS Blog
-projects[os_blog][type] = "module"
-projects[os_blog][subdir] = "features"
-projects[os_blog][download][type] = "git"
-projects[os_blog][download][revision] = "c038c2f"
-projects[os_blog][download][branch] = "7.x-2.x"
-projects[os_blog][download][url] = "https://github.com/opensourcery/os_blog.git"
-
 ; Address Field
 projects[addressfield][version] = "1.0-beta5"
 

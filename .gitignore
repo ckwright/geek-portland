@@ -7,5 +7,3 @@
 /drupal
 .vagrant
 Vagrantfile.local
-my_profile/modules/features/os_blog
-my_profile/modules/features/os_event
