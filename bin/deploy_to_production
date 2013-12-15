@@ -8,10 +8,10 @@
 #
 
 # Deploy to typical shared hosting.
-USER=
-HOST=
-INSTALLROOT=/home/$USER/os_app
-DOCUMENTROOT=/home/$USER/public_html
+USER=devgp
+HOST=spalding.dreamhost.com
+INSTALLROOT=/home/$USER/
+DOCUMENTROOT=/home/$USER/devgp
 
 ##### Things below here generally won't need to be changed #####
 
