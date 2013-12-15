@@ -54,5 +54,14 @@ function os_event_user_default_permissions() {
     'module' => 'fullcalendar',
   );
 
+  // Exported permission: 'view date repeats'.
+  $permissions['view date repeats'] = array(
+    'name' => 'view date repeats',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'date_repeat_field',
+  );
+
   return $permissions;
 }

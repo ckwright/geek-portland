@@ -38,6 +38,9 @@ projects[addressfield][version] = "1.0-beta5"
 ; Entity
 projects[entity][version] = "1.2"
 
+; Entity Reference
+projects[entityreference][version] = "1.1"
+
 ; Follow
 projects[follow][version] = "2.0-alpha1"
 

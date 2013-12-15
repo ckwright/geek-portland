@@ -103,10 +103,10 @@ function os_event_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '12',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '11',
         ),
       ),
       'display' => array(),
