@@ -115,19 +115,19 @@ variables[pathauto_node_pattern] = ''
 ;
 
 ; Age
-terms[age][name] = "21+"
-terms[age][vocabulary_machine_name] = "twenty_one"
+terms[twenty_one][name] = "21+"
+terms[twenty_one][vocabulary_machine_name] = "age"
 
-terms[age][name] = "All ages"
-terms[age][vocabulary_machine_name] = "all_ages"
+terms[all_ages][name] = "All ages"
+terms[all_ages][vocabulary_machine_name] = "age"
 
 ; Admission
-terms[admission][name] = "Entrance fee"
-terms[admission][vocabulary_machine_name] = "entrance_fee"
+terms[entrance_fee][name] = "Entrance fee"
+terms[entrance_fee][vocabulary_machine_name] = "admission"
 
-terms[admission][name] = "Free"
-terms[admission][vocabulary_machine_name] = "free"
+terms[free][name] = "Free"
+terms[free][vocabulary_machine_name] = "admission"
 
 ; Geeky interests
-terms[event_categories][name] = "Performance"
-terms[event_categories][vocabulary_machine_name] = "performance"
+terms[performance][name] = "Performance"
+terms[performance][vocabulary_machine_name] = "event_categories"
