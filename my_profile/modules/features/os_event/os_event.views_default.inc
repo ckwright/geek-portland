@@ -86,6 +86,36 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
+  /* Filter criterion: Content: Date (field_event_date:rrule) */
+  $handler->display->display_options['filters']['field_event_date_rrule']['id'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_rrule']['field'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['operator'] = 'contains';
+  $handler->display->display_options['filters']['field_event_date_rrule']['value'] = 'FREQ=WEEKLY';
+  $handler->display->display_options['filters']['field_event_date_rrule']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator_id'] = 'field_event_date_rrule_op';
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['label'] = 'Include weekly events?';
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator'] = 'field_event_date_rrule_op';
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['identifier'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
+  $handler->display->display_options['filters']['field_event_date_rrule']['is_grouped'] = TRUE;
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['identifier'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['widget'] = 'radios';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['group_items'] = array(
+    1 => array(
+      'title' => 'Show weekly',
+      'operator' => 'contains',
+      'value' => 'FREQ=WEEKLY',
+    ),
+  );
 
   /* Display: Upcoming events */
   $handler = $view->new_display('panel_pane', 'Upcoming events', 'panel_pane_upcoming');
@@ -100,41 +130,6 @@ function os_event_views_default_views() {
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 'fields_override';
   $handler->display->display_options['inherit_panels_path'] = '0';
-
-  /* Display: Feed */
-  $handler = $view->new_display('feed', 'Feed', 'feed');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['style_plugin'] = 'rss';
-  $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'event' => 'event',
-  );
-  $handler->display->display_options['path'] = 'events/rss.xml';
-  $handler->display->display_options['displays'] = array(
-    'default' => 'default',
-    'page' => 'page',
-    'page_1' => 'page_1',
-  );
 
   /* Display: Past events */
   $handler = $view->new_display('panel_pane', 'Past events', 'panel_pane_past');
@@ -178,6 +173,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block_upcoming');
