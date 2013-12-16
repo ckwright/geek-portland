@@ -203,7 +203,7 @@ function os_event_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_event_category'
   $field_instances['node-event-field_event_category'] = array(
     'bundle' => 'event',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -232,11 +232,13 @@ function os_event_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'taxonomy',
       'settings' => array(
         'apply_chosen' => 0,
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
       ),
-      'type' => 'options_select',
+      'type' => 'taxonomy_autocomplete',
       'weight' => 10,
     ),
   );
@@ -388,7 +390,7 @@ function os_event_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Where will this event be held? <a href="node/add/location">Add a location now</a>',
+    'description' => 'Where will this event be held? <a href="/node/add/location">Add a location now</a>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -540,7 +542,7 @@ function os_event_field_default_field_instances() {
   t('This will display on the calendar page.');
   t('What fees are required for this event?');
   t('Where to find out more about this event.');
-  t('Where will this event be held? <a href="node/add/location">Add a location now</a>');
+  t('Where will this event be held? <a href="/node/add/location">Add a location now</a>');
 
   return $field_instances;
 }
