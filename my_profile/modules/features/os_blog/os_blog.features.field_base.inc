@@ -35,7 +35,7 @@ function os_blog_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'blog_categories',
+          'vocabulary' => 'event_categories',
           'parent' => 0,
         ),
       ),
