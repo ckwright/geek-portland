@@ -30,6 +30,9 @@ includes[panels] = "panels.make"
 ; Uncomment to use Solr Search.
 ; includes[solr] = "solr.make"
 
+; Organic Groups.
+includes[og] = "og.make"
+
 ; Project-specific modules, and overrides.
 
 ; Address Field
