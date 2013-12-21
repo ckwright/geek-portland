@@ -59,8 +59,6 @@ projects[menu_position][version] = "1.1"
 
 projects[redirect][version] = "1.0-rc1"
 
-projects[panels][version] = "3.3"
-
 projects[pathauto][version] = "1.2"
 
 projects[strongarm][version] = "2.0"
