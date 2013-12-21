@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Geek Pages feature.
+ */
+
+include_once 'geek_pages.features.inc';
