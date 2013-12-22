@@ -69,6 +69,40 @@ function geek_pages_field_default_field_bases() {
     'type' => 'link_field',
   );
 
+  // Exported field_base: 'field_geek_page_type_s_'
+  $field_bases['field_geek_page_type_s_'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_geek_page_type_s_',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'geek_page_terms',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_podcast_feed'
   $field_bases['field_podcast_feed'] = array(
     'active' => 1,

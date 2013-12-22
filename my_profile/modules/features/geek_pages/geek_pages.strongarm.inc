@@ -44,10 +44,10 @@ function geek_pages_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '15',
+          'weight' => '16',
         ),
         'redirect' => array(
-          'weight' => '16',
+          'weight' => '17',
         ),
       ),
       'display' => array(),

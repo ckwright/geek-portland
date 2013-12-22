@@ -50,7 +50,7 @@ function geek_pages_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -114,7 +114,7 @@ function geek_pages_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -153,7 +153,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'emailwidget',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -193,7 +193,7 @@ function geek_pages_field_default_field_instances() {
         'apply_chosen' => 0,
       ),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -249,6 +249,46 @@ function geek_pages_field_default_field_instances() {
       'settings' => array(),
       'type' => 'link_field',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-geek_page-field_geek_page_type_s_'
+  $field_instances['node-geek_page-field_geek_page_type_s_'] = array(
+    'bundle' => 'geek_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What type of geek page is this?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_geek_page_type_s_',
+    'label' => 'Geek Page type(s)',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
+      'type' => 'options_select',
+      'weight' => 6,
     ),
   );
 
@@ -355,7 +395,7 @@ function geek_pages_field_default_field_instances() {
         'apply_chosen' => 0,
       ),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -394,7 +434,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'telwidget',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -449,7 +489,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -672,7 +712,7 @@ function geek_pages_field_default_field_instances() {
         'og_hide' => TRUE,
       ),
       'type' => 'options_onoff',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -731,7 +771,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -743,6 +783,7 @@ function geek_pages_field_default_field_instances() {
   t('Email');
   t('Enter the full url to your twitter home page, e.g. http://twitter.com/geekportland');
   t('Facebook');
+  t('Geek Page type(s)');
   t('Geeky interests');
   t('Group');
   t('Groups audience');
@@ -761,6 +802,7 @@ function geek_pages_field_default_field_instances() {
   t('Venue');
   t('Website');
   t('What sort of geeky interests are covered by this geek page?');
+  t('What type of geek page is this?');
   t('Youtube');
 
   return $field_instances;
