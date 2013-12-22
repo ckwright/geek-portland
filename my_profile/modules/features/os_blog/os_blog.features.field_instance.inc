@@ -51,7 +51,7 @@ function os_blog_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -4,
+      'weight' => 1,
     ),
   );
 
@@ -91,7 +91,47 @@ function os_blog_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => -3,
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-blog_post-field_event_category'
+  $field_instances['node-blog_post-field_event_category'] = array(
+    'bundle' => 'blog_post',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What geeky interests are discussed in this post?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_event_category',
+    'label' => 'Geeky interests',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
+      'type' => 'options_select',
+      'weight' => 3,
     ),
   );
 
@@ -152,7 +192,7 @@ function os_blog_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 31,
+      'weight' => 6,
     ),
   );
 
@@ -160,9 +200,11 @@ function os_blog_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Blog Category');
   t('Blog Post');
+  t('Geeky interests');
   t('Related Geek Pages');
   t('Tag your blog post with categories so that related posts can be linked. Begin typing a word to see matching categories.');
   t('What Geeky Pages, if any, relate to this blog post?');
+  t('What geeky interests are discussed in this post?');
 
   return $field_instances;
 }
