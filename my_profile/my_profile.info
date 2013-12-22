@@ -130,5 +130,43 @@ terms[free][name] = "Free"
 terms[free][vocabulary_machine_name] = "admission"
 
 ; Geeky interests
-terms[performance][name] = "Performance"
-terms[performance][vocabulary_machine_name] = "event_categories"
+terms[books][name] = "Books"
+terms[books][vocabulary_machine_name] = "event_categories"
+
+terms[tv][name] = "TV shows"
+terms[tv][vocabulary_machine_name] = "event_categories"
+
+terms[comics][name] = "Comics"
+terms[comics][vocabulary_machine_name] = "event_categories"
+
+terms[video_games][name] = "Video Games"
+terms[video_games][vocabulary_machine_name] = "event_categories"
+
+terms[tabletop][name] = "Tabletop Games"
+terms[tabletop][vocabulary_machine_name] = "event_categories"
+
+terms[roleplaying][name] = "Roleplaying"
+terms[roleplaying][vocabulary_machine_name] = "event_categories"
+
+; Geek page categorization
+terms[store][name] = "Store"
+terms[store][vocabulary_machine_name] = "geek_page_terms"
+
+terms[band][name] = "Band"
+terms[band][vocabulary_machine_name] = "geek_page_terms"
+
+terms[podcast][name] = "Podcast"
+terms[podcast][vocabulary_machine_name] = "geek_page_terms"
+
+terms[artist][name] = "Artist"
+terms[artist][vocabulary_machine_name] = "geek_page_terms"
+
+terms[organization][name] = "Organization"
+terms[organization][vocabulary_machine_name] = "geek_page_terms"
+
+; Blog
+terms[geeknews][name] = "Geek News"
+terms[geeknews][vocabulary_machine_name] = "blog_categories"
+
+terms[geekblog][name] = "Geek Blog"
+terms[geekblog][vocabulary_machine_name] = "blog_categories"
