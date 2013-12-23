@@ -170,3 +170,4 @@ terms[geeknews][vocabulary_machine_name] = "blog_categories"
 
 terms[geekblog][name] = "Geek Blog"
 terms[geekblog][vocabulary_machine_name] = "blog_categories"
+
