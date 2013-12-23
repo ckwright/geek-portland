@@ -50,7 +50,7 @@ function geek_pages_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -114,7 +114,7 @@ function geek_pages_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -153,7 +153,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'emailwidget',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -190,10 +190,10 @@ function geek_pages_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'apply_chosen' => 0,
+        'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 15,
     ),
   );
 
@@ -285,7 +285,7 @@ function geek_pages_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'apply_chosen' => 0,
+        'apply_chosen' => 1,
       ),
       'type' => 'options_select',
       'weight' => 6,
@@ -392,10 +392,10 @@ function geek_pages_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'apply_chosen' => 0,
+        'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -434,7 +434,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'telwidget',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -489,7 +489,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -712,7 +712,7 @@ function geek_pages_field_default_field_instances() {
         'og_hide' => TRUE,
       ),
       'type' => 'options_onoff',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -771,7 +771,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
