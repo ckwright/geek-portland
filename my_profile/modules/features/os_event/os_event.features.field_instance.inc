@@ -205,7 +205,7 @@ function os_event_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'What sort of geeky interests are covered by this event?',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -225,7 +225,7 @@ function os_event_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_event_category',
-    'label' => 'Event Category',
+    'label' => 'Geeky interests',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -590,8 +590,8 @@ function os_event_field_default_field_instances() {
   t('Buy tickets');
   t('Date');
   t('Description');
-  t('Event Category');
   t('For repeating events, if you don\'t select a given month or week, all will be chosen.');
+  t('Geeky interests');
   t('Image');
   t('Is this even free or not?');
   t('Load an image for this event. This image will be scaled to 320px wide.');
@@ -602,6 +602,7 @@ function os_event_field_default_field_instances() {
   t('This will display on the calendar page.');
   t('What Geeky Pages, if any, relate to this event?');
   t('What fees are required for this event?');
+  t('What sort of geeky interests are covered by this event?');
   t('Where to find out more about this event.');
   t('Where will this event be held? <a href="/node/add/location">Add a location now</a>');
 
