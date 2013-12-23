@@ -13,7 +13,6 @@ dependencies[] = os_base
 dependencies[] = os_event
 dependencies[] = strongarm
 dependencies[] = text
-dependencies[] = twitterfield
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_base][] = field_email
