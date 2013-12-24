@@ -250,6 +250,39 @@ nodes[geek-pages/guardian-games][form_build_id] = form-9YWgFVfnfMqggag3d_vRuRmFw
 nodes[geek-pages/guardian-games][form_token] = v8GEqEDfhYbKB6pYX7FlNZmQ5opMqM0DKA28mTrU0TQ
 nodes[geek-pages/guardian-games][form_id] = page_node_form
 
+nodes[blog/example-blog-post][uid] = 1
+nodes[blog/example-blog-post][title] = Example blog post
+nodes[blog/example-blog-post][status] = 1
+nodes[blog/example-blog-post][type] = blog_post
+nodes[blog/example-blog-post][language] = und
+nodes[blog/example-blog-post][created] = 1387852593
+nodes[blog/example-blog-post][changed] = 1387852593
+nodes[blog/example-blog-post][revision_timestamp] = 1387852593
+nodes[blog/example-blog-post][revision_uid] = 1
+nodes[blog/example-blog-post][body][und][0][value] = <p>Famous comic artist signing at Guardian for some reason.</p>
+nodes[blog/example-blog-post][body][und][0][format] = full_html
+nodes[blog/example-blog-post][name] = admin
+nodes[blog/example-blog-post][date] = 2013-12-23 18:36:33 -0800
+nodes[blog/example-blog-post][menu][module] = menu
+nodes[blog/example-blog-post][menu][parent_depth_limit] = 8
+nodes[blog/example-blog-post][menu][parent] = main-menu:0
+nodes[blog/example-blog-post][path][alias] = blog/example-blog-post
+nodes[blog/example-blog-post][path][pid] = 24
+nodes[blog/example-blog-post][path][source] = node/4
+nodes[blog/example-blog-post][path][language] = und
+nodes[blog/example-blog-post][path][original][pid] = 24
+nodes[blog/example-blog-post][path][original][source] = node/4
+nodes[blog/example-blog-post][path][original][alias] = blog/example-blog-post
+nodes[blog/example-blog-post][path][original][language] = und
+nodes[blog/example-blog-post][path][pathauto] = 1
+nodes[blog/example-blog-post][submit] = Save
+nodes[blog/example-blog-post][preview] = Preview
+nodes[blog/example-blog-post][delete] = Delete
+nodes[blog/example-blog-post][preview_changes] = View changes
+nodes[blog/example-blog-post][form_build_id] = form-DwvzNI29A4pBte2Xw8XIxt4LBmMrx8Bzyh6aR_LSxQc
+nodes[blog/example-blog-post][form_token] = v8GEqEDfhYbKB6pYX7FlNZmQ5opMqM0DKA28mTrU0TQ
+nodes[blog/example-blog-post][form_id] = page_node_form
+
 ;
 ; Terms
 ;
