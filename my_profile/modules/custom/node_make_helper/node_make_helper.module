@@ -32,7 +32,7 @@ function node_make_helper_create_info_files($nodes) {
     $node = $form['#node'];
     entity_form_submit_build_entity('node', $node, $form, $form_state);
     if(isset($node->path['alias'])) {
-      $node_array = json_decode(json_encode($node), true);
+      $node_array = _object_to_array($node);
 
       node_make_helper_keys_clean($node_array, 'menu');
 
@@ -80,3 +80,21 @@ function node_make_helper_keys_clean(&$node_array, $key) {
 
   $node_array[$key] = array_diff_key($node_array[$key], $bad_keys);
 }
+
+
+/**
+ * Generic function to convert an object into an array.
+ *
+ * Note: Unfortunately we can't json_encode then decode the object, as some of
+ * the object's values are and should remain json encoded.
+ */
+function _object_to_array($obj) {
+  $arr = array();
+  $arrObj = is_object($obj) ? get_object_vars($obj) : $obj;
+  foreach ($arrObj as $key => $val) {
+    $val = (is_array($val) || is_object($val)) ? _object_to_array($val) : $val;
+    $arr[$key] = $val;
+  }
+  return $arr;
+}
+
