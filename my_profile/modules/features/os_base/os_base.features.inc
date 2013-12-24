@@ -20,6 +20,61 @@ function os_base_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function os_base_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: large_image.
+  $styles['large_image'] = array(
+    'name' => 'large_image',
+    'label' => 'Large Image',
+    'effects' => array(
+      1 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 300,
+          'height' => 250,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: tiny_image.
+  $styles['tiny_image'] = array(
+    'name' => 'tiny_image',
+    'label' => 'Tiny image',
+    'effects' => array(
+      2 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 75,
+          'height' => 65,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function os_base_node_info() {
