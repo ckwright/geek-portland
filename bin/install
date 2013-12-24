@@ -44,6 +44,11 @@ else
   drush site-install -y --uri=default $PROFILE
   drush fra -y
   drush cc all
+  drush en devel_generate -y
+  drush genc 10 --types=location
+  drush genc 10 --types=geek_page
+  drush genc 10 --types=event
+  drush genc 10 --types=blog_post
   cd -
 fi
 

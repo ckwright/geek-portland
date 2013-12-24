@@ -81,7 +81,8 @@ projects[admin_menu][subdir] = "development"
 projects[admin_menu][version] = "3.0-rc4"
 
 projects[devel][subdir] = "development"
-projects[devel][version] = "1.3"
+projects[devel][download][branch] = "7.x-1.x"
+projects[devel][download][revision] = "c29e12f3"
 
 projects[environment_indicator][subdir] = "development"
 projects[environment_indicator][version] = "2.0"
