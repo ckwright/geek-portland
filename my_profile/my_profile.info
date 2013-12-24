@@ -67,7 +67,7 @@ users[admin][data][overlay] = 0
 ;
 ; Variables
 ;
-;variables[site_frontpage] = TODO
+variables[site_frontpage] = home
 ;variables[site_404] =
 variables[site_mail] = admin@my_profile.dev
 variables[site_name] = geek portland
