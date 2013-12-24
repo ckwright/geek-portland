@@ -21,7 +21,7 @@ function home_page_default_page_manager_pages() {
     'type' => 'normal',
     'title' => 'Home',
     'name' => 'main-menu',
-    'weight' => '0',
+    'weight' => '-1',
     'parent' => array(
       'type' => 'none',
       'title' => '',
