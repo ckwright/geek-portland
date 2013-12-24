@@ -27,7 +27,7 @@ function os_event_default_page_manager_pages() {
     'weight' => '0',
     'parent' => array(
       'type' => 'normal',
-      'title' => 'Events',
+      'title' => 'Calendar',
       'name' => 'main-menu',
       'weight' => '0',
     ),

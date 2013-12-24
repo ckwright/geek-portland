@@ -89,12 +89,12 @@ function os_blog_default_page_manager_pages() {
   );
   $page->menu = array(
     'type' => 'default tab',
-    'title' => 'Blog',
+    'title' => 'GeekNews',
     'name' => 'main-menu',
     'weight' => '0',
     'parent' => array(
       'type' => 'normal',
-      'title' => 'Blog',
+      'title' => 'GeekNews',
       'name' => 'main-menu',
       'weight' => '0',
     ),
