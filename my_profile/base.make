@@ -67,7 +67,7 @@ projects[token][version] = "1.5"
 
 projects[views][version] = "3.7"
 
-;projects[views_bulk_operations][version] = "3.1" 
+;projects[views_bulk_operations][version] = "3.1"
 
 projects[wysiwyg][version] = "2.2"
 ; Select theme css patch: http://drupal.org/node/1309040#comment-6107956
