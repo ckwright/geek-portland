@@ -107,13 +107,11 @@ function os_event_views_default_views() {
   );
   $handler->display->display_options['filters']['field_event_date_rrule']['is_grouped'] = TRUE;
   $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['identifier'] = 'field_event_date_rrule';
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['optional'] = FALSE;
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['widget'] = 'radios';
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['default_group'] = '1';
   $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['group_items'] = array(
     1 => array(
-      'title' => 'Show weekly',
-      'operator' => 'contains',
+      'title' => 'Hide weekly',
+      'operator' => 'not',
       'value' => 'FREQ=WEEKLY',
     ),
   );
