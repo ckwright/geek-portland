@@ -89,4 +89,4 @@ libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar
 ; Theme
 ;
 projects[adaptivetheme][version] = "3.1"
-projects[corolla][version] = "3.0-rc1"
+projects[sky][version] = "3.0-rc1"

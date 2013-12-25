@@ -13,14 +13,14 @@ function adaptive_theme_helper_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'theme_corolla_files_directory';
+  $strongarm->name = 'theme_sky_files_directory';
   $strongarm->value = 'profiles/my_profile/modules/features/adaptive_theme_helper/css';
-  $export['theme_corolla_files_directory'] = $strongarm;
+  $export['theme_sky_files_directory'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'theme_corolla_settings';
+  $strongarm->name = 'theme_sky_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
     'toggle_name' => 0,
@@ -181,7 +181,7 @@ function adaptive_theme_helper_strongarm() {
     'base_font_size' => '<none>',
     'site_name_font_type' => '',
     'site_name_font' => 'bf-sss',
-    'site_name_font_gwf' => 'Londrina Solid',
+    'site_name_font_gwf' => '',
     'site_name_font_gwf_add_styles' => 0,
     'site_name_font_gwf_add_styles_300' => 0,
     'site_name_font_gwf_add_styles_300italic' => 0,
@@ -199,7 +199,7 @@ function adaptive_theme_helper_strongarm() {
     'site_name_font_gwf_add_charsets_khmer' => 0,
     'site_name_font_gwf_add_charsets_vietnamese' => 0,
     'site_name_font_cfs' => '',
-    'site_name_font_size' => '3.5em',
+    'site_name_font_size' => '2em',
     'site_slogan_font_type' => '',
     'site_slogan_font' => 'bf-sss',
     'site_slogan_font_gwf' => '',
@@ -223,7 +223,7 @@ function adaptive_theme_helper_strongarm() {
     'site_slogan_font_size' => '1.2em',
     'page_title_font_type' => '',
     'page_title_font' => 'bf-sss',
-    'page_title_font_gwf' => 'Londrina Solid',
+    'page_title_font_gwf' => '',
     'page_title_font_gwf_add_styles' => 0,
     'page_title_font_gwf_add_styles_300' => 0,
     'page_title_font_gwf_add_styles_300italic' => 0,
@@ -244,7 +244,7 @@ function adaptive_theme_helper_strongarm() {
     'page_title_font_size' => '2em',
     'node_title_font_type' => '',
     'node_title_font' => 'bf-sss',
-    'node_title_font_gwf' => 'Londrina Solid',
+    'node_title_font_gwf' => '',
     'node_title_font_gwf_add_styles' => 0,
     'node_title_font_gwf_add_styles_300' => 0,
     'node_title_font_gwf_add_styles_300italic' => 0,
@@ -307,7 +307,7 @@ function adaptive_theme_helper_strongarm() {
     'block_title_font_size' => '1.4em',
     'content_headings_h1h4_font_type' => '',
     'content_headings_h1h4_font' => 'bf-sss',
-    'content_headings_h1h4_font_gwf' => 'Wellfleet',
+    'content_headings_h1h4_font_gwf' => '',
     'content_headings_h1h4_font_gwf_add_styles' => 0,
     'content_headings_h1h4_font_gwf_add_styles_300' => 0,
     'content_headings_h1h4_font_gwf_add_styles_300italic' => 0,
@@ -492,15 +492,15 @@ function adaptive_theme_helper_strongarm() {
     'extra_item_list_classes' => 1,
     'content_corner_radius' => 'rc-6',
     'tabs_corner_radius' => 'rct-6',
-    'box_shadows' => 'bs-n',
     'body_background' => 'bb-n',
     'menu_bullets' => 'mb-dd',
-    'at__active_tab' => 'edit-modify-output',
+    'menu_bar_position' => 'mbp-l',
+    'at__active_tab' => 'edit-font',
     'at-release' => '7.x-3.x',
     'at-color' => '1',
     'favicon_mimetype' => 'image/vnd.microsoft.icon',
   );
-  $export['theme_corolla_settings'] = $strongarm;
+  $export['theme_sky_settings'] = $strongarm;
 
   return $export;
 }
