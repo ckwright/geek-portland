@@ -7,3 +7,25 @@
  * remember to update the name in the info file
  * as well.
  */
+@import "compass/css3";
+
+html,
+body,
+.bb-n {
+  background: url("images/bg.gif") no-repeat bottom right #fff;
+}
+
+#columns {
+  background: none;
+}
+
+#menu-bar {
+  background: #99cc66;
+}
+
+.node {
+  background: #fff;
+  border: 1px solid #E6E4DE;
+  @include border-radius(6px);
+  padding: 1em;
+}
