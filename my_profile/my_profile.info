@@ -4,7 +4,7 @@ name = geek portland
 distribution_name = geek portland
 description = geek portland
 core = 7.x
-theme = sky
+theme = geek_portland
 
 ; Core
 dependencies[] = block

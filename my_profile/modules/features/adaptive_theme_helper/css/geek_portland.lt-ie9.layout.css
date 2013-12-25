@@ -1,5 +1,5 @@
 /* bigscreen three_col_grail */
-.container {width:100%;max-width:1140px}
+.container {width:100%;max-width:1200px}
 #content-column,.content-column,div.sidebar {float: left; clear: none}
 .two-sidebars .content-inner {margin-left: 25%; margin-right: 25%}
 .sidebar-first .content-inner {margin-left: 25%; margin-right: 0}

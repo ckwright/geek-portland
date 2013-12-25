@@ -13,14 +13,14 @@ function adaptive_theme_helper_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'theme_sky_files_directory';
+  $strongarm->name = 'theme_geek_portland_files_directory';
   $strongarm->value = 'profiles/my_profile/modules/features/adaptive_theme_helper/css';
-  $export['theme_sky_files_directory'] = $strongarm;
+  $export['theme_geek_portland_files_directory'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'theme_sky_settings';
+  $strongarm->name = 'theme_geek_portland_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
     'toggle_name' => 0,
@@ -153,7 +153,7 @@ function adaptive_theme_helper_strongarm() {
     'enable_image_settings' => 1,
     'enable_apple_touch_icons' => 0,
     'enable_exclude_css' => 0,
-    'enable_custom_css' => 1,
+    'enable_custom_css' => 0,
     'enable_context_regions' => 0,
     'enable_float_region_blocks' => 0,
     'enable_markup_overides' => 1,
@@ -464,8 +464,6 @@ function adaptive_theme_helper_strongarm() {
     'image_caption_teaser' => 0,
     'image_caption_full' => 0,
     'image_teaser' => 0,
-    'custom_css' => '/* Add any valid CSS declarations */
-@import url("custom-geek.css");',
     'global_gutter_width' => '',
     'page_full_width_wrappers' => 0,
     'page_content_type_suggestions' => 0,
@@ -492,17 +490,11 @@ function adaptive_theme_helper_strongarm() {
     'extra_block_classes' => 1,
     'extra_menu_classes' => 1,
     'extra_item_list_classes' => 1,
-    'content_corner_radius' => 'rc-6',
-    'tabs_corner_radius' => 'rct-6',
-    'body_background' => 'bb-n',
-    'menu_bullets' => 'mb-dd',
-    'menu_bar_position' => 'mbp-l',
-    'at__active_tab' => 'edit-custom-styles',
+    'at__active_tab' => 'edit-font',
     'at-release' => '7.x-3.x',
     'at-color' => '1',
-    'favicon_mimetype' => 'image/vnd.microsoft.icon',
   );
-  $export['theme_sky_settings'] = $strongarm;
+  $export['theme_geek_portland_settings'] = $strongarm;
 
   return $export;
 }
