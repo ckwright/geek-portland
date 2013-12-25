@@ -43,7 +43,7 @@ function adaptive_theme_helper_strongarm() {
     'bigscreen_page_width' => '100',
     'bigscreen_set_max_width' => 1,
     'bigscreen_max_width_unit' => 'px',
-    'bigscreen_max_width' => '1140',
+    'bigscreen_max_width' => '1200',
     'bigscreen_media_query' => 'only screen and (min-width:1200px)',
     'tablet_landscape_layout' => 'three_col_grail',
     'tablet_landscape_sidebar_unit' => '%',
