@@ -21,6 +21,17 @@ body,
 
 #menu-bar {
   background: #99cc66;
+
+  &.nav {
+    .block-menu {
+      ul {
+        li {
+          a {
+          }
+        }
+      }
+    }
+  }
 }
 
 .node {
