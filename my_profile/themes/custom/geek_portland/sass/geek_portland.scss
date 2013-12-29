@@ -15,8 +15,29 @@ body,
   background: url("images/bg.gif") no-repeat bottom right #fff;
 }
 
-#columns {
-  background: none;
+
+#header {
+
+  .container {
+    position: relative;
+
+    .region-header {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
+  }
+}
+
+#branding {
+  width: 75%;
+  margin-bottom: 0;
+
+  #logo {
+    padding: 0;
+    max-width: 100%;
+  }
 }
 
 #menu-bar {
@@ -24,6 +45,9 @@ body,
 
   &.nav {
     .block-menu {
+      width: 70%;
+      min-width: 400px;
+
       ul {
         li {
           a {
@@ -32,6 +56,21 @@ body,
       }
     }
   }
+
+  .block-search {
+    float: right;
+    width: 30%;
+    min-width: 300px;
+    text-align: right;
+  }
+
+  .menu-wrapper {
+    clear: none;
+  }
+}
+
+#columns {
+  background: none;
 }
 
 .node {
@@ -39,4 +78,22 @@ body,
   border: 1px solid #E6E4DE;
   @include border-radius(6px);
   padding: 1em;
+}
+
+/*
+ * Block styles
+ */
+.block-geek-social {
+  ul {
+    list-style: none outside none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none outside none;
+      display: inline;
+      padding: 0;
+      margin: 0;
+    }
+  }
 }

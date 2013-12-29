@@ -35,14 +35,14 @@ function adaptive_theme_helper_context_default_contexts() {
         'search-form' => array(
           'module' => 'search',
           'delta' => 'form',
-          'region' => 'header',
-          'weight' => '-9',
+          'region' => 'menu_bar',
+          'weight' => '-15',
         ),
         'system-main-menu' => array(
           'module' => 'system',
           'delta' => 'main-menu',
           'region' => 'menu_bar',
-          'weight' => '-9',
+          'weight' => '-14',
         ),
       ),
     ),

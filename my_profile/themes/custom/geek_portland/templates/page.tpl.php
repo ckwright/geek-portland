@@ -2,8 +2,8 @@
 
   <?php print render($page['top_menu']); ?>
 
-  <header id="header" class="clearfix" role="banner">
-  <div class="container">
+  <header id="header" role="banner">
+  <div class="container clearfix">
     <?php if ($site_logo || $site_name || $site_slogan): ?>
       <!-- start: Branding -->
       <div id="branding" class="branding-elements clearfix">
