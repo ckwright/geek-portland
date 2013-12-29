@@ -187,3 +187,73 @@ function os_base_entity_info_alter(&$info) {
     unset($info['fieldable_panels_pane']['bundles']['fieldable_panels_pane']);
   }
 }
+
+/**
+ * Implements hook_block_info().
+ *
+ * Enables the social media links block.
+ */
+function os_base_block_info() {
+    return array(
+      'geek_social' => array (
+        'info' => 'Social media links',
+        'cache' => DRUPAL_CACHE_GLOBAL,
+      ),
+    );
+}
+
+/**
+ * Enables hook_block_configure().
+ *
+ * Configuration for the Social Media blocks.
+ */
+function os_base_block_configure($delta = '') {
+  $form = array();
+
+  if ($delta == 'geek_social') {
+    $links = '<ul>
+<li><a href="http://twitter.com/geekportland"><img src="/profiles/my_profile/themes/custom/geek_portland/css/images/twitter.png" alt="Twitter" /></a></li>
+<li><a href="http://www.facebook.com/geekportland"><img src="/profiles/my_profile/themes/custom/geek_portland/css/images/facebook.png" alt="Facebook" /></a></li>
+</ul>';
+
+    $form['body_field']['body'] = array(
+      '#type' => 'text_format',
+      '#title' => t('Block body'),
+      '#default_value' => variable_get('os_base_social_media', $links),
+      '#format' => 'full_html',
+      '#rows' => 15,
+      '#description' => t('The content of the block as shown to the user.'),
+      '#required' => TRUE,
+      '#weight' => -17,
+    );
+  }
+
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ *
+ * Saves the variable for the social media blocks.
+ */
+function os_base_block_save($delta = '', $edit = array()) {
+  if ($delta == 'geek_social' && isset($edit['body']['value'])) {
+    variable_set('os_base_social_media', $edit['body']['value']);
+  }
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * Shows the body text on the Social Media block view.
+ */
+function os_base_block_view($delta = '') {
+  $block = array();
+
+  if ($delta == 'geek_social') {
+    $block['subject'] = NULL;
+    $block['content'] = variable_get('os_base_social_media', '');
+  }
+
+  return $block;
+}

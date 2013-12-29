@@ -4,6 +4,7 @@ core = 7.x
 package = geek portland
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = os_base
 dependencies[] = search
 dependencies[] = strongarm
 features[context][] = all_pages

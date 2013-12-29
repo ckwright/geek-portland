@@ -26,11 +26,17 @@ function adaptive_theme_helper_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'os_base-geek_social' => array(
+          'module' => 'os_base',
+          'delta' => 'geek_social',
+          'region' => 'header',
+          'weight' => '-10',
+        ),
         'search-form' => array(
           'module' => 'search',
           'delta' => 'form',
           'region' => 'header',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'system-main-menu' => array(
           'module' => 'system',
