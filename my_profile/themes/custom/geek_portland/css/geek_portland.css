@@ -15,8 +15,12 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right whit
 
 #columns { background: none; }
 
-.node { background: #fff; border: 1px solid #e6e4de; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; padding: 1em; }
-
 /* Block styles */
 .block-geek-social ul { list-style: none outside none; padding: 0; margin: 0; }
 .block-geek-social ul li { list-style: none outside none; display: inline; padding: 0; margin: 0; }
+
+/* Node listing views */
+.view-content .item-list ul { margin: 0; padding: 0; }
+.view-content .item-list ul li.views-row { list-style: none outside none; }
+
+.node { background: #fff; border: 1px solid #e6e4de; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; padding: 1em; }

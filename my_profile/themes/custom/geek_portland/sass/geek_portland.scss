@@ -80,13 +80,6 @@ body,
   background: none;
 }
 
-.node {
-  background: #fff;
-  border: 1px solid #E6E4DE;
-  @include border-radius(6px);
-  padding: 1em;
-}
-
 /*
  * Block styles
  */
@@ -103,4 +96,28 @@ body,
       margin: 0;
     }
   }
+}
+
+/*
+ * Node listing views
+ */
+
+.view-content {
+  .item-list {
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li.views-row {
+        list-style: none outside none;
+      }
+    }
+  }
+}
+
+.node {
+  background: #fff;
+  border: 1px solid #E6E4DE;
+  @include border-radius(6px);
+  padding: 1em;
 }
