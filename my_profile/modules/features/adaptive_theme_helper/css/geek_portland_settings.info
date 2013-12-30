@@ -384,6 +384,7 @@ settings[main_menu_font_gwf_add_charsets_cyrillic-ext] = 0
 settings[main_menu_font_gwf_add_charsets_khmer] = 0
 settings[main_menu_font_gwf_add_charsets_vietnamese] = 0
 settings[main_menu_font_cfs] = ''
+settings[main_menu_font_size] = 1.4em
 settings[secondary_menu_font_type] = gwf
 settings[secondary_menu_font] = bf-sss
 settings[secondary_menu_font_gwf] = Source Sans Pro

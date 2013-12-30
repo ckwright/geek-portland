@@ -42,30 +42,37 @@ body,
 
 #menu-bar {
   background: #99cc66;
+  padding-top: 3px;
 
   &.nav {
     .block-menu {
-      width: 70%;
-      min-width: 400px;
-
-      ul {
-        li {
-          a {
-          }
-        }
-      }
+      width: 75%;
+      float: left;
     }
   }
 
   .block-search {
+    clear: none;
     float: right;
-    width: 30%;
-    min-width: 300px;
+    width: 25%;
+    min-width: 170px;
     text-align: right;
+    line-height: 2.4em;
+    height: 2.4em;
+
+    input {
+      float: none;
+    }
   }
 
   .menu-wrapper {
-    clear: none;
+
+    ul.menu {
+      li {
+        width: 18%;
+        text-align: center;
+      }
+    }
   }
 }
 

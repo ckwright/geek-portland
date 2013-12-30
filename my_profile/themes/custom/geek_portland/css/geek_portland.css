@@ -7,10 +7,11 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right whit
 #branding { width: 75%; margin-bottom: 0; }
 #branding #logo { padding: 0; max-width: 100%; }
 
-#menu-bar { background: #99cc66; }
-#menu-bar.nav .block-menu { width: 70%; min-width: 400px; }
-#menu-bar .block-search { float: right; width: 30%; min-width: 300px; text-align: right; }
-#menu-bar .menu-wrapper { clear: none; }
+#menu-bar { background: #99cc66; padding-top: 3px; }
+#menu-bar.nav .block-menu { width: 75%; float: left; }
+#menu-bar .block-search { clear: none; float: right; width: 25%; min-width: 170px; text-align: right; line-height: 2.4em; height: 2.4em; }
+#menu-bar .block-search input { float: none; }
+#menu-bar .menu-wrapper ul.menu li { width: 18%; text-align: center; }
 
 #columns { background: none; }
 

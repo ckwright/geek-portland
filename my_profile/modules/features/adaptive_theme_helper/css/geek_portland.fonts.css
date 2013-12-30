@@ -13,7 +13,7 @@ h3{font-size:1.4em;}
 h4{font-size:1.2em;}
 h5{font-size:1em;}
 h6{font-size:1em;}
-#menu-bar .menu-wrapper,#primary-menu-bar .menu-wrapper{font-family:'Source Sans Pro'}
+#menu-bar .menu-wrapper,#primary-menu-bar .menu-wrapper{font-size:1.4em;font-family:'Source Sans Pro'}
 #secondary-menu-bar .menu-wrapper,#menu-bar #block-system-user-menu{font-family:'Source Sans Pro'}
 nav.block .block-content{font-family:'Source Sans Pro'}
 ruby ruby{font-family:'Source Sans Pro'}
