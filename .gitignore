@@ -7,3 +7,4 @@
 /drupal
 .vagrant
 Vagrantfile.local
+/db/local.sql.gz
