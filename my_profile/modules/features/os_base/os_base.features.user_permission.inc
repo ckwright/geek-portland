@@ -96,6 +96,28 @@ function os_base_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'search content'.
+  $permissions['search content'] = array(
+    'name' => 'search content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search',
+  );
+
+  // Exported permission: 'use advanced search'.
+  $permissions['use advanced search'] = array(
+    'name' => 'use advanced search',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search',
+  );
+
   // Exported permission: 'use text format filtered_html'.
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
