@@ -6,7 +6,9 @@ body.admin-menu { margin-top: 0 !important; }
 
 #branding, .region-header { float: none; margin: 0 0 10px; width: 100%; clear: both; text-align: center; max-width: 100%; overflow: hidden; }
 
-.region-header .block { clear: both; float: none; margin: 5px auto; max-width: 80%; }
+#header .container .region-header { bottom: -15px; }
+
+.region-header .block { margin: 5px auto; }
 
 .region-header .block .block-inner { margin-left: 0; margin-right: 0; margin: auto; }
 

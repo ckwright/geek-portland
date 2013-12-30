@@ -21,11 +21,18 @@ body.admin-menu {
   overflow: hidden;
 }
 
+
+
+#header {
+  .container {
+    .region-header {
+      bottom: -15px;
+    }
+  }
+}
+
 .region-header .block {
-  clear: both;
-  float: none;
   margin: 5px auto;
-  max-width: 80%;
 }
 
 .region-header .block .block-inner {
