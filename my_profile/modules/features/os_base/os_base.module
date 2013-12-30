@@ -211,15 +211,10 @@ function os_base_block_configure($delta = '') {
   $form = array();
 
   if ($delta == 'geek_social') {
-    $links = '<ul>
-<li><a href="http://twitter.com/geekportland"><img src="/profiles/my_profile/themes/custom/geek_portland/css/images/twitter.png" alt="Twitter" /></a></li>
-<li><a href="http://www.facebook.com/geekportland"><img src="/profiles/my_profile/themes/custom/geek_portland/css/images/facebook.png" alt="Facebook" /></a></li>
-</ul>';
-
     $form['body_field']['body'] = array(
       '#type' => 'text_format',
       '#title' => t('Block body'),
-      '#default_value' => variable_get('os_base_social_media', $links),
+      '#default_value' => variable_get('os_base_social_media', ''),
       '#format' => 'full_html',
       '#rows' => 15,
       '#description' => t('The content of the block as shown to the user.'),

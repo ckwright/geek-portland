@@ -109,4 +109,10 @@ function os_base_install() {
       ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
       ->execute();
   }
+  // Add a custom block's body.
+  $links = '<ul>
+<li><a href="http://twitter.com/geekportland"><img src="/profiles/my_profile/themes/custom/geek_portland/css/images/twitter.png" alt="Twitter" /></a></li>
+<li><a href="http://www.facebook.com/geekportland"><img src="/profiles/my_profile/themes/custom/geek_portland/css/images/facebook.png" alt="Facebook" /></a></li>
+</ul>';
+  variable_set('os_base_social_media', $links);
 }
