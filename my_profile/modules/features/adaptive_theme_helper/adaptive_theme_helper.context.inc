@@ -32,15 +32,15 @@ function adaptive_theme_helper_context_default_contexts() {
           'region' => 'header',
           'weight' => '-10',
         ),
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
-          'region' => 'menu_bar',
-          'weight' => '-15',
-        ),
         'system-main-menu' => array(
           'module' => 'system',
           'delta' => 'main-menu',
+          'region' => 'menu_bar',
+          'weight' => '-15',
+        ),
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
           'region' => 'menu_bar',
           'weight' => '-14',
         ),

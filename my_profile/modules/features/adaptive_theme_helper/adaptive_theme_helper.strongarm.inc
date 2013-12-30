@@ -371,7 +371,7 @@ function adaptive_theme_helper_strongarm() {
     'main_menu_font_gwf_add_charsets_khmer' => 0,
     'main_menu_font_gwf_add_charsets_vietnamese' => 0,
     'main_menu_font_cfs' => '',
-    'main_menu_font_size' => '<none>',
+    'main_menu_font_size' => '1.4em',
     'secondary_menu_font_type' => 'gwf',
     'secondary_menu_font' => 'bf-sss',
     'secondary_menu_font_gwf' => 'Source Sans Pro',
@@ -490,9 +490,15 @@ function adaptive_theme_helper_strongarm() {
     'extra_block_classes' => 1,
     'extra_menu_classes' => 1,
     'extra_item_list_classes' => 1,
+    'content_corner_radius' => 'rc-6',
+    'tabs_corner_radius' => 'rct-6',
+    'body_background' => 'bb-n',
+    'menu_bullets' => 'mb-dd',
+    'menu_bar_position' => 'mbp-l',
     'at__active_tab' => 'edit-font',
     'at-release' => '7.x-3.x',
     'at-color' => '1',
+    'favicon_mimetype' => 'image/vnd.microsoft.icon',
   );
   $export['theme_geek_portland_settings'] = $strongarm;
 
