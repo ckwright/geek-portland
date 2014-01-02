@@ -251,10 +251,8 @@ function os_base_block_save($delta = '', $edit = array()) {
 function os_base_block_view($delta = '') {
   $block = array();
 
-  if ($delta == 'geek_social') {
-    $block['subject'] = NULL;
-    $block['content'] = variable_get(_os_block_variable_get($delta), '');
-  }
+  $block['subject'] = NULL;
+  $block['content'] = variable_get(_os_block_variable_get($delta), '');
 
   return $block;
 }
