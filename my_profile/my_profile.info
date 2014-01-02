@@ -150,17 +150,17 @@ terms[roleplaying][name] = "Roleplaying"
 terms[roleplaying][vocabulary_machine_name] = "event_categories"
 
 ; Geek page categorization
+terms[games][name] = "Games"
+terms[games][vocabulary_machine_name] = "geek_page_terms"
+
+terms[comics][name] = "Comics"
+terms[comics][vocabulary_machine_name] = "geek_page_terms"
+
+terms[creator][name] = "Creator"
+terms[creator][vocabulary_machine_name] = "geek_page_terms"
+
 terms[store][name] = "Store"
 terms[store][vocabulary_machine_name] = "geek_page_terms"
-
-terms[band][name] = "Band"
-terms[band][vocabulary_machine_name] = "geek_page_terms"
-
-terms[podcast][name] = "Podcast"
-terms[podcast][vocabulary_machine_name] = "geek_page_terms"
-
-terms[artist][name] = "Artist"
-terms[artist][vocabulary_machine_name] = "geek_page_terms"
 
 terms[organization][name] = "Organization"
 terms[organization][vocabulary_machine_name] = "geek_page_terms"
