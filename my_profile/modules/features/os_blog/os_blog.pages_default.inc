@@ -124,7 +124,7 @@ function os_blog_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'flexible';
+  $display->layout = 'one';
   $display->layout_settings = array(
     'items' => array(
       'canvas' => array(
@@ -194,6 +194,7 @@ function os_blog_default_page_manager_pages() {
       'default' => NULL,
       'center' => NULL,
       'sidebar' => NULL,
+      'one_main' => NULL,
     ),
   );
   $display->cache = array();
@@ -202,7 +203,7 @@ function os_blog_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'center';
+    $pane->panel = 'one_main';
     $pane->type = 'views_panes';
     $pane->subtype = 'blog-page';
     $pane->shown = TRUE;
@@ -225,29 +226,7 @@ function os_blog_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['center'][0] = 'new-1';
-    $pane = new stdClass();
-    $pane->pid = 'new-2';
-    $pane->panel = 'sidebar';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'blog-blog_category_panel_pane';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'path' => 'blog.xml',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['sidebar'][0] = 'new-2';
+    $display->panels['one_main'][0] = 'new-1';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-1';
   $handler->conf['display'] = $display;
