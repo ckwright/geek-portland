@@ -33,6 +33,9 @@ function os_base_menu_alter(&$items) {
       $items[$path . '/%field_collection_item']['access arguments'] = array('administer fieldgroups');
     }
   }
+
+  // Renames search results page.
+  $items['search']['title'] = 'Search Results';
 }
 
 /**
