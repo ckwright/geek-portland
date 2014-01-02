@@ -124,7 +124,7 @@ function os_blog_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'one';
+  $display->layout = 'two_brick';
   $display->layout_settings = array(
     'items' => array(
       'canvas' => array(
@@ -195,6 +195,13 @@ function os_blog_default_page_manager_pages() {
       'center' => NULL,
       'sidebar' => NULL,
       'one_main' => NULL,
+      'two_brick_top' => NULL,
+      'two_brick_left_above' => NULL,
+      'two_brick_right_above' => NULL,
+      'two_brick_middle' => NULL,
+      'two_brick_left_below' => NULL,
+      'two_brick_right_below' => NULL,
+      'two_brick_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -203,7 +210,7 @@ function os_blog_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'one_main';
+    $pane->panel = 'two_brick_middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'blog-page';
     $pane->shown = TRUE;
@@ -226,7 +233,29 @@ function os_blog_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['one_main'][0] = 'new-1';
+    $display->panels['two_brick_middle'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
+    $pane->panel = 'two_brick_right_above';
+    $pane->type = 'block';
+    $pane->subtype = 'views--exp-blog-page';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['two_brick_right_above'][0] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-1';
   $handler->conf['display'] = $display;
