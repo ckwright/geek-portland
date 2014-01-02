@@ -198,7 +198,7 @@ function os_blog_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Blog';
+  $display->title = 'GeekNews';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
