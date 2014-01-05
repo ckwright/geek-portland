@@ -55,7 +55,7 @@ fi
 # Enable modules developer modules.
 # TODO use drush aliases
 cd drupal
-: ${TURNIP_DEVELOPER_MODULES:="devel diff styleguide views_ui context_ui"}
+: ${TURNIP_DEVELOPER_MODULES:="devel diff styleguide views_ui context_ui ds_ui"}
 drush en -y $TURNIP_DEVELOPER_MODULES
 
 # Enable stage file proxy module.
