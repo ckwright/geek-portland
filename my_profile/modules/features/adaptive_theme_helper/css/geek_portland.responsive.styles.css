@@ -99,10 +99,6 @@ h1#site-name { font-size: 2em; }
 
 #menu-bar .menu-wrapper li, #menu-bar .menu-wrapper .menu li { margin-right: 2px; }
 
-/* Footer styles */
-#page .four-4x25 > .panel-row > .region-four-second { float: left; }
-#page .four-4x25 > .panel-row > .region-four-second .block-inner .block-content { border: none; }
-
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
 h1#site-name { font-size: 2.8em; }
