@@ -143,27 +143,45 @@ terms[free][vocabulary_machine_name] = "admission"
 terms[books][name] = "Books"
 terms[books][vocabulary_machine_name] = "event_categories"
 
-terms[tv][name] = "TV shows"
+terms[tv][name] = "Movies/TV shows"
 terms[tv][vocabulary_machine_name] = "event_categories"
 
 terms[comics][name] = "Comics"
 terms[comics][vocabulary_machine_name] = "event_categories"
 
-terms[video_games][name] = "Video Games"
-terms[video_games][vocabulary_machine_name] = "event_categories"
+terms[games][name] = "Games"
+terms[games][vocabulary_machine_name] = "event_categories"
 
-terms[tabletop][name] = "Tabletop Games"
-terms[tabletop][vocabulary_machine_name] = "event_categories"
+terms[science][name] = "Science"
+terms[science][vocabulary_machine_name] = "event_categories"
 
-terms[roleplaying][name] = "Roleplaying"
-terms[roleplaying][vocabulary_machine_name] = "event_categories"
+terms[music][name] = "Music"
+terms[music][vocabulary_machine_name] = "event_categories"
+
+terms[cosplay][name] = "Cosplay"
+terms[cosplay][vocabulary_machine_name] = "event_categories"
+
+terms[history][name] = "History"
+terms[history][vocabulary_machine_name] = "event_categories"
+
+terms[comedy][name] = "Comedy"
+terms[comedy][vocabulary_machine_name] = "event_categories"
+
+terms[theater][name] = "Theater"
+terms[theater][vocabulary_machine_name] = "event_categories"
+
+terms[radio][name] = "Radio/Podcast"
+terms[radio][vocabulary_machine_name] = "event_categories"
+
+terms[art][name] = "Art"
+terms[art][vocabulary_machine_name] = "event_categories"
+
+terms[other][name] = "Other"
+terms[other][vocabulary_machine_name] = "event_categories"
 
 ; Geek page categorization
-terms[games][name] = "Games"
-terms[games][vocabulary_machine_name] = "geek_page_terms"
-
-terms[comics][name] = "Comics"
-terms[comics][vocabulary_machine_name] = "geek_page_terms"
+terms[gallery][name] = "Gallery"
+terms[gallery][vocabulary_machine_name] = "geek_page_terms"
 
 terms[creator][name] = "Creator"
 terms[creator][vocabulary_machine_name] = "geek_page_terms"
@@ -180,4 +198,3 @@ terms[geeknews][vocabulary_machine_name] = "blog_categories"
 
 terms[geekblog][name] = "Geek Blog"
 terms[geekblog][vocabulary_machine_name] = "blog_categories"
-
