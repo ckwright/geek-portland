@@ -56,6 +56,7 @@ features[field_instance][] = node-geek_page-field_youtube
 features[field_instance][] = node-geek_page-group_group
 features[field_instance][] = node-geek_page-og_group_ref
 features[node][] = geek_page
+features[page_manager_pages][] = geek_page_add
 features[page_manager_pages][] = geek_pages_landing
 features[taxonomy][] = geek_page_terms
 features[user_permission][] = create geek_page content

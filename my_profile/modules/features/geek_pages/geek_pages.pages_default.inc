@@ -11,6 +11,60 @@ function geek_pages_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
+  $page->name = 'geek_page_add';
+  $page->task = 'page';
+  $page->admin_title = 'Geek page: add';
+  $page->admin_description = '';
+  $page->path = 'add/geek_page';
+  $page->access = array(
+    'plugins' => array(),
+    'logic' => 'or',
+    'type' => 'none',
+    'settings' => NULL,
+  );
+  $page->menu = array(
+    'type' => 'tab',
+    'title' => 'Add geek page',
+    'name' => 'navigation',
+    'weight' => '84',
+    'parent' => array(
+      'type' => 'normal',
+      'title' => 'Submit',
+      'name' => 'menu-footer-menu',
+      'weight' => '0',
+    ),
+  );
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_geek_page_add_menu_context';
+  $handler->task = 'page';
+  $handler->subtask = 'geek_page_add';
+  $handler->handler = 'menu_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Context Admin',
+    'no_blocks' => FALSE,
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'context_admin_options' => 'node_create_menu',
+    'submitted_context' => 'empty',
+    'context_admin_options_items' => 'geek_page',
+    'context_admin_use_node_edit' => 0,
+  );
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['geek_page_add'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
   $page->name = 'geek_pages_landing';
   $page->task = 'page';
   $page->admin_title = 'Geek Pages landing';
