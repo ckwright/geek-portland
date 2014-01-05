@@ -111,7 +111,7 @@ function os_event_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Is this even free or not?',
+    'description' => 'What ages are allowed in this event?',
     'display' => array(
       'default' => array(
         'label' => 'above',
