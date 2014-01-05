@@ -16,7 +16,10 @@ function geek_pages_default_page_manager_pages() {
   $page->admin_title = 'Geek Pages landing';
   $page->admin_description = 'Landing page for geek pages';
   $page->path = 'geeks';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'GeekPages',
