@@ -136,33 +136,3 @@ body,
 /*
  * Footer styles
  */
-#page {
-  footer {
-    font-size: 1.4em;
-    background: none;
-  }
-
-  .four-4x25 > .panel-row > .region {
-    text-align: center;
-
-    .block-inner {
-      padding: 0;
-      margin: 0;
-    }
-  }
-
-  .four-4x25 > .panel-row > .region-four-second {
-    float: right;
-
-    & + .region-four-first {
-      margin-left: 0;
-    }
-
-    .block-inner {
-      .block-content {
-        border-right: 2px solid #E6E4DE;
-      }
-    }
-
-  }
-}
