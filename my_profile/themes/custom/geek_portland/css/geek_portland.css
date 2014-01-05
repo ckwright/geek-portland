@@ -24,6 +24,7 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right whit
 .view-content .item-list ul li.views-row { list-style: none outside none; }
 
 .node { background: #fff; border: 1px solid #e6e4de; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; padding: 1em; }
+.node .region-inner { margin: 0 25px; }
 
 /* Footer styles */
 #page footer { font-size: 1.4em; background: none; }

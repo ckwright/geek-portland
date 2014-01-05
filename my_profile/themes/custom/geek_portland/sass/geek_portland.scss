@@ -120,6 +120,10 @@ body,
   border: 1px solid #E6E4DE;
   @include border-radius(6px);
   padding: 1em;
+
+  .region-inner {
+    margin: 0 25px;
+  }
 }
 
 /*
