@@ -81,10 +81,10 @@ function os_blog_ds_layout_settings_info() {
     ),
     'classes' => array(),
     'wrappers' => array(
-      'two_25_75_top' => 'div',
+      'two_25_75_top' => 'header',
       'two_25_75_first' => 'div',
       'two_25_75_second' => 'div',
-      'two_25_75_bottom' => 'div',
+      'two_25_75_bottom' => 'footer',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
