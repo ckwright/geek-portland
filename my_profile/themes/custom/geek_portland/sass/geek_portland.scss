@@ -136,3 +136,34 @@ body,
 /*
  * Footer styles
  */
+#page > footer {
+  background: none;
+  padding: 0;
+
+  .block-menu-footer-menu {
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none outside none;
+    }
+
+    ul {
+      text-align: center;
+
+      li {
+        display: inline;
+        padding: 0 4em;
+        border-right: 2px solid #E6E4DE;
+
+        &.last {
+          border: none;
+        }
+
+        a {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}

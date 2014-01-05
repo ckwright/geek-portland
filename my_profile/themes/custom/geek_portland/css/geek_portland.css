@@ -28,3 +28,9 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right whit
 .node .region-inner { margin: 0 25px; }
 
 /* Footer styles */
+#page > footer { background: none; padding: 0; }
+#page > footer .block-menu-footer-menu ul, #page > footer .block-menu-footer-menu li { margin: 0; padding: 0; list-style: none outside none; }
+#page > footer .block-menu-footer-menu ul { text-align: center; }
+#page > footer .block-menu-footer-menu ul li { display: inline; padding: 0 4em; border-right: 2px solid #e6e4de; }
+#page > footer .block-menu-footer-menu ul li.last { border: none; }
+#page > footer .block-menu-footer-menu ul li a { font-size: 1.3em; }
