@@ -273,41 +273,22 @@ function os_event_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Events: add';
   $page->admin_description = '';
-  $page->path = 'events/add';
+  $page->path = 'add/event';
   $page->access = array(
-    'plugins' => array(
-      0 => array(
-        'name' => 'role',
-        'settings' => array(
-          'rids' => array(
-            0 => 6,
-          ),
-        ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
-      ),
-      1 => array(
-        'name' => 'perm',
-        'settings' => array(
-          'perm' => 'edit any event content',
-        ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
-      ),
-    ),
+    'plugins' => array(),
     'logic' => 'or',
     'type' => 'none',
     'settings' => NULL,
   );
   $page->menu = array(
-    'type' => 'tab',
+    'type' => 'default tab',
     'title' => 'Add event',
     'name' => 'navigation',
     'weight' => '84',
     'parent' => array(
-      'type' => 'none',
-      'title' => '',
-      'name' => 'navigation',
+      'type' => 'normal',
+      'title' => 'Submit',
+      'name' => 'menu-footer-menu',
       'weight' => '0',
     ),
   );
