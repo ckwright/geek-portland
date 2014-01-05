@@ -115,10 +115,4 @@ function os_base_install() {
 <li><a href="http://www.facebook.com/geekportland"><img src="/profiles/my_profile/themes/custom/geek_portland/css/images/facebook.png" alt="Facebook" /></a></li>
 </ul>';
   variable_set('os_base_social_media', $links);
-
-  $contact_link = l(t('Other Inquiries'), 'contact');
-  variable_set('os_base_inquiries_text', $contact_link);
-
-  $submit_event = l(t('Submit Your Own Event!'), 'node/add/event');
-  variable_set('os_base_submit_event', $submit_event);
 }

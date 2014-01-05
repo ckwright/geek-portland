@@ -44,18 +44,6 @@ function adaptive_theme_helper_context_default_contexts() {
           'region' => 'menu_bar',
           'weight' => '-14',
         ),
-        'os_base-inquiries_text' => array(
-          'module' => 'os_base',
-          'delta' => 'inquiries_text',
-          'region' => 'four_second',
-          'weight' => '-10',
-        ),
-        'os_base-submit_event' => array(
-          'module' => 'os_base',
-          'delta' => 'submit_event',
-          'region' => 'four_third',
-          'weight' => '-10',
-        ),
       ),
     ),
   );

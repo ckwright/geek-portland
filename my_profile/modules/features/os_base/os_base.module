@@ -202,14 +202,6 @@ function os_base_block_info() {
         'info' => 'Social media links',
         'cache' => DRUPAL_CACHE_GLOBAL,
       ),
-      'inquiries_text' => array (
-        'info' => 'Inquiries link',
-        'cache' => DRUPAL_CACHE_GLOBAL,
-      ),
-      'submit_event' => array (
-        'info' => 'Submit an event link',
-        'cache' => DRUPAL_CACHE_GLOBAL,
-      ),
     );
 }
 
@@ -271,14 +263,6 @@ function _os_block_variable_get($delta) {
   switch ($delta) {
     case 'geek_social':
       $variable = 'os_base_social_media';
-
-      break;
-    case 'inquiries_text':
-      $variable = 'os_base_inquiries_text';
-
-      break;
-    case 'submit_event':
-      $variable = 'os_base_submit_event';
 
       break;
   }
