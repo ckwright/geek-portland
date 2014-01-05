@@ -52,19 +52,6 @@ function os_blog_ds_layout_settings_info() {
   $ds_layout->view_mode = 'teaser';
   $ds_layout->layout = 'panels-two_25_75';
   $ds_layout->settings = array(
-    'classes' => array(),
-    'wrappers' => array(
-      'three_25_50_25_top' => 'div',
-      'three_25_50_25_first' => 'div',
-      'three_25_50_25_second' => 'div',
-      'three_25_50_25_third' => 'div',
-      'three_25_50_25_bottom' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
     'regions' => array(
       'two_25_75_top' => array(
         0 => 'title',
@@ -72,12 +59,12 @@ function os_blog_ds_layout_settings_info() {
         2 => 'author',
       ),
       'two_25_75_first' => array(
-        0 => 'field_image',
+        3 => 'field_image',
       ),
       'two_25_75_second' => array(
-        0 => 'body',
-        1 => 'field_event_category',
-        2 => 'node_link',
+        4 => 'body',
+        5 => 'field_event_category',
+        6 => 'node_link',
       ),
     ),
     'fields' => array(
@@ -89,6 +76,21 @@ function os_blog_ds_layout_settings_info() {
       'field_event_category' => 'two_25_75_second',
       'node_link' => 'two_25_75_second',
     ),
+    'limit' => array(
+      'field_image' => '1',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'two_25_75_top' => 'div',
+      'two_25_75_first' => 'div',
+      'two_25_75_second' => 'div',
+      'two_25_75_bottom' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|blog_post|teaser'] = $ds_layout;
 
