@@ -130,6 +130,9 @@ terms[all_ages][name] = "All ages"
 terms[all_ages][vocabulary_machine_name] = "age"
 
 ; Admission
+terms[tba][name] = "TBA"
+terms[tba][vocabulary_machine_name] = "admission"
+
 terms[entrance_fee][name] = "Entrance fee"
 terms[entrance_fee][vocabulary_machine_name] = "admission"
 
