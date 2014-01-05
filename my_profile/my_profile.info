@@ -64,6 +64,12 @@ users[admin][mail] = admin@my_profile.example.com
 users[admin][status] = 1
 users[admin][data][overlay] = 0
 
+users[kenna][uid] = 2
+users[kenna][name] = kenna
+users[kenna][mail] = ninjahq@gmail.com
+users[kenna][status] = 1
+users[kenna][roles] = administrator,site editor
+
 ;
 ; Variables
 ;
