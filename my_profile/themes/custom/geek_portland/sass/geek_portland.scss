@@ -72,11 +72,17 @@ body,
 
     ul.menu {
       li {
-        width: 18%;
+        width: 16%;
         text-align: center;
 
         a {
           line-height: 2em;
+        }
+
+        &.last {
+          a {
+            color: #000;
+          }
         }
       }
     }

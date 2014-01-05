@@ -11,8 +11,9 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right whit
 #menu-bar.nav .block-menu { width: 75%; float: left; }
 #menu-bar .block-search { clear: none; float: right; width: 25%; min-width: 170px; text-align: right; line-height: 2em; height: 2em; }
 #menu-bar .block-search input { float: none; font-size: .9em; position: relative; top: -1px; }
-#menu-bar .menu-wrapper ul.menu li { width: 18%; text-align: center; }
+#menu-bar .menu-wrapper ul.menu li { width: 16%; text-align: center; }
 #menu-bar .menu-wrapper ul.menu li a { line-height: 2em; }
+#menu-bar .menu-wrapper ul.menu li.last a { color: #000; }
 
 #columns { background: none; }
 
