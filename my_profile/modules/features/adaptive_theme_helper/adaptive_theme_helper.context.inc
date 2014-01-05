@@ -44,6 +44,12 @@ function adaptive_theme_helper_context_default_contexts() {
           'region' => 'menu_bar',
           'weight' => '-14',
         ),
+        'menu-menu-footer-menu' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-menu',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
