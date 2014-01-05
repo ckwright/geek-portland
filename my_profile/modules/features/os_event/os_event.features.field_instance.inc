@@ -495,7 +495,7 @@ function os_event_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This will display on the calendar page.',
+    'description' => 'This will display on the calendar grid page, so keep it short!',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -603,14 +603,14 @@ function os_event_field_default_field_instances() {
   t('For repeating events, if you don\'t select a given month or week, all will be chosen.');
   t('Geeky interests');
   t('Image');
-  t('Is this even free or not?');
   t('Load an image for this event. This image will be scaled to 320px wide.');
   t('Location');
   t('More info');
   t('Related Geek Pages');
   t('Short title');
-  t('This will display on the calendar page.');
+  t('This will display on the calendar grid page, so keep it short!');
   t('What Geeky Pages, if any, relate to this event?');
+  t('What ages are allowed in this event?');
   t('What fees are required for this event?');
   t('What sort of geeky interests are covered by this event?');
   t('Where to find out more about this event.');
