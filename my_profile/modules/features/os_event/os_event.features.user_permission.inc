@@ -14,6 +14,8 @@ function os_event_user_default_permissions() {
   $permissions['create event content'] = array(
     'name' => 'create event content',
     'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
       'event administrator' => 'event administrator',
       'site editor' => 'site editor',
     ),

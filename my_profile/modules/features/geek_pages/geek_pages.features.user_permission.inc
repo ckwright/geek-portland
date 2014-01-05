@@ -14,6 +14,8 @@ function geek_pages_user_default_permissions() {
   $permissions['create geek_page content'] = array(
     'name' => 'create geek_page content',
     'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
       'site editor' => 'site editor',
     ),
     'module' => 'node',
