@@ -42,7 +42,7 @@ body,
 
 #menu-bar {
   background: #99cc66;
-  padding-top: 3px;
+  padding-top: 2px;
 
   &.nav {
     .block-menu {
@@ -57,11 +57,14 @@ body,
     width: 25%;
     min-width: 170px;
     text-align: right;
-    line-height: 2.4em;
-    height: 2.4em;
+    line-height: 2em;
+    height: 2em;
 
     input {
       float: none;
+      font-size: .9em;
+      position: relative;
+      top: -1px;
     }
   }
 
@@ -71,6 +74,10 @@ body,
       li {
         width: 18%;
         text-align: center;
+
+        a {
+          line-height: 2em;
+        }
       }
     }
   }
