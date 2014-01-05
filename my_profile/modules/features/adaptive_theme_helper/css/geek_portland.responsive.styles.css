@@ -11,7 +11,9 @@ body.admin-menu { margin-top: 0 !important; }
 
 #branding, .region-header { float: none; margin: 0 0 10px; width: 100%; clear: both; text-align: center; max-width: 100%; overflow: hidden; }
 
-.region-header .block { clear: both; float: none; margin: 5px auto; max-width: 80%; }
+#header .container .region-header { bottom: -15px; }
+
+.region-header .block { margin: 5px auto; }
 
 .region-header .block .block-inner { margin-left: 0; margin-right: 0; margin: auto; }
 
@@ -27,13 +29,15 @@ h2#site-slogan { font-size: 0.9em; }
 
 .menu-toggle a { padding: 7px 10px 10px; display: block; }
 
-#menu-bar .menu-wrapper { float: none !important; }
+#menu-bar.nav .block-menu { width: 100%; }
+
+#menu-bar .menu-wrapper { float: none !important; width: 100%; }
 
 #menu-bar .menu-wrapper li a, #menu-bar .menu-wrapper .menu li a { display: block; padding: 0 0.5em; -moz-border-radius: 0 !important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
 
 #menu-bar .menu-wrapper li, #menu-bar .menu-wrapper .menu li { display: block; float: none; margin-right: 0; }
 
-#menu-bar .menu-wrapper ul.menu li { margin: 0; padding: 0; }
+#menu-bar .menu-wrapper ul.menu li { margin: 0; padding: 0; width: 100%; text-align: left; }
 
 ul.sf-menu { width: 100%; }
 
@@ -49,7 +53,9 @@ body.admin-menu { margin-top: 0 !important; }
 
 #branding, .region-header { float: none; margin: 0 0 10px; width: 100%; clear: both; text-align: center; max-width: 100%; overflow: hidden; }
 
-.region-header .block { clear: both; float: none; margin: 5px auto; max-width: 80%; }
+#header .container .region-header { bottom: -15px; }
+
+.region-header .block { margin: 5px auto; }
 
 .region-header .block .block-inner { margin-left: 0; margin-right: 0; margin: auto; }
 
@@ -65,13 +71,15 @@ h2#site-slogan { font-size: 0.9em; }
 
 .menu-toggle a { padding: 7px 10px 10px; display: block; }
 
-#menu-bar .menu-wrapper { float: none !important; }
+#menu-bar.nav .block-menu { width: 100%; }
+
+#menu-bar .menu-wrapper { float: none !important; width: 100%; }
 
 #menu-bar .menu-wrapper li a, #menu-bar .menu-wrapper .menu li a { display: block; padding: 0 0.5em; -moz-border-radius: 0 !important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
 
 #menu-bar .menu-wrapper li, #menu-bar .menu-wrapper .menu li { display: block; float: none; margin-right: 0; }
 
-#menu-bar .menu-wrapper ul.menu li { margin: 0; padding: 0; }
+#menu-bar .menu-wrapper ul.menu li { margin: 0; padding: 0; width: 100%; text-align: left; }
 
 ul.sf-menu { width: 100%; }
 
@@ -83,9 +91,17 @@ body { padding: 0 8px; }
 
 h1#site-name { font-size: 2em; }
 
+#menu-bar.nav .block-menu { width: 100%; }
+#menu-bar .block-search { float: none; width: 100%; background: #fff; }
+#menu-bar .menu-wrapper { clear: both; }
+
 #menu-bar .menu-wrapper li a, #menu-bar .menu-wrapper .menu li a { padding: 0 1em; font-size: .9em; }
 
 #menu-bar .menu-wrapper li, #menu-bar .menu-wrapper .menu li { margin-right: 2px; }
+
+/* Footer styles */
+#page .four-4x25 > .panel-row > .region-four-second { float: left; }
+#page .four-4x25 > .panel-row > .region-four-second .block-inner .block-content { border: none; }
 
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
