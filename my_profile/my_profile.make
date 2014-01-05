@@ -41,6 +41,9 @@ projects[addressfield][version] = "1.0-beta5"
 ; Context
 projects[context][version] = "3.1"
 
+; Display Suite
+projects[ds][version] = "2.6"
+
 ; Entity
 projects[entity][version] = "1.2"
 
