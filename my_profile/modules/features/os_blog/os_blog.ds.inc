@@ -86,7 +86,7 @@ function os_blog_ds_layout_settings_info() {
       'two_25_75_second' => 'div',
       'two_25_75_bottom' => 'footer',
     ),
-    'layout_wrapper' => 'div',
+    'layout_wrapper' => 'article',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
