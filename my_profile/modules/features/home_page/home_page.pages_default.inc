@@ -16,7 +16,10 @@ function home_page_default_page_manager_pages() {
   $page->admin_title = 'Home page';
   $page->admin_description = 'The site\'s home page';
   $page->path = 'home';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Home',
@@ -81,8 +84,18 @@ function home_page_default_page_manager_pages() {
       'arguments' => array(
         'type' => 'geek_page',
       ),
+      'exposed' => array(
+        'sort_by' => 'random',
+        'sort_order' => 'DESC',
+      ),
     );
-    $pane->cache = array();
+    $pane->cache = array(
+      'method' => 'simple',
+      'settings' => array(
+        'lifetime' => '15',
+        'granularity' => 'none',
+      ),
+    );
     $pane->style = array(
       'settings' => NULL,
     );
@@ -103,8 +116,18 @@ function home_page_default_page_manager_pages() {
       'arguments' => array(
         'type' => 'blog_post',
       ),
+      'exposed' => array(
+        'sort_by' => 'created',
+        'sort_order' => 'DESC',
+      ),
     );
-    $pane->cache = array();
+    $pane->cache = array(
+      'method' => 'simple',
+      'settings' => array(
+        'lifetime' => '3600',
+        'granularity' => 'none',
+      ),
+    );
     $pane->style = array(
       'settings' => NULL,
     );

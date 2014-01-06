@@ -27,7 +27,9 @@ function home_page_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Image */
@@ -44,12 +46,27 @@ function home_page_views_default_views() {
     'image_style' => 'large_image',
     'image_link' => 'content',
   );
+  $handler->display->display_options['fields']['field_image']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['created']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['created']['expose']['label'] = 'Post date';
+  /* Sort criterion: Global: Random */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
+  $handler->display->display_options['sorts']['random']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['random']['expose']['label'] = 'Random';
   /* Contextual filter: Content: Type */
   $handler->display->display_options['arguments']['type']['id'] = 'type';
   $handler->display->display_options['arguments']['type']['table'] = 'node';
@@ -75,6 +92,15 @@ function home_page_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 0;
+  $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['argument_input'] = array(
     'type' => array(
       'type' => 'user',
