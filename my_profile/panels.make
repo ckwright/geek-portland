@@ -13,5 +13,7 @@ projects[panels][patch][] = "https://drupal.org/files/panels-n1632898-15.patch"
 projects[panels][patch][] = "https://drupal.org/files/panels_ipe_fix_ajax_1613402-9.patch"
 ; Panels IPE Save Drops Context Specified in Page Manager https://drupal.org/node/1772834 - This was commited Sep 24, 2012 and should be removed when updating to 3.4
 projects[panels][patch][] = "https://drupal.org/files/1772834-fix-lost-context-6.patch"
+; PHP 5.4 Issue with array_diff_assoc in plugins.inc https://drupal.org/node/1762290
+projects[panels][patch][] = "https://drupal.org/files/issues/panels-array_diff_assoc-1762290-22.patch"
 
 projects[panels_breadcrumbs][version] = "2.1"
