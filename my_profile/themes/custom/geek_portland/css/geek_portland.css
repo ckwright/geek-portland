@@ -46,6 +46,8 @@ h1, h2, h3, h4, h5 { margin: 0; }
 #content .grouping-content .node { background: none; border: none; }
 #content .grouping-content .node .at-panel { margin-left: 15%; }
 #content .grouping-content .node .at-panel .region-conditional-stack { clear: none; }
+#content .grouping-content .node .region-inner { margin: 0; }
+#content .grouping-content .node .field { padding: 0; }
 
 /* Footer styles */
 #page > footer { background: none; padding: 0; }

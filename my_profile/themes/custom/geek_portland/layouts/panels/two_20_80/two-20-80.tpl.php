@@ -12,7 +12,7 @@
  *   added by Adaptivetheme in the appropriate process function.
  * - $panel_suffix: closing element for the $prefix.
  *
- * @see adaptivetheme_preprocess_two_25_75()
+ * @see adaptivetheme_preprocess_two_20_80()
  * @see adaptivetheme_preprocess_node()
  * @see adaptivetheme_process_node()
  */
@@ -25,28 +25,28 @@ $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
-<div class="at-panel panel-display two-25-75 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <?php if ($content['two_25_75_top']): ?>
-    <div class="region region-two-25-75-top region-conditional-stack">
+<div class="at-panel panel-display two-20-80 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+  <?php if ($content['two_20_80_top']): ?>
+    <div class="region region-two-20-80-top region-conditional-stack">
       <div class="region-inner clearfix">
-        <?php print $content['two_25_75_top']; ?>
+        <?php print $content['two_20_80_top']; ?>
       </div>
     </div>
   <?php endif; ?>
-  <div class="region region-two-25-75-first">
+  <div class="region region-two-20-80-first">
     <div class="region-inner clearfix">
-      <?php print $content['two_25_75_first']; ?>
+      <?php print $content['two_20_80_first']; ?>
     </div>
   </div>
-  <div class="region region-two-25-75-second">
+  <div class="region region-two-20-80-second">
     <div class="region-inner clearfix">
-      <?php print $content['two_25_75_second']; ?>
+      <?php print $content['two_20_80_second']; ?>
     </div>
   </div>
-  <?php if ($content['two_25_75_bottom']): ?>
-    <div class="region region-two-25-75-bottom region-conditional-stack">
+  <?php if ($content['two_20_80_bottom']): ?>
+    <div class="region region-two-20-80-bottom region-conditional-stack">
       <div class="region-inner clearfix">
-        <?php print $content['two_25_75_bottom']; ?>
+        <?php print $content['two_20_80_bottom']; ?>
       </div>
     </div>
   <?php endif; ?>
