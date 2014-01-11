@@ -5,3 +5,13 @@
  */
 
 include_once 'home_page.features.inc';
+
+/**
+ * Displays the grouped value from the display suite view as a short time.
+ *
+ * This function is called from the views configuration Display Suite | Settings
+ * "Group data".
+ */
+function home_page_ds_date_view($raw_value, $object) {
+  return render(field_view_field('node', $object, 'field_event_date', 'blurb', LANGUAGE_NONE));
+}
