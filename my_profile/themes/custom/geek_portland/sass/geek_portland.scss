@@ -124,31 +124,56 @@ h5 {
 /*
  * Node listing views
  */
+#content {
+  .view-content {
+    .item-list {
+      ul {
+        margin: 0;
+        padding: 0;
 
-.view-content {
-  .item-list {
-    ul {
-      margin: 0;
-      padding: 0;
+        li.views-row {
+          list-style: none outside none;
+        }
+      }
+    }
+  }
 
-      li.views-row {
-        list-style: none outside none;
+  .node {
+    background: #fff;
+    border: 1px solid #E6E4DE;
+    @include border-radius(6px);
+    padding: 1em;
+
+    .region-inner {
+      margin: 0 25px;
+    }
+  }
+
+  .grouping-content {
+    .grouping-title {
+      float: left;
+      white-space: nowrap;
+      padding-top: 14px;
+
+      + .node {
+        border-top: 1px solid #E6E4DE;
+      }
+    }
+
+    .node {
+      background: none;
+      border: none;
+
+      .at-panel {
+        margin-left: 15%;
+
+        .region-conditional-stack {
+          clear: none;
+        }
       }
     }
   }
 }
-
-.node {
-  background: #fff;
-  border: 1px solid #E6E4DE;
-  @include border-radius(6px);
-  padding: 1em;
-
-  .region-inner {
-    margin: 0 25px;
-  }
-}
-
 /*
  * Footer styles
  */
