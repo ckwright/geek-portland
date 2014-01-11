@@ -70,7 +70,7 @@ function home_page_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Today\'s events';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -140,23 +140,25 @@ function home_page_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-3';
     $pane->panel = 'three_25_50_25_second';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_listing-panel_pane_upcoming';
+    $pane->type = 'page_title';
+    $pane->subtype = 'page_title';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'more_link' => 1,
-      'use_pager' => 0,
-      'pager_id' => '0',
-      'items_per_page' => '15',
+      'markup' => 'h1',
+      'class' => '',
+      'id' => 'page-title',
       'override_title' => 0,
-      'override_title_text' => '',
+      'override_title_text' => 'Today\'s Events',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'page-title',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -164,6 +166,24 @@ function home_page_default_page_manager_pages() {
     $display->panels['three_25_50_25_second'][0] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
+    $pane->panel = 'three_25_50_25_second';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'event_listing-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-4'] = $pane;
+    $display->panels['three_25_50_25_second'][1] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
     $pane->panel = 'three_25_50_25_third';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -184,8 +204,8 @@ function home_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['three_25_50_25_third'][0] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['three_25_50_25_third'][0] = 'new-5';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
