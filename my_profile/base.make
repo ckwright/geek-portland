@@ -15,7 +15,7 @@ projects[ctools][patch][] = "https://drupal.org/files/ctools-views-content-custo
 
 projects[chosen][version] = "2.0-alpha4"
 
-projects[date][version] = "2.6"
+projects[date][version] = "2.7"
 
 projects[entitycache][version] = "1.2"
 
