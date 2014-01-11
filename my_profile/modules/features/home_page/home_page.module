@@ -25,7 +25,11 @@ function home_page_ds_date_view($raw_value, $object) {
  */
 function home_page_ds_views_row_render_entity_alter(&$content, &$context) {
   // If this view is already grouped by the field_event_date...
-  $options = $context['view']->display[$context['view']->current_display]->display_options['row_options']['grouping_fieldset']['group_field'];
+  $options =
+      isset($context['view']->display[$context['view']->current_display]->display_options['row_options']['grouping_fieldset']['group_field'])
+      ? $context['view']->display[$context['view']->current_display]->display_options['row_options']['grouping_fieldset']['group_field']
+      : ''
+  ;
 
   if ($options == 'field_data_field_event_date|field_event_date_value') {
     unset($content['field_event_date']);
