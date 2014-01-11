@@ -16,3 +16,17 @@ function home_page_ds_date_view($raw_value, $object) {
   $contents = field_view_field('node', $object, 'field_event_date', 'blurb', LANGUAGE_NONE);
   return render($contents);
 }
+
+/**
+ * Implements hook_ds_views_row_render_entity_alter().
+ *
+ * If you're grouping by the 'field_event_date' field, don't show it in the
+ * rendered content as well.
+ */
+function home_page_ds_views_row_render_entity_alter(&$content, &$context) {
+  // If this view is already grouped by the field_event_date...
+  if(isset($context['view']->style_options['grouping'][0]['field']) && $context['view']->style_options['grouping'][0]['field'] == 'field_event_date') {
+    // Then don't show that field in the output.
+    unset($content['field_event_date']);
+  }
+}
