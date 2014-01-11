@@ -17,6 +17,15 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 300,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -72,6 +81,12 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'What fees are required for this event?',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
@@ -113,6 +128,12 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'What ages are allowed in this event?',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
@@ -154,6 +175,12 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'A link to buy tickets online.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -210,6 +237,12 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'What sort of geeky interests are covered by this event?',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
@@ -250,6 +283,20 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'For repeating events, if you don\'t select a given month or week, all will be chosen.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'time',
+          'fromto' => 'value',
+          'multiple_from' => '',
+          'multiple_number' => 1,
+          'multiple_to' => '',
+          'show_repeat_rule' => 'hide',
+        ),
+        'type' => 'date_default',
+        'weight' => 7,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -328,6 +375,16 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Load an image for this event. This image will be scaled to 320px wide.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'tiny_image',
+        ),
+        'type' => 'image',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'image',
@@ -397,6 +454,15 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Where will this event be held? <a href="/node/add/location">Add a location now</a>',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -442,6 +508,12 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Where to find out more about this event.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -497,6 +569,12 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'This will display on the calendar grid page, so keep it short!',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -538,6 +616,12 @@ function os_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'What Geeky Pages, if any, relate to this event?',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'og_ui',

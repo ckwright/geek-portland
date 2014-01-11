@@ -96,6 +96,12 @@ function os_event_strongarm() {
       'ical' => array(
         'custom_settings' => TRUE,
       ),
+      'blurb' => array(
+        'custom_settings' => TRUE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
