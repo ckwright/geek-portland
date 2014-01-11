@@ -13,5 +13,6 @@ include_once 'home_page.features.inc';
  * "Group data".
  */
 function home_page_ds_date_view($raw_value, $object) {
-  return render(field_view_field('node', $object, 'field_event_date', 'blurb', LANGUAGE_NONE));
+  $contents = field_view_field('node', $object, 'field_event_date', 'blurb', LANGUAGE_NONE);
+  return render($contents);
 }
