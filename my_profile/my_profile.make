@@ -45,7 +45,7 @@ projects[context][version] = "3.1"
 projects[ds][version] = "2.6"
 
 ; Entity
-projects[entity][version] = "1.2"
+projects[entity][version] = "1.3"
 
 ; Entity Reference
 projects[entityreference][version] = "1.1"
