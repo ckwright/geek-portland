@@ -20,6 +20,7 @@ environment = :production
 # Location of the theme's resources.
 # Compass will overwrite the CSS files in the css_dir when set to watch.
 css_dir = "css"
+fonts_dir = "font"
 sass_dir = "sass"
 images_dir = "css/images"
 

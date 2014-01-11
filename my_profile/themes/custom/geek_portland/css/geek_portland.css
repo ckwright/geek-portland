@@ -1,5 +1,9 @@
 /** Footheme footheme.css  Use this file to add your custom styles.  You can change the name of this file, just remember to update the name in the info file as well. */
+@font-face { font-family: "geek_portland"; src: url('../font/geek_portland.eot'); src: url('../font/geek_portland.eot?#iefix') format('eot'), url('../font/geek_portland.woff') format('woff'), url('../font/geek_portland.ttf') format('truetype'), url('../font/geek_portland.svg') format('svg'); }
+
 html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right white; }
+
+h1, h2, h3, h4, h5 { margin: 0; }
 
 #header .container { position: relative; }
 #header .container .region-header { position: absolute; bottom: 0; right: 0; text-align: right; }
@@ -35,3 +39,14 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right whit
 #page > footer .block-menu-footer-menu ul li { display: inline; padding: 0 4em; border-right: 2px solid #e6e4de; }
 #page > footer .block-menu-footer-menu ul li.last { border: none; }
 #page > footer .block-menu-footer-menu ul li a { font-size: 1.3em; }
+
+/* Custom title elements */
+h1#page-title:before { color: #669933; font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
+
+.front h1#page-title:before { content: '\43'; /* 'C' */ }
+
+.page-geeks h1#page-title:before { content: '\41'; /* 'A' */ }
+
+.page-blog h1#page-title:before { content: '\4c'; /* 'L' */ }
+
+.page-search h1#page-title:before { content: '\53'; /* 'S' */ }
