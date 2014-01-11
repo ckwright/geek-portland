@@ -83,8 +83,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 15,
       ),
       'default' => array(
@@ -130,8 +131,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 14,
       ),
       'default' => array(
@@ -177,8 +179,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'link_default',
         'weight' => 16,
       ),
       'default' => array(
@@ -239,8 +242,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 13,
       ),
       'default' => array(
@@ -510,8 +514,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'link_default',
         'weight' => 5,
       ),
       'default' => array(
@@ -571,8 +576,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'text_default',
         'weight' => 12,
       ),
       'default' => array(
@@ -618,8 +624,11 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 17,
       ),
       'default' => array(
