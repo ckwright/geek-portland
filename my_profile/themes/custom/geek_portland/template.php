@@ -64,3 +64,14 @@ function geek_portland_preprocess_block(&$vars) {
 function geek_portland_process_block(&$vars) {
 }
 // */
+
+/**
+ * Implements hook_process_page().
+ *
+ * For this theme, we're forcing each panel page do create a page title pane.
+ */
+function geek_portland_process_page(&$vars) {
+  if (isset($vars['theme_hook_suggestions']) && in_array('page__panels', $vars['theme_hook_suggestions'])) {
+    $vars['title'] = '';
+  }
+}
