@@ -12,6 +12,7 @@ dependencies[] = ds
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = fullcalendar
+dependencies[] = geofield_map
 dependencies[] = image
 dependencies[] = libraries
 dependencies[] = link

@@ -263,6 +263,106 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
+
+  /* Display: Today's events map */
+  $handler = $view->new_display('panel_pane', 'Today\'s events map', 'panel_pane_2');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'geofield_map_map';
+  $handler->display->display_options['style_options']['data_source'] = 'field_gmap';
+  $handler->display->display_options['style_options']['popup_source'] = 'title';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_location_target_id']['id'] = 'field_location_target_id';
+  $handler->display->display_options['relationships']['field_location_target_id']['table'] = 'field_data_field_location';
+  $handler->display->display_options['relationships']['field_location_target_id']['field'] = 'field_location_target_id';
+  $handler->display->display_options['relationships']['field_location_target_id']['label'] = 'Location';
+  $handler->display->display_options['relationships']['field_location_target_id']['required'] = TRUE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Date */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['settings'] = array(
+    'format_type' => 'time',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Gmap */
+  $handler->display->display_options['fields']['field_gmap']['id'] = 'field_gmap';
+  $handler->display->display_options['fields']['field_gmap']['table'] = 'field_data_field_gmap';
+  $handler->display->display_options['fields']['field_gmap']['field'] = 'field_gmap';
+  $handler->display->display_options['fields']['field_gmap']['relationship'] = 'field_location_target_id';
+  $handler->display->display_options['fields']['field_gmap']['label'] = '';
+  $handler->display->display_options['fields']['field_gmap']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_gmap']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_gmap']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_gmap']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_gmap']['click_sort_column'] = 'geom';
+  $handler->display->display_options['fields']['field_gmap']['type'] = 'geofield_map_map';
+  $handler->display->display_options['fields']['field_gmap']['settings'] = array(
+    'geofield_map_width' => '100%',
+    'geofield_map_height' => '300px',
+    'geofield_map_zoom' => '8',
+    'geofield_map_controltype' => 'default',
+    'geofield_map_mtc' => 'standard',
+    'geofield_map_pancontrol' => 1,
+    'geofield_map_maptype' => 'map',
+    'geofield_map_baselayers_map' => 1,
+    'geofield_map_baselayers_satellite' => 1,
+    'geofield_map_baselayers_hybrid' => 1,
+    'geofield_map_baselayers_physical' => 0,
+    'geofield_map_scale' => 0,
+    'geofield_map_overview' => 0,
+    'geofield_map_overview_opened' => 0,
+    'geofield_map_scrollwheel' => 0,
+    'geofield_map_draggable' => 0,
+    'geofield_map_streetview_show' => 0,
+  );
+  $handler->display->display_options['fields']['field_gmap']['field_api_classes'] = TRUE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'event' => 'event',
+  );
+  /* Filter criterion: Content: Date -  start date (field_event_date) */
+  $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
+  /* Filter criterion: Content: Promoted to front page */
+  $handler->display->display_options['filters']['promote']['id'] = 'promote';
+  $handler->display->display_options['filters']['promote']['table'] = 'node';
+  $handler->display->display_options['filters']['promote']['field'] = 'promote';
+  $handler->display->display_options['filters']['promote']['value'] = '1';
   $export['event_listing'] = $view;
 
   return $export;
