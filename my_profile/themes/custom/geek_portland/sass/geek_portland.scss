@@ -159,6 +159,10 @@ h5 {
     .field-type-image {
       figure {
         margin: 0;
+
+        img {
+          max-width: 90%;
+        }
       }
     }
   }
