@@ -237,9 +237,13 @@ h5 {
 }
 
 .field-name-field-event-category {
+  float: left;
+
   ul {
+    margin: 0;
+
     li {
-      list-style-image: url("images/tag_5063.svg");
+      list-style: none inside url("images/tag_5063.svg");
     }
   }
 }
@@ -329,6 +333,10 @@ article {
         padding-right: 1em;
       }
     }
+  }
+
+  .field-name-node-link {
+    text-align: right;
   }
 }
 /*
