@@ -63,8 +63,6 @@
         </div>
       <?php endif; ?>
 
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
-
       <div id="content-column">
         <div class="content-inner">
 
