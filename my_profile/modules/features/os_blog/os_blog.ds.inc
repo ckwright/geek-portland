@@ -23,14 +23,19 @@ function os_blog_ds_field_settings_info() {
       'format' => 'default',
     ),
     'node_link' => array(
-      'weight' => '6',
+      'weight' => '7',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'author' => array(
+      'weight' => '5',
+      'label' => 'hidden',
+      'format' => 'author_linked',
+    ),
+    'posted_by' => array(
       'weight' => '2',
       'label' => 'hidden',
-      'format' => 'author',
+      'format' => 'author_linked',
     ),
   );
   $export['node|blog_post|teaser'] = $ds_fieldsetting;
@@ -56,23 +61,25 @@ function os_blog_ds_layout_settings_info() {
       'two_25_75_top' => array(
         0 => 'title',
         1 => 'field_blog_category',
-        2 => 'author',
+        2 => 'posted_by',
       ),
       'two_25_75_first' => array(
         3 => 'field_image',
       ),
       'two_25_75_second' => array(
         4 => 'body',
-        5 => 'field_event_category',
-        6 => 'node_link',
+        5 => 'author',
+        6 => 'field_event_category',
+        7 => 'node_link',
       ),
     ),
     'fields' => array(
       'title' => 'two_25_75_top',
       'field_blog_category' => 'two_25_75_top',
-      'author' => 'two_25_75_top',
+      'posted_by' => 'two_25_75_top',
       'field_image' => 'two_25_75_first',
       'body' => 'two_25_75_second',
+      'author' => 'two_25_75_second',
       'field_event_category' => 'two_25_75_second',
       'node_link' => 'two_25_75_second',
     ),
