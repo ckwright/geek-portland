@@ -141,7 +141,8 @@ h5 {
     }
   }
 
-  .node {
+  .node,
+  .view-empty {
     background: #fff;
     border: 1px solid #E6E4DE;
     @include border-radius(6px);
