@@ -31,3 +31,18 @@ h1#site-name {
 #menu-bar .menu-wrapper .menu li {
   margin-right: 2px;
 }
+
+
+.front {
+  .region-three-25-50-25-first {
+    .region-inner {
+      & > div {
+        float: left;
+
+        &.panel-pane {
+          width: 49%;
+        }
+      }
+    }
+  }
+}
