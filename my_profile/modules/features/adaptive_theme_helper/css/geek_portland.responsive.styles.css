@@ -43,6 +43,8 @@ ul.sf-menu { width: 100%; }
 
 .sf-menu.sf-style-default ul { width: 100% !important; }
 
+.homepage-listing { height: auto; }
+
 }
 @media only screen and (min-width:321px) and (max-width:480px) {
 body { padding: 0 5px; }
@@ -85,6 +87,8 @@ ul.sf-menu { width: 100%; }
 
 .sf-menu.sf-style-default ul { width: 100% !important; }
 
+.homepage-listing { height: auto; }
+
 }
 @media only screen and (min-width:481px) and (max-width:768px) {
 body { padding: 0 8px; }
@@ -98,6 +102,9 @@ h1#site-name { font-size: 2em; }
 #menu-bar .menu-wrapper li a, #menu-bar .menu-wrapper .menu li a { padding: 0 1em; font-size: .9em; }
 
 #menu-bar .menu-wrapper li, #menu-bar .menu-wrapper .menu li { margin-right: 2px; }
+
+.front .region-three-25-50-25-first .region-inner > div { float: left; }
+.front .region-three-25-50-25-first .region-inner > div.panel-pane { width: 49%; }
 
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {

@@ -4,7 +4,7 @@
  * @file
  * Implementation of hook_panels_layouts
  */
-function adaptivetheme_three_30_50_20_panels_layouts() {
+function geek_portland_three_30_50_20_panels_layouts() {
   $items['three_30_50_20'] = array(
     'title'    => t('AT Three column 30/50/20'),
     'category' => t('AT Responsive Panels - 3 column'),

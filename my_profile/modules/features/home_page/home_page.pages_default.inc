@@ -57,7 +57,7 @@ function home_page_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'three_25_50_25';
+  $display->layout = 'three_30_50_20';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -75,7 +75,7 @@ function home_page_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'three_25_50_25_first';
+    $pane->panel = 'three_30_50_20_first';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured_content_slideshows-panel_pane_1';
     $pane->shown = TRUE;
@@ -104,10 +104,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['three_25_50_25_first'][0] = 'new-1';
+    $display->panels['three_30_50_20_first'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'three_25_50_25_first';
+    $pane->panel = 'three_30_50_20_first';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured_content_slideshows-panel_pane_1';
     $pane->shown = TRUE;
@@ -136,10 +136,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['three_25_50_25_first'][1] = 'new-2';
+    $display->panels['three_30_50_20_first'][1] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
-    $pane->panel = 'three_25_50_25_second';
+    $pane->panel = 'three_30_50_20_second';
     $pane->type = 'page_title';
     $pane->subtype = 'page_title';
     $pane->shown = TRUE;
@@ -163,10 +163,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
-    $display->panels['three_25_50_25_second'][0] = 'new-3';
+    $display->panels['three_30_50_20_second'][0] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
-    $pane->panel = 'three_25_50_25_second';
+    $pane->panel = 'three_30_50_20_second';
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
     $pane->shown = TRUE;
@@ -186,10 +186,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-4'] = $pane;
-    $display->panels['three_25_50_25_second'][1] = 'new-4';
+    $display->panels['three_30_50_20_second'][1] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
-    $pane->panel = 'three_25_50_25_second';
+    $pane->panel = 'three_30_50_20_second';
     $pane->type = 'views_panes';
     $pane->subtype = 'event_listing-panel_pane_1';
     $pane->shown = TRUE;
@@ -207,10 +207,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-5'] = $pane;
-    $display->panels['three_25_50_25_second'][2] = 'new-5';
+    $display->panels['three_30_50_20_second'][2] = 'new-5';
     $pane = new stdClass();
     $pane->pid = 'new-6';
-    $pane->panel = 'three_25_50_25_third';
+    $pane->panel = 'three_30_50_20_third';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -231,7 +231,7 @@ function home_page_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-6'] = $pane;
-    $display->panels['three_25_50_25_third'][0] = 'new-6';
+    $display->panels['three_30_50_20_third'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -287,7 +287,7 @@ function home_page_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'three_25_50_25';
+  $display->layout = 'three_30_50_20';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -305,7 +305,7 @@ function home_page_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-7';
-    $pane->panel = 'three_25_50_25_first';
+    $pane->panel = 'three_30_50_20_first';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured_content_slideshows-panel_pane_1';
     $pane->shown = TRUE;
@@ -334,10 +334,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-7'] = $pane;
-    $display->panels['three_25_50_25_first'][0] = 'new-7';
+    $display->panels['three_30_50_20_first'][0] = 'new-7';
     $pane = new stdClass();
     $pane->pid = 'new-8';
-    $pane->panel = 'three_25_50_25_first';
+    $pane->panel = 'three_30_50_20_first';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured_content_slideshows-panel_pane_1';
     $pane->shown = TRUE;
@@ -366,10 +366,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-8'] = $pane;
-    $display->panels['three_25_50_25_first'][1] = 'new-8';
+    $display->panels['three_30_50_20_first'][1] = 'new-8';
     $pane = new stdClass();
     $pane->pid = 'new-9';
-    $pane->panel = 'three_25_50_25_second';
+    $pane->panel = 'three_30_50_20_second';
     $pane->type = 'page_title';
     $pane->subtype = 'page_title';
     $pane->shown = TRUE;
@@ -393,10 +393,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-9'] = $pane;
-    $display->panels['three_25_50_25_second'][0] = 'new-9';
+    $display->panels['three_30_50_20_second'][0] = 'new-9';
     $pane = new stdClass();
     $pane->pid = 'new-10';
-    $pane->panel = 'three_25_50_25_second';
+    $pane->panel = 'three_30_50_20_second';
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
     $pane->shown = TRUE;
@@ -416,10 +416,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-10'] = $pane;
-    $display->panels['three_25_50_25_second'][1] = 'new-10';
+    $display->panels['three_30_50_20_second'][1] = 'new-10';
     $pane = new stdClass();
     $pane->pid = 'new-11';
-    $pane->panel = 'three_25_50_25_second';
+    $pane->panel = 'three_30_50_20_second';
     $pane->type = 'views_panes';
     $pane->subtype = 'event_listing-panel_pane_2';
     $pane->shown = TRUE;
@@ -437,10 +437,10 @@ function home_page_default_page_manager_pages() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-11'] = $pane;
-    $display->panels['three_25_50_25_second'][2] = 'new-11';
+    $display->panels['three_30_50_20_second'][2] = 'new-11';
     $pane = new stdClass();
     $pane->pid = 'new-12';
-    $pane->panel = 'three_25_50_25_third';
+    $pane->panel = 'three_30_50_20_third';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -461,7 +461,7 @@ function home_page_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-12'] = $pane;
-    $display->panels['three_25_50_25_third'][0] = 'new-12';
+    $display->panels['three_30_50_20_third'][0] = 'new-12';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
