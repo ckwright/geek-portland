@@ -24,7 +24,7 @@ function home_page_default_page_manager_pages() {
     'type' => 'default tab',
     'title' => 'List View',
     'name' => 'main-menu',
-    'weight' => '-1',
+    'weight' => '1',
     'parent' => array(
       'type' => 'normal',
       'title' => 'Home',
