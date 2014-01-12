@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5 { margin: 0; }
 #content .grouping-content .node .region-inner { margin: 0; }
 #content .grouping-content .node .field { padding: 0; }
 #content .grouping-content .node .field-name-node-link { text-align: right; }
+#content .views-row-1 .grouping-content .node { border: none; }
+
+.homepage-listing { background: #fff; border: 1px solid #e6e4de; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; height: 475px; overflow: auto; }
 
 /* Footer styles */
 #page > footer { background: none; padding: 0; }

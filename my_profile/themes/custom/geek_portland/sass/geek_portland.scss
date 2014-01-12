@@ -199,7 +199,26 @@ h5 {
       }
     }
   }
+
+  .views-row-1 {
+    .grouping-content {
+      .node {
+        border: none;
+      }
+    }
+  }
+
 }
+
+.homepage-listing {
+  background: #fff;
+  border: 1px solid #E6E4DE;
+  @include border-radius(6px);
+
+  height: 475px;
+  overflow: auto;
+}
+
 /*
  * Footer styles
  */
