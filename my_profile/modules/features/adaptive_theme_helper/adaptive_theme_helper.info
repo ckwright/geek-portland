@@ -13,6 +13,7 @@ features[context][] = all_pages
 features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
+features[menu_custom][] = main-menu
 features[menu_custom][] = menu-footer-menu
 features[menu_links][] = main-menu_calendar:events
 features[menu_links][] = main-menu_geeknews:blog
