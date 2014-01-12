@@ -15,20 +15,20 @@ function home_page_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Home page';
   $page->admin_description = 'The site\'s home page';
-  $page->path = 'home';
+  $page->path = 'home/list';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
   );
   $page->menu = array(
-    'type' => 'normal',
-    'title' => 'Home',
+    'type' => 'default tab',
+    'title' => 'List View',
     'name' => 'main-menu',
     'weight' => '-1',
     'parent' => array(
-      'type' => 'none',
-      'title' => '',
-      'name' => 'navigation',
+      'type' => 'normal',
+      'title' => 'Home',
+      'name' => 'main-menu',
       'weight' => '0',
     ),
   );
@@ -167,11 +167,16 @@ function home_page_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-4';
     $pane->panel = 'three_25_50_25_second';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_listing-panel_pane_1';
+    $pane->type = 'page_tabs';
+    $pane->subtype = 'page_tabs';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'type' => 'both',
+      'id' => 'tabs',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -184,6 +189,27 @@ function home_page_default_page_manager_pages() {
     $display->panels['three_25_50_25_second'][1] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
+    $pane->panel = 'three_25_50_25_second';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'event_listing-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'homepage-listing',
+    );
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $display->content['new-5'] = $pane;
+    $display->panels['three_25_50_25_second'][2] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
     $pane->panel = 'three_25_50_25_third';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -204,8 +230,8 @@ function home_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['three_25_50_25_third'][0] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['three_25_50_25_third'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
