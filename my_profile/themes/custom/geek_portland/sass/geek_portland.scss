@@ -149,6 +149,20 @@ h5 {
     }
   }
 
+  .node-blurb {
+    margin-bottom: .5em;
+
+    p {
+      margin: 0;
+    }
+
+    .field-type-image {
+      figure {
+        margin: 0;
+      }
+    }
+  }
+
   .grouping-content {
     .grouping-title {
       float: left;
@@ -178,6 +192,10 @@ h5 {
 
       .field {
         padding: 0;
+      }
+
+      .field-name-node-link {
+        text-align: right;
       }
     }
   }
