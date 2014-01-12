@@ -2,7 +2,7 @@
 /* Custom title elements */
 h1#page-title:before { color: #669933; font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
 
-.front h1#page-title:before { content: '\43'; /* 'C' */ }
+.page-home h1#page-title:before { content: '\43'; /* 'C' */ }
 
 .page-geeks h1#page-title:before { content: '\41'; /* 'A' */ }
 
@@ -54,6 +54,8 @@ h1, h2, h3, h4, h5 { margin: 0; }
 #content .grouping-content .node .field { padding: 0; }
 #content .grouping-content .node .field-name-node-link { text-align: right; }
 #content .views-row-1 .grouping-content .node { border: none; }
+
+.pane-page-tabs ul.tabs li { float: right; }
 
 .homepage-listing { background: #fff; border: 1px solid #e6e4de; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; height: 475px; overflow: auto; }
 
