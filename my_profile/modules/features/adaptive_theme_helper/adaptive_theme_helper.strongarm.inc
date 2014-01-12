@@ -125,7 +125,7 @@ function adaptive_theme_helper_strongarm() {
     'smartphone_landscape_two_brick' => 'two-brick-stack',
     'smartphone_landscape_two_33_66' => 'two-33-66-stack',
     'smartphone_landscape_two_50' => 'two-50-stack',
-    'smartphone_landscape_two_20_80' => 'two-20-80',
+    'smartphone_landscape_two_20_80' => 'two-20-80-stack',
     'smartphone_landscape_two_25_75' => 'two-25-75-stack',
     'smartphone_landscape_three_25_50_25' => 'three-25-50-25-stack',
     'smartphone_landscape_three_3x33' => 'three-3x33-stack',
