@@ -206,8 +206,10 @@ h5 {
 
   .views-row-1 {
     .grouping-content {
+      .grouping-title,
       .node {
         border: none;
+        padding-top: 0;
       }
     }
   }
@@ -233,6 +235,10 @@ h5 {
 
   height: 475px;
   overflow: auto;
+
+  .block-inner {
+    margin: 20px;
+  }
 }
 
 /*
