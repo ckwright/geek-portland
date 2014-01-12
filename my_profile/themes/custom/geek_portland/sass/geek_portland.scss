@@ -236,6 +236,14 @@ h5 {
   margin-bottom: 20px;
 }
 
+.field-name-field-event-category {
+  ul {
+    li {
+      list-style-image: url("images/tag_5063.svg");
+    }
+  }
+}
+
 /*
  * Front page
  */
@@ -303,6 +311,26 @@ h5 {
   }
 }
 
+article {
+  .region-two-25-75-top {
+    .region-inner {
+      div,
+      ul,
+      li,
+      p {
+        display: inline;
+      }
+
+      ul {
+        margin: 0;
+      }
+
+      .field {
+        padding-right: 1em;
+      }
+    }
+  }
+}
 /*
  * Footer styles
  */

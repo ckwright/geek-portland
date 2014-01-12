@@ -14,3 +14,33 @@ include_once 'adaptive_theme_helper.features.inc';
 function adaptive_theme_helper_block_view_menu_menu_footer_menu_alter(&$data, $block) {
   unset($data['subject']);
 }
+
+/**
+ * Implements hook_ds_fields_info().
+ *
+ * Styles author name.
+ */
+function adaptive_theme_helper_ds_fields_info($entity_type) {
+  $fields['node']['posted_by'] = array(
+    'title' => t('Posted by Author'),
+    'field_type' => DS_FIELD_TYPE_FUNCTION,
+    'function' => 'adaptive_theme_helper_ds_render_author_field',
+    'properties' => array(
+      'formatters' => array(
+        'author' => t('Author'),
+        'author_linked' => t('Author linked to profile')
+      ),
+    ),
+  );
+
+  return $fields;
+}
+
+/**
+ * Function that adds 'Posted by' before the name of the author.
+ */
+function adaptive_theme_helper_ds_render_author_field ($field) {
+  $author = ds_render_author_field($field);
+
+  return t('Posted by !author', array('!author' => $author));
+}

@@ -63,6 +63,8 @@ h1, h2, h3, h4, h5 { margin: 0; }
 
 .region-inner > .rounded-corner { margin-bottom: 20px; }
 
+.field-name-field-event-category ul li { list-style-image: url("images/tag_5063.svg"); }
+
 /* Front page */
 .homepage-listing { height: 475px; overflow: auto; }
 
@@ -79,6 +81,10 @@ h1, h2, h3, h4, h5 { margin: 0; }
 .pane-views-exp-blog-page .block-inner { margin: 0; }
 .pane-views-exp-blog-page .views-exposed-widgets .views-exposed-widget { padding-top: 0; display: table-cell; float: left; vertical-align: top; }
 .pane-views-exp-blog-page .views-exposed-widgets .form-type-textfield input { width: 170px; }
+
+article .region-two-25-75-top .region-inner div, article .region-two-25-75-top .region-inner ul, article .region-two-25-75-top .region-inner li, article .region-two-25-75-top .region-inner p { display: inline; }
+article .region-two-25-75-top .region-inner ul { margin: 0; }
+article .region-two-25-75-top .region-inner .field { padding-right: 1em; }
 
 /* Footer styles */
 #page > footer { background: none; padding: 0; }
