@@ -10,4 +10,5 @@ features[ctools][] = page_manager:pages_default:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[page_manager_pages][] = home_page
+features[page_manager_pages][] = home_page_map
 features[views_view][] = featured_content_slideshows
