@@ -231,6 +231,10 @@ h5 {
   }
 }
 
+.region-inner > .rounded-corner {
+  margin-bottom: 20px;
+}
+
 /*
  * Front page
  */
@@ -238,7 +242,6 @@ h5 {
   height: 475px;
   overflow: auto;
 }
-
 
 /*
  * Search styles
@@ -266,6 +269,34 @@ h5 {
         margin-top: -20px;
         border: 0;
         padding-bottom: 0;
+      }
+    }
+  }
+}
+
+
+/*
+ * Blog listing styles
+ */
+.pane-views-exp-blog-page {
+  margin: 0;
+
+  .block-inner {
+    margin: 0;
+  }
+
+  .views-exposed-widgets {
+
+    .views-exposed-widget {
+      padding-top: 0;
+      display: table-cell;
+      float: left;
+      vertical-align: top;
+    }
+
+    .form-type-textfield {
+      input {
+        width: 170px;
       }
     }
   }
