@@ -108,7 +108,7 @@ function adaptive_theme_helper_strongarm() {
     'tablet_portrait_two_66_33' => 'two-66-33',
     'tablet_portrait_two_brick' => 'two-brick',
     'tablet_portrait_two_33_66' => 'two-33-66',
-    'tablet_portrait_two_50' => 'two-50',
+    'tablet_portrait_two_50' => 'two-50-stack',
     'tablet_portrait_two_20_80' => 'two-20-80',
     'tablet_portrait_two_25_75' => 'two-25-75',
     'tablet_portrait_three_25_50_25' => 'three-25-50-25-stack-top',

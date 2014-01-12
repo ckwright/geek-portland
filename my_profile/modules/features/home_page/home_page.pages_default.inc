@@ -67,6 +67,11 @@ function home_page_default_page_manager_pages() {
       'three_25_50_25_second' => NULL,
       'three_25_50_25_third' => NULL,
       'three_25_50_25_bottom' => NULL,
+      'three_30_50_20_top' => NULL,
+      'three_30_50_20_first' => NULL,
+      'three_30_50_20_second' => NULL,
+      'three_30_50_20_third' => NULL,
+      'three_30_50_20_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -298,6 +303,11 @@ function home_page_default_page_manager_pages() {
       'three_25_50_25_second' => NULL,
       'three_25_50_25_third' => NULL,
       'three_25_50_25_bottom' => NULL,
+      'three_30_50_20_top' => NULL,
+      'three_30_50_20_first' => NULL,
+      'three_30_50_20_second' => NULL,
+      'three_30_50_20_third' => NULL,
+      'three_30_50_20_bottom' => NULL,
     ),
   );
   $display->cache = array();
