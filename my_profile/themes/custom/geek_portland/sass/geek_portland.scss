@@ -215,8 +215,14 @@ h5 {
 }
 
 .pane-page-tabs {
-  ul.tabs li {
-    float:right;
+  margin-bottom: 0;
+
+  ul.tabs {
+    border: 0;
+
+    li {
+      float:right;
+    }
   }
 }
 
