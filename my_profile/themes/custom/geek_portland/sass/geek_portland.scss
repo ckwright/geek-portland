@@ -153,6 +153,12 @@ h5 {
     }
   }
 
+  .field-type-image {
+      figure {
+        margin: 0;
+      }
+    }
+
   .node-blurb {
     margin-bottom: .5em;
 
@@ -162,7 +168,6 @@ h5 {
 
     .field-type-image {
       figure {
-        margin: 0;
 
         img {
           max-width: 90%;

@@ -43,9 +43,9 @@ h1, h2, h3, h4, h5 { margin: 0; }
 #content .view-content .item-list ul li.views-row { list-style: none outside none; }
 #content .node, #content .view-empty { background: #fff; border: 1px solid #e6e4de; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; padding: 1em; }
 #content .node .region-inner, #content .view-empty .region-inner { margin: 0 25px; }
+#content .field-type-image figure { margin: 0; }
 #content .node-blurb { margin-bottom: .5em; }
 #content .node-blurb p { margin: 0; }
-#content .node-blurb .field-type-image figure { margin: 0; }
 #content .node-blurb .field-type-image figure img { max-width: 90%; }
 #content .grouping-content .grouping-title { float: left; white-space: nowrap; padding-top: 14px; }
 #content .grouping-content .grouping-title + .node { border-top: 1px solid #e6e4de; }
