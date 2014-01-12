@@ -70,7 +70,7 @@ function os_event_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'event';
   $ds_layout->view_mode = 'blurb';
-  $ds_layout->layout = 'panels-two_25_75';
+  $ds_layout->layout = 'panels-two_20_80';
   $ds_layout->settings = array(
     'classes' => array(),
     'wrappers' => array(
@@ -85,26 +85,26 @@ function os_event_ds_layout_settings_info() {
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
     'regions' => array(
-      'two_25_75_top' => array(
+      'two_20_80_top' => array(
         0 => 'title',
         1 => 'field_location',
         2 => 'field_event_date',
       ),
-      'two_25_75_first' => array(
+      'two_20_80_first' => array(
         0 => 'field_image',
       ),
-      'two_25_75_second' => array(
+      'two_20_80_second' => array(
         0 => 'body',
         1 => 'node_link',
       ),
     ),
     'fields' => array(
-      'title' => 'two_25_75_top',
-      'field_location' => 'two_25_75_top',
-      'field_event_date' => 'two_25_75_top',
-      'field_image' => 'two_25_75_first',
-      'body' => 'two_25_75_second',
-      'node_link' => 'two_25_75_second',
+      'title' => 'two_20_80_top',
+      'field_location' => 'two_20_80_top',
+      'field_event_date' => 'two_20_80_top',
+      'field_image' => 'two_20_80_first',
+      'body' => 'two_20_80_second',
+      'node_link' => 'two_20_80_second',
     ),
   );
   $export['node|event|blurb'] = $ds_layout;
