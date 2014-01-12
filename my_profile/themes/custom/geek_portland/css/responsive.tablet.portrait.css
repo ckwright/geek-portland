@@ -12,3 +12,7 @@ h1#site-name { font-size: 2em; }
 
 .front .region-three-25-50-25-first .region-inner > div { float: left; }
 .front .region-three-25-50-25-first .region-inner > div.panel-pane { width: 49%; }
+
+/* Search styles */
+.page-search .region-two-50-first { height: auto; }
+.page-search .region-two-50-second { position: static; }

@@ -228,16 +228,43 @@ h5 {
   }
 }
 
+/*
+ * Front page
+ */
 .homepage-listing {
-  background: #fff;
-  border: 1px solid #E6E4DE;
-  @include border-radius(6px);
-
   height: 475px;
   overflow: auto;
+}
 
-  .block-inner {
-    margin: 20px;
+
+/*
+ * Search styles
+ */
+.page-search {
+  .region-two-50-first {
+    height: 100px;
+  }
+  .region-two-50-second {
+    position: absolute;
+    z-index: 10;
+    right: -20px;
+  }
+  .advanced-search {
+    margin-bottom: 0;
+
+    form {
+      margin-bottom: 0;
+    }
+
+    fieldset#edit-advanced {
+      margin-bottom: 0;
+
+      &.collapsed {
+        margin-top: -20px;
+        border: 0;
+        padding-bottom: 0;
+      }
+    }
   }
 }
 

@@ -39,3 +39,7 @@ ul.sf-menu { width: 100%; }
 .sf-menu.sf-style-default ul { width: 100% !important; }
 
 .homepage-listing { height: auto; }
+
+/* Search styles */
+.page-search .region-two-50-first { height: auto; }
+.page-search .region-two-50-second { position: static; }
