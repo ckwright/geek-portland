@@ -198,6 +198,7 @@ function home_page_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'rounded_corners',
     );
     $pane->css = array(
       'css_id' => '',
@@ -428,6 +429,7 @@ function home_page_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'rounded_corners',
     );
     $pane->css = array(
       'css_id' => '',
