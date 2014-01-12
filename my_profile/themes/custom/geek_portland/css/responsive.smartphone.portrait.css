@@ -37,3 +37,5 @@ h2#site-slogan { font-size: 0.9em; }
 ul.sf-menu { width: 100%; }
 
 .sf-menu.sf-style-default ul { width: 100% !important; }
+
+.homepage-listing { height: auto; }
