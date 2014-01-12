@@ -36,6 +36,8 @@ h1, h2, h3, h4, h5 { margin: 0; }
 .block-geek-social ul { list-style: none outside none; padding: 0; margin: 0; }
 .block-geek-social ul li { list-style: none outside none; display: inline; padding: 0; margin: 0; }
 
+.rounded-corner .block-inner { margin-left: 0; }
+
 /* Node listing views */
 #content .view-content .item-list ul { margin: 0; padding: 0; }
 #content .view-content .item-list ul li.views-row { list-style: none outside none; }

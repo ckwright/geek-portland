@@ -10,8 +10,8 @@ h1#site-name { font-size: 2em; }
 
 #menu-bar .menu-wrapper li, #menu-bar .menu-wrapper .menu li { margin-right: 2px; }
 
-.front .region-three-25-50-25-first .region-inner > div { float: left; }
-.front .region-three-25-50-25-first .region-inner > div.panel-pane { width: 49%; }
+.front .region-three-30-50-20-first .region-inner > div { float: left; }
+.front .region-three-30-50-20-first .region-inner > div.panel-pane { width: 49%; }
 
 /* Search styles */
 .page-search .region-two-50-first { height: auto; }
