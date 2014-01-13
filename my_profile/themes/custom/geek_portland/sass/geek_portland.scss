@@ -253,6 +253,19 @@ h5 {
   }
 }
 
+.field-name-og-group-ref {
+  .item-list {
+    ul {
+      margin: 0;
+
+      li {
+        list-style: none inside url("images/address_20757.svg");
+      }
+    }
+  }
+}
+
+
 /*
  * Front page
  */
@@ -346,6 +359,14 @@ article {
         li {
           display: block;
         }
+      }
+
+      .field-name-ds-user-picture {
+        float: left;
+      }
+
+      .field-name-post-date {
+        display: block;
       }
     }
   }
