@@ -76,4 +76,7 @@ function geek_portland_process_page(&$vars) {
     $vars['title'] = '';
     $vars['primary_local_tasks'] = '';
   }
+  if (drupal_static('hide_title')) {
+    $vars['title'] = '';
+  }
 }
