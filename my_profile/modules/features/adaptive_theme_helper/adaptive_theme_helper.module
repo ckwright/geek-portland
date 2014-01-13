@@ -91,9 +91,11 @@ function adaptive_theme_helper_field_formatter_view($entity_type, $entity, $fiel
  * Hides the default h1 (preserves the meta title) if ds shows the title.
  */
 function adaptive_theme_helper_field_attach_view_alter(&$build, $context) {
-  $field_values = ds_get_field_settings('node', $build['#bundle'], 'full');
+  if(isset($build['#bundle'])) {
+    $field_values = ds_get_field_settings('node', $build['#bundle'], 'full');
 
-  if(isset($field_values['title'])) {
-    drupal_static('hide_title', TRUE);
+    if(isset($field_values['title'])) {
+      drupal_static('hide_title', TRUE);
+    }
   }
 }
