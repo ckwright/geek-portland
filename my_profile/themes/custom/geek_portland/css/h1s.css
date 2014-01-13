@@ -1,6 +1,8 @@
 /* Custom title elements */
 h1#page-title:before { color: #669933; font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
 
+h1.page-title { font-weight: bold; }
+
 .page-home h1#page-title:before { content: '\43'; /* 'C' */ }
 
 .page-geeks h1#page-title:before { content: '\41'; /* 'A' */ }
