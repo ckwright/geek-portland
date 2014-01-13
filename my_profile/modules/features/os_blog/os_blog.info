@@ -2,6 +2,7 @@ name = OpenSourcery Blog
 description = Provides blog post content type, blog category taxonomy and related views.
 core = 7.x
 package = OpenSourcery
+dependencies[] = adaptive_theme_helper
 dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = entityreference
