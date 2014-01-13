@@ -12,6 +12,41 @@ function os_blog_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|blog_post|default';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'blog_post';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '0',
+        'wrapper' => 'h1',
+        'class' => '',
+      ),
+    ),
+    'post_date' => array(
+      'weight' => '5',
+      'label' => 'hidden',
+      'format' => 'ds_post_date_long',
+    ),
+    'ds_user_picture' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'ds_picture_user_icon',
+    ),
+    'posted_by' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'author',
+    ),
+  );
+  $export['node|blog_post|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|blog_post|teaser';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'blog_post';
@@ -48,6 +83,55 @@ function os_blog_ds_field_settings_info() {
  */
 function os_blog_ds_layout_settings_info() {
   $export = array();
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|blog_post|default';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'blog_post';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'panels-two_25_75';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'two_25_75_top' => array(
+        0 => 'field_event_category',
+        1 => 'title',
+        2 => 'ds_user_picture',
+        3 => 'posted_by',
+        4 => 'field_blog_category',
+        5 => 'post_date',
+      ),
+      'two_25_75_bottom' => array(
+        6 => 'field_image',
+        7 => 'body',
+        8 => 'og_group_ref',
+      ),
+    ),
+    'fields' => array(
+      'field_event_category' => 'two_25_75_top',
+      'title' => 'two_25_75_top',
+      'ds_user_picture' => 'two_25_75_top',
+      'posted_by' => 'two_25_75_top',
+      'field_blog_category' => 'two_25_75_top',
+      'post_date' => 'two_25_75_top',
+      'field_image' => 'two_25_75_bottom',
+      'body' => 'two_25_75_bottom',
+      'og_group_ref' => 'two_25_75_bottom',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'two_25_75_top' => 'div',
+      'two_25_75_first' => 'div',
+      'two_25_75_second' => 'div',
+      'two_25_75_bottom' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|blog_post|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
