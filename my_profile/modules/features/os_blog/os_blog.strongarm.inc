@@ -40,6 +40,9 @@ function os_blog_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'blurb' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

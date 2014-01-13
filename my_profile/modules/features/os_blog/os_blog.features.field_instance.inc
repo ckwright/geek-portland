@@ -22,7 +22,7 @@ function os_blog_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -67,7 +67,7 @@ function os_blog_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -157,7 +157,7 @@ function os_blog_field_default_field_instances() {
           'image_style' => 'large_image',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -224,7 +224,7 @@ function os_blog_field_default_field_instances() {
         'module' => 'og_ui',
         'settings' => array(),
         'type' => 'og_list_default',
-        'weight' => 4,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
