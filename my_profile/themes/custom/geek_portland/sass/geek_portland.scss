@@ -337,6 +337,23 @@ article {
       .field {
         padding-right: 1em;
       }
+
+      .field-name-field-event-category {
+        float:right;
+        display: block;
+
+        ul,
+        li {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .region-two-25-75-bottom {
+    .field-type-image {
+      float: left;
+      margin-right: 2em;
     }
   }
 
