@@ -44,3 +44,43 @@ function adaptive_theme_helper_ds_render_author_field ($field) {
 
   return t('Posted by !author', array('!author' => $author));
 }
+
+
+/**
+ * Implement hook_field_formatter_info().
+ *
+ * Creates a new formatter for OG entity references.
+ */
+function adaptive_theme_helper_field_formatter_info() {
+  return array(
+    'at_list_default' => array(
+      'label' => t('Separated OG audience list'),
+      'field types' => array('entityreference'),
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_field_formatter_view().
+ *
+ * Adds the ability to show a csv og links.
+ */
+function adaptive_theme_helper_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  if ($display['type'] === 'at_list_default') {
+    $display['type'] = 'og_list_default';
+    $nodes = og_ui_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display);
+
+    if (!empty($nodes)) {
+      foreach ($nodes as $node) {
+        $render[] = render($node);
+      }
+
+      $output = '';
+      $output = implode(', ', $render);
+      $element[0] = array('#theme' => 'item_list', '#items' => array($output));
+    }
+  }
+
+  return $element;
+}
