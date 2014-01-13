@@ -91,7 +91,8 @@ article .region-two-25-75-top .region-inner div, article .region-two-25-75-top .
 article .region-two-25-75-top .region-inner ul { margin: 0; }
 article .region-two-25-75-top .region-inner .field { padding-right: 1em; }
 article .region-two-25-75-top .region-inner .field-name-field-event-category { float: right; display: block; }
-article .region-two-25-75-top .region-inner .field-name-field-event-category ul, article .region-two-25-75-top .region-inner .field-name-field-event-category li { display: block; }
+article .region-two-25-75-top .region-inner .field-name-field-event-category li { display: list-item; }
+article .region-two-25-75-top .region-inner .field-name-title { display: block; }
 article .region-two-25-75-top .region-inner .field-name-ds-user-picture { float: left; }
 article .region-two-25-75-top .region-inner .field-name-post-date { display: block; }
 article .region-two-25-75-bottom .field-type-image { float: left; margin-right: 2em; }

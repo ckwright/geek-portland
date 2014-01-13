@@ -355,10 +355,13 @@ article {
         float:right;
         display: block;
 
-        ul,
         li {
-          display: block;
+          display: list-item;
         }
+      }
+
+      .field-name-title {
+        display: block;
       }
 
       .field-name-ds-user-picture {
