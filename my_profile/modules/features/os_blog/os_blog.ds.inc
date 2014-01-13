@@ -24,7 +24,7 @@ function os_blog_ds_field_settings_info() {
       'formatter_settings' => array(
         'link' => '0',
         'wrapper' => 'h1',
-        'class' => '',
+        'class' => 'page-title',
       ),
     ),
     'post_date' => array(
