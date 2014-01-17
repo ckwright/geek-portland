@@ -59,9 +59,9 @@ h1, h2, h3, h4, h5 { margin: 0; }
 #content .grouping-content .node .field-name-node-link { text-align: right; }
 #content .views-row-1 .grouping-content .grouping-title, #content .views-row-1 .grouping-content .node { border: none; padding-top: 0; }
 
-.pane-page-tabs { margin-bottom: 0; }
-.pane-page-tabs ul.tabs { border: 0; }
-.pane-page-tabs ul.tabs li { float: right; }
+.region-three-30-50-20-second .pane-page-tabs { margin-bottom: 0; }
+.region-three-30-50-20-second .pane-page-tabs ul.tabs { border: 0; }
+.region-three-30-50-20-second .pane-page-tabs ul.tabs li { float: right; }
 
 .region-inner > .rounded-corner { margin-bottom: 20px; }
 

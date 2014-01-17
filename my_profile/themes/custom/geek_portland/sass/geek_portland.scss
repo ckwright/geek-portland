@@ -224,15 +224,16 @@ h5 {
   }
 
 }
+.region-three-30-50-20-second {
+  .pane-page-tabs {
+    margin-bottom: 0;
 
-.pane-page-tabs {
-  margin-bottom: 0;
+    ul.tabs {
+      border: 0;
 
-  ul.tabs {
-    border: 0;
-
-    li {
-      float:right;
+      li {
+        float:right;
+      }
     }
   }
 }
