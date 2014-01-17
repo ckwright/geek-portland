@@ -67,7 +67,6 @@ features[page_manager_pages][] = events
 features[page_manager_pages][] = events_calendar
 features[page_manager_pages][] = os_event_administer
 features[page_manager_pages][] = os_event_node_add
-features[page_manager_pages][] = past_events
 features[taxonomy][] = admission
 features[taxonomy][] = age
 features[taxonomy][] = event_categories
