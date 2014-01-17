@@ -119,6 +119,7 @@ function os_event_views_default_views() {
   /* Display: Upcoming events */
   $handler = $view->new_display('panel_pane', 'Upcoming events', 'panel_pane_upcoming');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['allow']['use_pager'] = 'use_pager';
   $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
   $handler->display->display_options['allow']['offset'] = 0;

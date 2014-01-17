@@ -57,12 +57,19 @@ function os_event_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'flexible';
+  $display->layout = 'two_brick';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'center' => NULL,
+      'two_brick_top' => NULL,
+      'two_brick_left_above' => NULL,
+      'two_brick_right_above' => NULL,
+      'two_brick_middle' => NULL,
+      'two_brick_left_below' => NULL,
+      'two_brick_right_below' => NULL,
+      'two_brick_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -71,7 +78,7 @@ function os_event_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'center';
+    $pane->panel = 'two_brick_left_above';
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
     $pane->shown = TRUE;
@@ -91,10 +98,10 @@ function os_event_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['center'][0] = 'new-1';
+    $display->panels['two_brick_left_above'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'center';
+    $pane->panel = 'two_brick_middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'event_listing-panel_pane_upcoming';
     $pane->shown = TRUE;
@@ -113,10 +120,32 @@ function os_event_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['center'][1] = 'new-2';
+    $display->panels['two_brick_middle'][0] = 'new-2';
+    $pane = new stdClass();
+    $pane->pid = 'new-3';
+    $pane->panel = 'two_brick_right_above';
+    $pane->type = 'block';
+    $pane->subtype = 'views-4ea83464ef7888af6fd9a3b7d9220a02';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-3'] = $pane;
+    $display->panels['two_brick_right_above'][0] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -139,7 +168,7 @@ function os_event_default_page_manager_pages() {
     'type' => 'default tab',
     'title' => 'Calendar',
     'name' => 'navigation',
-    'weight' => '2',
+    'weight' => '0',
     'parent' => array(
       'type' => 'normal',
       'title' => 'Calendar',
@@ -192,7 +221,7 @@ function os_event_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-4';
     $pane->panel = 'two_brick_left_above';
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
@@ -200,7 +229,7 @@ function os_event_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'type' => 'both',
-      'id' => 'tabs',
+      'id' => '',
       'override_title' => 0,
       'override_title_text' => '',
     );
@@ -212,10 +241,10 @@ function os_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['two_brick_left_above'][0] = 'new-3';
+    $display->content['new-4'] = $pane;
+    $display->panels['two_brick_left_above'][0] = 'new-4';
     $pane = new stdClass();
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-5';
     $pane->panel = 'two_brick_middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'event_listing-panel_pane_calendar';
@@ -230,10 +259,10 @@ function os_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['two_brick_middle'][0] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['two_brick_middle'][0] = 'new-5';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
     $pane->panel = 'two_brick_right_above';
     $pane->type = 'block';
     $pane->subtype = 'views-4ea83464ef7888af6fd9a3b7d9220a02';
@@ -252,10 +281,10 @@ function os_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['two_brick_right_above'][0] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['two_brick_right_above'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-4';
+  $display->title_pane = 'new-5';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['events_calendar'] = $page;
