@@ -115,6 +115,68 @@ function os_event_views_default_views() {
       'value' => 'FREQ=WEEKLY',
     ),
   );
+  /* Filter criterion: Content: Geeky interests (field_event_category) */
+  $handler->display->display_options['filters']['field_event_category_tid']['id'] = 'field_event_category_tid';
+  $handler->display->display_options['filters']['field_event_category_tid']['table'] = 'field_data_field_event_category';
+  $handler->display->display_options['filters']['field_event_category_tid']['field'] = 'field_event_category_tid';
+  $handler->display->display_options['filters']['field_event_category_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_event_category_tid']['expose']['operator_id'] = 'field_event_category_tid_op';
+  $handler->display->display_options['filters']['field_event_category_tid']['expose']['label'] = 'Geeky interests';
+  $handler->display->display_options['filters']['field_event_category_tid']['expose']['operator'] = 'field_event_category_tid_op';
+  $handler->display->display_options['filters']['field_event_category_tid']['expose']['identifier'] = 'field_event_category_tid';
+  $handler->display->display_options['filters']['field_event_category_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
+  $handler->display->display_options['filters']['field_event_category_tid']['group_info']['label'] = 'Geeky interests (field_event_category)';
+  $handler->display->display_options['filters']['field_event_category_tid']['group_info']['identifier'] = 'field_event_category_tid';
+  $handler->display->display_options['filters']['field_event_category_tid']['group_info']['remember'] = FALSE;
+  $handler->display->display_options['filters']['field_event_category_tid']['group_info']['group_items'] = array(
+    1 => array(),
+    2 => array(),
+    3 => array(),
+  );
+  $handler->display->display_options['filters']['field_event_category_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_event_category_tid']['vocabulary'] = 'event_categories';
+  /* Filter criterion: Content: Admission (field_admission) */
+  $handler->display->display_options['filters']['field_admission_tid']['id'] = 'field_admission_tid';
+  $handler->display->display_options['filters']['field_admission_tid']['table'] = 'field_data_field_admission';
+  $handler->display->display_options['filters']['field_admission_tid']['field'] = 'field_admission_tid';
+  $handler->display->display_options['filters']['field_admission_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_admission_tid']['expose']['operator_id'] = 'field_admission_tid_op';
+  $handler->display->display_options['filters']['field_admission_tid']['expose']['label'] = 'Cost';
+  $handler->display->display_options['filters']['field_admission_tid']['expose']['operator'] = 'field_admission_tid_op';
+  $handler->display->display_options['filters']['field_admission_tid']['expose']['identifier'] = 'field_admission_tid';
+  $handler->display->display_options['filters']['field_admission_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
+  $handler->display->display_options['filters']['field_admission_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_admission_tid']['vocabulary'] = 'admission';
+  /* Filter criterion: Content: Age (field_age) */
+  $handler->display->display_options['filters']['field_age_tid']['id'] = 'field_age_tid';
+  $handler->display->display_options['filters']['field_age_tid']['table'] = 'field_data_field_age';
+  $handler->display->display_options['filters']['field_age_tid']['field'] = 'field_age_tid';
+  $handler->display->display_options['filters']['field_age_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_age_tid']['expose']['operator_id'] = 'field_age_tid_op';
+  $handler->display->display_options['filters']['field_age_tid']['expose']['label'] = 'Age';
+  $handler->display->display_options['filters']['field_age_tid']['expose']['operator'] = 'field_age_tid_op';
+  $handler->display->display_options['filters']['field_age_tid']['expose']['identifier'] = 'field_age_tid';
+  $handler->display->display_options['filters']['field_age_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
+  $handler->display->display_options['filters']['field_age_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_age_tid']['vocabulary'] = 'age';
 
   /* Display: Upcoming events */
   $handler = $view->new_display('panel_pane', 'Upcoming events', 'panel_pane_upcoming');
