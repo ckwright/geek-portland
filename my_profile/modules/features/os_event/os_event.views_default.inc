@@ -97,7 +97,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_category_tid']['expose']['operator_id'] = 'field_event_category_tid_op';
   $handler->display->display_options['filters']['field_event_category_tid']['expose']['label'] = 'Geeky interests';
   $handler->display->display_options['filters']['field_event_category_tid']['expose']['operator'] = 'field_event_category_tid_op';
-  $handler->display->display_options['filters']['field_event_category_tid']['expose']['identifier'] = 'field_event_category_tid';
+  $handler->display->display_options['filters']['field_event_category_tid']['expose']['identifier'] = 'interests';
   $handler->display->display_options['filters']['field_event_category_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -124,7 +124,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['og_group_ref_target_id']['expose']['operator_id'] = 'og_group_ref_target_id_op';
   $handler->display->display_options['filters']['og_group_ref_target_id']['expose']['label'] = 'Related Geek Pages';
   $handler->display->display_options['filters']['og_group_ref_target_id']['expose']['operator'] = 'og_group_ref_target_id_op';
-  $handler->display->display_options['filters']['og_group_ref_target_id']['expose']['identifier'] = 'og_group_ref_target_id';
+  $handler->display->display_options['filters']['og_group_ref_target_id']['expose']['identifier'] = 'geeks';
   $handler->display->display_options['filters']['og_group_ref_target_id']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -153,7 +153,9 @@ function os_event_views_default_views() {
     5 => 0,
   );
   $handler->display->display_options['filters']['field_event_date_rrule']['is_grouped'] = TRUE;
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['identifier'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['label'] = 'Show weekly events';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['identifier'] = 'weekly';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['widget'] = 'radios';
   $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['default_group'] = '1';
   $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['group_items'] = array(
     1 => array(
@@ -171,7 +173,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_age_tid']['expose']['operator_id'] = 'field_age_tid_op';
   $handler->display->display_options['filters']['field_age_tid']['expose']['label'] = 'Age';
   $handler->display->display_options['filters']['field_age_tid']['expose']['operator'] = 'field_age_tid_op';
-  $handler->display->display_options['filters']['field_age_tid']['expose']['identifier'] = 'field_age_tid';
+  $handler->display->display_options['filters']['field_age_tid']['expose']['identifier'] = 'age';
   $handler->display->display_options['filters']['field_age_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -190,7 +192,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_admission_tid']['expose']['operator_id'] = 'field_admission_tid_op';
   $handler->display->display_options['filters']['field_admission_tid']['expose']['label'] = 'Cost';
   $handler->display->display_options['filters']['field_admission_tid']['expose']['operator'] = 'field_admission_tid_op';
-  $handler->display->display_options['filters']['field_admission_tid']['expose']['identifier'] = 'field_admission_tid';
+  $handler->display->display_options['filters']['field_admission_tid']['expose']['identifier'] = 'cost';
   $handler->display->display_options['filters']['field_admission_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -209,7 +211,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['keys']['expose']['operator_id'] = 'keys_op';
   $handler->display->display_options['filters']['keys']['expose']['label'] = 'Search';
   $handler->display->display_options['filters']['keys']['expose']['operator'] = 'keys_op';
-  $handler->display->display_options['filters']['keys']['expose']['identifier'] = 'keys';
+  $handler->display->display_options['filters']['keys']['expose']['identifier'] = 'search';
   $handler->display->display_options['filters']['keys']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
