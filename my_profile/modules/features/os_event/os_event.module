@@ -5,3 +5,37 @@
  */
 
 include_once('os_event.features.inc');
+
+/**
+ * Post-render function that adds a fieldset around .
+ */
+function _os_event_add_fieldset($children, $elements) {
+  // Default collapsed
+  $collapsed = TRUE;
+  $class = array('collapsible', 'collapsed');
+
+  $fieldset['element'] = array(
+    '#title' => t('Filter'),
+    '#collapsible' => TRUE,
+    '#collapsed' => $collapsed,
+    '#attributes' => array('class' => $class),
+    '#children' => $children,
+  );
+
+  return theme('fieldset', $fieldset);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Wraps exposed form elements in a fieldset.
+ */
+function os_event_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  global $base_url;
+
+  if(isset($form_state['view']->current_display) && $form_state['view']->current_display == 'panel_pane_calendar') {
+    $form['#post_render'][] = '_os_event_add_fieldset';
+    $form['#attached']['js'][] = $base_url . '/misc/form.js';
+    $form['#attached']['js'][] = $base_url . '/misc/collapse.js';
+  }
+}
