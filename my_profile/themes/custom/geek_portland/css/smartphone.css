@@ -41,5 +41,5 @@ ul.sf-menu { width: 100%; }
 .homepage-listing { height: auto; }
 
 /* Search styles */
-.page-search .region-two-50-first { height: auto; }
-.page-search .region-two-50-second { position: static; }
+.top-right-dropdown .region-two-50-first { height: auto; }
+.top-right-dropdown .region-two-50-second { position: static; }

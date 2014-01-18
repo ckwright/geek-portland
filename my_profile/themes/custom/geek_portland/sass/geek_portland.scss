@@ -227,12 +227,20 @@ table.fc-header {
   }
 
 }
+
+.pane-page-tabs {
+  margin-bottom: 0;
+
+  ul.tabs {
+    border: 0;
+    margin-left: 1em;
+  }
+}
+
 .region-three-30-50-20-second {
   .pane-page-tabs {
-    margin-bottom: 0;
 
     ul.tabs {
-      border: 0;
 
       li {
         float:right;
@@ -281,14 +289,16 @@ table.fc-header {
 /*
  * Search styles
  */
-.page-search {
-  .region-two-50-first {
-    height: 100px;
-  }
+.top-right-dropdown {
+
   .region-two-50-second {
     position: absolute;
     z-index: 10;
     right: -20px;
+
+    fieldset {
+      background: #fff;
+    }
   }
   .advanced-search {
     margin-bottom: 0;
@@ -309,6 +319,11 @@ table.fc-header {
   }
 }
 
+.page-search {
+  .region-two-50-first {
+    height: 100px;
+  }
+}
 
 /*
  * Blog listing styles
