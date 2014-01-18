@@ -18,6 +18,8 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right whit
 
 h1, h2, h3, h4, h5 { margin: 0; }
 
+table.fc-header { border: 0; }
+
 #header .container { position: relative; }
 #header .container .region-header { position: absolute; bottom: 0; right: 0; text-align: right; }
 
