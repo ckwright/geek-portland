@@ -4,7 +4,7 @@ h1#page-title:before { color: #669933; font-family: "geek_portland"; font-style:
 
 h1.page-title { font-weight: bold; }
 
-.page-home h1#page-title:before { content: '\43'; /* 'C' */ }
+.page-home h1#page-title:before, .page-events h1#page-title:before { content: '\43'; /* 'C' */ }
 
 .page-geeks h1#page-title:before { content: '\41'; /* 'A' */ }
 

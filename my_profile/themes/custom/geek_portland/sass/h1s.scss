@@ -29,7 +29,8 @@ h1.page-title {
   font-weight: bold;
 }
 
-.page-home {
+.page-home,
+.page-events {
   h1#page-title {
     &:before {
       content: '\43'; /* 'C' */
