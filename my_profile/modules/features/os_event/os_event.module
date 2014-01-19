@@ -90,3 +90,24 @@ function os_event_theme($existing, $type, $theme, $path) {
     ),
   );
 }
+
+/**
+* Implements hook_fullcalendar_api().
+*/
+function os_event_fullcalendar_api() {
+  return array(
+    'api' => fullcalendar_api_version(),
+  );
+}
+/**
+* Implements hook_fullcalendar_options_info().
+*/
+function os_event_fullcalendar_options_info() {
+  return array(
+    'os_event' => array(
+      'js' => TRUE,
+      'no_fieldset' => TRUE,
+      'weight' => 5,
+    ),
+  );
+}
