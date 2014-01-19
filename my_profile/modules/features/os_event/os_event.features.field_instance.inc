@@ -489,9 +489,10 @@ function os_event_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => 1,
+          'links' => 0,
+          'view_mode' => 'location_link',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 3,
       ),
     ),
