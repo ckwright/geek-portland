@@ -92,8 +92,8 @@ libraries[fullcalendar][download][type] = "get"
 libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
 
 ; Magnific Popup
-libraries[magnific-popup][download][url] = "http://github.com/dimsemenov/Magnific-Popup.git"
-libraries[magnific-popup][destination] = "libraries"
+libraries[magnific-popup][download][type] = "git"
+libraries[magnific-popup][download][url] = "https://github.com/dimsemenov/Magnific-Popup.git"
 
 ;
 ; Theme
