@@ -153,13 +153,12 @@ function os_event_views_default_views() {
     5 => 0,
   );
   $handler->display->display_options['filters']['field_event_date_rrule']['is_grouped'] = TRUE;
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['label'] = 'Show weekly events';
   $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['identifier'] = 'weekly';
   $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['widget'] = 'radios';
   $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['default_group'] = '1';
   $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['group_items'] = array(
     1 => array(
-      'title' => 'Hide weekly',
+      'title' => 'Show weekly events',
       'operator' => 'not',
       'value' => 'FREQ=WEEKLY',
     ),
