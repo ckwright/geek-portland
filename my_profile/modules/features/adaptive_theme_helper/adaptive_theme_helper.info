@@ -10,6 +10,7 @@ dependencies[] = os_base
 dependencies[] = search
 dependencies[] = strongarm
 features[context][] = all_pages
+features[context][] = is_popup
 features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
