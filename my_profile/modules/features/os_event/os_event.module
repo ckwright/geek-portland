@@ -34,8 +34,59 @@ function os_event_form_views_exposed_form_alter(&$form, &$form_state, $form_id) 
   global $base_url;
 
   if(isset($form_state['view']->current_display) && $form_state['view']->current_display == 'panel_pane_calendar') {
+    // 1. Add fieldset dropdown.
     $form['#post_render'][] = '_os_event_add_fieldset';
     $form['#attached']['js'][] = $base_url . '/misc/form.js';
     $form['#attached']['js'][] = $base_url . '/misc/collapse.js';
+
+    // 2. Alter weekly option to be checkbox instead of radios.
+    // <input type="radio" class="form-radio" value="All" name="weekly" id="edit-weekly-all">
+    // <input type="checkbox" class="form-checkbox" value="1" name="weekly">
+    $form['weekly']['#theme'] = 'radio_as_checkbox';
   }
+}
+
+/**
+ * Turns two radio boxes into a single checkbox.
+ *
+ * @see theme_radio()
+ * @see theme_checkbox()
+ */
+function theme_radio_as_checkbox($variables) {
+  $element = $variables['element'];
+  $attributes = array();
+  if (isset($element['#id'])) {
+    $attributes['id'] = $element['#id'];
+  }
+  $attributes['class'] = 'form-checkboxes';
+  if (!empty($element['#attributes']['class'])) {
+    $attributes['class'] .= ' ' . implode(' ', $element['#attributes']['class']);
+  }
+  if (isset($element['#attributes']['title'])) {
+    $attributes['title'] = $element['#attributes']['title'];
+  }
+
+  $desired_value = 'All';
+
+  $child['#type'] = 'checkboxes';
+  $element[$desired_value]['#type'] = $element[$desired_value]['#theme'] = 'checkbox';
+  $element[$desired_value]['#checked'] = $element[$desired_value]['#value'] == $element[$desired_value]['#return_value'];
+  $element[$desired_value]['#title'] = $element[1]['#title'];
+  $child[$desired_value] = $element[$desired_value];
+  $element['#children'] = drupal_render($child);
+
+  return '<div' . drupal_attributes($attributes) . '>' . (!empty($element['#children']) ? $element['#children'] : '') . '</div>';
+}
+
+/**
+ * Implements hook_theme().
+ *
+ * Declares a new custom function theme_radio_as_checkbox.
+ */
+function os_event_theme($existing, $type, $theme, $path) {
+  return array(
+    'radio_as_checkbox' => array(
+      'render element' => 'element',
+    ),
+  );
 }
