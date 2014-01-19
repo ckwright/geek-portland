@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5 { margin: 0; }
 
 table.fc-header { border: 0; }
 
+.rounded-corner, .rounded-corner-panel, #content .node, #content .view-empty { border: 1px solid #e6e4de; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0px 0px 5px #e6e4de; -moz-box-shadow: 0px 0px 5px #e6e4de; box-shadow: 0px 0px 5px #e6e4de; }
+
+.rounded-corner-panel { padding: 20px; background: #fff; margin-left: 0; margin-right: 0; }
+
 #header .container { position: relative; }
 #header .container .region-header { position: absolute; bottom: 0; right: 0; text-align: right; }
 
@@ -40,12 +44,12 @@ table.fc-header { border: 0; }
 .block-geek-social ul { list-style: none outside none; padding: 0; margin: 0; }
 .block-geek-social ul li { list-style: none outside none; display: inline; padding: 0; margin: 0; }
 
-.rounded-corner .block-inner { margin-left: 0; }
+.rounded-corner .block-inner, .rounded-corner-panel .block-inner, #content .node .block-inner, #content .view-empty .block-inner { margin-left: 0; }
 
 /* Node listing views */
 #content .view-content .item-list ul { margin: 0; padding: 0; }
 #content .view-content .item-list ul li.views-row { list-style: none outside none; }
-#content .node, #content .view-empty { background: #fff; border: 1px solid #e6e4de; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; padding: 1em; }
+#content .node, #content .view-empty { background: #fff; padding: 1em; }
 #content .node .region-inner, #content .view-empty .region-inner { margin: 0 25px; }
 #content .field-type-image figure { margin: 0; }
 #content .node-blurb { margin-bottom: .5em; }
@@ -66,7 +70,7 @@ table.fc-header { border: 0; }
 
 .region-three-30-50-20-second .pane-page-tabs ul.tabs li { float: right; }
 
-.region-inner > .rounded-corner { margin-bottom: 20px; }
+.region-inner > .rounded-corner, .region-inner > .rounded-corner-panel, #content .region-inner > .node, #content .region-inner > .view-empty { margin-bottom: 20px; }
 
 .field-name-field-event-category { float: left; }
 .field-name-field-event-category ul { margin: 0; }

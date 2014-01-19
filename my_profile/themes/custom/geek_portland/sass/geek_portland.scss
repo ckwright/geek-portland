@@ -29,6 +29,21 @@ h5 {
 table.fc-header {
   border: 0;
 }
+
+.rounded-corner {
+  border: 1px solid #E6E4DE;
+  @include border-radius(6px);
+  @include single-box-shadow(#E6E4DE);
+}
+
+.rounded-corner-panel {
+  @extend .rounded-corner;
+  padding: 20px;
+  background: #fff;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 #header {
 
   .container {
@@ -147,8 +162,7 @@ table.fc-header {
   .node,
   .view-empty {
     background: #fff;
-    border: 1px solid #E6E4DE;
-    @include border-radius(6px);
+    @extend .rounded-corner;
     padding: 1em;
 
     .region-inner {
