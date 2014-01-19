@@ -94,6 +94,12 @@ table.fc-header { border: 0; }
 
 .page-search .region-two-50-first { height: 100px; }
 
+/* Event listing styles */
+.node-teaser .field-name-field-buy-tickets { float: right; }
+.node-teaser .region-two-25-75-second .field-name-field-admission, .node-teaser .region-two-25-75-second .field-name-field-age { display: inline; padding-right: 10px; }
+.node-teaser .region-two-25-75-second .field-name-field-admission *, .node-teaser .region-two-25-75-second .field-name-field-age * { display: inline; }
+.node-teaser .region-two-25-75-second .field-name-field-admission ul, .node-teaser .region-two-25-75-second .field-name-field-admission li, .node-teaser .region-two-25-75-second .field-name-field-age ul, .node-teaser .region-two-25-75-second .field-name-field-age li { margin: 0; padding: 0; list-style: none outside none; }
+
 /* Blog listing styles */
 .pane-views-exp-blog-page { margin: 0; }
 .pane-views-exp-blog-page .block-inner { margin: 0; }

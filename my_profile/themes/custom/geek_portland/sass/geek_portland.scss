@@ -351,6 +351,35 @@ table.fc-header {
 }
 
 /*
+ * Event listing styles
+ */
+.node-teaser {
+  .field-name-field-buy-tickets {
+    float: right;
+  }
+
+  .region-two-25-75-second {
+    .field-name-field-admission,
+    .field-name-field-age
+    {
+      display: inline;
+      padding-right: 10px;
+
+      * {
+        display: inline;
+      }
+
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none outside none;
+      }
+    }
+  }
+}
+
+/*
  * Blog listing styles
  */
 .pane-views-exp-blog-page {
