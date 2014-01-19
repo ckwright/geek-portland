@@ -85,6 +85,8 @@ table.fc-header { border: 0; }
 .top-right-dropdown .advanced-search form { margin-bottom: 0; }
 .top-right-dropdown .advanced-search fieldset#edit-advanced { margin-bottom: 0; }
 .top-right-dropdown .advanced-search fieldset#edit-advanced.collapsed { margin-top: -20px; border: 0; padding-bottom: 0; }
+.top-right-dropdown .views-exposed-widget { width: 45%; min-width: 212px; }
+.top-right-dropdown #edit-search-wrapper, .top-right-dropdown .views-submit-button { width: auto; min-width: 0; }
 
 .page-search .region-two-50-first { height: 100px; }
 
