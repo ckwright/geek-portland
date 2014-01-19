@@ -62,6 +62,16 @@ function os_event_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Short title */
+  $handler->display->display_options['fields']['field_short_title']['id'] = 'field_short_title';
+  $handler->display->display_options['fields']['field_short_title']['table'] = 'field_data_field_short_title';
+  $handler->display->display_options['fields']['field_short_title']['field'] = 'field_short_title';
+  $handler->display->display_options['fields']['field_short_title']['label'] = '';
+  $handler->display->display_options['fields']['field_short_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_short_title']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_short_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_short_title']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_short_title']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Date -  start date (field_event_date) */
   $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
@@ -272,6 +282,8 @@ function os_event_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'fullcalendar';
+  $handler->display->display_options['style_options']['fields']['title_field'] = 'field_short_title';
+  $handler->display->display_options['style_options']['fields']['title'] = TRUE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
