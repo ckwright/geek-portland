@@ -102,6 +102,9 @@ function os_event_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'location_link' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

@@ -31,7 +31,7 @@ function os_event_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 7,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -89,11 +89,14 @@ function os_event_field_default_field_instances() {
         'weight' => 15,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 8,
+        'label' => 'inline',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'inline',
@@ -140,11 +143,14 @@ function os_event_field_default_field_instances() {
         'weight' => 14,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'label' => 'hidden',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -191,11 +197,11 @@ function os_event_field_default_field_instances() {
         'weight' => 16,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -258,7 +264,7 @@ function os_event_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -314,15 +320,15 @@ function os_event_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'medium',
+          'format_type' => 'long',
           'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
+          'multiple_from' => 'now',
+          'multiple_number' => 1,
           'multiple_to' => '',
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -399,7 +405,7 @@ function os_event_field_default_field_instances() {
         'weight' => 2,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -477,13 +483,14 @@ function os_event_field_default_field_instances() {
         'weight' => 1,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'location_link',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 5,
+        'type' => 'entityreference_entity_view',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -530,11 +537,11 @@ function os_event_field_default_field_instances() {
         'weight' => 5,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -593,10 +600,9 @@ function os_event_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -643,10 +649,9 @@ function os_event_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'og_ui',
         'settings' => array(),
-        'type' => 'og_list_default',
-        'weight' => 11,
+        'type' => 'hidden',
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'hidden',
