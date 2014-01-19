@@ -1,0 +1,13 @@
+diff --git a/js/fullcalendar.fullcalendar.js b/js/fullcalendar.fullcalendar.js
+index ab3db75..0a7d011 100644
+--- a/js/fullcalendar.fullcalendar.js
++++ b/js/fullcalendar.fullcalendar.js
+@@ -17,7 +17,7 @@ Drupal.fullcalendar.plugins.fullcalendar = {
+           window.open(calEvent.url, '_self');
+         }
+         else {
+-          window.open(calEvent.url);
++          window.open(calEvent.url, '_blank', 'height=500,width=600,scrollbars=yes');
+         }
+         return false;
+       },
