@@ -91,6 +91,10 @@ libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profi
 libraries[fullcalendar][download][type] = "get"
 libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
 
+; Magnific Popup
+libraries[magnific-popup][download][url] = "http://github.com/dimsemenov/Magnific-Popup.git"
+libraries[magnific-popup][destination] = "libraries"
+
 ;
 ; Theme
 ;

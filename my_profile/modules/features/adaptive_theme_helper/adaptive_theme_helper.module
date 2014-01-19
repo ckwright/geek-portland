@@ -99,3 +99,69 @@ function adaptive_theme_helper_field_attach_view_alter(&$build, $context) {
     }
   }
 }
+
+/**
+ * Implements hook_library().
+ */
+function adaptive_theme_helper_library() {
+  $libraries = array();
+
+  $magnific_library_path = libraries_get_path('magnific-popup', FALSE);
+  $module_path = drupal_get_path('module', 'adaptive_theme_helper');
+
+  if (empty($magnific_library_path)) {
+    drupal_set_message(t('Please install the Magnific Popup JS library.'), 'error');
+    return array();
+  }
+
+  $libraries['magnific_popup'] = array(
+    'title' => 'Magnific Popup jQuery Plugin',
+    'website' => 'http://dimsemenov.com/plugins/magnific-popup/',
+    'version' => '1',
+    'js' => array(
+      "{$magnific_library_path}/dist/jquery.magnific-popup.js" => array('type' => 'file'),
+    ),
+    'css' => array(
+      "{$magnific_library_path}/dist/magnific-popup.css" => array('type' => 'file'),
+    ),
+    'dependencies' => array(
+      array('system', 'jquery'),
+    ),
+  );
+
+  return $libraries;
+}
+
+
+/**
+ * Internal utility function to check required library status.
+ */
+function _adaptive_theme_helper_check_status() {
+  $jquery = drupal_get_library('system', 'jquery');
+  if (empty($jquery) || empty($jquery['version'])) {
+    // jQuery not available?  Totally an error condition.
+    // @todo We should watchdog this, and/or report it on site status screen.
+    return FALSE;
+  }
+  // Check if the available jQuery version is 1.7.2+.
+  // @see http://dimsemenov.com/plugins/magnific-popup/documentation.html
+  if (version_compare($jquery['version'], '1.7.2') < 0) {
+    // $jquery['version'] is lower than 1.7.2.
+    // @todo We should watchdog this, and/or report it on site status screen.
+    //return FALSE;
+  }
+  return TRUE;
+}
+
+/**
+ * Implements hook_view().
+ *
+ * Adds magnific to galleries.
+ */
+function adaptive_theme_helper_node_view($node, $view_mode, $langcode) {
+  // Add Magnific Popup library to page.
+  if ($view_mode == 'full') {
+    drupal_add_library('adaptive_theme_helper', 'magnific_popup', FALSE);
+    drupal_add_js(drupal_get_path('module', 'adaptive_theme_helper') .'/js/magnificPrep.js', 'file');
+  }
+}
