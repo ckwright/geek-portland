@@ -354,8 +354,57 @@ table.fc-header {
  * Event listing styles
  */
 .node-teaser {
-  .field-name-field-buy-tickets {
-    float: right;
+  /*
+   * Regions
+   */
+  .region-two-25-75-top {
+    .region-inner {
+      div,
+      ul,
+      li,
+      p {
+        display: inline;
+      }
+
+      ul {
+        margin: 0;
+      }
+
+      .field {
+        padding-right: 1em;
+      }
+
+      .field-name-field-event-category {
+        float:right;
+        display: block;
+
+        li {
+          display: list-item;
+        }
+      }
+
+      .field-name-ds-user-picture {
+        float: left;
+      }
+
+      .field-name-post-date,
+      .field-name-title {
+        display: block;
+      }
+
+      .field-name-field-location {
+        .field-name-title,
+        * {
+          display: inline;
+        }
+        .field-name-field-address {
+          div {
+            padding-right: 10px;
+          }
+        }
+      }
+
+    }
   }
 
   .region-two-25-75-second {
@@ -375,6 +424,35 @@ table.fc-header {
         padding: 0;
         list-style: none outside none;
       }
+    }
+  }
+
+  .region-two-25-75-bottom {
+    .field-type-image {
+      float: left;
+      margin-right: 2em;
+    }
+  }
+
+  /*
+   * Global field styles
+   */
+  .field-name-title {
+    display: block;
+  }
+
+  .field-name-node-link {
+    text-align: right;
+  }
+
+  .field-name-field-buy-tickets {
+    float: right;
+  }
+
+  .field-name-field-location {
+    display: block;
+    * {
+      display: inline;
     }
   }
 }
@@ -406,58 +484,6 @@ table.fc-header {
   }
 }
 
-article {
-  .region-two-25-75-top {
-    .region-inner {
-      div,
-      ul,
-      li,
-      p {
-        display: inline;
-      }
-
-      ul {
-        margin: 0;
-      }
-
-      .field {
-        padding-right: 1em;
-      }
-
-      .field-name-field-event-category {
-        float:right;
-        display: block;
-
-        li {
-          display: list-item;
-        }
-      }
-
-      .field-name-title {
-        display: block;
-      }
-
-      .field-name-ds-user-picture {
-        float: left;
-      }
-
-      .field-name-post-date {
-        display: block;
-      }
-    }
-  }
-
-  .region-two-25-75-bottom {
-    .field-type-image {
-      float: left;
-      margin-right: 2em;
-    }
-  }
-
-  .field-name-node-link {
-    text-align: right;
-  }
-}
 /*
  * Footer styles
  */

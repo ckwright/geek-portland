@@ -95,27 +95,31 @@ table.fc-header { border: 0; }
 .page-search .region-two-50-first { height: 100px; }
 
 /* Event listing styles */
-.node-teaser .field-name-field-buy-tickets { float: right; }
+.node-teaser { /* Regions */ /* Global field styles */ }
+.node-teaser .region-two-25-75-top .region-inner div, .node-teaser .region-two-25-75-top .region-inner ul, .node-teaser .region-two-25-75-top .region-inner li, .node-teaser .region-two-25-75-top .region-inner p { display: inline; }
+.node-teaser .region-two-25-75-top .region-inner ul { margin: 0; }
+.node-teaser .region-two-25-75-top .region-inner .field { padding-right: 1em; }
+.node-teaser .region-two-25-75-top .region-inner .field-name-field-event-category { float: right; display: block; }
+.node-teaser .region-two-25-75-top .region-inner .field-name-field-event-category li { display: list-item; }
+.node-teaser .region-two-25-75-top .region-inner .field-name-ds-user-picture { float: left; }
+.node-teaser .region-two-25-75-top .region-inner .field-name-post-date, .node-teaser .region-two-25-75-top .region-inner .field-name-title { display: block; }
+.node-teaser .region-two-25-75-top .region-inner .field-name-field-location .field-name-title, .node-teaser .region-two-25-75-top .region-inner .field-name-field-location * { display: inline; }
+.node-teaser .region-two-25-75-top .region-inner .field-name-field-location .field-name-field-address div { padding-right: 10px; }
 .node-teaser .region-two-25-75-second .field-name-field-admission, .node-teaser .region-two-25-75-second .field-name-field-age { display: inline; padding-right: 10px; }
 .node-teaser .region-two-25-75-second .field-name-field-admission *, .node-teaser .region-two-25-75-second .field-name-field-age * { display: inline; }
 .node-teaser .region-two-25-75-second .field-name-field-admission ul, .node-teaser .region-two-25-75-second .field-name-field-admission li, .node-teaser .region-two-25-75-second .field-name-field-age ul, .node-teaser .region-two-25-75-second .field-name-field-age li { margin: 0; padding: 0; list-style: none outside none; }
+.node-teaser .region-two-25-75-bottom .field-type-image { float: left; margin-right: 2em; }
+.node-teaser .field-name-title { display: block; }
+.node-teaser .field-name-node-link { text-align: right; }
+.node-teaser .field-name-field-buy-tickets { float: right; }
+.node-teaser .field-name-field-location { display: block; }
+.node-teaser .field-name-field-location * { display: inline; }
 
 /* Blog listing styles */
 .pane-views-exp-blog-page { margin: 0; }
 .pane-views-exp-blog-page .block-inner { margin: 0; }
 .pane-views-exp-blog-page .views-exposed-widgets .views-exposed-widget { padding-top: 0; display: table-cell; float: left; vertical-align: top; }
 .pane-views-exp-blog-page .views-exposed-widgets .form-type-textfield input { width: 170px; }
-
-article .region-two-25-75-top .region-inner div, article .region-two-25-75-top .region-inner ul, article .region-two-25-75-top .region-inner li, article .region-two-25-75-top .region-inner p { display: inline; }
-article .region-two-25-75-top .region-inner ul { margin: 0; }
-article .region-two-25-75-top .region-inner .field { padding-right: 1em; }
-article .region-two-25-75-top .region-inner .field-name-field-event-category { float: right; display: block; }
-article .region-two-25-75-top .region-inner .field-name-field-event-category li { display: list-item; }
-article .region-two-25-75-top .region-inner .field-name-title { display: block; }
-article .region-two-25-75-top .region-inner .field-name-ds-user-picture { float: left; }
-article .region-two-25-75-top .region-inner .field-name-post-date { display: block; }
-article .region-two-25-75-bottom .field-type-image { float: left; margin-right: 2em; }
-article .field-name-node-link { text-align: right; }
 
 /* Footer styles */
 #page > footer { background: none; padding: 0; }
