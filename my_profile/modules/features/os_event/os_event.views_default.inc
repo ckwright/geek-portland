@@ -132,37 +132,6 @@ function os_event_views_default_views() {
     4 => 0,
     5 => 0,
   );
-  /* Filter criterion: Content: Date (field_event_date:rrule) */
-  $handler->display->display_options['filters']['field_event_date_rrule']['id'] = 'field_event_date_rrule';
-  $handler->display->display_options['filters']['field_event_date_rrule']['table'] = 'field_data_field_event_date';
-  $handler->display->display_options['filters']['field_event_date_rrule']['field'] = 'field_event_date_rrule';
-  $handler->display->display_options['filters']['field_event_date_rrule']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_event_date_rrule']['value'] = 'FREQ=WEEKLY';
-  $handler->display->display_options['filters']['field_event_date_rrule']['group'] = 1;
-  $handler->display->display_options['filters']['field_event_date_rrule']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator_id'] = 'field_event_date_rrule_op';
-  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['label'] = 'Include weekly events?';
-  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator'] = 'field_event_date_rrule_op';
-  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['identifier'] = 'field_event_date_rrule';
-  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['multiple'] = TRUE;
-  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-  );
-  $handler->display->display_options['filters']['field_event_date_rrule']['is_grouped'] = TRUE;
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['identifier'] = 'weekly';
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['widget'] = 'radios';
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['default_group'] = '1';
-  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['group_items'] = array(
-    1 => array(
-      'title' => 'Show weekly events',
-      'operator' => 'not',
-      'value' => 'FREQ=WEEKLY',
-    ),
-  );
   /* Filter criterion: Content: Age (field_age) */
   $handler->display->display_options['filters']['field_age_tid']['id'] = 'field_age_tid';
   $handler->display->display_options['filters']['field_age_tid']['table'] = 'field_data_field_age';
@@ -201,6 +170,37 @@ function os_event_views_default_views() {
   );
   $handler->display->display_options['filters']['field_admission_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_admission_tid']['vocabulary'] = 'admission';
+  /* Filter criterion: Content: Date (field_event_date:rrule) */
+  $handler->display->display_options['filters']['field_event_date_rrule']['id'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_rrule']['field'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['operator'] = 'contains';
+  $handler->display->display_options['filters']['field_event_date_rrule']['value'] = 'FREQ=WEEKLY';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group'] = 1;
+  $handler->display->display_options['filters']['field_event_date_rrule']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator_id'] = 'field_event_date_rrule_op';
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['label'] = 'Include weekly events?';
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator'] = 'field_event_date_rrule_op';
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['identifier'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_event_date_rrule']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
+  $handler->display->display_options['filters']['field_event_date_rrule']['is_grouped'] = TRUE;
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['identifier'] = 'weekly';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['widget'] = 'radios';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['default_group'] = '1';
+  $handler->display->display_options['filters']['field_event_date_rrule']['group_info']['group_items'] = array(
+    1 => array(
+      'title' => 'Show weekly events',
+      'operator' => 'not',
+      'value' => 'FREQ=WEEKLY',
+    ),
+  );
   /* Filter criterion: Search: Search Terms */
   $handler->display->display_options['filters']['keys']['id'] = 'keys';
   $handler->display->display_options['filters']['keys']['table'] = 'search_index';
