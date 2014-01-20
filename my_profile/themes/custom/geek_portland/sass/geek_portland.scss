@@ -330,6 +330,24 @@ table.fc-header {
   }
 }
 
+.field-name-field-admission,
+.field-name-field-age
+{
+  display: inline;
+  padding-right: 10px;
+
+  * {
+    display: inline;
+  }
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+  }
+}
+
 /*
  * Search styles
  */
@@ -431,23 +449,6 @@ table.fc-header {
   }
 
   .region-two-25-75-second {
-    .field-name-field-admission,
-    .field-name-field-age
-    {
-      display: inline;
-      padding-right: 10px;
-
-      * {
-        display: inline;
-      }
-
-      ul,
-      li {
-        margin: 0;
-        padding: 0;
-        list-style: none outside none;
-      }
-    }
   }
 
   .region-two-25-75-bottom {
