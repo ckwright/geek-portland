@@ -6,6 +6,7 @@ dependencies[] = adaptive_theme_helper
 dependencies[] = context_admin
 dependencies[] = ctools
 dependencies[] = date
+dependencies[] = date_ical
 dependencies[] = date_popup
 dependencies[] = date_repeat
 dependencies[] = date_repeat_field
