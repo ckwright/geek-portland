@@ -307,6 +307,30 @@ table.fc-header {
 }
 
 /*
+ * General styles
+ */
+.field-name-field-buy-tickets {
+  float: right;
+}
+
+.field-name-post-date,
+.field-name-title {
+  display: block;
+}
+
+.field-name-field-location {
+  .field-name-title,
+  * {
+    display: inline;
+  }
+  .field-name-field-address {
+    div {
+      padding-right: 10px;
+    }
+  }
+}
+
+/*
  * Search styles
  */
 .top-right-dropdown {
@@ -393,7 +417,6 @@ table.fc-header {
         float: left;
       }
 
-      .field-name-post-date,
       .field-name-title {
         display: block;
       }
@@ -403,13 +426,7 @@ table.fc-header {
         * {
           display: inline;
         }
-        .field-name-field-address {
-          div {
-            padding-right: 10px;
-          }
-        }
       }
-
     }
   }
 
@@ -449,10 +466,6 @@ table.fc-header {
 
   .field-name-node-link {
     text-align: right;
-  }
-
-  .field-name-field-buy-tickets {
-    float: right;
   }
 
   .field-name-field-location {
