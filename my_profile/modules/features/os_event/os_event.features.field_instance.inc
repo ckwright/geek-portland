@@ -406,12 +406,9 @@ function os_event_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
+        'module' => 'adaptive_theme_helper',
+        'settings' => array(),
+        'type' => 'magnific_slideshow',
         'weight' => 6,
       ),
       'teaser' => array(

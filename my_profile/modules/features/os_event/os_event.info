@@ -2,6 +2,7 @@ name = Events
 description = OpenSourcery event feature
 core = 7.x
 package = Features
+dependencies[] = adaptive_theme_helper
 dependencies[] = context_admin
 dependencies[] = ctools
 dependencies[] = date
