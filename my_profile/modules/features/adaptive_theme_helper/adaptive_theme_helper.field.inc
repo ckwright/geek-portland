@@ -20,6 +20,7 @@ function adaptive_theme_helper_field_formatter_info() {
     'magnific_slideshow' => array(
       'label' => t('Magnific slideshow'),
       'field types' => array('image'),
+      'settings' => array('large_image_style' => '', 'small_image_style' => ''),
     ),
   );
 }
