@@ -62,6 +62,9 @@ projects[geofield][version] = "2.1"
 
 projects[geophp][version] = "1.7"
 
+; iCal
+projects[date_ical][version] = "3.0"
+
 ; JQuery Update
 projects[jquery_update][version] = "2.3"
 
@@ -94,6 +97,10 @@ libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar
 ; Magnific Popup
 libraries[magnific-popup][download][type] = "git"
 libraries[magnific-popup][download][url] = "https://github.com/dimsemenov/Magnific-Popup.git"
+
+; iCalcreator
+libraries[iCalcreator][download][type] = "git"
+libraries[iCalcreator][download][url] = "git://github.com/iCalcreator/iCalcreator.git"
 
 ;
 ; Theme
