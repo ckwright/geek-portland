@@ -51,7 +51,8 @@ table.fc-header { border: 0; }
 #content .view-content .item-list ul li.views-row { list-style: none outside none; }
 #content .node, #content .view-empty { background: #fff; padding: 1em; }
 #content .node .region-inner, #content .view-empty .region-inner { margin: 0 25px; }
-#content .field-type-image figure { margin: 0; }
+#content .field-type-image figure { margin: 0; float: left; padding-right: 10px; }
+#content .field-type-image figure:first { float: none; }
 #content .node-blurb { margin-bottom: .5em; }
 #content .node-blurb p { margin: 0; }
 #content .node-blurb .field-type-image figure img { max-width: 90%; }

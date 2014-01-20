@@ -173,6 +173,12 @@ table.fc-header {
   .field-type-image {
       figure {
         margin: 0;
+        float: left;
+        padding-right: 10px;
+
+        &:first {
+          float: none;
+        }
       }
     }
 
