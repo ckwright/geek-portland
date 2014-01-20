@@ -47,7 +47,22 @@ function adaptive_theme_helper_field_formatter_view($entity_type, $entity, $fiel
     }
   }
   elseif ($display['type'] === 'magnific_slideshow') {
+    $image_style = $display['settings']['large_image_style'];
+    foreach ($items as $delta => $item) {
+      $uri = array(
+        'path' => file_create_url($item['uri']),
+        'options' => array(),
+      );
 
+      $element[$delta] = array(
+        '#theme' => 'image_formatter',
+        '#item' => $item,
+        '#image_style' => $image_style,
+        '#path' => isset($uri) ? $uri : '',
+      );
+
+      $image_style = $display['settings']['small_image_style'];
+    }
   }
 
   return $element;
