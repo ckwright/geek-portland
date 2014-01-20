@@ -111,3 +111,20 @@ function os_event_fullcalendar_options_info() {
     ),
   );
 }
+
+function os_event_render_map_link($field) {
+  if(isset($field['entity']->field_location['und'][0]['entity']->field_address['und'][0])) {
+    $map = $field['entity']->field_location['und'][0]['entity']->field_address['und'][0];
+    $address = $map['thoroughfare'] . '+' . $map['postal_code'];
+  }
+  $output = l('Map', 'http://maps.google.com?q=' . $address);
+
+  return $output;
+}
+
+
+function os_event_render_ical_link($field) {
+  $output = l('iCal', 'events/ical/' . $field['entity']->nid . '.ics');
+
+  return $output;
+}

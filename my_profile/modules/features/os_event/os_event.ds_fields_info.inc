@@ -12,11 +12,9 @@ function os_event_ds_fields_info($entity_type) {
   $fields = array();
 
   $fields['node']['ical_link'] = array(
-
-    // title: title of the field
     'title' => t('iCal link'),
     'field_type' => DS_FIELD_TYPE_FUNCTION,
-    'function' => 'theme_ical_link',
+    'function' => 'os_event_render_ical_link',
     'properties' => array(
       'settings' => array(
         'link text' => array('type' => 'textfield'),
@@ -28,11 +26,9 @@ function os_event_ds_fields_info($entity_type) {
   );
 
   $fields['node']['map_link'] = array(
-
-    // title: title of the field
-    'title' => t('iCal link'),
+    'title' => t('Map link'),
     'field_type' => DS_FIELD_TYPE_FUNCTION,
-    'function' => 'theme_map_link',
+    'function' => 'os_event_render_map_link',
     'properties' => array(
       'settings' => array(
         'link text' => array('type' => 'textfield'),
@@ -43,6 +39,6 @@ function os_event_ds_fields_info($entity_type) {
     )
   );
 
-  return array('node' => $fields);
+  return $fields;
 
 }
