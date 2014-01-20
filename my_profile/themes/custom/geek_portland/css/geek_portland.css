@@ -89,7 +89,8 @@ table.fc-header { border: 0; }
 .field-name-post-date, .field-name-title { display: block; }
 
 .field-name-field-location .field-name-title, .field-name-field-location * { display: inline; }
-.field-name-field-location .field-name-field-address div { padding-right: 10px; }
+.field-name-field-location .field-name-field-address > div { padding-right: 10px; }
+.field-name-field-location .field-name-field-address > div:after { display: none; }
 
 .field-name-field-admission, .field-name-field-age { display: inline; padding-right: 10px; }
 .field-name-field-admission *, .field-name-field-age * { display: inline; }

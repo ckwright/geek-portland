@@ -324,8 +324,12 @@ table.fc-header {
     display: inline;
   }
   .field-name-field-address {
-    div {
+    & > div {
       padding-right: 10px;
+
+      &:after {
+        display: none;
+      }
     }
   }
 }
