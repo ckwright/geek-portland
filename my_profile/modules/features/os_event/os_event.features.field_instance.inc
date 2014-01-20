@@ -407,7 +407,10 @@ function os_event_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'adaptive_theme_helper',
-        'settings' => array(),
+        'settings' => array(
+          'large_image_style' => 'large_image',
+          'small_image_style' => 'tiny_image',
+        ),
         'type' => 'magnific_slideshow',
         'weight' => 6,
       ),
