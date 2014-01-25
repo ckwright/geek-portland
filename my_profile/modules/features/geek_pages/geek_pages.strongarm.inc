@@ -37,6 +37,18 @@ function geek_pages_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'blurb' => array(
+        'custom_settings' => TRUE,
+      ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'location_link' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

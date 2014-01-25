@@ -17,6 +17,15 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 300,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -71,6 +80,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'This information on the Geek Page\'s physical location will be used to link to a google map offsite.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'addressfield',
@@ -131,6 +146,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'The Geek Page\'s official email address.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -170,6 +191,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'What sort of geeky interests are covered by this geek page?',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
@@ -210,6 +237,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'The link to this geek page\'s Facebook page',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -266,6 +299,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'What type of geek page is this?',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
@@ -305,6 +344,16 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Main image will be resized to 350px wide by 250px tall and should be at least that large to begin with. Subsequent images on the page will be shown in a lightbox.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'tiny_image',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'image',
@@ -375,6 +424,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Pull in address, website, and phone information from an existing venue.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -417,6 +472,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'If changing a telephone number, make sure to change the phone number on any related venue pages, if applicable.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -456,6 +517,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Link to the podcast feed for this geek page. When you go to this link, you should see xml.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -511,6 +578,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Enter the full url to your twitter home page, e.g. http://twitter.com/geekportland',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -567,6 +640,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -623,6 +702,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Link to the Geek Page\'s youtube channel',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -683,6 +768,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Determine if this is an OG group.',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'og_ui',
@@ -737,6 +828,12 @@ function geek_pages_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'og_ui',

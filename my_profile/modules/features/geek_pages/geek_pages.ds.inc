@@ -12,6 +12,31 @@ function geek_pages_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|geek_page|blurb';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'geek_page';
+  $ds_fieldsetting->view_mode = 'blurb';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+      ),
+    ),
+    'node_link' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['node|geek_page|blurb'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|geek_page|teaser';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'geek_page';
@@ -38,6 +63,50 @@ function geek_pages_ds_field_settings_info() {
  */
 function geek_pages_ds_layout_settings_info() {
   $export = array();
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|geek_page|blurb';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'geek_page';
+  $ds_layout->view_mode = 'blurb';
+  $ds_layout->layout = 'panels-two_25_75';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'two_25_75_top' => array(
+        0 => 'title',
+      ),
+      'two_25_75_first' => array(
+        1 => 'field_image',
+      ),
+      'two_25_75_second' => array(
+        2 => 'body',
+        3 => 'node_link',
+      ),
+    ),
+    'fields' => array(
+      'title' => 'two_25_75_top',
+      'field_image' => 'two_25_75_first',
+      'body' => 'two_25_75_second',
+      'node_link' => 'two_25_75_second',
+    ),
+    'limit' => array(
+      'field_image' => '1',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'two_25_75_top' => 'div',
+      'two_25_75_first' => 'div',
+      'two_25_75_second' => 'div',
+      'two_25_75_bottom' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|geek_page|blurb'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
