@@ -279,7 +279,12 @@ table.fc-header {
     margin: 0;
 
     li {
-      list-style: none inside url("images/tag_5063.svg");
+      list-style: none inside none;
+
+      &:before {
+        @include geek_font_prepare;
+        content: '\54'; /* 'T' */
+      }
     }
   }
 }

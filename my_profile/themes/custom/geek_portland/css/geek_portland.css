@@ -75,7 +75,8 @@ table.fc-header { border: 0; }
 
 .field-name-field-event-category { float: left; }
 .field-name-field-event-category ul { margin: 0; }
-.field-name-field-event-category ul li { list-style: none inside url("images/tag_5063.svg"); }
+.field-name-field-event-category ul li { list-style: none inside none; }
+.field-name-field-event-category ul li:before { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; content: '\54'; /* 'T' */ }
 
 .field-name-og-group-ref .item-list ul { margin: 0; }
 .field-name-og-group-ref .item-list ul li { list-style: none inside url("images/address_20757.svg"); }
