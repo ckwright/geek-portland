@@ -7,7 +7,6 @@
  * remember to update the name in the info file
  * as well.
  */
-@import "compass/css3";
 @import "h1s";
 
 @include font-face("geek_portland", font-files("geek_portland.woff", "geek_portland.ttf", "geek_portland.svg"), "geek_portland.eot");
@@ -297,7 +296,6 @@ table.fc-header {
   }
 }
 
-
 /*
  * Front page
  */
@@ -309,10 +307,6 @@ table.fc-header {
 /*
  * General styles
  */
-.field-name-field-buy-tickets {
-  float: right;
-}
-
 .field-name-post-date,
 .field-name-title {
   display: block;
@@ -349,6 +343,45 @@ table.fc-header {
     margin: 0;
     padding: 0;
     list-style: none outside none;
+  }
+}
+
+.field-name-field-buy-tickets,
+.field-name-field-more-info,
+.field-name-map-link,
+.field-name-ical-link {
+  float: right;
+  padding-left: .5em;
+
+  a {
+    &:before {
+      color: #000;
+      @include geek_font_prepare;
+    }
+  }
+}
+
+.field-name-field-buy-tickets {
+  a {
+    &:before {
+      content: '\47'; /* 'Y' */
+    }
+  }
+}
+
+.field-name-field-more-info {
+  a {
+    &:before {
+      content: '\49'; /* 'I' */
+    }
+  }
+}
+
+.field-name-ical-link {
+  a {
+    &:before {
+      content: '\43'; /* 'C' */
+    }
   }
 }
 
