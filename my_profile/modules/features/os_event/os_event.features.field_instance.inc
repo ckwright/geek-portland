@@ -647,7 +647,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 21,
       ),
       'ical' => array(
         'label' => 'above',
@@ -702,7 +702,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 20,
       ),
       'ical' => array(
         'label' => 'above',
