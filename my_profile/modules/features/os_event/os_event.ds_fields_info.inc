@@ -18,10 +18,8 @@ function os_event_ds_fields_info($entity_type) {
     'properties' => array(
       'settings' => array(
         'link text' => array('type' => 'textfield'),
-        'wrapper' => array('type' => 'textfield', 'description' => t('Eg: h1, h2, p')),
-        'class' => array('type' => 'textfield', 'description' => t('Put a class on the wrapper. Eg: block-title')),
       ),
-      'default' => array('link text' => 'Read more', 'wrapper' => '', 'class' => '', 'link' => 1),
+      'default' => array('link text' => 'iCal'),
     )
   );
 
@@ -32,10 +30,8 @@ function os_event_ds_fields_info($entity_type) {
     'properties' => array(
       'settings' => array(
         'link text' => array('type' => 'textfield'),
-        'wrapper' => array('type' => 'textfield', 'description' => t('Eg: h1, h2, p')),
-        'class' => array('type' => 'textfield', 'description' => t('Put a class on the wrapper. Eg: block-title')),
       ),
-      'default' => array('link text' => 'Read more', 'wrapper' => '', 'class' => '', 'link' => 1),
+      'default' => array('link text' => 'Map'),
     )
   );
 

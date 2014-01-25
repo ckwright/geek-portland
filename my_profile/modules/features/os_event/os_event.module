@@ -112,19 +112,54 @@ function os_event_fullcalendar_options_info() {
   );
 }
 
+/**
+ * Renders a map link.
+ *
+ * @param array $field
+ * @return string
+ */
 function os_event_render_map_link($field) {
+  $settings = isset($field['formatter_settings']) ? $field['formatter_settings'] : array();
+  $settings += $field['properties']['default'];
+
   if(isset($field['entity']->field_location['und'][0]['entity']->field_address['und'][0])) {
     $map = $field['entity']->field_location['und'][0]['entity']->field_address['und'][0];
     $address = $map['thoroughfare'] . '+' . $map['postal_code'];
   }
-  $output = l('Map', 'http://maps.google.com?q=' . $address);
+  $output = l($settings['link text'], 'http://maps.google.com?q=' . $address);
 
   return $output;
 }
 
-
+/**
+ * Renders an iCal link.
+ *
+ * @param array $field
+ * @return string
+ */
 function os_event_render_ical_link($field) {
-  $output = l('iCal', 'events/ical/' . $field['entity']->nid . '.ics');
+  $settings = isset($field['formatter_settings']) ? $field['formatter_settings'] : array();
+  $settings += $field['properties']['default'];
+
+  $output = l($settings['link text'], 'events/ical/' . $field['entity']->nid . '.ics');
 
   return $output;
+}
+
+/**
+ * Implements hook_ds_field_format_summary().
+ *
+ * Seems to be needed to pull in the summary.
+ */
+function os_event_ds_field_format_summary($field) {
+  return ds_ds_field_format_summary($field);
+}
+
+/**
+ * Implements hook_ds_field_settings_form().
+ *
+ * Seems to be needed to pull in the settings form.
+ */
+function os_event_ds_field_settings_form($field) {
+  return ds_ds_field_settings_form($field);
 }
