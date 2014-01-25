@@ -364,7 +364,7 @@ table.fc-header {
 .field-name-field-buy-tickets {
   a {
     &:before {
-      content: '\47'; /* 'Y' */
+      content: '\47'; /* 'G' */
     }
   }
 }
@@ -373,6 +373,13 @@ table.fc-header {
   a {
     &:before {
       content: '\49'; /* 'I' */
+    }
+  }
+}
+.field-name-map-link {
+  a {
+    &:before {
+      content: '\4D'; /* 'M' */
     }
   }
 }
