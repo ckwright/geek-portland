@@ -37,6 +37,31 @@ function os_event_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|event|default';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'event';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'ical_link' => array(
+      'weight' => '11',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'map_link' => array(
+      'weight' => '10',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['node|event|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|event|teaser';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'event';
@@ -113,6 +138,65 @@ function os_event_ds_layout_settings_info() {
     ),
   );
   $export['node|event|blurb'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|event|default';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'event';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'panels-two_25_75';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'two_25_75_top' => array(
+        0 => 'field_buy_tickets',
+        1 => 'title',
+        2 => 'field_event_date',
+        3 => 'field_location',
+        4 => 'field_admission',
+        5 => 'field_age',
+      ),
+      'two_25_75_first' => array(
+        6 => 'field_image',
+      ),
+      'two_25_75_second' => array(
+        7 => 'body',
+      ),
+      'two_25_75_bottom' => array(
+        8 => 'field_event_category',
+        9 => 'field_more_info',
+        10 => 'map_link',
+        11 => 'ical_link',
+      ),
+    ),
+    'fields' => array(
+      'field_buy_tickets' => 'two_25_75_top',
+      'title' => 'two_25_75_top',
+      'field_event_date' => 'two_25_75_top',
+      'field_location' => 'two_25_75_top',
+      'field_admission' => 'two_25_75_top',
+      'field_age' => 'two_25_75_top',
+      'field_image' => 'two_25_75_first',
+      'body' => 'two_25_75_second',
+      'field_event_category' => 'two_25_75_bottom',
+      'field_more_info' => 'two_25_75_bottom',
+      'map_link' => 'two_25_75_bottom',
+      'ical_link' => 'two_25_75_bottom',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'two_25_75_top' => 'div',
+      'two_25_75_first' => 'div',
+      'two_25_75_second' => 'div',
+      'two_25_75_bottom' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|event|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
