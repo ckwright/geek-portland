@@ -131,6 +131,9 @@ table.fc-header { border: 0; }
 .node-teaser .field-name-field-location { display: block; }
 .node-teaser .field-name-field-location * { display: inline; }
 
+.node-full .region-two-25-75-top .field { padding-bottom: 0; }
+.node-full .date-repeat-rule { color: #5E5247; }
+
 /* Blog listing styles */
 .pane-views-exp-blog-page { margin: 0; }
 .pane-views-exp-blog-page .block-inner { margin: 0; }
