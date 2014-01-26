@@ -331,14 +331,19 @@ table.fc-header {
 }
 
 .field-name-field-address {
-    & > div {
-      padding-right: 10px;
+  display:inline;
+  & > div {
+    padding-right: 10px;
 
-      &:after {
-        display: none;
-      }
+    &:after {
+      display: none;
     }
   }
+}
+
+.field-name-field-phone {
+  display: inline;
+}
 
 .field-name-field-admission,
 .field-name-field-age

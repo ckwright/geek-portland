@@ -90,8 +90,11 @@ table.fc-header { border: 0; }
 
 .field-name-field-location .field-name-title, .field-name-field-location *, .field-name-field-address .field-name-title, .field-name-field-address * { display: inline; }
 
+.field-name-field-address { display: inline; }
 .field-name-field-address > div { padding-right: 10px; }
 .field-name-field-address > div:after { display: none; }
+
+.field-name-field-phone { display: inline; }
 
 .field-name-field-admission, .field-name-field-age { display: inline; padding-right: 10px; }
 .field-name-field-admission *, .field-name-field-age * { display: inline; }
