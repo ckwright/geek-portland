@@ -157,3 +157,8 @@ table.fc-header { border: 0; }
 .view-geekpages .views-row { float: left; width: 48%; margin-bottom: 1em; }
 .view-geekpages .views-row-even { margin-left: 1%; }
 .view-geekpages .views-row-odd { margin-right: 1%; clear: left; }
+
+.node-type-geek-page .field-name-field-event-category { clear: right; }
+
+.field-name-field-twitter, .field-name-field-facebook, .field-name-field-youtube, .field-name-field-podcast-feed { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; font-size: 2em; float: right; }
+.field-name-field-twitter a, .field-name-field-facebook a, .field-name-field-youtube a, .field-name-field-podcast-feed a { color: #000; }
