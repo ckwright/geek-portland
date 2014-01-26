@@ -290,17 +290,16 @@ table.fc-header {
   }
 }
 
-.field-name-og-group-ref {
-  .item-list {
-    ul {
-      margin: 0;
+.field-name-field-geek-page-type-s-,
+.field-name-og-group-ref .item-list {
+  ul {
+    margin: 0;
 
-      li {
-        list-style: none inside none;
-        &:before {
-          content: '\41'; /* 'A' */
-          @include geek_font_prepare;
-        }
+    li {
+      list-style: none inside none;
+      &:before {
+        content: '\41'; /* 'A' */
+        @include geek_font_prepare;
       }
     }
   }
