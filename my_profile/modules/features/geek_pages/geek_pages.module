@@ -5,3 +5,19 @@
  */
 
 include_once 'geek_pages.features.inc';
+
+
+/**
+ * Renders an upcoming events link.
+ *
+ * @param array $field
+ * @return string
+ */
+function geek_pages_render_related_link($field) {
+  $settings = isset($field['formatter_settings']) ? $field['formatter_settings'] : array();
+  $settings += $field['properties']['default'];
+
+  $output = l($settings['link text'], 'events/list?geeks=' . $field['entity']->nid);
+
+  return $output;
+}
