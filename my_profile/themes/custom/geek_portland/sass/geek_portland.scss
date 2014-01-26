@@ -322,12 +322,15 @@ table.fc-header {
   display: block;
 }
 
-.field-name-field-location {
+.field-name-field-location,
+.field-name-field-address {
   .field-name-title,
   * {
     display: inline;
   }
-  .field-name-field-address {
+}
+
+.field-name-field-address {
     & > div {
       padding-right: 10px;
 
@@ -336,7 +339,6 @@ table.fc-header {
       }
     }
   }
-}
 
 .field-name-field-admission,
 .field-name-field-age
