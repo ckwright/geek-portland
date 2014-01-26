@@ -173,6 +173,7 @@ table.fc-header {
       figure {
         margin: 0;
         float: left;
+        clear: left;
         padding-right: 10px;
 
         &:first {
@@ -295,7 +296,11 @@ table.fc-header {
       margin: 0;
 
       li {
-        list-style: none inside url("images/address_20757.svg");
+        list-style: none inside none;
+        &:before {
+          content: '\41'; /* 'A' */
+          @include geek_font_prepare;
+        }
       }
     }
   }
@@ -531,6 +536,10 @@ table.fc-header {
     .field {
       padding-bottom: 0;
     }
+
+    .field-name-field-event-category {
+      float: right;
+    }
   }
 
   .date-repeat-rule {
@@ -597,5 +606,25 @@ table.fc-header {
         }
       }
     }
+  }
+}
+
+/*
+ * Geek pages
+ */
+.view-geekpages {
+  .views-row {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+  }
+
+  .views-row-even {
+    margin-left: 1%;
+  }
+
+  .views-row-odd {
+    margin-right: 1%;
+    clear: left;
   }
 }

@@ -51,7 +51,7 @@ table.fc-header { border: 0; }
 #content .view-content .item-list ul li.views-row { list-style: none outside none; }
 #content .node, #content .view-empty { background: #fff; padding: 1em; }
 #content .node .region-inner, #content .view-empty .region-inner { margin: 0 25px; }
-#content .field-type-image figure { margin: 0; float: left; padding-right: 10px; }
+#content .field-type-image figure { margin: 0; float: left; clear: left; padding-right: 10px; }
 #content .field-type-image figure:first { float: none; }
 #content .node-blurb { margin-bottom: .5em; }
 #content .node-blurb p { margin: 0; }
@@ -79,7 +79,8 @@ table.fc-header { border: 0; }
 .field-name-field-event-category ul li:before { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; content: '\54'; /* 'T' */ }
 
 .field-name-og-group-ref .item-list ul { margin: 0; }
-.field-name-og-group-ref .item-list ul li { list-style: none inside url("images/address_20757.svg"); }
+.field-name-og-group-ref .item-list ul li { list-style: none inside none; }
+.field-name-og-group-ref .item-list ul li:before { content: '\41'; /* 'A' */ font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
 
 /* Front page */
 .homepage-listing { height: 475px; overflow: auto; }
@@ -135,6 +136,7 @@ table.fc-header { border: 0; }
 .node-teaser .field-name-field-location * { display: inline; }
 
 .node-full .region-two-25-75-top .field { padding-bottom: 0; }
+.node-full .region-two-25-75-top .field-name-field-event-category { float: right; }
 .node-full .date-repeat-rule { color: #5E5247; }
 
 /* Blog listing styles */
@@ -150,3 +152,8 @@ table.fc-header { border: 0; }
 #page > footer .block-menu-footer-menu ul li { display: inline; padding: 0 4em; border-right: 2px solid #e6e4de; }
 #page > footer .block-menu-footer-menu ul li.last { border: none; }
 #page > footer .block-menu-footer-menu ul li a { font-size: 1.3em; }
+
+/* Geek pages */
+.view-geekpages .views-row { float: left; width: 48%; margin-bottom: 1em; }
+.view-geekpages .views-row-even { margin-left: 1%; }
+.view-geekpages .views-row-odd { margin-right: 1%; clear: left; }
