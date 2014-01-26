@@ -431,12 +431,8 @@ function geek_pages_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'links' => 1,
-          'view_mode' => 'location_link',
-        ),
-        'type' => 'entityreference_entity_view',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 7,
       ),
       'teaser' => array(
