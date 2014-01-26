@@ -111,7 +111,7 @@ function geek_pages_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'one';
+  $display->layout = 'two_25_75';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -125,7 +125,7 @@ function geek_pages_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'one_main';
+    $pane->panel = 'two_25_75_top';
     $pane->type = 'page_title';
     $pane->subtype = 'page_title';
     $pane->shown = TRUE;
@@ -146,10 +146,10 @@ function geek_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['one_main'][0] = 'new-1';
+    $display->panels['two_25_75_top'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'one_main';
+    $pane->panel = 'two_25_75_top';
     $pane->type = 'views_panes';
     $pane->subtype = 'geekpages-panel_pane_1';
     $pane->shown = TRUE;
@@ -164,7 +164,7 @@ function geek_pages_default_page_manager_pages() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['one_main'][1] = 'new-2';
+    $display->panels['two_25_75_top'][1] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
