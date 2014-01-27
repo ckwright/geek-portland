@@ -418,6 +418,20 @@ table.fc-header {
   }
 }
 
+
+.field-name-field-twitter,
+.field-name-field-facebook,
+.field-name-field-youtube,
+.field-name-field-podcast-feed {
+  @include geek_font_prepare;
+  font-size: 2em;
+  float: right;
+
+  a {
+    color: #000;
+  }
+}
+
 /*
  * Search styles
  */
@@ -648,18 +662,5 @@ table.fc-header {
 .node-type-geek-page {
   .field-name-field-event-category {
     clear: right;
-  }
-}
-
-.field-name-field-twitter,
-.field-name-field-facebook,
-.field-name-field-youtube,
-.field-name-field-podcast-feed {
-  @include geek_font_prepare;
-  font-size: 2em;
-  float: right;
-
-  a {
-    color: #000;
   }
 }
