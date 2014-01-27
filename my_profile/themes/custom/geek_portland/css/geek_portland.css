@@ -82,6 +82,8 @@ table.fc-header { border: 0; }
 .field-name-field-geek-page-type-s- ul li, .field-name-og-group-ref .item-list ul li { list-style: none inside none; }
 .field-name-field-geek-page-type-s- ul li:before, .field-name-og-group-ref .item-list ul li:before { content: '\41'; /* 'A' */ font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
 
+.field-name-related-link a:before { color: #000; content: '\43'; /* 'C' */ font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
+
 /* Front page */
 .homepage-listing { height: 475px; overflow: auto; }
 

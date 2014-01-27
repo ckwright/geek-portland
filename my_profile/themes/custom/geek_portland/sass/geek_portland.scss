@@ -305,6 +305,16 @@ table.fc-header {
   }
 }
 
+.field-name-related-link {
+  a {
+    &:before {
+      color: #000;
+      content: '\43'; /* 'C' */
+      @include geek_font_prepare;
+    }
+  }
+}
+
 /*
  * Front page
  */
