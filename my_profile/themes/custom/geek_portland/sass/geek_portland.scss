@@ -273,8 +273,7 @@ table.fc-header {
   margin-bottom: 20px;
 }
 
-.field-name-field-event-category,
-.field-name-field-blog-category {
+.field-name-field-event-category {
   float: left;
 
   ul {
@@ -300,9 +299,9 @@ table.fc-header {
   }
 }
 
-.field-name-ds-user-picture,
-.field-name-posted-by {
+.field-name-ds-user-picture {
   float: left;
+  padding-right: 10px;
 }
 
 
@@ -349,7 +348,8 @@ table.fc-header {
 }
 
 .field-name-field-location,
-.field-name-field-address {
+.field-name-field-address,
+{
   .field-name-title,
   * {
     display: inline;
@@ -367,8 +367,14 @@ table.fc-header {
   }
 }
 
-.field-name-field-phone {
+.field-name-field-phone,
+.field-name-posted-by,
+.field-name-field-blog-category {
   display: inline;
+
+  * {
+    display: inline;
+  }
 }
 
 .field-name-field-admission,
