@@ -17,7 +17,7 @@ function geek_pages_render_related_link($field) {
   $settings = isset($field['formatter_settings']) ? $field['formatter_settings'] : array();
   $settings += $field['properties']['default'];
 
-  $output = l($settings['link text'], 'events/list?geeks=' . $field['entity']->nid);
+  $output = l($settings['link text'], 'events/list', array('query' => array('geeks' => $field['entity']->nid)));
 
   return $output;
 }
