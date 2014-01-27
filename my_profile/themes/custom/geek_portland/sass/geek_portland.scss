@@ -273,7 +273,8 @@ table.fc-header {
   margin-bottom: 20px;
 }
 
-.field-name-field-event-category {
+.field-name-field-event-category,
+.field-name-field-blog-category {
   float: left;
 
   ul {
@@ -289,6 +290,22 @@ table.fc-header {
     }
   }
 }
+
+.field-name-field-blog-category {
+  ul li {
+    &:before {
+      content: '\e800'; /* 'C' */
+      @include geek_font_prepare;
+    }
+  }
+}
+
+.field-name-ds-user-picture,
+.field-name-posted-by {
+  float: left;
+}
+
+
 
 .field-name-field-geek-page-type-s-,
 .field-name-og-group-ref .item-list {
