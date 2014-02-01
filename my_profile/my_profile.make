@@ -80,6 +80,9 @@ projects[location][version] = "3.1"
 ; Link
 projects[link][version] = "1.2"
 
+; References dialog
+projects[references_dialog][version] = "1.0-alpha4"
+
 ; Views Bulk Operations
 projects[views_bulk_operations][version] = "3.2"
 
