@@ -82,6 +82,8 @@ projects[link][version] = "1.2"
 
 ; References dialog
 projects[references_dialog][version] = "1.0-alpha4"
+; Entity Reference incorrectly calls entity_access() https://drupal.org/comment/7893609#comment-7893609
+projects[references_dialog][patch][] = "https://drupal.org/files/references_dialog-wrong-call-to-entity_access-1780626-6.patch"
 
 ; Views Bulk Operations
 projects[views_bulk_operations][version] = "3.2"
