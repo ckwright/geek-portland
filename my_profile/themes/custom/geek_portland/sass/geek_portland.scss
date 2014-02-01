@@ -169,6 +169,13 @@ table.fc-header {
     }
   }
 
+  .rounded-corner-panel {
+    .view-empty {
+      border: 0;
+      @include single-box-shadow(#FFF);
+    }
+  }
+
   .field-type-image {
       figure {
         margin: 0;

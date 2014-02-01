@@ -51,6 +51,7 @@ table.fc-header { border: 0; }
 #content .view-content .item-list ul li.views-row { list-style: none outside none; }
 #content .node, #content .view-empty { background: #fff; padding: 1em; }
 #content .node .region-inner, #content .view-empty .region-inner { margin: 0 25px; }
+#content .rounded-corner-panel .view-empty { border: 0; -webkit-box-shadow: 0px 0px 5px white; -moz-box-shadow: 0px 0px 5px white; box-shadow: 0px 0px 5px white; }
 #content .field-type-image figure { margin: 0; float: left; clear: left; padding-right: 10px; }
 #content .field-type-image figure:first { float: none; }
 #content .node-blurb { margin-bottom: .5em; }
@@ -73,10 +74,10 @@ table.fc-header { border: 0; }
 
 .region-inner > .rounded-corner, .region-inner > .rounded-corner-panel, #content .region-inner > .node, #content .region-inner > .view-empty { margin-bottom: 20px; }
 
-.field-name-field-event-category { float: left; }
-.field-name-field-event-category ul { margin: 0; }
-.field-name-field-event-category ul li { list-style: none inside none; }
-.field-name-field-event-category ul li:before { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; content: '\54'; /* 'T' */ }
+.region .field-name-field-event-category { float: left; }
+.region .field-name-field-event-category ul { margin: 0; }
+.region .field-name-field-event-category ul li { list-style: none inside none; }
+.region .field-name-field-event-category ul li:before { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; content: '\54'; /* 'T' */ }
 
 .field-name-field-blog-category ul li:before { content: '\e800'; /* 'C' */ font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
 
