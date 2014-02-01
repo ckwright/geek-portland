@@ -90,7 +90,7 @@ function geek_portland_html_head_alter(&$head_elements) {
   adaptivetheme_html_head_alter($head_elements);
 
   $args = arg();
-  if($args[0] == 'events') {
+  if($args[0] == 'events' && !isset($args[1])) {
     $head_elements['adaptivetheme_meta_viewport']['#attributes']['content'] = "width=980";
   }
 }
