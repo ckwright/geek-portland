@@ -13,7 +13,11 @@ projects[ctools][patch][] = "http://drupal.org/files/page-manager-admin-paths-11
 ; https://drupal.org/node/1417630#comment-6810906
 projects[ctools][patch][] = "https://drupal.org/files/ctools-views-content-custom-url-1417630-06.patch"
 
-projects[chosen][version] = "2.0-alpha4"
+projects[chosen][download][revision] = "c48c8a6"
+projects[chosen][download][branch] = "7.x-2.x"
+; Chosen will support jQuery 1.4.4 once a pull request (see library below).
+; https://drupal.org/node/2113097
+projects[chosen][patch][] = "https://drupal.org/files/issues/chosen-remove_jquery_update-2113097-3.patch"
 
 projects[date][version] = "2.7"
 
@@ -47,9 +51,6 @@ projects[google_analytics][version] = "1.3"
 
 projects[html5_tools][download][branch] = "7.x-1.x"
 projects[html5_tools][download][revision] = "11e0c28"
-
-projects[jquery_update][download][branch] = "7.x-2.x"
-projects[jquery_update][download][revision] = "469fac0"
 
 projects[linkchecker][version] = "1.1"
 
@@ -118,10 +119,13 @@ projects[diff][version] = "3.2"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;; LIBRARIES ;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-libraries[chosen][download][type] = "get"
-libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
-libraries[chosen][destination] = "libraries"
-libraries[chosen][directory_name] = "chosen"
+; Pull a pull-request branch for jQuery < 1.6 support. See:
+; * https://github.com/harvesthq/chosen/pull/1555
+; * https://github.com/harvesthq/chosen/pull/1702
+libraries[chosen][download][type] = "git"
+libraries[chosen][download][branch] = "with-built-assets"
+libraries[chosen][download][revision] = "9abefa9"
+libraries[chosen][download][url] = "https://github.com/opensourcery/chosen.git"
 
 libraries[tinymce][download][type] = "get"
 libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.5.8.zip"
