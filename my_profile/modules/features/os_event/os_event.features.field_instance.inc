@@ -504,7 +504,7 @@ function os_event_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Where will this event be held? <a href="/node/add/location">Add a location now</a>',
+    'description' => 'Begin typing to find a venue, or click "Create Venue" below if none found.',
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
@@ -545,18 +545,24 @@ function os_event_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_location',
-    'label' => 'Location',
+    'label' => 'Venue',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'entityreference',
       'settings' => array(
-        'apply_chosen' => 0,
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'references_dialog_add' => 1,
+        'references_dialog_edit' => 0,
+        'references_dialog_search' => 0,
+        'references_dialog_search_view' => '',
+        'size' => 60,
       ),
-      'type' => 'options_select',
+      'type' => 'entityreference_autocomplete',
       'weight' => 3,
     ),
   );
@@ -762,6 +768,7 @@ function os_event_field_default_field_instances() {
   t('A link to buy tickets online.');
   t('Admission');
   t('Age');
+  t('Begin typing to find a venue, or click "Create Venue" below if none found.');
   t('Buy tickets');
   t('Date');
   t('Description');
@@ -769,17 +776,16 @@ function os_event_field_default_field_instances() {
   t('Geeky interests');
   t('Image');
   t('Load an image for this event. This image will be scaled to 320px wide.');
-  t('Location');
   t('More info');
   t('Related Geek Pages');
   t('Short title');
   t('This will display on the calendar grid page, so keep it short!');
+  t('Venue');
   t('What Geeky Pages, if any, relate to this event?');
   t('What ages are allowed in this event?');
   t('What fees are required for this event?');
   t('What sort of geeky interests are covered by this event?');
   t('Where to find out more about this event.');
-  t('Where will this event be held? <a href="/node/add/location">Add a location now</a>');
 
   return $field_instances;
 }
