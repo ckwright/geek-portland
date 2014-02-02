@@ -27,6 +27,7 @@ dependencies[] = options
 dependencies[] = os_base
 dependencies[] = page_manager
 dependencies[] = panels
+dependencies[] = references_dialog
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
