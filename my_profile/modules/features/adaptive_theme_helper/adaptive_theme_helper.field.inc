@@ -32,6 +32,7 @@ function adaptive_theme_helper_field_formatter_info() {
  * Adds the ability to show a csv og links.
  */
 function adaptive_theme_helper_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
   if ($display['type'] === 'at_list_default') {
     $display['type'] = 'og_list_default';
     $nodes = og_ui_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display);
