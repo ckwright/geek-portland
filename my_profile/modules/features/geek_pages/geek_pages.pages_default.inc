@@ -154,6 +154,48 @@ function geek_pages_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-2';
     $pane->panel = 'two_25_75_top';
+    $pane->type = 'block';
+    $pane->subtype = 'facetapi-sETdfNYsjOZy2xW67tXAflCof15TVfJL';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => 'Geek type',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['two_25_75_top'][1] = 'new-2';
+    $pane = new stdClass();
+    $pane->pid = 'new-3';
+    $pane->panel = 'two_25_75_top';
+    $pane->type = 'block';
+    $pane->subtype = 'facetapi-wyW1MFiimF1gtxNmMtuFM1rhJBGT3u5H';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $display->content['new-3'] = $pane;
+    $display->panels['two_25_75_top'][2] = 'new-3';
+    $pane = new stdClass();
+    $pane->pid = 'new-4';
+    $pane->panel = 'two_25_75_top';
     $pane->type = 'views_panes';
     $pane->subtype = 'geekpages2-panel_pane_1';
     $pane->shown = TRUE;
@@ -165,10 +207,10 @@ function geek_pages_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['two_25_75_top'][1] = 'new-2';
+    $display->content['new-4'] = $pane;
+    $display->panels['two_25_75_top'][3] = 'new-4';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
