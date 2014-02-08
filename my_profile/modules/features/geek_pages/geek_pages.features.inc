@@ -146,12 +146,6 @@ function geek_pages_default_search_api_server() {
             "type" : "list\\u003Cinteger\\u003E",
             "boost" : "1.0"
           },
-          "field_geek_page_type_s_" : {
-            "table" : "search_api_db_geek_pages",
-            "column" : "field_geek_page_type_s_",
-            "type" : "integer",
-            "boost" : "1.0"
-          },
           "search_api_language" : {
             "table" : "search_api_db_geek_pages",
             "column" : "search_api_language",
@@ -168,6 +162,12 @@ function geek_pages_default_search_api_server() {
             "table" : "search_api_db_geek_pages",
             "column" : "sticky",
             "type" : "boolean",
+            "boost" : "1.0"
+          },
+          "field_geek_page_type_s_" : {
+            "table" : "search_api_db_geek_pages",
+            "column" : "field_geek_page_type_s_",
+            "type" : "integer",
             "boost" : "1.0"
           }
         }
