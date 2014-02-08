@@ -117,6 +117,10 @@ function geek_pages_default_page_manager_pages() {
     'style_settings' => array(
       'default' => NULL,
       'one_main' => NULL,
+      'two_25_75_top' => NULL,
+      'two_25_75_first' => NULL,
+      'two_25_75_second' => NULL,
+      'two_25_75_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -151,7 +155,7 @@ function geek_pages_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'two_25_75_top';
     $pane->type = 'views_panes';
-    $pane->subtype = 'geekpages-panel_pane_1';
+    $pane->subtype = 'geekpages2-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
