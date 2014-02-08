@@ -27,8 +27,8 @@ includes[images] = "images.make"
 ; Uncomment to use Panels.
 includes[panels] = "panels.make"
 
-; Uncomment to use Solr Search.
-; includes[solr] = "solr.make"
+; Uncomment to use Search.
+includes[search] = "search.make"
 
 ; Organic Groups.
 includes[og] = "og.make"
