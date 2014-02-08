@@ -472,6 +472,7 @@ function os_event_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_image'
   $field_instances['node-event-field_image'] = array(
     'bundle' => 'event',
+    'default_value' => array(),
     'deleted' => 0,
     'description' => 'Load an image for this event. This image will be scaled to 320px wide.',
     'display' => array(
@@ -530,25 +531,17 @@ function os_event_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'imagefield_crop',
       'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'upload' => 0,
-        ),
+        'collapsible' => 2,
+        'croparea' => '500x500',
+        'enforce_minimum' => 1,
+        'enforce_ratio' => 1,
+        'preview_image_style' => '',
         'progress_indicator' => 'throbber',
+        'resolution' => '300x250',
       ),
-      'type' => 'media_generic',
+      'type' => 'imagefield_crop_widget',
       'weight' => 4,
     ),
   );
