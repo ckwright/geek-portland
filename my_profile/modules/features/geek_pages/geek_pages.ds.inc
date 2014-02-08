@@ -37,6 +37,21 @@ function geek_pages_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|geek_page|default';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'geek_page';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'related_link' => array(
+      'weight' => '12',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['node|geek_page|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|geek_page|teaser';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'geek_page';
@@ -107,6 +122,65 @@ function geek_pages_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['node|geek_page|blurb'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|geek_page|default';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'geek_page';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'panels-two_25_75';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'two_25_75_top' => array(
+        0 => 'field_twitter',
+        1 => 'field_facebook',
+        2 => 'field_youtube',
+        3 => 'field_podcast_feed',
+        4 => 'field_event_category',
+        5 => 'field_website',
+        6 => 'field_address',
+        7 => 'field_phone',
+      ),
+      'two_25_75_first' => array(
+        8 => 'field_image',
+      ),
+      'two_25_75_second' => array(
+        9 => 'body',
+      ),
+      'two_25_75_bottom' => array(
+        10 => 'field_geek_page_type_s_',
+        11 => 'related_link',
+      ),
+    ),
+    'fields' => array(
+      'field_twitter' => 'two_25_75_top',
+      'field_facebook' => 'two_25_75_top',
+      'field_youtube' => 'two_25_75_top',
+      'field_podcast_feed' => 'two_25_75_top',
+      'field_event_category' => 'two_25_75_top',
+      'field_website' => 'two_25_75_top',
+      'field_address' => 'two_25_75_top',
+      'field_phone' => 'two_25_75_top',
+      'field_image' => 'two_25_75_first',
+      'body' => 'two_25_75_second',
+      'field_geek_page_type_s_' => 'two_25_75_bottom',
+      'related_link' => 'two_25_75_bottom',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'two_25_75_top' => 'div',
+      'two_25_75_first' => 'div',
+      'two_25_75_second' => 'div',
+      'two_25_75_bottom' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|geek_page|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
