@@ -170,8 +170,10 @@ table.fc-header { border: 0; }
 
 /* Geek pages */
 .view-geekpages2 .views-row { float: left; width: 48%; margin-bottom: 1em; }
-.view-geekpages2 .views-row-even { margin-left: 1%; }
-.view-geekpages2 .views-row-odd { margin-right: 1%; clear: left; }
+.view-geekpages2 .views-row-odd { margin-left: 1%; }
+.view-geekpages2 .views-row-even { margin-right: 1%; clear: left; }
+
+.page-geeks section.contextual-links-region { float: left; width: 24%; margin-bottom: 1em; }
 
 .node-type-geek-page .field-name-field-event-category { clear: right; }
 .node-type-geek-page .region-two-25-75-bottom .field { float: left; }

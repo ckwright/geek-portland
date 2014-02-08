@@ -680,13 +680,21 @@ table.fc-header {
     margin-bottom: 1em;
   }
 
-  .views-row-even {
+  .views-row-odd {
     margin-left: 1%;
   }
 
-  .views-row-odd {
+  .views-row-even {
     margin-right: 1%;
     clear: left;
+  }
+}
+
+.page-geeks {
+  section.contextual-links-region {
+    float: left;
+    width: 24%;
+    margin-bottom: 1em;
   }
 }
 
