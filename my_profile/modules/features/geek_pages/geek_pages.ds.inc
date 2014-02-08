@@ -61,6 +61,11 @@ function geek_pages_ds_field_settings_info() {
       'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+      ),
     ),
     'node_link' => array(
       'weight' => '8',
@@ -217,6 +222,9 @@ function geek_pages_ds_layout_settings_info() {
       'field_image' => 'two_25_75_first',
       'body' => 'two_25_75_second',
       'node_link' => 'two_25_75_second',
+    ),
+    'limit' => array(
+      'field_image' => '1',
     ),
     'classes' => array(),
     'wrappers' => array(
