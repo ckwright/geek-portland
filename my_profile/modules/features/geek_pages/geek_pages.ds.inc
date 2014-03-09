@@ -42,8 +42,18 @@ function geek_pages_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'geek_page';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '5',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '0',
+        'wrapper' => 'h1',
+        'class' => 'page-title',
+      ),
+    ),
     'related_link' => array(
-      'weight' => '12',
+      'weight' => '10',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -143,19 +153,18 @@ function geek_pages_ds_layout_settings_info() {
         2 => 'field_youtube',
         3 => 'field_podcast_feed',
         4 => 'field_event_category',
-        5 => 'field_website',
-        6 => 'field_address',
-        7 => 'field_phone',
+        5 => 'title',
+        6 => 'field_website',
       ),
       'two_25_75_first' => array(
-        8 => 'field_image',
+        7 => 'field_image',
       ),
       'two_25_75_second' => array(
-        9 => 'body',
+        8 => 'body',
       ),
       'two_25_75_bottom' => array(
-        10 => 'field_geek_page_type_s_',
-        11 => 'related_link',
+        9 => 'field_geek_page_type_s_',
+        10 => 'related_link',
       ),
     ),
     'fields' => array(
@@ -164,9 +173,8 @@ function geek_pages_ds_layout_settings_info() {
       'field_youtube' => 'two_25_75_top',
       'field_podcast_feed' => 'two_25_75_top',
       'field_event_category' => 'two_25_75_top',
+      'title' => 'two_25_75_top',
       'field_website' => 'two_25_75_top',
-      'field_address' => 'two_25_75_top',
-      'field_phone' => 'two_25_75_top',
       'field_image' => 'two_25_75_first',
       'body' => 'two_25_75_second',
       'field_geek_page_type_s_' => 'two_25_75_bottom',

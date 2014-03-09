@@ -31,7 +31,7 @@ function geek_pages_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -80,7 +80,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -239,7 +239,7 @@ function geek_pages_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 11,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -292,7 +292,7 @@ function geek_pages_field_default_field_instances() {
           'small_image_style' => 'tiny_image',
         ),
         'type' => 'magnific_slideshow',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -363,7 +363,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -659,7 +659,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -716,7 +716,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
