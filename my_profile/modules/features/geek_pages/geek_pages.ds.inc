@@ -155,6 +155,7 @@ function geek_pages_ds_layout_settings_info() {
         4 => 'field_event_category',
         5 => 'title',
         6 => 'field_website',
+        11 => 'field_location',
       ),
       'two_25_75_first' => array(
         7 => 'field_image',
@@ -179,6 +180,7 @@ function geek_pages_ds_layout_settings_info() {
       'body' => 'two_25_75_second',
       'field_geek_page_type_s_' => 'two_25_75_bottom',
       'related_link' => 'two_25_75_bottom',
+      'field_location' => 'two_25_75_top',
     ),
     'classes' => array(),
     'wrappers' => array(
