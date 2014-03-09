@@ -59,83 +59,7 @@ function geek_pages_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance: 'node-geek_page-field_address'
-  $field_instances['node-geek_page-field_address'] = array(
-    'bundle' => 'geek_page',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|geek_page|field_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'This information on the Geek Page\'s physical location will be used to link to a google map offsite.',
-    'display' => array(
-      'blurb' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 21,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            'address' => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_address',
-    'label' => 'Address',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'addressfield',
-      'settings' => array(
-        'available_countries' => array(
-          'US' => 'US',
-        ),
-        'format_handlers' => array(
-          'address' => 'address',
-          'address-hide-country' => 'address-hide-country',
-          'organisation' => 0,
-          'name-full' => 0,
-          'name-oneline' => 0,
-        ),
-      ),
-      'type' => 'addressfield_standard',
-      'weight' => 11,
+      'weight' => 8,
     ),
   );
 
@@ -179,7 +103,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'emailwidget',
-      'weight' => 13,
+      'weight' => 10,
     ),
   );
 
@@ -228,7 +152,7 @@ function geek_pages_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 15,
+      'weight' => 13,
     ),
   );
 
@@ -339,7 +263,7 @@ function geek_pages_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 12,
     ),
   );
 
@@ -399,8 +323,16 @@ function geek_pages_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'imagefield_crop',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          0 => 'public',
+          1 => 'private',
+        ),
+        'allowed_types' => array(
+          0 => 'image',
+        ),
+        'browser_plugins' => array(),
         'collapsible' => 2,
         'croparea' => '500x500',
         'enforce_minimum' => 1,
@@ -409,7 +341,7 @@ function geek_pages_field_default_field_instances() {
         'progress_indicator' => 'throbber',
         'resolution' => '300x250',
       ),
-      'type' => 'imagefield_crop_widget',
+      'type' => 'media_generic',
       'weight' => 5,
     ),
   );
@@ -455,52 +387,7 @@ function geek_pages_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 14,
-    ),
-  );
-
-  // Exported field_instance: 'node-geek_page-field_phone'
-  $field_instances['node-geek_page-field_phone'] = array(
-    'bundle' => 'geek_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'If changing a telephone number, make sure to change the phone number on any related venue pages, if applicable.',
-    'display' => array(
-      'blurb' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 22,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 21,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_phone',
-    'label' => 'Phone',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'html5_tools',
-      'settings' => array(),
-      'type' => 'telwidget',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -561,7 +448,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -808,7 +695,7 @@ function geek_pages_field_default_field_instances() {
         'og_hide' => TRUE,
       ),
       'type' => 'options_onoff',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -872,13 +759,12 @@ function geek_pages_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Address');
   t('Body');
   t('Determine if this is an OG group.');
   t('Email');
@@ -888,17 +774,14 @@ function geek_pages_field_default_field_instances() {
   t('Geeky interests');
   t('Group');
   t('Groups audience');
-  t('If changing a telephone number, make sure to change the phone number on any related venue pages, if applicable.');
   t('Image');
   t('Link to the Geek Page\'s youtube channel');
   t('Link to the podcast feed for this geek page. When you go to this link, you should see xml.');
   t('Main image will be resized to 350px wide by 250px tall and should be at least that large to begin with. Subsequent images on the page will be shown in a lightbox.');
-  t('Phone');
   t('Podcast feed');
   t('Pull in address, website, and phone information from an existing venue.');
   t('The Geek Page\'s official email address.');
   t('The link to this geek page\'s Facebook page');
-  t('This information on the Geek Page\'s physical location will be used to link to a google map offsite.');
   t('Twitter');
   t('Venue');
   t('Website');

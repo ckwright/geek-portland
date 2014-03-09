@@ -125,10 +125,11 @@ function geek_pages_default_page_manager_pages() {
   );
   $display->cache = array();
   $display->title = 'GeekPages';
+  $display->uuid = '1cb96015-9d93-4413-a510-411b6a65550b';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-f172d3e1-735d-46ef-8226-9f0fb1864deb';
     $pane->panel = 'two_25_75_top';
     $pane->type = 'page_title';
     $pane->subtype = 'page_title';
@@ -141,7 +142,13 @@ function geek_pages_default_page_manager_pages() {
       'override_title' => 0,
       'override_title_text' => '',
     );
-    $pane->cache = array();
+    $pane->cache = array(
+      'method' => 'simple',
+      'settings' => array(
+        'lifetime' => '604800',
+        'granularity' => 'none',
+      ),
+    );
     $pane->style = array(
       'settings' => NULL,
     );
@@ -149,10 +156,11 @@ function geek_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['two_25_75_top'][0] = 'new-1';
+    $pane->uuid = 'f172d3e1-735d-46ef-8226-9f0fb1864deb';
+    $display->content['new-f172d3e1-735d-46ef-8226-9f0fb1864deb'] = $pane;
+    $display->panels['two_25_75_top'][0] = 'new-f172d3e1-735d-46ef-8226-9f0fb1864deb';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-554f1b77-4d06-4309-adc1-3d713ed2d2c9';
     $pane->panel = 'two_25_75_top';
     $pane->type = 'block';
     $pane->subtype = 'facetapi-sETdfNYsjOZy2xW67tXAflCof15TVfJL';
@@ -170,10 +178,11 @@ function geek_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['two_25_75_top'][1] = 'new-2';
+    $pane->uuid = '554f1b77-4d06-4309-adc1-3d713ed2d2c9';
+    $display->content['new-554f1b77-4d06-4309-adc1-3d713ed2d2c9'] = $pane;
+    $display->panels['two_25_75_top'][1] = 'new-554f1b77-4d06-4309-adc1-3d713ed2d2c9';
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-87f818c1-3313-4a9f-9fd4-654f21846c1d';
     $pane->panel = 'two_25_75_top';
     $pane->type = 'block';
     $pane->subtype = 'facetapi-wyW1MFiimF1gtxNmMtuFM1rhJBGT3u5H';
@@ -191,10 +200,11 @@ function geek_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['two_25_75_top'][2] = 'new-3';
+    $pane->uuid = '87f818c1-3313-4a9f-9fd4-654f21846c1d';
+    $display->content['new-87f818c1-3313-4a9f-9fd4-654f21846c1d'] = $pane;
+    $display->panels['two_25_75_top'][2] = 'new-87f818c1-3313-4a9f-9fd4-654f21846c1d';
     $pane = new stdClass();
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-e00fcb33-ffc2-414c-82a5-8941d2bddc87';
     $pane->panel = 'two_25_75_top';
     $pane->type = 'views_panes';
     $pane->subtype = 'geekpages2-panel_pane_1';
@@ -209,8 +219,9 @@ function geek_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['two_25_75_top'][3] = 'new-4';
+    $pane->uuid = 'e00fcb33-ffc2-414c-82a5-8941d2bddc87';
+    $display->content['new-e00fcb33-ffc2-414c-82a5-8941d2bddc87'] = $pane;
+    $display->panels['two_25_75_top'][3] = 'new-e00fcb33-ffc2-414c-82a5-8941d2bddc87';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

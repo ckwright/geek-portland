@@ -64,7 +64,7 @@ function geek_pages_default_search_api_index() {
         "title" : { "type" : "string" },
         "sticky" : { "type" : "boolean" },
         "field_event_category" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_geek_page_type_s_" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "field_geek_page_type_s_" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "search_api_language" : { "type" : "string" }
       },
       "data_alter_callbacks" : {
@@ -165,9 +165,9 @@ function geek_pages_default_search_api_server() {
             "boost" : "1.0"
           },
           "field_geek_page_type_s_" : {
-            "table" : "search_api_db_geek_pages",
+            "table" : "search_api_db_geek_pages_field_geek_page_type_s_",
             "column" : "field_geek_page_type_s_",
-            "type" : "integer",
+            "type" : "list\\u003Cinteger\\u003E",
             "boost" : "1.0"
           }
         }
