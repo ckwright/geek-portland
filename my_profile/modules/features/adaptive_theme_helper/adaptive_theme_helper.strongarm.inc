@@ -13,6 +13,13 @@ function adaptive_theme_helper_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'jquery_update_jquery_version';
+  $strongarm->value = '1.7';
+  $export['jquery_update_jquery_version'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'theme_geek_portland_files_directory';
   $strongarm->value = 'profiles/my_profile/modules/features/adaptive_theme_helper/css';
   $export['theme_geek_portland_files_directory'] = $strongarm;
