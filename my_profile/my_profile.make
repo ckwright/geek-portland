@@ -72,7 +72,7 @@ projects[jquery_update][version] = "2.3"
 projects[mollom][version] = "2.7"
 
 ; Libraries.
-projects[libraries][version] = "2.1"
+projects[libraries][version] = "2.2"
 
 ; Location
 projects[location][version] = "3.1"
