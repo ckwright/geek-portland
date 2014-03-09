@@ -63,7 +63,7 @@ projects[geofield][version] = "2.1"
 projects[geophp][version] = "1.7"
 
 ; iCal
-projects[date_ical][version] = "3.0"
+projects[date_ical][version] = "3.1"
 
 ; JQuery Update
 projects[jquery_update][version] = "2.3"
