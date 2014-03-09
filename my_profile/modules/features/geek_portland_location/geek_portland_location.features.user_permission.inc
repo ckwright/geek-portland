@@ -24,7 +24,6 @@ function geek_portland_location_user_default_permissions() {
   $permissions['delete any location content'] = array(
     'name' => 'delete any location content',
     'roles' => array(
-      'event administrator' => 'event administrator',
       'site editor' => 'site editor',
     ),
     'module' => 'node',
@@ -34,7 +33,6 @@ function geek_portland_location_user_default_permissions() {
   $permissions['delete own location content'] = array(
     'name' => 'delete own location content',
     'roles' => array(
-      'event administrator' => 'event administrator',
       'site editor' => 'site editor',
     ),
     'module' => 'node',
@@ -44,7 +42,6 @@ function geek_portland_location_user_default_permissions() {
   $permissions['edit any location content'] = array(
     'name' => 'edit any location content',
     'roles' => array(
-      'event administrator' => 'event administrator',
       'site editor' => 'site editor',
     ),
     'module' => 'node',
@@ -54,7 +51,6 @@ function geek_portland_location_user_default_permissions() {
   $permissions['edit own location content'] = array(
     'name' => 'edit own location content',
     'roles' => array(
-      'event administrator' => 'event administrator',
       'site editor' => 'site editor',
     ),
     'module' => 'node',
