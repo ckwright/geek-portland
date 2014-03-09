@@ -42,6 +42,10 @@ function geek_search_default_page_manager_handlers() {
       'two_brick_right_below' => NULL,
       'two_brick_bottom' => NULL,
       'two_brick_right_above' => NULL,
+      'two_50_top' => NULL,
+      'two_50_first' => NULL,
+      'two_50_second' => NULL,
+      'two_50_bottom' => NULL,
     ),
     'two_brick_right_above' => array(
       'style' => 'default',
@@ -49,10 +53,11 @@ function geek_search_default_page_manager_handlers() {
   );
   $display->cache = array();
   $display->title = '';
+  $display->uuid = '56524696-35fa-4366-b342-e64da259bdb1';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-3b522773-6dae-4440-9b7d-aefbfda757cc';
     $pane->panel = 'two_50_bottom';
     $pane->type = 'search_result';
     $pane->subtype = 'search_result';
@@ -73,7 +78,10 @@ function geek_search_default_page_manager_handlers() {
       'override_title' => 1,
       'override_title_text' => '',
     );
-    $pane->cache = array();
+    $pane->cache = array(
+      'method' => '0',
+      'settings' => array(),
+    );
     $pane->style = array(
       'settings' => NULL,
     );
@@ -81,10 +89,11 @@ function geek_search_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['two_50_bottom'][0] = 'new-1';
+    $pane->uuid = '3b522773-6dae-4440-9b7d-aefbfda757cc';
+    $display->content['new-3b522773-6dae-4440-9b7d-aefbfda757cc'] = $pane;
+    $display->panels['two_50_bottom'][0] = 'new-3b522773-6dae-4440-9b7d-aefbfda757cc';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-3126eecd-b860-4563-9e1d-243c9df8a85f';
     $pane->panel = 'two_50_first';
     $pane->type = 'page_title';
     $pane->subtype = 'page_title';
@@ -95,9 +104,15 @@ function geek_search_default_page_manager_handlers() {
       'class' => '',
       'id' => 'page-title',
       'override_title' => 0,
-      'override_title_text' => '',
+      'override_title_text' => '%keywords searched',
     );
-    $pane->cache = array();
+    $pane->cache = array(
+      'method' => 'simple',
+      'settings' => array(
+        'lifetime' => '1800',
+        'granularity' => 'args',
+      ),
+    );
     $pane->style = array(
       'settings' => NULL,
     );
@@ -105,10 +120,11 @@ function geek_search_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['two_50_first'][0] = 'new-2';
+    $pane->uuid = '3126eecd-b860-4563-9e1d-243c9df8a85f';
+    $display->content['new-3126eecd-b860-4563-9e1d-243c9df8a85f'] = $pane;
+    $display->panels['two_50_first'][0] = 'new-3126eecd-b860-4563-9e1d-243c9df8a85f';
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-d929264a-df66-4f2a-944d-96e4ec26a3ed';
     $pane->panel = 'two_50_second';
     $pane->type = 'search_form';
     $pane->subtype = 'search_form';
@@ -125,7 +141,13 @@ function geek_search_default_page_manager_handlers() {
       'override_title' => 0,
       'override_title_text' => '',
     );
-    $pane->cache = array();
+    $pane->cache = array(
+      'method' => 'simple',
+      'settings' => array(
+        'lifetime' => '1800',
+        'granularity' => 'args',
+      ),
+    );
     $pane->style = array(
       'settings' => NULL,
       'style' => 'rounded_corners',
@@ -137,10 +159,11 @@ function geek_search_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['two_50_second'][0] = 'new-3';
+    $pane->uuid = 'd929264a-df66-4f2a-944d-96e4ec26a3ed';
+    $display->content['new-d929264a-df66-4f2a-944d-96e4ec26a3ed'] = $pane;
+    $display->panels['two_50_second'][0] = 'new-d929264a-df66-4f2a-944d-96e4ec26a3ed';
   $display->hide_title = PANELS_TITLE_PANE;
-  $display->title_pane = 'new-1';
+  $display->title_pane = 'new-3b522773-6dae-4440-9b7d-aefbfda757cc';
   $handler->conf['display'] = $display;
   $export['search_node_panel_context'] = $handler;
 
