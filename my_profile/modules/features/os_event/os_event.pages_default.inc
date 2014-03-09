@@ -78,10 +78,11 @@ function os_event_default_page_manager_pages() {
   );
   $display->cache = array();
   $display->title = 'Upcoming Events';
+  $display->uuid = '0df87708-e217-4112-be4b-bc1a3be9ccee';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-981cc4ed-dc6b-4621-b30b-86d767523725';
     $pane->panel = 'two_50_bottom';
     $pane->type = 'views_panes';
     $pane->subtype = 'event_listing-panel_pane_upcoming';
@@ -103,34 +104,11 @@ function os_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['two_50_bottom'][0] = 'new-1';
+    $pane->uuid = '981cc4ed-dc6b-4621-b30b-86d767523725';
+    $display->content['new-981cc4ed-dc6b-4621-b30b-86d767523725'] = $pane;
+    $display->panels['two_50_bottom'][0] = 'new-981cc4ed-dc6b-4621-b30b-86d767523725';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
-    $pane->panel = 'two_50_first';
-    $pane->type = 'page_title';
-    $pane->subtype = 'page_title';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'markup' => 'h1',
-      'class' => '',
-      'id' => 'page-title',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['two_50_first'][0] = 'new-2';
-    $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-6ef29c15-5d0e-434e-a6fd-6cafb86ce0f9';
     $pane->panel = 'two_50_first';
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
@@ -148,12 +126,13 @@ function os_event_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['two_50_first'][1] = 'new-3';
+    $pane->uuid = '6ef29c15-5d0e-434e-a6fd-6cafb86ce0f9';
+    $display->content['new-6ef29c15-5d0e-434e-a6fd-6cafb86ce0f9'] = $pane;
+    $display->panels['two_50_first'][0] = 'new-6ef29c15-5d0e-434e-a6fd-6cafb86ce0f9';
     $pane = new stdClass();
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-fc95b54e-93fb-44c7-921d-e1ca766ddd71';
     $pane->panel = 'two_50_second';
     $pane->type = 'block';
     $pane->subtype = 'views-4ea83464ef7888af6fd9a3b7d9220a02';
@@ -172,8 +151,9 @@ function os_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['two_50_second'][0] = 'new-4';
+    $pane->uuid = 'fc95b54e-93fb-44c7-921d-e1ca766ddd71';
+    $display->content['new-fc95b54e-93fb-44c7-921d-e1ca766ddd71'] = $pane;
+    $display->panels['two_50_second'][0] = 'new-fc95b54e-93fb-44c7-921d-e1ca766ddd71';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -261,10 +241,11 @@ function os_event_default_page_manager_pages() {
   );
   $display->cache = array();
   $display->title = 'Calendar';
+  $display->uuid = 'a16499a2-b4b9-42c6-b575-899da7b13d38';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-f9e72ae8-1f05-44d3-836d-0abe073bba81';
     $pane->panel = 'two_50_bottom';
     $pane->type = 'views_panes';
     $pane->subtype = 'event_listing-panel_pane_calendar';
@@ -280,34 +261,11 @@ function os_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['two_50_bottom'][0] = 'new-5';
+    $pane->uuid = 'f9e72ae8-1f05-44d3-836d-0abe073bba81';
+    $display->content['new-f9e72ae8-1f05-44d3-836d-0abe073bba81'] = $pane;
+    $display->panels['two_50_bottom'][0] = 'new-f9e72ae8-1f05-44d3-836d-0abe073bba81';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
-    $pane->panel = 'two_50_first';
-    $pane->type = 'page_title';
-    $pane->subtype = 'page_title';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'markup' => 'h1',
-      'class' => '',
-      'id' => 'page-title',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['two_50_first'][0] = 'new-6';
-    $pane = new stdClass();
-    $pane->pid = 'new-7';
+    $pane->pid = 'new-5eb2f60f-20a7-4b5e-b58d-04de18add58d';
     $pane->panel = 'two_50_first';
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
@@ -325,12 +283,13 @@ function os_event_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['two_50_first'][1] = 'new-7';
+    $pane->uuid = '5eb2f60f-20a7-4b5e-b58d-04de18add58d';
+    $display->content['new-5eb2f60f-20a7-4b5e-b58d-04de18add58d'] = $pane;
+    $display->panels['two_50_first'][0] = 'new-5eb2f60f-20a7-4b5e-b58d-04de18add58d';
     $pane = new stdClass();
-    $pane->pid = 'new-8';
+    $pane->pid = 'new-e3f0cd10-1eef-41bb-9da4-a0e8bfbaf17c';
     $pane->panel = 'two_50_second';
     $pane->type = 'block';
     $pane->subtype = 'views-4ea83464ef7888af6fd9a3b7d9220a02';
@@ -349,10 +308,11 @@ function os_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['two_50_second'][0] = 'new-8';
+    $pane->uuid = 'e3f0cd10-1eef-41bb-9da4-a0e8bfbaf17c';
+    $display->content['new-e3f0cd10-1eef-41bb-9da4-a0e8bfbaf17c'] = $pane;
+    $display->panels['two_50_second'][0] = 'new-e3f0cd10-1eef-41bb-9da4-a0e8bfbaf17c';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-5';
+  $display->title_pane = 'new-f9e72ae8-1f05-44d3-836d-0abe073bba81';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['events_calendar'] = $page;

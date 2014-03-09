@@ -531,8 +531,16 @@ function os_event_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'imagefield_crop',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          0 => 'private',
+          1 => 'public',
+        ),
+        'allowed_types' => array(
+          0 => 'image',
+        ),
+        'browser_plugins' => array(),
         'collapsible' => 2,
         'croparea' => '500x500',
         'enforce_minimum' => 1,
@@ -541,7 +549,7 @@ function os_event_field_default_field_instances() {
         'progress_indicator' => 'throbber',
         'resolution' => '300x250',
       ),
-      'type' => 'imagefield_crop_widget',
+      'type' => 'media_generic',
       'weight' => 4,
     ),
   );
