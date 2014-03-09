@@ -11,7 +11,7 @@ projects[file_entity][version] = "2.0-alpha3"
 
 projects[imagefield_crop][version] = "1.1"
 
-projects[image_resize_filter][version] = "1.13"
+projects[image_resize_filter][version] = "1.14"
 ; Images not resizing if path has query string: https://drupal.org/node/1929710
 projects[image_resize_filter][patch][] = https://drupal.org/files/image_resize_filter-remove-query-string-1929710-8.patch
 
