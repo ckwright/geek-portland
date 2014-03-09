@@ -13,11 +13,7 @@ projects[ctools][patch][] = "http://drupal.org/files/page-manager-admin-paths-11
 ; https://drupal.org/node/1417630#comment-6810906
 projects[ctools][patch][] = "https://drupal.org/files/ctools-views-content-custom-url-1417630-06.patch"
 
-projects[chosen][download][revision] = "c48c8a6"
-projects[chosen][download][branch] = "7.x-2.x"
-; Chosen will support jQuery 1.4.4 once a pull request (see library below).
-; https://drupal.org/node/2113097
-projects[chosen][patch][] = "https://drupal.org/files/issues/chosen-remove_jquery_update-2113097-3.patch"
+projects[chosen][version] = "2.0-beta4"
 
 projects[date][version] = "2.7"
 
