@@ -74,6 +74,7 @@ function os_base_wysiwyg_default_profiles() {
           'anchor' => 1,
           'image' => 1,
           'formatselect' => 1,
+          'blockquote' => 1,
           'hr' => 1,
           'cut' => 1,
           'copy' => 1,
