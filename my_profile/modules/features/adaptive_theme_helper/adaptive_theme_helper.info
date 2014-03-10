@@ -3,6 +3,7 @@ description = Permissions and settings associated with the website's theme.
 core = 7.x
 package = geek portland
 dependencies[] = context
+dependencies[] = context_query_param
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = jquery_update

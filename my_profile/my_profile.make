@@ -40,6 +40,7 @@ projects[addressfield][version] = "1.0-beta5"
 
 ; Context
 projects[context][version] = "3.2"
+projects[context_query_param][version] = "1.3"
 
 ; Display Suite
 projects[ds][version] = "2.6"
