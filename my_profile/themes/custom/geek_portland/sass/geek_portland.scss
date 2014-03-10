@@ -168,6 +168,10 @@ table.fc-header {
       margin: 0 25px;
     }
 
+    .region-two-25-75-top {
+      padding-bottom: 5px;
+    }
+
     .region-two-25-75-second {
       .region-inner {
         margin-left: 0;
@@ -187,7 +191,7 @@ table.fc-header {
         margin: 0;
         float: left;
         clear: left;
-        padding-right: 10px;
+        padding: 7px 10px 7px 0;
 
         &:first {
           float: none;
