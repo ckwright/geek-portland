@@ -178,4 +178,4 @@ table.fc-header { border: 0; }
 .page-geeks section.contextual-links-region { float: left; width: 24%; margin-bottom: 1em; }
 
 .node-type-geek-page .field-name-field-event-category { clear: right; }
-.node-type-geek-page .region-two-25-75-bottom .field { float: left; }
+.node-type-geek-page .region-two-25-75-bottom .field { float: left; padding-right: .5em; }
