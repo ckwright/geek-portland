@@ -22,6 +22,14 @@ function adaptive_theme_helper_field_formatter_info() {
       'field types' => array('image'),
       'settings' => array('large_image_style' => '', 'small_image_style' => ''),
     ),
+    'ds_taxonomy_separator_sparse' => array(
+      'label' => t('Taxonomy, without id=4'),
+      'field types' => array('taxonomy_term_reference'),
+      'settings'    => array(
+        'taxonomy_term_link' => TRUE,
+        'taxonomy_term_separator' => ', ',
+      ),
+    ),
   );
 }
 
@@ -63,6 +71,13 @@ function adaptive_theme_helper_field_formatter_view($entity_type, $entity, $fiel
       );
 
       $image_style = $display['settings']['small_image_style'];
+    }
+  }
+  elseif ($display['type'] === 'ds_taxonomy_separator_sparse') {
+    $display['type'] = 'ds_taxonomy_separator';
+    $element = ds_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display);
+    if (isset($element[0]['#markup'])) {
+      $element[0]['#markup'] = str_replace('Entrance fee', '', $element[0]['#markup']);
     }
   }
 

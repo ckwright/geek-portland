@@ -90,12 +90,12 @@ function os_event_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'inline',
-        'module' => 'ds',
+        'module' => 'adaptive_theme_helper',
         'settings' => array(
           'taxonomy_term_link' => TRUE,
           'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'ds_taxonomy_separator',
+        'type' => 'ds_taxonomy_separator_sparse',
         'weight' => 4,
       ),
       'ical' => array(
@@ -106,12 +106,12 @@ function os_event_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'ds',
+        'module' => 'adaptive_theme_helper',
         'settings' => array(
           'taxonomy_term_link' => TRUE,
           'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'ds_taxonomy_separator',
+        'type' => 'ds_taxonomy_separator_sparse',
         'weight' => 5,
       ),
     ),
