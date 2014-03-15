@@ -51,6 +51,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['relationship'] = 'field_dates_value';
   $handler->display->display_options['fields']['field_event_date']['label'] = '';
   $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_date']['settings'] = array(
@@ -61,6 +62,7 @@ function os_event_views_default_views() {
     'multiple_to' => '',
     'show_repeat_rule' => 'show',
   );
+  $handler->display->display_options['fields']['field_event_date']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -82,6 +84,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['sorts']['field_event_date_value']['field'] = 'field_event_date_value';
+  $handler->display->display_options['sorts']['field_event_date_value']['relationship'] = 'field_dates_value';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -101,6 +104,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value']['relationship'] = 'field_dates_value';
   $handler->display->display_options['filters']['field_event_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_date_value']['group'] = 1;
   $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
@@ -190,6 +194,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_rrule']['id'] = 'field_event_date_rrule';
   $handler->display->display_options['filters']['field_event_date_rrule']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_rrule']['field'] = 'field_event_date_rrule';
+  $handler->display->display_options['filters']['field_event_date_rrule']['relationship'] = 'field_dates_value';
   $handler->display->display_options['filters']['field_event_date_rrule']['operator'] = 'contains';
   $handler->display->display_options['filters']['field_event_date_rrule']['value'] = 'FREQ=WEEKLY';
   $handler->display->display_options['filters']['field_event_date_rrule']['group'] = 1;
@@ -280,6 +285,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value']['relationship'] = 'field_dates_value';
   $handler->display->display_options['filters']['field_event_date_value']['operator'] = '<=';
   $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
 
@@ -321,6 +327,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['relationship'] = 'field_dates_value';
   $handler->display->display_options['fields']['field_event_date']['label'] = '';
   $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_date']['settings'] = array(
@@ -331,6 +338,7 @@ function os_event_views_default_views() {
     'multiple_to' => '',
     'show_repeat_rule' => 'show',
   );
+  $handler->display->display_options['fields']['field_event_date']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -378,6 +386,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value_1']['id'] = 'field_event_date_value_1';
   $handler->display->display_options['filters']['field_event_date_value_1']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value_1']['field'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value_1']['relationship'] = 'field_dates_value';
   $handler->display->display_options['filters']['field_event_date_value_1']['expose']['operator_id'] = 'field_event_date_value_1_op';
   $handler->display->display_options['filters']['field_event_date_value_1']['expose']['label'] = 'Date -  start date (field_event_date)';
   $handler->display->display_options['filters']['field_event_date_value_1']['expose']['operator'] = 'field_event_date_value_1_op';
@@ -424,6 +433,7 @@ function os_event_views_default_views() {
     'multiple_to' => '',
     'show_repeat_rule' => 'show',
   );
+  $handler->display->display_options['fields']['field_event_date']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -530,6 +540,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value']['relationship'] = 'field_dates_value';
   $handler->display->display_options['filters']['field_event_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_date_value']['group'] = 1;
   $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
