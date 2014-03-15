@@ -51,6 +51,9 @@ projects[entity][version] = "1.3"
 ; Entity Reference
 projects[entityreference][version] = "1.1"
 
+; Field collection
+projects[field_collection][version] = "1.0-beta7"
+
 ; Follow
 projects[follow][version] = "2.0-alpha1"
 
