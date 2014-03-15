@@ -418,11 +418,18 @@ function os_event_views_default_views() {
   $handler->display->display_options['relationships']['field_location_target_id']['field'] = 'field_location_target_id';
   $handler->display->display_options['relationships']['field_location_target_id']['label'] = 'Location';
   $handler->display->display_options['relationships']['field_location_target_id']['required'] = TRUE;
+  /* Relationship: Content: Dates (field_dates) */
+  $handler->display->display_options['relationships']['field_dates_value']['id'] = 'field_dates_value';
+  $handler->display->display_options['relationships']['field_dates_value']['table'] = 'field_data_field_dates';
+  $handler->display->display_options['relationships']['field_dates_value']['field'] = 'field_dates_value';
+  $handler->display->display_options['relationships']['field_dates_value']['label'] = 'All dates';
+  $handler->display->display_options['relationships']['field_dates_value']['delta'] = '-1';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Field: Date */
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['relationship'] = 'field_dates_value';
   $handler->display->display_options['fields']['field_event_date']['label'] = '';
   $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_date']['settings'] = array(
@@ -493,6 +500,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value']['relationship'] = 'field_dates_value';
   $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
   /* Filter criterion: Content: Promoted to front page */
   $handler->display->display_options['filters']['promote']['id'] = 'promote';
