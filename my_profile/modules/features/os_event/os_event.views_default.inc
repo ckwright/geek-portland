@@ -41,7 +41,13 @@ function os_event_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'No events to display.';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
-  /* Field: Content: Date */
+  /* Relationship: Content: Dates (field_dates) */
+  $handler->display->display_options['relationships']['field_dates_value']['id'] = 'field_dates_value';
+  $handler->display->display_options['relationships']['field_dates_value']['table'] = 'field_data_field_dates';
+  $handler->display->display_options['relationships']['field_dates_value']['field'] = 'field_dates_value';
+  $handler->display->display_options['relationships']['field_dates_value']['label'] = 'All dates';
+  $handler->display->display_options['relationships']['field_dates_value']['delta'] = '-1';
+  /* Field: Field: Date */
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
@@ -72,7 +78,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['fields']['field_short_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_short_title']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_short_title']['element_default_classes'] = FALSE;
-  /* Sort criterion: Content: Date -  start date (field_event_date) */
+  /* Sort criterion: Field: Date -  start date (field_event_date) */
   $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['sorts']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -91,7 +97,7 @@ function os_event_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date -  start date (field_event_date) */
+  /* Filter criterion: Field: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -180,7 +186,7 @@ function os_event_views_default_views() {
   );
   $handler->display->display_options['filters']['field_admission_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_admission_tid']['vocabulary'] = 'admission';
-  /* Filter criterion: Content: Date (field_event_date:rrule) */
+  /* Filter criterion: Field: Date (field_event_date:rrule) */
   $handler->display->display_options['filters']['field_event_date_rrule']['id'] = 'field_event_date_rrule';
   $handler->display->display_options['filters']['field_event_date_rrule']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_rrule']['field'] = 'field_event_date_rrule';
@@ -249,7 +255,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Date -  start date (field_event_date) */
+  /* Sort criterion: Field: Date -  start date (field_event_date) */
   $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['sorts']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -270,7 +276,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Content: Date -  start date (field_event_date) */
+  /* Filter criterion: Field: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -311,7 +317,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Date */
+  /* Field: Field: Date */
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
@@ -368,7 +374,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Content: Date -  start date (field_event_date) */
+  /* Filter criterion: Field: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value_1']['id'] = 'field_event_date_value_1';
   $handler->display->display_options['filters']['field_event_date_value_1']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value_1']['field'] = 'field_event_date_value';
@@ -404,7 +410,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['relationships']['field_location_target_id']['label'] = 'Location';
   $handler->display->display_options['relationships']['field_location_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Date */
+  /* Field: Field: Date */
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
@@ -473,7 +479,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Content: Date -  start date (field_event_date) */
+  /* Filter criterion: Field: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -520,7 +526,7 @@ function os_event_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date -  start date (field_event_date) */
+  /* Filter criterion: Field: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
