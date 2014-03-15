@@ -10,6 +10,56 @@
 function os_event_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'field_collection_item-field_dates-field_event_date'
+  $field_instances['field_collection_item-field_dates-field_event_date'] = array(
+    'bundle' => 'field_dates',
+    'deleted' => 0,
+    'description' => 'For repeating events, if you don\'t select a given month or week, all will be chosen.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_event_date',
+    'label' => 'Date',
+    'required' => 1,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'M j Y - g:i:sa',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'repeat_collapsed' => 1,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-event-body'
   $field_instances['node-event-body'] = array(
     'bundle' => 'event',
@@ -260,6 +310,58 @@ function os_event_field_default_field_instances() {
       'settings' => array(),
       'type' => 'link_field',
       'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-event-field_dates'
+  $field_instances['node-event-field_dates'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Add the date(s) of the event.',
+    'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 24,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_dates',
+    'label' => 'Dates',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 3,
     ),
   );
 
@@ -817,12 +919,14 @@ function os_event_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('A link to buy tickets online.');
+  t('Add the date(s) of the event.');
   t('Admission');
   t('Age');
   t('Begin typing to find a venue, or click "Create Venue" below if none found.');
   t('Briefly explain any costs associated with this event, if known.');
   t('Buy tickets');
   t('Date');
+  t('Dates');
   t('Description');
   t('Entrance Fee');
   t('For repeating events, if you don\'t select a given month or week, all will be chosen.');
