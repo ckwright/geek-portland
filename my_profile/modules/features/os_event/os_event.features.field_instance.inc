@@ -74,7 +74,7 @@ function os_event_field_default_field_instances() {
           'trim_length' => 300,
         ),
         'type' => 'text_trimmed',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -90,7 +90,7 @@ function os_event_field_default_field_instances() {
           'trim_length' => 300,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -99,7 +99,7 @@ function os_event_field_default_field_instances() {
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 8,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -133,10 +133,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 15,
+        'type' => 'hidden',
+        'weight' => 21,
       ),
       'default' => array(
         'label' => 'inline',
@@ -152,7 +151,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'inline',
@@ -162,7 +161,7 @@ function os_event_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator_sparse',
-        'weight' => 5,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -193,10 +192,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 14,
+        'type' => 'hidden',
+        'weight' => 20,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -212,7 +210,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -222,7 +220,7 @@ function os_event_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 7,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -253,10 +251,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 16,
+        'type' => 'hidden',
+        'weight' => 22,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -269,7 +266,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -321,10 +318,13 @@ function os_event_field_default_field_instances() {
     'description' => 'Add the date(s) of the event.',
     'display' => array(
       'blurb' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'field_collection',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 2,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -336,16 +336,22 @@ function os_event_field_default_field_instances() {
         'weight' => 2,
       ),
       'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'inline',
+        'module' => 'field_collection',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
         'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'field_collection',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -376,7 +382,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 16,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -389,14 +395,14 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -428,10 +434,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 13,
+        'type' => 'hidden',
+        'weight' => 19,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -447,7 +452,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -457,7 +462,7 @@ function os_event_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 9,
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'node',
@@ -494,7 +499,7 @@ function os_event_field_default_field_instances() {
           'image_style' => 'tiny_image',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -510,7 +515,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -520,7 +525,7 @@ function os_event_field_default_field_instances() {
           'image_style' => 'large_image',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -594,13 +599,13 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 20,
       ),
     ),
     'entity_type' => 'node',
@@ -637,10 +642,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 5,
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -653,7 +657,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -705,10 +709,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 12,
+        'type' => 'hidden',
+        'weight' => 18,
       ),
       'default' => array(
         'label' => 'above',
@@ -720,7 +723,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -758,12 +761,9 @@ function os_event_field_default_field_instances() {
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 17,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'default' => array(
         'label' => 'above',
@@ -775,7 +775,7 @@ function os_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'hidden',
