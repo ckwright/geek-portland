@@ -47,7 +47,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['relationships']['field_dates_value']['field'] = 'field_dates_value';
   $handler->display->display_options['relationships']['field_dates_value']['label'] = 'All dates';
   $handler->display->display_options['relationships']['field_dates_value']['delta'] = '-1';
-  /* Field: Field: Date */
+  /* Field: Field collection item: Date */
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
@@ -80,7 +80,14 @@ function os_event_views_default_views() {
   $handler->display->display_options['fields']['field_short_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_short_title']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_short_title']['element_default_classes'] = FALSE;
-  /* Sort criterion: Field: Date -  start date (field_event_date) */
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Sort criterion: Field collection item: Date -  start date (field_event_date) */
   $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['sorts']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -100,7 +107,7 @@ function os_event_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Field: Date -  start date (field_event_date) */
+  /* Filter criterion: Field collection item: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -190,7 +197,7 @@ function os_event_views_default_views() {
   );
   $handler->display->display_options['filters']['field_admission_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_admission_tid']['vocabulary'] = 'admission';
-  /* Filter criterion: Field: Date (field_event_date:rrule) */
+  /* Filter criterion: Field collection item: Date (field_event_date:rrule) */
   $handler->display->display_options['filters']['field_event_date_rrule']['id'] = 'field_event_date_rrule';
   $handler->display->display_options['filters']['field_event_date_rrule']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_rrule']['field'] = 'field_event_date_rrule';
@@ -260,7 +267,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Field: Date -  start date (field_event_date) */
+  /* Sort criterion: Field collection item: Date -  start date (field_event_date) */
   $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['sorts']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -281,7 +288,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Field: Date -  start date (field_event_date) */
+  /* Filter criterion: Field collection item: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -296,7 +303,9 @@ function os_event_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'fullcalendar';
   $handler->display->display_options['style_options']['timeformat'] = 'h:mmt';
   $handler->display->display_options['style_options']['fields']['title_field'] = 'field_short_title';
+  $handler->display->display_options['style_options']['fields']['url_field'] = 'path';
   $handler->display->display_options['style_options']['fields']['title'] = TRUE;
+  $handler->display->display_options['style_options']['fields']['url'] = TRUE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
@@ -323,7 +332,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Field: Date */
+  /* Field: Field collection item: Date */
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
@@ -382,7 +391,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Field: Date -  start date (field_event_date) */
+  /* Filter criterion: Field collection item: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value_1']['id'] = 'field_event_date_value_1';
   $handler->display->display_options['filters']['field_event_date_value_1']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value_1']['field'] = 'field_event_date_value';
@@ -425,7 +434,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['relationships']['field_dates_value']['label'] = 'All dates';
   $handler->display->display_options['relationships']['field_dates_value']['delta'] = '-1';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Field: Date */
+  /* Field: Field collection item: Date */
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
@@ -496,7 +505,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Field: Date -  start date (field_event_date) */
+  /* Filter criterion: Field collection item: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
@@ -544,7 +553,7 @@ function os_event_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Field: Date -  start date (field_event_date) */
+  /* Filter criterion: Field collection item: Date -  start date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
