@@ -70,7 +70,6 @@ features[field_instance][] = node-event-field_buy_tickets
 features[field_instance][] = node-event-field_dates
 features[field_instance][] = node-event-field_entrance_fee
 features[field_instance][] = node-event-field_event_category
-features[field_instance][] = node-event-field_event_date
 features[field_instance][] = node-event-field_image
 features[field_instance][] = node-event-field_location
 features[field_instance][] = node-event-field_more_info
