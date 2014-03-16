@@ -151,7 +151,7 @@ function os_event_ds_layout_settings_info() {
       'two_25_75_top' => array(
         0 => 'field_buy_tickets',
         1 => 'title',
-        2 => 'field_event_date',
+        2 => 'field_dates',
         3 => 'field_location',
         4 => 'field_admission',
         5 => 'field_entrance_fee',
@@ -173,7 +173,7 @@ function os_event_ds_layout_settings_info() {
     'fields' => array(
       'field_buy_tickets' => 'two_25_75_top',
       'title' => 'two_25_75_top',
-      'field_event_date' => 'two_25_75_top',
+      'field_dates' => 'two_25_75_top',
       'field_location' => 'two_25_75_top',
       'field_admission' => 'two_25_75_top',
       'field_entrance_fee' => 'two_25_75_top',

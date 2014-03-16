@@ -327,13 +327,13 @@ function os_event_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 24,
+        'weight' => 2,
       ),
       'ical' => array(
         'label' => 'above',
