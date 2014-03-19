@@ -251,7 +251,34 @@ function os_event_views_default_views() {
   /* Display: Upcoming events */
   $handler = $view->new_display('panel_pane', 'Upcoming events', 'panel_pane_upcoming');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Field collection item: Date */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['relationship'] = 'field_dates_value';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'hide',
+  );
+  $handler->display->display_options['fields']['field_event_date']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_event_date']['field_api_classes'] = TRUE;
   $handler->display->display_options['allow']['use_pager'] = 'use_pager';
   $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
   $handler->display->display_options['allow']['offset'] = 0;
