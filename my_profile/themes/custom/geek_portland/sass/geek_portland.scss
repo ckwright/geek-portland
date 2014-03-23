@@ -228,7 +228,7 @@ table.fc-header {
     }
 
     .node {
-      background: none;
+      @include single-box-shadow(#FFF);
       border: none;
 
       .at-panel {
