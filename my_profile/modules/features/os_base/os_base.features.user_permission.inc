@@ -51,6 +51,26 @@ function os_base_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'administer honeypot'.
+  $permissions['administer honeypot'] = array(
+    'name' => 'administer honeypot',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'honeypot',
+  );
+
+  // Exported permission: 'bypass honeypot protection'.
+  $permissions['bypass honeypot protection'] = array(
+    'name' => 'bypass honeypot protection',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'event administrator' => 'event administrator',
+      'site editor' => 'site editor',
+    ),
+    'module' => 'honeypot',
+  );
+
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
