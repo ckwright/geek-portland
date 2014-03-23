@@ -106,7 +106,7 @@ projects[diff][version] = "3.2"
 ; * https://github.com/harvesthq/chosen/pull/1702
 libraries[chosen][download][type] = "git"
 libraries[chosen][download][branch] = "with-built-assets"
-libraries[chosen][download][revision] = "9abefa9"
+libraries[chosen][download][revision] = "ae2ef5d"
 libraries[chosen][download][url] = "https://github.com/opensourcery/chosen.git"
 
 libraries[tinymce][download][type] = "get"
