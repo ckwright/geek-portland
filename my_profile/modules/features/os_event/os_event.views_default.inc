@@ -451,7 +451,9 @@ function os_event_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'geofield_map_map';
   $handler->display->display_options['style_options']['data_source'] = 'field_gmap';
   $handler->display->display_options['style_options']['popup_source'] = 'title';
-  $handler->display->display_options['style_options']['geofield_map_height'] = '100%';
+  $handler->display->display_options['style_options']['geofield_map_width'] = '558px';
+  $handler->display->display_options['style_options']['geofield_map_height'] = '475px';
+  $handler->display->display_options['style_options']['geofield_map_zoom'] = '11';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
