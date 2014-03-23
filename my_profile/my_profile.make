@@ -70,8 +70,8 @@ projects[date_ical][version] = "3.1"
 ; JQuery Update
 projects[jquery_update][version] = "2.3"
 
-; Mollom
-projects[mollom][version] = "2.7"
+; Honeypot
+projects[honeypot][version] = "1.16"
 
 ; Libraries.
 projects[libraries][version] = "2.2"
