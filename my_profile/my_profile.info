@@ -24,7 +24,6 @@ dependencies[] = overlay
 dependencies[] = path
 dependencies[] = rdf
 dependencies[] = search
-dependencies[] = shortcut
 dependencies[] = taxonomy
 ; The admin_menu module should only be used for development purposes.
 dependencies[] = toolbar
