@@ -167,8 +167,8 @@ function geek_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => 'Geek type',
+      'override_title' => 1,
+      'override_title_text' => 'GeekPage type',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -192,8 +192,8 @@ function geek_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'GeekPage interest',
     );
     $pane->cache = array();
     $pane->style = array(
