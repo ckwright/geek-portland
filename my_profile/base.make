@@ -16,6 +16,8 @@ projects[ctools][patch][] = "https://drupal.org/files/ctools-views-content-custo
 projects[chosen][version] = "2.0-beta4"
 
 projects[date][version] = "2.7"
+; Nested field values don't display correctly. https://drupal.org/node/1854378
+projects[date][patch][] = "https://drupal.org/files/date-repeat-field-nested-2065747-1.patch"
 
 projects[entitycache][version] = "1.2"
 
