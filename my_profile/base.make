@@ -33,8 +33,6 @@ projects[footable][download][revision] = "a52b6dc"
 ; https://drupal.org/node/1924942#comment-7098614
 projects[footable][patch][] = "https://drupal.org/files/footable-hook-requirements-install-1924942-02.patch"
 
-;projects[fullcalendar][version] = "2.0"
-
 projects[google_analytics][version] = "1.3"
 
 projects[html5_tools][download][branch] = "7.x-1.x"
