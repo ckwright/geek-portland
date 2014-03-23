@@ -126,6 +126,7 @@ function os_event_ds_layout_settings_info() {
     ),
     'limit' => array(
       'field_dates' => 'delta',
+      'field_image' => '1',
     ),
     'classes' => array(),
     'wrappers' => array(
