@@ -2,4 +2,4 @@
 core = "7.x"
 api = 2
 
-projects[og][version] = "2.5"
+projects[og][version] = "2.6"
