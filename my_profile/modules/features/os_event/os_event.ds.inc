@@ -124,6 +124,9 @@ function os_event_ds_layout_settings_info() {
       'body' => 'two_20_80_second',
       'node_link' => 'two_20_80_second',
     ),
+    'limit' => array(
+      'field_dates' => 'delta',
+    ),
     'classes' => array(),
     'wrappers' => array(
       'two_20_80_top' => 'div',
@@ -239,6 +242,7 @@ function os_event_ds_layout_settings_info() {
       'node_link' => 'two_25_75_second',
     ),
     'limit' => array(
+      'field_dates' => 'delta',
       'field_image' => '1',
     ),
     'classes' => array(),
