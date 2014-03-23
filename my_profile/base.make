@@ -42,10 +42,6 @@ projects[html5_tools][download][revision] = "11e0c28"
 
 projects[linkchecker][version] = "1.1"
 
-projects[menu_block][version] = "2.3"
-
-projects[menu_position][version] = "1.1"
-
 projects[redirect][version] = "1.0-rc1"
 
 projects[pathauto][version] = "1.2"
