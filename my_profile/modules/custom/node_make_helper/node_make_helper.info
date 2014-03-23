@@ -1,6 +1,0 @@
-name = Node make helper
-description = Creates the text to insert into a .info file to make a node.
-core = 7.x
-
-dependencies[] = features
-dependencies[] = node
