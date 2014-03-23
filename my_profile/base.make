@@ -25,14 +25,6 @@ projects[features][version] = "2.0"
 ; PDO exception if permissions are set in same feature as module creating them. http://drupal.org/node/1063204#comment-6350488
 projects[features][patch][] = "http://drupal.org/files/features_static_caches-1063204-32.patch"
 
-; Later dev commit fixes array/boolean mismatch.
-; @see https://drupal.org/node/1915318
-projects[features_override][download][branch] = "7.x-2.x"
-projects[features_override][download][revision] = "ed1df0e"
-; A patch to fix coding standards issues with produced features override code
-; Original issue see: http://drupal.org/node/1974336
-projects[features_override][patch][] = "http://drupal.org/files/export_breaks_coding_standards_0.patch"
-
 projects[fences][version] = "1.0"
 
 ; FooTable (responsive tables).
