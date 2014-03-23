@@ -2,11 +2,6 @@
 core = "7.x"
 api = 2
 
-projects[caption_filter][download][branch] = "7.x-1.x"
-projects[caption_filter][download][revision] = "6ab247f6c"
-; https://drupal.org/node/1432092#comment-7541749
-projects[caption_filter][patch][] = "https://drupal.org/files/tinymce-button--1432092--17.patch"
-
 projects[file_entity][version] = "2.0-alpha3"
 
 projects[imagefield_crop][version] = "1.1"
