@@ -119,14 +119,15 @@ function os_event_fullcalendar_options_info() {
  * @return string
  */
 function os_event_render_map_link($field) {
+  $output = '';
   $settings = isset($field['formatter_settings']) ? $field['formatter_settings'] : array();
   $settings += $field['properties']['default'];
 
   if(isset($field['entity']->field_location['und'][0]['entity']->field_address['und'][0])) {
     $map = $field['entity']->field_location['und'][0]['entity']->field_address['und'][0];
     $address = $map['thoroughfare'] . '+' . $map['postal_code'];
+    $output = l($settings['link text'], 'http://maps.google.com?q=' . $address);
   }
-  $output = l($settings['link text'], 'http://maps.google.com?q=' . $address);
 
   return $output;
 }
