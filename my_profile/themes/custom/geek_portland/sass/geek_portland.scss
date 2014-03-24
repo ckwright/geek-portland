@@ -230,6 +230,7 @@ table.fc-header {
     .node {
       @include single-box-shadow(#FFF);
       border: none;
+      background: none;
 
       .at-panel {
         margin-left: 15%;

@@ -61,7 +61,7 @@ table.fc-header { border: 0; }
 #content .node-blurb .field-type-image figure img { max-width: 90%; }
 #content .grouping-content .grouping-title { float: left; white-space: nowrap; padding-top: 14px; }
 #content .grouping-content .grouping-title + .node { border-top: 1px solid #e6e4de; }
-#content .grouping-content .node { -webkit-box-shadow: 0px 0px 5px white; -moz-box-shadow: 0px 0px 5px white; box-shadow: 0px 0px 5px white; border: none; }
+#content .grouping-content .node { -webkit-box-shadow: 0px 0px 5px white; -moz-box-shadow: 0px 0px 5px white; box-shadow: 0px 0px 5px white; border: none; background: none; }
 #content .grouping-content .node .at-panel { margin-left: 15%; }
 #content .grouping-content .node .at-panel .region-conditional-stack { clear: none; }
 #content .grouping-content .node .region-inner { margin: 0; }
