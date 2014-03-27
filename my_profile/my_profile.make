@@ -86,6 +86,7 @@ projects[references_dialog][patch][] = "https://drupal.org/files/references_dial
 
 ; Views Bulk Operations
 projects[views_bulk_operations][version] = "3.2"
+projects[viewfield][version] = "2.0"
 
 ; Libraries
 
