@@ -163,6 +163,22 @@ function geek_pages_field_default_field_bases() {
     'type' => 'link_field',
   );
 
+  // Exported field_base: 'field_upcoming_events'
+  $field_bases['field_upcoming_events'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_upcoming_events',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'viewfield',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'viewfield',
+  );
+
   // Exported field_base: 'field_youtube'
   $field_bases['field_youtube'] = array(
     'active' => 1,

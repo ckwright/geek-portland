@@ -31,7 +31,7 @@ function geek_pages_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -80,7 +80,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -239,7 +239,7 @@ function geek_pages_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -292,7 +292,7 @@ function geek_pages_field_default_field_instances() {
           'small_image_style' => 'tiny_image',
         ),
         'type' => 'magnific_slideshow',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -361,9 +361,10 @@ function geek_pages_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
+        'module' => 'adaptive_theme_helper',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 23,
+        'type' => 'at_list_default',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -514,6 +515,69 @@ function geek_pages_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-geek_page-field_upcoming_events'
+  $field_instances['node-geek_page-field_upcoming_events'] = array(
+    'bundle' => 'geek_page',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'event_listing|panel_pane_upcoming',
+        'vargs' => 'geeks=[node:nid]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_upcoming_events',
+    'label' => 'Upcoming Events',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'blog' => 0,
+        'event_listing' => 'event_listing',
+        'featured_content_slideshows' => 0,
+        'geekpages2' => 0,
+        'media_default' => 0,
+        'og_all_user_group_content' => 0,
+        'og_members' => 0,
+        'og_members_admin' => 0,
+        'og_nodes' => 0,
+        'og_user_groups' => 0,
+        'os_blog_administer' => 0,
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 17,
+    ),
+  );
+
   // Exported field_instance: 'node-geek_page-field_website'
   $field_instances['node-geek_page-field_website'] = array(
     'bundle' => 'geek_page',
@@ -659,7 +723,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -716,7 +780,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -783,6 +847,7 @@ function geek_pages_field_default_field_instances() {
   t('The Geek Page\'s official email address.');
   t('The link to this geek page\'s Facebook page');
   t('Twitter');
+  t('Upcoming Events');
   t('Venue');
   t('Website');
   t('What sort of geeky interests are covered by this geek page?');

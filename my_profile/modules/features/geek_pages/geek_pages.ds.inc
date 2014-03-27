@@ -53,7 +53,7 @@ function geek_pages_ds_field_settings_info() {
       ),
     ),
     'related_link' => array(
-      'weight' => '10',
+      'weight' => '11',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -155,17 +155,18 @@ function geek_pages_ds_layout_settings_info() {
         4 => 'field_event_category',
         5 => 'title',
         6 => 'field_website',
-        11 => 'field_location',
+        7 => 'field_location',
       ),
       'two_25_75_first' => array(
-        7 => 'field_image',
+        8 => 'field_image',
       ),
       'two_25_75_second' => array(
-        8 => 'body',
+        9 => 'body',
+        10 => 'field_upcoming_events',
       ),
       'two_25_75_bottom' => array(
-        9 => 'field_geek_page_type_s_',
-        10 => 'related_link',
+        11 => 'related_link',
+        12 => 'field_geek_page_type_s_',
       ),
     ),
     'fields' => array(
@@ -176,11 +177,12 @@ function geek_pages_ds_layout_settings_info() {
       'field_event_category' => 'two_25_75_top',
       'title' => 'two_25_75_top',
       'field_website' => 'two_25_75_top',
+      'field_location' => 'two_25_75_top',
       'field_image' => 'two_25_75_first',
       'body' => 'two_25_75_second',
-      'field_geek_page_type_s_' => 'two_25_75_bottom',
+      'field_upcoming_events' => 'two_25_75_second',
       'related_link' => 'two_25_75_bottom',
-      'field_location' => 'two_25_75_top',
+      'field_geek_page_type_s_' => 'two_25_75_bottom',
     ),
     'classes' => array(),
     'wrappers' => array(
