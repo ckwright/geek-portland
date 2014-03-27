@@ -520,8 +520,8 @@ function geek_pages_field_default_field_instances() {
     'bundle' => 'geek_page',
     'default_value' => array(
       0 => array(
-        'vname' => 'event_listing|panel_pane_upcoming',
-        'vargs' => 'geeks=[node:nid]',
+        'vname' => 'event_listing|panel_pane_3',
+        'vargs' => '[node:nid]',
       ),
     ),
     'deleted' => 0,
