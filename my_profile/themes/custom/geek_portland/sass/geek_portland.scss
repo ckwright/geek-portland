@@ -177,6 +177,11 @@ table.fc-header {
         margin-left: 0;
       }
     }
+
+    .node {
+      @include single-box-shadow(#FFF);
+      border: 0;
+    }
   }
 
   .rounded-corner-panel {
