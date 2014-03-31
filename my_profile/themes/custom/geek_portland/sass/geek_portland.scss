@@ -178,7 +178,8 @@ table.fc-header {
       }
     }
 
-    .node {
+    .node,
+    .view-empty {
       @include single-box-shadow(#FFF);
       border: 0;
     }
