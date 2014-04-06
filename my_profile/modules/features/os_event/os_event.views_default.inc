@@ -334,6 +334,9 @@ function os_event_views_default_views() {
   /* Display: Calendar */
   $handler = $view->new_display('panel_pane', 'Calendar', 'panel_pane_calendar');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'fullcalendar';
   $handler->display->display_options['style_options']['timeformat'] = 'h:mmt';
