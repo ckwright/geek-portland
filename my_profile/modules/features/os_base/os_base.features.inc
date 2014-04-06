@@ -25,12 +25,12 @@ function os_base_ctools_plugin_api($module = NULL, $api = NULL) {
 function os_base_image_default_styles() {
   $styles = array();
 
-  // Exported image style: large_image.
-  $styles['large_image'] = array(
-    'name' => 'large_image',
-    'label' => 'Large Image',
+  // Exported image style: dynamic_crop.
+  $styles['dynamic_crop'] = array(
+    'name' => 'dynamic_crop',
+    'label' => 'Dynamic Crop',
     'effects' => array(
-      7 => array(
+      1 => array(
         'label' => 'Javascript crop',
         'help' => 'Create a crop with a javascript toolbox.',
         'effect callback' => 'imagecrop_effect',
@@ -48,6 +48,43 @@ function os_base_image_default_styles() {
           'aspect_ratio' => '',
           'disable_if_no_data' => 1,
         ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: large_image.
+  $styles['large_image'] = array(
+    'name' => 'large_image',
+    'label' => 'Large Image',
+    'effects' => array(
+      3 => array(
+        'label' => 'Reuse a javascript crop selection',
+        'help' => 'Reuse crop selection from another javascript crop preset.',
+        'effect callback' => 'imagecrop_reuse_effect',
+        'form callback' => 'imagecrop_reuse_form',
+        'summary theme' => 'theme_imagecrop_reuse',
+        'module' => 'imagecrop',
+        'name' => 'imagecrop_reuse',
+        'data' => array(
+          'imagecrop_style' => 'dynamic_crop',
+        ),
+        'weight' => 1,
+      ),
+      4 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 300,
+          'height' => 250,
+          'upscale' => 0,
+        ),
         'weight' => 2,
       ),
     ),
@@ -58,7 +95,7 @@ function os_base_image_default_styles() {
     'name' => 'tiny_image',
     'label' => 'Tiny image',
     'effects' => array(
-      9 => array(
+      5 => array(
         'label' => 'Reuse a javascript crop selection',
         'help' => 'Reuse crop selection from another javascript crop preset.',
         'effect callback' => 'imagecrop_reuse_effect',
@@ -67,11 +104,11 @@ function os_base_image_default_styles() {
         'module' => 'imagecrop',
         'name' => 'imagecrop_reuse',
         'data' => array(
-          'imagecrop_style' => 'large_image',
+          'imagecrop_style' => 'dynamic_crop',
         ),
         'weight' => -10,
       ),
-      10 => array(
+      6 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',

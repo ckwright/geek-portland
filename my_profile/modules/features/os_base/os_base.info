@@ -33,6 +33,7 @@ features[file_display][] = image__default__file_image
 features[filter][] = filtered_html
 features[filter][] = full_html
 features[filter][] = plain_text
+features[image][] = dynamic_crop
 features[image][] = large_image
 features[image][] = tiny_image
 features[image][] = user_icon
