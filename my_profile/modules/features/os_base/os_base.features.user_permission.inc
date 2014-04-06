@@ -94,6 +94,8 @@ function os_base_user_default_permissions() {
     'name' => 'crop any image',
     'roles' => array(
       'administrator' => 'administrator',
+      'event administrator' => 'event administrator',
+      'site editor' => 'site editor',
     ),
     'module' => 'imagecrop',
   );
@@ -103,6 +105,8 @@ function os_base_user_default_permissions() {
     'name' => 'crop own images',
     'roles' => array(
       'administrator' => 'administrator',
+      'event administrator' => 'event administrator',
+      'site editor' => 'site editor',
     ),
     'module' => 'imagecrop',
   );
