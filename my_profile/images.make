@@ -4,7 +4,8 @@ api = 2
 
 projects[file_entity][version] = "2.0-alpha3"
 
-projects[imagefield_crop][version] = "1.1"
+projects[imagecrop][download][branch] = "7.x-1.x"
+projects[imagecrop][download][revision] = "98d1faa"
 
 projects[image_resize_filter][version] = "1.14"
 ; Images not resizing if path has query string: https://drupal.org/node/1929710
