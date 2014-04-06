@@ -174,6 +174,214 @@ function os_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_modules';
+  $strongarm->value = array(
+    'media' => 'media',
+    'profile_picture' => 0,
+  );
+  $export['imagecrop_modules'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_popup';
+  $strongarm->value = 'imagecrop_jquery_dialog';
+  $export['imagecrop_popup'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_popup_height';
+  $strongarm->value = '600';
+  $export['imagecrop_popup_height'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_popup_width';
+  $strongarm->value = '700';
+  $export['imagecrop_popup_width'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_rotation';
+  $strongarm->value = 0;
+  $export['imagecrop_rotation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_scale_default';
+  $strongarm->value = 1;
+  $export['imagecrop_scale_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_scale_step';
+  $strongarm->value = '50';
+  $export['imagecrop_scale_step'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_show_cancel_button';
+  $strongarm->value = 1;
+  $export['imagecrop_show_cancel_button'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_skip_preview';
+  $strongarm->value = 1;
+  $export['imagecrop_skip_preview'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_theme';
+  $strongarm->value = 'theme_default';
+  $export['imagecrop_theme'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagecrop_ui_controls';
+  $strongarm->value = 0;
+  $export['imagecrop_ui_controls'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imagefield_crop_info';
+  $strongarm->value = array(
+    28 => array(
+      'x' => '0',
+      'y' => '0',
+      'width' => '300',
+      'height' => '250',
+    ),
+    29 => array(
+      'x' => '0',
+      'y' => '0',
+      'width' => '300',
+      'height' => '250',
+    ),
+    30 => array(
+      'x' => '0',
+      'y' => '-138',
+      'width' => '300',
+      'height' => '250',
+    ),
+    57 => array(
+      'x' => '0',
+      'y' => '201',
+      'width' => '830',
+      'height' => '691',
+    ),
+    59 => array(
+      'x' => '0',
+      'y' => '260',
+      'width' => '661',
+      'height' => '550',
+    ),
+    60 => array(
+      'x' => '15',
+      'y' => '-161',
+      'width' => '300',
+      'height' => '250',
+    ),
+    62 => array(
+      'x' => '0',
+      'y' => '5',
+      'width' => '505',
+      'height' => '421',
+    ),
+    67 => array(
+      'x' => '0',
+      'y' => '65',
+      'width' => '679',
+      'height' => '567',
+    ),
+    69 => array(
+      'x' => '0',
+      'y' => '9',
+      'width' => '324',
+      'height' => '270',
+    ),
+    71 => array(
+      'x' => '146',
+      'y' => '0',
+      'width' => '321',
+      'height' => '268',
+    ),
+    73 => array(
+      'x' => '0',
+      'y' => '69',
+      'width' => '501',
+      'height' => '418',
+    ),
+    75 => array(
+      'x' => '61',
+      'y' => '501',
+      'width' => '551',
+      'height' => '458',
+    ),
+    77 => array(
+      'x' => '0',
+      'y' => '0',
+      'width' => '769',
+      'height' => '641',
+    ),
+    79 => array(
+      'x' => '96',
+      'y' => '0',
+      'width' => '864',
+      'height' => '720',
+    ),
+    83 => array(
+      'x' => '0',
+      'y' => '0',
+      'width' => '2459',
+      'height' => '2048',
+    ),
+    85 => array(
+      'x' => '12',
+      'y' => '-10',
+      'width' => '299',
+      'height' => '250',
+    ),
+    87 => array(
+      'x' => '51',
+      'y' => '0',
+      'width' => '551',
+      'height' => '459',
+    ),
+    89 => array(
+      'x' => '55',
+      'y' => '0',
+      'width' => '551',
+      'height' => '459',
+    ),
+    91 => array(
+      'x' => '0',
+      'y' => '196',
+      'width' => '600',
+      'height' => '500',
+    ),
+    93 => array(
+      'x' => '0',
+      'y' => '3',
+      'width' => '400',
+      'height' => '333',
+    ),
+  );
+  $export['imagefield_crop_info'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_page';
   $strongarm->value = array(
     0 => 'status',

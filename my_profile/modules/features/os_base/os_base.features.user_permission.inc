@@ -60,6 +60,15 @@ function os_base_user_default_permissions() {
     'module' => 'honeypot',
   );
 
+  // Exported permission: 'administer imagecrop'.
+  $permissions['administer imagecrop'] = array(
+    'name' => 'administer imagecrop',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'imagecrop',
+  );
+
   // Exported permission: 'bypass honeypot protection'.
   $permissions['bypass honeypot protection'] = array(
     'name' => 'bypass honeypot protection',
@@ -78,6 +87,24 @@ function os_base_user_default_permissions() {
       'site editor' => 'site editor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'crop any image'.
+  $permissions['crop any image'] = array(
+    'name' => 'crop any image',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'imagecrop',
+  );
+
+  // Exported permission: 'crop own images'.
+  $permissions['crop own images'] = array(
+    'name' => 'crop own images',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'imagecrop',
   );
 
   // Exported permission: 'delete any page content'.
