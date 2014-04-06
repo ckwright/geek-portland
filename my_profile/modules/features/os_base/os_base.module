@@ -269,37 +269,3 @@ function _os_block_variable_get($delta) {
 
   return $variable;
 }
-
-/**
- * Implements hook_module_implements_alter().
- *
- * Move jquery update to the end. This will make sure our
- * os_base_library_alter is always called before the jquery_update.
- *
- * See: https://drupal.org/node/1766240 .
- */
-function os_base_module_implements_alter(&$implementations, $hook) {
-  if ($hook == 'library_alter' && module_exists('jquery_update')) {
-    $jquery_update = $implementations['jquery_update'];
-    unset($implementations['jquery_update']);
-    $implementations['jquery_update'] = $jquery_update;
-  }
-}
-
-/**
- * Implements hook_library_alter().
- *
- * Makes JQuery Update only run on the custom theme.
- *
- * See: https://drupal.org/node/1766240 .
- */
-function os_base_library_alter(&$libraries, $module) {
-  global $theme_key, $conf;
-
-  if ($theme_key == 'seven') {
-    $conf['jquery_update_jquery_version'] = '1.5';
-  }
-  else {
-    $conf['jquery_update_jquery_version'] = '1.8';
-  }
-}
