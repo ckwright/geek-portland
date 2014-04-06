@@ -9,7 +9,6 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = geek_pages
 dependencies[] = image
-dependencies[] = imagefield_crop
 dependencies[] = media
 dependencies[] = node
 dependencies[] = og

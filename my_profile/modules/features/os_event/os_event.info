@@ -19,7 +19,6 @@ dependencies[] = field_collection
 dependencies[] = fullcalendar
 dependencies[] = geofield_map
 dependencies[] = image
-dependencies[] = imagefield_crop
 dependencies[] = libraries
 dependencies[] = link
 dependencies[] = media
