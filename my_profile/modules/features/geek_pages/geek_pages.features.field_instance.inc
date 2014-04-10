@@ -63,6 +63,59 @@ function geek_pages_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-geek_page-field_all_geeky_interests'
+  $field_instances['node-geek_page-field_all_geeky_interests'] = array(
+    'bundle' => 'geek_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Add any and all geeky tags here.',
+    'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_all_geeky_interests',
+    'label' => 'All geeky interests',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 18,
+    ),
+  );
+
   // Exported field_instance: 'node-geek_page-field_email'
   $field_instances['node-geek_page-field_email'] = array(
     'bundle' => 'geek_page',
@@ -829,6 +882,8 @@ function geek_pages_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add any and all geeky tags here.');
+  t('All geeky interests');
   t('Body');
   t('Determine if this is an OG group.');
   t('Email');

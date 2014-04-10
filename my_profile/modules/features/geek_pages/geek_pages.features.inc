@@ -62,11 +62,13 @@ function geek_pages_default_search_api_index() {
       "cron_limit" : "50",
       "fields" : {
         "title" : { "type" : "string" },
+        "status" : { "type" : "boolean" },
         "sticky" : { "type" : "boolean" },
-        "search_api_language" : { "type" : "string" },
-        "search_api_aggregation_1" : { "type" : "text" },
-        "field_event_category:name" : { "type" : "list\\u003Cstring\\u003E" },
-        "field_geek_page_type_s_:name" : { "type" : "list\\u003Cstring\\u003E" }
+        "author" : { "type" : "integer", "entity_type" : "user" },
+        "field_event_category" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_geek_page_type_s_" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_all_geeky_interests" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "search_api_language" : { "type" : "string" }
       },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {
@@ -79,18 +81,7 @@ function geek_pages_default_search_api_index() {
         "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } },
         "search_api_alter_add_viewed_entity" : { "status" : 0, "weight" : "0", "settings" : { "mode" : "full" } },
         "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] },
-        "search_api_alter_add_aggregation" : {
-          "status" : 1,
-          "weight" : "0",
-          "settings" : { "fields" : { "search_api_aggregation_1" : {
-                "name" : "sample",
-                "type" : "fulltext",
-                "fields" : [ "field_event_category:name", "field_geek_page_type_s_:name" ],
-                "description" : "A Fulltext aggregation of the following fields: Geeky interests \\u00bb Name, Geek Page type(s) \\u00bb Name."
-              }
-            }
-          }
-        }
+        "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "0", "settings" : [] }
       },
       "processors" : {
         "search_api_case_ignore" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } },
@@ -152,6 +143,12 @@ function geek_pages_default_search_api_server() {
       "database" : "default:default",
       "min_chars" : "3",
       "indexes" : { "geek_pages" : {
+          "field_event_category" : {
+            "table" : "search_api_db_geek_pages_field_event_category",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
           "search_api_language" : {
             "table" : "search_api_db_geek_pages",
             "column" : "search_api_language",
@@ -170,21 +167,28 @@ function geek_pages_default_search_api_server() {
             "type" : "boolean",
             "boost" : "1.0"
           },
-          "field_event_category:name" : {
-            "table" : "search_api_db_geek_pages_field_event_category_name",
-            "type" : "list\\u003Cstring\\u003E",
-            "boost" : "1.0",
-            "column" : "value"
+          "field_geek_page_type_s_" : {
+            "table" : "search_api_db_geek_pages_field_geek_page_type_s_",
+            "column" : "field_geek_page_type_s_",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
           },
-          "field_geek_page_type_s_:name" : {
-            "table" : "search_api_db_geek_pages_field_geek_page_type_s__name",
-            "type" : "list\\u003Cstring\\u003E",
-            "boost" : "1.0",
-            "column" : "value"
+          "status" : {
+            "table" : "search_api_db_geek_pages",
+            "column" : "status",
+            "type" : "boolean",
+            "boost" : "1.0"
           },
-          "search_api_aggregation_1" : {
-            "table" : "search_api_db_geek_pages_search_api_aggregation_1",
-            "type" : "text",
+          "author" : {
+            "table" : "search_api_db_geek_pages",
+            "column" : "author",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "field_all_geeky_interests" : {
+            "table" : "search_api_db_geek_pages_field_all_geeky_interests",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
             "boost" : "1.0"
           }
         }

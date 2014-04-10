@@ -160,30 +160,27 @@ function geek_pages_default_page_manager_pages() {
     $display->content['new-f172d3e1-735d-46ef-8226-9f0fb1864deb'] = $pane;
     $display->panels['two_25_75_top'][0] = 'new-f172d3e1-735d-46ef-8226-9f0fb1864deb';
     $pane = new stdClass();
-    $pane->pid = 'new-378df044-874f-4c1b-8caf-ec3f384f6b4b';
+    $pane->pid = 'new-23a0d296-fd25-4a78-9d45-77397a189b36';
     $pane->panel = 'two_25_75_top';
     $pane->type = 'block';
-    $pane->subtype = 'facetapi-jRG5p91EDrAEpwGR4UMLiRgUSV0kqCLD';
+    $pane->subtype = 'facetapi-eZFKxlkwwNefMkRofwp7uwTAkOHfH9Do';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
-      'override_title_text' => 'GeekPage type',
+      'override_title_text' => 'Geeky terms',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'facets',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '378df044-874f-4c1b-8caf-ec3f384f6b4b';
-    $display->content['new-378df044-874f-4c1b-8caf-ec3f384f6b4b'] = $pane;
-    $display->panels['two_25_75_top'][1] = 'new-378df044-874f-4c1b-8caf-ec3f384f6b4b';
+    $pane->uuid = '23a0d296-fd25-4a78-9d45-77397a189b36';
+    $display->content['new-23a0d296-fd25-4a78-9d45-77397a189b36'] = $pane;
+    $display->panels['two_25_75_top'][1] = 'new-23a0d296-fd25-4a78-9d45-77397a189b36';
     $pane = new stdClass();
     $pane->pid = 'new-e00fcb33-ffc2-414c-82a5-8941d2bddc87';
     $pane->panel = 'two_25_75_top';
