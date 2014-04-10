@@ -16,6 +16,7 @@ dependencies[] = image
 dependencies[] = image_resize_filter
 dependencies[] = imagecrop
 dependencies[] = media
+dependencies[] = menu
 dependencies[] = node
 dependencies[] = overlay
 dependencies[] = page_manager
