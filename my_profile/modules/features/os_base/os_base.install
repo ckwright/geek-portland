@@ -147,3 +147,39 @@ function os_base_update_7001(&$sandbox) {
   $node_date = field_read_instance('node', 'field_event_date', 'event');
   field_delete_instance($node_date);
 }
+
+/**
+ * Combines field_geek_page_type_s_ and field_event_category into field_all_geeky_interests.
+ */
+function os_base_update_7002(&$sandbox) {
+  features_revert(array('geek_pages' => array('field_base','field_instance', 'search_api_index')));
+
+  $geek_pages = db_select('node', 'node')
+      ->fields('node')
+      ->condition('type', 'geek_page')
+      ->execute();
+
+  foreach ($geek_pages as $node) {
+    $node = node_load($node->nid);
+    foreach ($node->field_geek_page_type_s_[LANGUAGE_NONE] as $geek_type) {
+      $node->field_all_geeky_interests[LANGUAGE_NONE][] = array(
+        'access' => 1,
+        'entity' => entity_load_single('taxonomy_term', $geek_type['tid']),
+        'target_id' => $geek_type['tid'],
+      );
+    }
+    foreach ($node->field_event_category[LANGUAGE_NONE] as $geek_category) {
+      $node->field_all_geeky_interests[LANGUAGE_NONE][] = array(
+        'access' => 1,
+        'entity' => entity_load_single('taxonomy_term', $geek_category['tid']),
+        'target_id' => $geek_type['tid'],
+      );
+    }
+    node_save($node);
+  }
+
+  $geek_type = field_read_instance('node', 'field_geek_page_type_s_', 'geek_page');
+  field_delete_instance($geek_type);
+  $geek_interests = field_read_instance('node', 'field_event_category', 'geek_page');
+  field_delete_instance($geek_interests);
+}
