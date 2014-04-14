@@ -43,7 +43,7 @@ function geek_pages_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '5',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -53,7 +53,7 @@ function geek_pages_ds_field_settings_info() {
       ),
     ),
     'related_link' => array(
-      'weight' => '11',
+      'weight' => '10',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -152,21 +152,20 @@ function geek_pages_ds_layout_settings_info() {
         1 => 'field_facebook',
         2 => 'field_youtube',
         3 => 'field_podcast_feed',
-        4 => 'field_event_category',
-        5 => 'title',
-        6 => 'field_website',
-        7 => 'field_location',
+        4 => 'title',
+        5 => 'field_website',
+        6 => 'field_location',
       ),
       'two_25_75_first' => array(
-        8 => 'field_image',
+        7 => 'field_image',
       ),
       'two_25_75_second' => array(
-        9 => 'body',
-        10 => 'field_upcoming_events',
+        8 => 'body',
+        9 => 'field_upcoming_events',
       ),
       'two_25_75_bottom' => array(
-        11 => 'related_link',
-        12 => 'field_geek_page_type_s_',
+        10 => 'related_link',
+        11 => 'field_all_geeky_interests',
       ),
     ),
     'fields' => array(
@@ -174,7 +173,6 @@ function geek_pages_ds_layout_settings_info() {
       'field_facebook' => 'two_25_75_top',
       'field_youtube' => 'two_25_75_top',
       'field_podcast_feed' => 'two_25_75_top',
-      'field_event_category' => 'two_25_75_top',
       'title' => 'two_25_75_top',
       'field_website' => 'two_25_75_top',
       'field_location' => 'two_25_75_top',
@@ -182,7 +180,7 @@ function geek_pages_ds_layout_settings_info() {
       'body' => 'two_25_75_second',
       'field_upcoming_events' => 'two_25_75_second',
       'related_link' => 'two_25_75_bottom',
-      'field_geek_page_type_s_' => 'two_25_75_bottom',
+      'field_all_geeky_interests' => 'two_25_75_bottom',
     ),
     'classes' => array(),
     'wrappers' => array(

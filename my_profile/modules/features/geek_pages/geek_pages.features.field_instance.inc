@@ -39,7 +39,7 @@ function geek_pages_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -93,13 +93,11 @@ function geek_pages_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 26,
+        'label' => 'hidden',
+        'module' => 'adaptive_theme_helper',
+        'settings' => array(),
+        'type' => 'at_list_default',
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -149,7 +147,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -263,7 +261,7 @@ function geek_pages_field_default_field_instances() {
           'small_image_style' => 'tiny_image',
         ),
         'type' => 'magnific_slideshow',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -335,7 +333,7 @@ function geek_pages_field_default_field_instances() {
         'module' => 'adaptive_theme_helper',
         'settings' => array(),
         'type' => 'at_list_default',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -509,7 +507,7 @@ function geek_pages_field_default_field_instances() {
         'module' => 'viewfield',
         'settings' => array(),
         'type' => 'viewfield_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -567,7 +565,7 @@ function geek_pages_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -694,7 +692,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -751,7 +749,7 @@ function geek_pages_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
