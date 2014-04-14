@@ -16,7 +16,7 @@ h1.page-title { font-weight: bold; }
 
 html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right white; }
 
-h1, h2, h3, h4, h5 { margin: 0; }
+h1, h2, h3, h4, h5 { margin: 0; line-height: 120%; }
 
 table.fc-header { border: 0; }
 
