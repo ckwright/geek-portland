@@ -316,7 +316,7 @@ function os_event_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add the date(s) of the event.',
+    'description' => 'Click "Add another item" to add more days for this event.',
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
@@ -833,12 +833,12 @@ function os_event_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('A link to buy tickets online.');
-  t('Add the date(s) of the event.');
   t('Admission');
   t('Age');
   t('Begin typing to find a venue, or click "Create Venue" below if none found.');
   t('Briefly explain any costs associated with this event, if known.');
   t('Buy tickets');
+  t('Click "Add another item" to add more days for this event.');
   t('Date');
   t('Dates');
   t('Description');
