@@ -171,7 +171,7 @@ function geek_pages_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'facets',
+      'css_class' => '',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -187,8 +187,8 @@ function geek_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => 'Geeky terms',
+      'override_title' => 1,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -196,7 +196,7 @@ function geek_pages_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'facets',
+      'css_class' => '',
     );
     $pane->extras = array();
     $pane->position = 1;
