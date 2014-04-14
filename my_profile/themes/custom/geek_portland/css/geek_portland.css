@@ -173,8 +173,8 @@ table.fc-header { border: 0; }
 
 /* Geek pages */
 .view-geekpages2 .views-row { float: left; width: 48%; margin-bottom: 1em; }
-.view-geekpages2 .views-row-odd { margin-left: 1%; }
-.view-geekpages2 .views-row-even { margin-right: 1%; clear: left; }
+.view-geekpages2 .views-row-even { margin-left: 1%; }
+.view-geekpages2 .views-row-odd { margin-right: 1%; clear: left; }
 
 .page-geeks section.facets { float: left; width: 49%; margin-bottom: 1em; }
 
