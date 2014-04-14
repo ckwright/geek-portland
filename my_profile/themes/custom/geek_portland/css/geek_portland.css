@@ -73,7 +73,7 @@ table.fc-header { border: 0; }
 .pane-page-tabs { margin-bottom: 0; }
 .pane-page-tabs ul.tabs { border: 0; margin-left: 1em; }
 
-.region-three-30-50-20-second .pane-page-tabs ul.tabs li { float: right; }
+.page-home .pane-page-tabs ul.tabs li { float: right; }
 
 .region-inner > .rounded-corner, .region-inner > .rounded-corner-panel, #content .region-inner > .node, #content .region-inner > .view-empty { margin-bottom: 20px; }
 
