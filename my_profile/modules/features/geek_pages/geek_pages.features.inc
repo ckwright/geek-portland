@@ -66,7 +66,6 @@ function geek_pages_default_search_api_index() {
         "sticky" : { "type" : "boolean" },
         "author" : { "type" : "integer", "entity_type" : "user" },
         "field_event_category" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_geek_page_type_s_" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_all_geeky_interests" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "search_api_language" : { "type" : "string" }
       },
@@ -165,12 +164,6 @@ function geek_pages_default_search_api_server() {
             "table" : "search_api_db_geek_pages",
             "column" : "sticky",
             "type" : "boolean",
-            "boost" : "1.0"
-          },
-          "field_geek_page_type_s_" : {
-            "table" : "search_api_db_geek_pages_field_geek_page_type_s_",
-            "column" : "field_geek_page_type_s_",
-            "type" : "list\\u003Cinteger\\u003E",
             "boost" : "1.0"
           },
           "status" : {
