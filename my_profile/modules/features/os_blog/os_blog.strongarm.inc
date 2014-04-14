@@ -43,6 +43,12 @@ function os_blog_strongarm() {
       'blurb' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'location_link' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

@@ -18,7 +18,7 @@ function os_blog_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -28,17 +28,17 @@ function os_blog_ds_field_settings_info() {
       ),
     ),
     'post_date' => array(
-      'weight' => '5',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'ds_post_date_long',
     ),
     'ds_user_picture' => array(
-      'weight' => '2',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'ds_picture_user_icon',
     ),
     'posted_by' => array(
-      'weight' => '3',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'author',
     ),
@@ -94,29 +94,33 @@ function os_blog_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'two_25_75_top' => array(
-        0 => 'field_event_category',
-        1 => 'title',
-        2 => 'ds_user_picture',
-        3 => 'posted_by',
-        4 => 'field_blog_category',
-        5 => 'post_date',
+        0 => 'title',
+        1 => 'ds_user_picture',
+        2 => 'posted_by',
+        3 => 'field_blog_category',
+        4 => 'post_date',
+      ),
+      'two_25_75_first' => array(
+        5 => 'field_image',
+      ),
+      'two_25_75_second' => array(
+        6 => 'body',
       ),
       'two_25_75_bottom' => array(
-        6 => 'field_image',
-        7 => 'body',
-        8 => 'og_group_ref',
+        7 => 'og_group_ref',
+        8 => 'field_event_category',
       ),
     ),
     'fields' => array(
-      'field_event_category' => 'two_25_75_top',
       'title' => 'two_25_75_top',
       'ds_user_picture' => 'two_25_75_top',
       'posted_by' => 'two_25_75_top',
       'field_blog_category' => 'two_25_75_top',
       'post_date' => 'two_25_75_top',
-      'field_image' => 'two_25_75_bottom',
-      'body' => 'two_25_75_bottom',
+      'field_image' => 'two_25_75_first',
+      'body' => 'two_25_75_second',
       'og_group_ref' => 'two_25_75_bottom',
+      'field_event_category' => 'two_25_75_bottom',
     ),
     'classes' => array(),
     'wrappers' => array(
