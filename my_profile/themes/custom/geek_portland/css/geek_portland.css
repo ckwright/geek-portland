@@ -44,7 +44,7 @@ table.fc-header { border: 0; }
 .block-geek-social ul { list-style: none outside none; padding: 0; margin: 0; }
 .block-geek-social ul li { list-style: none outside none; display: inline; padding: 0; margin: 0; }
 
-.rounded-corner .block-inner, .rounded-corner-panel .block-inner, #content .node .block-inner, #content .view-empty .block-inner { margin-left: 0; }
+.rounded-corner .block-inner, .rounded-corner-panel .block-inner, #content .node .block-inner, #content .view-empty .block-inner, .page-title .block-inner { margin-left: 0; }
 
 /* Node listing views */
 #content .view-content .item-list ul { margin: 0; padding: 0; }
