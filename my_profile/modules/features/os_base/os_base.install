@@ -172,7 +172,7 @@ function os_base_update_7002(&$sandbox) {
       $node->field_all_geeky_interests[LANGUAGE_NONE][] = array(
         'access' => 1,
         'entity' => entity_load_single('taxonomy_term', $geek_category['tid']),
-        'target_id' => $geek_type['tid'],
+        'target_id' => $geek_category['tid'],
       );
     }
     node_save($node);
