@@ -77,10 +77,10 @@ table.fc-header { border: 0; }
 
 .region-inner > .rounded-corner, .region-inner > .rounded-corner-panel, #content .region-inner > .node, #content .region-inner > .view-empty { margin-bottom: 20px; }
 
-.region .field-name-field-event-category { float: left; }
-.region .field-name-field-event-category ul { margin: 0; }
-.region .field-name-field-event-category ul li { list-style: none inside none; }
-.region .field-name-field-event-category ul li:before { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; content: '\54'; /* 'T' */ }
+.region .field-name-field-event-category, .region .field-name-field-all-geeky-interests { float: left; }
+.region .field-name-field-event-category ul, .region .field-name-field-all-geeky-interests ul { margin: 0; }
+.region .field-name-field-event-category ul li, .region .field-name-field-all-geeky-interests ul li { list-style: none inside none; }
+.region .field-name-field-event-category ul li:before, .region .field-name-field-all-geeky-interests ul li:before { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; content: '\54'; /* 'T' */ }
 
 .field-name-field-blog-category ul li:before { content: '\e800'; /* 'C' */ font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
 
