@@ -511,7 +511,7 @@ function os_event_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'tiny_image',
+          'image_style' => 'medium_image',
         ),
         'type' => 'image',
         'weight' => 3,
