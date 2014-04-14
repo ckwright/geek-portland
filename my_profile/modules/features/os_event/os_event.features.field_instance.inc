@@ -756,7 +756,7 @@ function os_event_field_default_field_instances() {
   // Exported field_instance: 'node-event-og_group_ref'
   $field_instances['node-event-og_group_ref'] = array(
     'bundle' => 'event',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => 'What Geeky Pages, if any, relate to this event?',
     'display' => array(
@@ -818,9 +818,14 @@ function os_event_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'og',
-      'settings' => array(),
-      'type' => 'og_complex',
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'options_select',
       'weight' => 14,
     ),
   );
