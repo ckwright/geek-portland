@@ -569,6 +569,14 @@ function os_event_views_default_views() {
   $handler->display->display_options['row_options']['grouping_fieldset']['group_field_function'] = 'home_page_ds_date_view';
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'blurb';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'There are no events today. <a href="/add">Submit your own</a> or <a href="/events/list">see what\'s happening later this week</a>.';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
