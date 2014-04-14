@@ -22,7 +22,7 @@ function os_event_default_page_manager_pages() {
   );
   $page->menu = array(
     'type' => 'tab',
-    'title' => 'Events',
+    'title' => 'List',
     'name' => 'main-menu',
     'weight' => '0',
     'parent' => array(
