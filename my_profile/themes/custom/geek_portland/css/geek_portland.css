@@ -95,6 +95,8 @@ table.fc-header { border: 0; }
 /* Front page */
 .homepage-listing { height: 475px; overflow: auto; }
 
+.pane-featured-content-slideshows-panel-pane-1 h2 { color: #000; }
+
 /* General styles */
 .field-name-post-date, .field-name-title { display: block; }
 
