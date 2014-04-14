@@ -52,11 +52,6 @@ function geek_pages_ds_field_settings_info() {
         'class' => 'page-title',
       ),
     ),
-    'related_link' => array(
-      'weight' => '10',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
   );
   $export['node|geek_page|default'] = $ds_fieldsetting;
 
@@ -164,8 +159,7 @@ function geek_pages_ds_layout_settings_info() {
         9 => 'field_upcoming_events',
       ),
       'two_25_75_bottom' => array(
-        10 => 'related_link',
-        11 => 'field_all_geeky_interests',
+        10 => 'field_all_geeky_interests',
       ),
     ),
     'fields' => array(
@@ -179,7 +173,6 @@ function geek_pages_ds_layout_settings_info() {
       'field_image' => 'two_25_75_first',
       'body' => 'two_25_75_second',
       'field_upcoming_events' => 'two_25_75_second',
-      'related_link' => 'two_25_75_bottom',
       'field_all_geeky_interests' => 'two_25_75_bottom',
     ),
     'classes' => array(),
