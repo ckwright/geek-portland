@@ -204,18 +204,16 @@ function os_blog_default_page_manager_pages() {
       'two_brick_left_below' => NULL,
       'two_brick_right_below' => NULL,
       'two_brick_bottom' => NULL,
-      'two_50_second' => array(
-        'corner_location' => 'panel',
-      ),
       'two_50_top' => NULL,
       'two_50_first' => NULL,
       'two_50_bottom' => NULL,
+      'two_50_second' => NULL,
     ),
     'two_brick_right_above' => array(
       'style' => 'rounded_corners',
     ),
     'two_50_second' => array(
-      'style' => 'rounded_corners',
+      'style' => '-1',
     ),
   );
   $display->cache = array();
