@@ -5,3 +5,20 @@
  */
 
 include_once 'os_blog.features.inc';
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Wraps exposed form elements in a fieldset.
+ */
+function os_blog_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  global $base_url;
+
+  if(isset($form_state['view']->current_display) && $form_state['view']->name == 'blog' && $form_state['view']->current_display == 'page') {
+    // 1. Add fieldset dropdown.
+    $form['#post_render'][] = '_os_event_add_fieldset';
+    $form['#attached']['js'][] = $base_url . '/misc/form.js';
+    $form['#attached']['js'][] = $base_url . '/misc/collapse.js';
+  }
+}
