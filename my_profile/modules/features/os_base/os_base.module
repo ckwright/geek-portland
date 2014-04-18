@@ -269,3 +269,16 @@ function _os_block_variable_get($delta) {
 
   return $variable;
 }
+
+/**
+* Implements hook_block_info_alter().
+*
+* Guarantees certain blocks are always in certain regions.
+*/
+function os_base_block_info_alter(&$blocks, $theme, $code_blocks) {
+  if (isset($blocks['menu']['menu-useful-links'])) {
+    $blocks['menu']['menu-useful-links']['theme'] = $theme;
+    $blocks['menu']['menu-useful-links']['region'] = 'dashboard_main';
+    $blocks['menu']['menu-useful-links']['status'] = '1';
+  }
+}
