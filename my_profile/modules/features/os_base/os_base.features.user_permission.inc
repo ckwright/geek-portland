@@ -20,6 +20,15 @@ function os_base_user_default_permissions() {
     'module' => 'contextual',
   );
 
+  // Exported permission: 'access dashboard'.
+  $permissions['access dashboard'] = array(
+    'name' => 'access dashboard',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'dashboard',
+  );
+
   // Exported permission: 'access overlay'.
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
