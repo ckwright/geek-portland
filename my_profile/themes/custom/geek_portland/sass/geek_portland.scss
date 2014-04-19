@@ -625,6 +625,14 @@ table.fc-header {
 }
 
 /*
+ * Fullcalendar
+ */
+.fc-event-default, .fc-event-default .fc-event-skin, .fc-event-default .fc-event-time, .fc-event-default a {
+  background: $dark_blue;
+  border: $dark_blue;
+}
+
+/*
  * Blog listing styles
  */
 .pane-views-exp-blog-page {
