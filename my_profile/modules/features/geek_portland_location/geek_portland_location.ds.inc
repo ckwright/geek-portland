@@ -41,6 +41,40 @@ function geek_portland_location_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|location|default';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'location';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'panels-one';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'one_main' => array(
+        0 => 'field_website',
+        1 => 'field_phone',
+        2 => 'field_address',
+        3 => 'field_gmap',
+      ),
+    ),
+    'fields' => array(
+      'field_website' => 'one_main',
+      'field_phone' => 'one_main',
+      'field_address' => 'one_main',
+      'field_gmap' => 'one_main',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'one_main' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|location|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|location|location_link';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'location';

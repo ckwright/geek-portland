@@ -46,6 +46,9 @@ function geek_portland_location_strongarm() {
       'location_link' => array(
         'custom_settings' => TRUE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
