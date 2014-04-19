@@ -330,9 +330,12 @@ function geek_pages_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'adaptive_theme_helper',
-        'settings' => array(),
-        'type' => 'at_list_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'location_link',
+        ),
+        'type' => 'entityreference_entity_view',
         'weight' => 6,
       ),
       'teaser' => array(
