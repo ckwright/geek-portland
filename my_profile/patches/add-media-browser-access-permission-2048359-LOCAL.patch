@@ -1,0 +1,24 @@
+diff --git a/media.module b/media.module
+index da42a87..6b3be5b 100644
+--- a/media.module
++++ b/media.module
+@@ -144,8 +144,7 @@ function media_menu() {
+     'title' => 'Media browser',
+     'description' => 'Media Browser for picking media and uploading new media',
+     'page callback' => 'media_browser',
+-    'access callback' => 'file_entity_access',
+-    'access arguments' => array('create'),
++    'access arguments' => array('access media browser'),
+     'type' => MENU_CALLBACK,
+     'file' => 'includes/media.browser.inc',
+     'theme callback' => 'media_dialog_get_theme_name',
+@@ -267,6 +266,9 @@ function media_permission() {
+       'title' => t('Import media files from the local filesystem'),
+       'description' => t('Simple file importer'),
+     ),
++    'access media browser' => array(
++      'title' => t('Use the media browser'),
++    ),
+   );
+ }
+ 
