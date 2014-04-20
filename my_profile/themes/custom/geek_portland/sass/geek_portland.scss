@@ -373,77 +373,78 @@ table.fc-header {
 }
 
 /*
- * General styles
+ * General styles for node display
  */
-.field-name-post-date,
-.field-name-title {
-  display: block;
-}
-
-.field-name-field-location,
-.field-name-field-address
-{
-  .field-name-title,
-  * {
-    display: inline;
+.node {
+  .field-name-post-date,
+  .field-name-title {
+    display: block;
   }
-}
 
-.field-name-field-address {
-  display:inline;
-  & > div {
+  .field-name-field-location,
+  .field-name-field-address
+  {
+    .field-name-title,
+    * {
+      display: inline;
+    }
+  }
+
+  .field-name-field-address {
+    display:inline;
+    & > div {
+      padding-right: 10px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .field-name-field-phone,
+  .field-name-posted-by,
+  .field-name-field-blog-category {
+    display: inline;
+
+    * {
+      display: inline;
+    }
+  }
+
+  .field-name-field-admission,
+  .field-name-field-entrance-fee,
+  .field-name-field-age
+  {
+    display: inline;
     padding-right: 10px;
 
-    &:after {
-      display: none;
+    * {
+      display: inline;
+    }
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none outside none;
+    }
+  }
+
+  .field-name-field-buy-tickets,
+  .field-name-field-more-info,
+  .field-name-map-link,
+  .field-name-ical-link {
+    float: right;
+    padding-left: .5em;
+
+    a {
+      &:before {
+        color: #000;
+        @include geek_font_prepare;
+      }
     }
   }
 }
-
-.field-name-field-phone,
-.field-name-posted-by,
-.field-name-field-blog-category {
-  display: inline;
-
-  * {
-    display: inline;
-  }
-}
-
-.field-name-field-admission,
-.field-name-field-entrance-fee,
-.field-name-field-age
-{
-  display: inline;
-  padding-right: 10px;
-
-  * {
-    display: inline;
-  }
-
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-    list-style: none outside none;
-  }
-}
-
-.field-name-field-buy-tickets,
-.field-name-field-more-info,
-.field-name-map-link,
-.field-name-ical-link {
-  float: right;
-  padding-left: .5em;
-
-  a {
-    &:before {
-      color: #000;
-      @include geek_font_prepare;
-    }
-  }
-}
-
 .field-name-field-buy-tickets {
   a {
     &:before {

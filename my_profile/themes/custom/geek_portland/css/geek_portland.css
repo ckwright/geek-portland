@@ -97,24 +97,19 @@ table.fc-header { border: 0; }
 
 .pane-featured-content-slideshows-panel-pane-1 h2 { color: #000; }
 
-/* General styles */
-.field-name-post-date, .field-name-title { display: block; }
-
-.field-name-field-location .field-name-title, .field-name-field-location *, .field-name-field-address .field-name-title, .field-name-field-address * { display: inline; }
-
-.field-name-field-address { display: inline; }
-.field-name-field-address > div { padding-right: 10px; }
-.field-name-field-address > div:after { display: none; }
-
-.field-name-field-phone, .field-name-posted-by, .field-name-field-blog-category { display: inline; }
-.field-name-field-phone *, .field-name-posted-by *, .field-name-field-blog-category * { display: inline; }
-
-.field-name-field-admission, .field-name-field-entrance-fee, .field-name-field-age { display: inline; padding-right: 10px; }
-.field-name-field-admission *, .field-name-field-entrance-fee *, .field-name-field-age * { display: inline; }
-.field-name-field-admission ul, .field-name-field-admission li, .field-name-field-entrance-fee ul, .field-name-field-entrance-fee li, .field-name-field-age ul, .field-name-field-age li { margin: 0; padding: 0; list-style: none outside none; }
-
-.field-name-field-buy-tickets, .field-name-field-more-info, .field-name-map-link, .field-name-ical-link { float: right; padding-left: .5em; }
-.field-name-field-buy-tickets a:before, .field-name-field-more-info a:before, .field-name-map-link a:before, .field-name-ical-link a:before { color: #000; font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
+/* General styles for node display */
+.node .field-name-post-date, .node .field-name-title { display: block; }
+.node .field-name-field-location .field-name-title, .node .field-name-field-location *, .node .field-name-field-address .field-name-title, .node .field-name-field-address * { display: inline; }
+.node .field-name-field-address { display: inline; }
+.node .field-name-field-address > div { padding-right: 10px; }
+.node .field-name-field-address > div:after { display: none; }
+.node .field-name-field-phone, .node .field-name-posted-by, .node .field-name-field-blog-category { display: inline; }
+.node .field-name-field-phone *, .node .field-name-posted-by *, .node .field-name-field-blog-category * { display: inline; }
+.node .field-name-field-admission, .node .field-name-field-entrance-fee, .node .field-name-field-age { display: inline; padding-right: 10px; }
+.node .field-name-field-admission *, .node .field-name-field-entrance-fee *, .node .field-name-field-age * { display: inline; }
+.node .field-name-field-admission ul, .node .field-name-field-admission li, .node .field-name-field-entrance-fee ul, .node .field-name-field-entrance-fee li, .node .field-name-field-age ul, .node .field-name-field-age li { margin: 0; padding: 0; list-style: none outside none; }
+.node .field-name-field-buy-tickets, .node .field-name-field-more-info, .node .field-name-map-link, .node .field-name-ical-link { float: right; padding-left: .5em; }
+.node .field-name-field-buy-tickets a:before, .node .field-name-field-more-info a:before, .node .field-name-map-link a:before, .node .field-name-ical-link a:before { color: #000; font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
 
 .field-name-field-buy-tickets a:before { content: '\47'; /* 'G' */ }
 
