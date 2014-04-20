@@ -25,10 +25,15 @@ function _os_event_add_fieldset($children, $elements) {
   $element_children = element_children($elements);
   foreach ($element_children as $input_name) {
     if (isset($elements[$input_name]['#default_value']) && $elements[$input_name]['#default_value'] != $elements[$input_name]['#value']) {
+      // Checkboxes themed uniquely.
+      if ($elements[$input_name]['#theme'] == 'radio_as_checkbox') {
+        $fieldset['element']['#title'] .= '&bull;' . $elements[$input_name]['#options'][1];
+      }
       // Dropdowns.
-      if (isset($elements[$input_name]['#options'][$elements[$input_name]['#value']])) {
+      elseif (isset($elements[$input_name]['#options'][$elements[$input_name]['#value']])) {
         $fieldset['element']['#title'] .= '&bull;' . $elements[$input_name]['#options'][$elements[$input_name]['#value']];
       }
+      // Inputs.
       else {
         $fieldset['element']['#title'] .= '&bull;' . $elements[$input_name]['#value'];
       }
