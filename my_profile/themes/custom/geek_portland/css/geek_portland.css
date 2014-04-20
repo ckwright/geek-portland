@@ -178,7 +178,5 @@ table.fc-header { border: 0; }
 .view-geekpages2 .views-row-even { margin-left: 1%; }
 .view-geekpages2 .views-row-odd { margin-right: 1%; clear: left; }
 
-.page-geeks section.facets { float: left; width: 49%; margin-bottom: 1em; }
-
 .node-type-geek-page .field-name-field-event-category { clear: right; }
 .node-type-geek-page .region-two-25-75-bottom .field { float: left; padding-right: .5em; }

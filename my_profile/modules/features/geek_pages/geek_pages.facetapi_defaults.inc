@@ -121,15 +121,15 @@ function geek_pages_facetapi_default_facet_settings() {
       'indexed' => 0,
     ),
     'sort_weight' => array(
+      'display' => '-50',
       'active' => '-48',
       'count' => '-46',
-      'display' => '-50',
       'indexed' => '-44',
     ),
     'sort_order' => array(
+      'display' => '4',
       'active' => '3',
       'count' => '3',
-      'display' => '4',
       'indexed' => '4',
     ),
     'empty_behavior' => 'none',
