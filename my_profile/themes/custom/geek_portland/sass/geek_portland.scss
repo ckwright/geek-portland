@@ -710,6 +710,10 @@ table.fc-header {
   }
 }
 
+.facetapi-facet-field-all-geeky-interests {
+  @include columns(3em 3);
+}
+
 .node-type-geek-page {
   .field-name-field-event-category {
     clear: right;

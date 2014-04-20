@@ -178,5 +178,7 @@ table.fc-header { border: 0; }
 .view-geekpages2 .views-row-even { margin-left: 1%; }
 .view-geekpages2 .views-row-odd { margin-right: 1%; clear: left; }
 
+.facetapi-facet-field-all-geeky-interests { -webkit-columns: 3em 3; -moz-columns: 3em 3; -ms-columns: 3em 3; -o-columns: 3em 3; columns: 3em 3; }
+
 .node-type-geek-page .field-name-field-event-category { clear: right; }
 .node-type-geek-page .region-two-25-75-bottom .field { float: left; padding-right: .5em; }
