@@ -22,6 +22,19 @@ function _os_event_add_fieldset($children, $elements) {
     '#children' => $children,
   );
 
+  $element_children = element_children($elements);
+  foreach ($element_children as $input_name) {
+    if (isset($elements[$input_name]['#default_value']) && $elements[$input_name]['#default_value'] != $elements[$input_name]['#value']) {
+      // Dropdowns.
+      if (isset($elements[$input_name]['#options'][$elements[$input_name]['#value']])) {
+        $fieldset['element']['#title'] .= '&bull;' . $elements[$input_name]['#options'][$elements[$input_name]['#value']];
+      }
+      else {
+        $fieldset['element']['#title'] .= '&bull;' . $elements[$input_name]['#value'];
+      }
+    }
+  }
+
   return theme('fieldset', $fieldset);
 }
 
