@@ -589,7 +589,7 @@ function os_event_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Begin typing to find a venue, or click "Create Venue" below if none found.',
+    'description' => 'Begin typing to find a venue. If you don\'t see the venue, please choose "See listing details" and enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.',
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
@@ -712,6 +712,59 @@ function os_event_field_default_field_instances() {
       'settings' => array(),
       'type' => 'link_field',
       'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-event-field_notes_for_geek_portland'
+  $field_instances['node-event-field_notes_for_geek_portland'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Leave a note about this event to Geek Portland. This will not appear on the final event description.',
+    'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 24,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_notes_for_geek_portland',
+    'label' => 'Notes for Geek Portland',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 15,
     ),
   );
 
@@ -849,7 +902,7 @@ function os_event_field_default_field_instances() {
   t('A link to buy tickets online.');
   t('Admission');
   t('Age');
-  t('Begin typing to find a venue, or click "Create Venue" below if none found.');
+  t('Begin typing to find a venue. If you don\'t see the venue, please choose "See listing details" and enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.');
   t('Briefly explain any costs associated with this event, if known.');
   t('Buy tickets');
   t('Click "Add another item" to add more days for this event.');
@@ -860,8 +913,10 @@ function os_event_field_default_field_instances() {
   t('For repeating events, if you don\'t select a given month or week, all will be chosen.');
   t('Geeky interests');
   t('Image');
+  t('Leave a note about this event to Geek Portland. This will not appear on the final event description.');
   t('Load an image for this event. This image will be scaled to 320px wide.');
   t('More info');
+  t('Notes for Geek Portland');
   t('Related Geek Pages');
   t('Short title');
   t('This will display on the calendar grid page, so keep it short!');
