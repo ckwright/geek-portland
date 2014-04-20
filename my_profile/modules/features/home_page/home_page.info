@@ -3,6 +3,7 @@ description = A feature to pull in the home page information
 core = 7.x
 package = geek portland
 dependencies[] = ctools
+dependencies[] = entity
 dependencies[] = page_manager
 dependencies[] = views
 dependencies[] = views_content

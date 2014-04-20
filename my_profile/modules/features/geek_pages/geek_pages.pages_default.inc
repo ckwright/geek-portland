@@ -205,6 +205,25 @@ function geek_pages_default_page_manager_pages() {
     $display->content['new-23a0d296-fd25-4a78-9d45-77397a189b36'] = $pane;
     $display->panels['two_50_first'][1] = 'new-23a0d296-fd25-4a78-9d45-77397a189b36';
     $pane = new stdClass();
+    $pane->pid = 'new-0a3b1911-bedc-4a5b-9af6-8844ec1df960';
+    $pane->panel = 'two_50_second';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'featured_content_slideshows-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '0a3b1911-bedc-4a5b-9af6-8844ec1df960';
+    $display->content['new-0a3b1911-bedc-4a5b-9af6-8844ec1df960'] = $pane;
+    $display->panels['two_50_second'][0] = 'new-0a3b1911-bedc-4a5b-9af6-8844ec1df960';
+    $pane = new stdClass();
     $pane->pid = 'new-f172d3e1-735d-46ef-8226-9f0fb1864deb';
     $pane->panel = 'two_50_top';
     $pane->type = 'page_title';

@@ -33,18 +33,14 @@ function geek_pages_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'entity';
   $handler->display->display_options['row_options']['view_mode'] = 'blurb';
-  /* Sort criterion: Indexed Node: Sticky in lists */
-  $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
-  $handler->display->display_options['sorts']['sticky']['table'] = 'search_api_index_geek_pages';
-  $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
-  $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
   /* Sort criterion: Indexed Node: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'search_api_index_geek_pages';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: All GeekPages */
+  $handler = $view->new_display('panel_pane', 'All GeekPages', 'panel_pane_1');
+  $handler->display->display_options['display_description'] = 'Shows all geek pages arranged alphabetically';
   $handler->display->display_options['inherit_panels_path'] = '1';
   $export['geekpages2'] = $view;
 

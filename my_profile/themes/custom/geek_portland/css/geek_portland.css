@@ -174,9 +174,12 @@ table.fc-header { border: 0; }
 #page > footer .block-menu-footer-menu ul li a { font-size: 1.3em; }
 
 /* Geek pages */
-.view-geekpages2 .views-row { float: left; width: 48%; margin-bottom: 1em; }
-.view-geekpages2 .views-row-even { margin-left: 1%; }
-.view-geekpages2 .views-row-odd { margin-right: 1%; clear: left; }
+.region-two-50-bottom .view-geekpages2 .views-row { float: left; width: 49%; margin-bottom: 1em; }
+.region-two-50-bottom .view-geekpages2 .views-row-even { margin-left: 1%; }
+.region-two-50-bottom .view-geekpages2 .views-row-odd { margin-right: 1%; clear: left; }
+
+.region-two-50-second .pane-featured-content-slideshows-panel-pane-2 { margin-left: 2%; }
+.region-two-50-second .pane-featured-content-slideshows-panel-pane-2 .block-inner { margin-left: 0; }
 
 .facetapi-facet-field-all-geeky-interests { -webkit-columns: 3em 3; -moz-columns: 3em 3; -ms-columns: 3em 3; -o-columns: 3em 3; columns: 3em 3; }
 
