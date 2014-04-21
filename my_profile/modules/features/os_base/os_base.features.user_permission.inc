@@ -29,6 +29,16 @@ function os_base_user_default_permissions() {
     'module' => 'dashboard',
   );
 
+  // Exported permission: 'access media browser'.
+  $permissions['access media browser'] = array(
+    'name' => 'access media browser',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'media',
+  );
+
   // Exported permission: 'access overlay'.
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
@@ -62,6 +72,17 @@ function os_base_user_default_permissions() {
     'module' => 'toolbar',
   );
 
+  // Exported permission: 'add media from remote sources'.
+  $permissions['add media from remote sources'] = array(
+    'name' => 'add media from remote sources',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'media_internet',
+  );
+
   // Exported permission: 'administer filters'.
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
@@ -87,6 +108,15 @@ function os_base_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'imagecrop',
+  );
+
+  // Exported permission: 'administer media browser'.
+  $permissions['administer media browser'] = array(
+    'name' => 'administer media browser',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media',
   );
 
   // Exported permission: 'bypass honeypot protection'.
@@ -165,6 +195,15 @@ function os_base_user_default_permissions() {
       'site editor' => 'site editor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'import media'.
+  $permissions['import media'] = array(
+    'name' => 'import media',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media',
   );
 
   // Exported permission: 'search content'.
