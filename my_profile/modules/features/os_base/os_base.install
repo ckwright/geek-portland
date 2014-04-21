@@ -183,3 +183,13 @@ function os_base_update_7002(&$sandbox) {
   $geek_interests = field_read_instance('node', 'field_event_category', 'geek_page');
   field_delete_instance($geek_interests);
 }
+
+/**
+ * Adds code for upgrade geek pages listing.
+ */
+function os_base_update_7003(&$sandbox) {
+  features_revert(array(
+    'geek_pages' => array('views_view'),
+    'home_page' => array('views_view'),
+  ));
+}
