@@ -14,7 +14,7 @@ function os_event_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_event';
-  $strongarm->value = 'edit-og';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_event'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -150,6 +150,7 @@ function os_event_strongarm() {
   $strongarm->name = 'node_options_event';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'promote',
   );
   $export['node_options_event'] = $strongarm;
 
