@@ -81,7 +81,7 @@ table.fc-header {
       li {
         a {
           &.active {
-            color: #1C6EA0;
+            color: $link_color;
           }
         }
       }
