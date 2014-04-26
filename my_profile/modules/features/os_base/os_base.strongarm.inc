@@ -176,8 +176,8 @@ function os_base_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'imagecrop_modules';
   $strongarm->value = array(
-    'media' => 'media',
     'profile_picture' => 0,
+    'media' => 0,
   );
   $export['imagecrop_modules'] = $strongarm;
 
