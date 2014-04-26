@@ -77,6 +77,14 @@ table.fc-header {
     .block-menu {
       width: 75%;
       float: left;
+
+      li {
+        a {
+          &.active {
+            color: #1C6EA0;
+          }
+        }
+      }
     }
   }
 
