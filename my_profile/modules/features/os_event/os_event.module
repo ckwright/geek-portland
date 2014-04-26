@@ -56,11 +56,6 @@ function os_event_form_views_exposed_form_alter(&$form, &$form_state, $form_id) 
     $form['#post_render'][] = '_os_event_add_fieldset';
     $form['#attached']['js'][] = $base_url . '/misc/form.js';
     $form['#attached']['js'][] = $base_url . '/misc/collapse.js';
-
-    // 2. Alter weekly option to be checkbox instead of radios.
-    // <input type="radio" class="form-radio" value="All" name="weekly" id="edit-weekly-all">
-    // <input type="checkbox" class="form-checkbox" value="1" name="weekly">
-    $form['weekly']['#theme'] = 'radio_as_checkbox';
   }
 }
 
