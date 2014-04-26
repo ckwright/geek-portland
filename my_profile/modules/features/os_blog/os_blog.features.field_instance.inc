@@ -63,53 +63,6 @@ function os_blog_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_blog_category'
-  $field_instances['node-blog_post-field_blog_category'] = array(
-    'bundle' => 'blog_post',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Tag your blog post with categories so that related posts can be linked. Begin typing a word to see matching categories.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_blog_category',
-    'label' => 'Blog Category',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 1,
-      ),
-      'type' => 'options_select',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'node-blog_post-field_event_category'
   $field_instances['node-blog_post-field_event_category'] = array(
     'bundle' => 'blog_post',
@@ -290,12 +243,10 @@ function os_blog_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('An image associated with this blog post. Required if you want this item to appear on the front page under Featured news.');
-  t('Blog Category');
   t('Blog Post');
   t('Geeky interests');
   t('Image');
   t('Related Geek Pages');
-  t('Tag your blog post with categories so that related posts can be linked. Begin typing a word to see matching categories.');
   t('What Geeky Pages, if any, relate to this blog post?');
   t('What geeky interests are discussed in this post?');
 
