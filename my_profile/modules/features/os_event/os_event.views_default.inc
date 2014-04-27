@@ -65,30 +65,6 @@ function os_event_views_default_views() {
     'show_repeat_rule' => 'show',
   );
   $handler->display->display_options['fields']['field_event_date']['delta_offset'] = '0';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Short title */
-  $handler->display->display_options['fields']['field_short_title']['id'] = 'field_short_title';
-  $handler->display->display_options['fields']['field_short_title']['table'] = 'field_data_field_short_title';
-  $handler->display->display_options['fields']['field_short_title']['field'] = 'field_short_title';
-  $handler->display->display_options['fields']['field_short_title']['label'] = '';
-  $handler->display->display_options['fields']['field_short_title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_short_title']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_short_title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_short_title']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_short_title']['element_default_classes'] = FALSE;
-  /* Field: Content: Path */
-  $handler->display->display_options['fields']['path']['id'] = 'path';
-  $handler->display->display_options['fields']['path']['table'] = 'node';
-  $handler->display->display_options['fields']['path']['field'] = 'path';
-  $handler->display->display_options['fields']['path']['label'] = '';
-  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Sort criterion: Field collection item: Date -  start date (field_event_date) */
   $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
