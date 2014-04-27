@@ -19,6 +19,8 @@ function os_event_default_page_manager_pages() {
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
+    'plugins' => array(),
+    'logic' => 'and',
   );
   $page->menu = array(
     'type' => 'tab',
@@ -371,14 +373,17 @@ function os_event_default_page_manager_pages() {
   $pages['os_event_node_add'] = $page;
 
   $page = new stdClass();
-  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->disabled = TRUE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
   $page->name = 'weekly_events';
   $page->task = 'page';
   $page->admin_title = 'Weekly events';
   $page->admin_description = '';
   $page->path = 'events/weekly';
-  $page->access = array();
+  $page->access = array(
+    'plugins' => array(),
+    'logic' => 'and',
+  );
   $page->menu = array(
     'type' => 'tab',
     'title' => 'Weekly',
