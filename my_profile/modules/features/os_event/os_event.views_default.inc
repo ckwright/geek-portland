@@ -823,6 +823,7 @@ function os_event_views_default_views() {
   /* Display: Weekly events */
   $handler = $view->new_display('panel_pane', 'Weekly events', 'panel_pane_4');
   $handler->display->display_options['display_description'] = 'Events that happen every week';
+  $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
