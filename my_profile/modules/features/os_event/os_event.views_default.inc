@@ -807,7 +807,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['operator'] = 'between';
   $handler->display->display_options['filters']['field_event_date_value']['group'] = 1;
   $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'this Sunday';
-  $handler->display->display_options['filters']['field_event_date_value']['default_to_date'] = 'next Sunday';
+  $handler->display->display_options['filters']['field_event_date_value']['default_to_date'] = 'next Saturday';
   /* Filter criterion: Content: Geeky interests (field_event_category) */
   $handler->display->display_options['filters']['field_event_category_tid']['id'] = 'field_event_category_tid';
   $handler->display->display_options['filters']['field_event_category_tid']['table'] = 'field_data_field_event_category';
