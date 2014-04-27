@@ -167,7 +167,8 @@ table.fc-header { border: 0; }
 #page > footer .block-menu-footer-menu ul { text-align: center; }
 #page > footer .block-menu-footer-menu ul li { display: inline; padding: 0 4em; border-right: 2px solid #e6e4de; }
 #page > footer .block-menu-footer-menu ul li.last { border: none; }
-#page > footer .block-menu-footer-menu ul li a { font-size: 1.3em; }
+#page > footer .block-menu-footer-menu ul li a { font-size: 1.3em; color: #669933; }
+#page > footer .block-menu-footer-menu ul li a:hover { color: #4D453E; }
 
 /* Geek pages */
 .region-two-50-bottom .view-geekpages2 .views-row { float: left; width: 49%; margin-bottom: 1em; }

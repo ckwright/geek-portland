@@ -693,6 +693,11 @@ table.fc-header {
 
         a {
           font-size: 1.3em;
+          color: $dark_green;
+
+          &:hover {
+            color: #4D453E;
+          }
         }
       }
     }
