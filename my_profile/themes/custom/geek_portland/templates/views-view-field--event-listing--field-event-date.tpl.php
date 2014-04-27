@@ -21,7 +21,7 @@
  * regardless of any changes in the aliasing that might happen if
  * the view is modified.
  */
-if (isset($row->nid)) {
+if (isset($row->nid) && isset($view->display_handler->options['row_plugin']) && $view->display_handler->options['row_plugin'] == 'fields') {
   $node = node_load($row->nid);
   $node_view = node_view($node, 'teaser');
 
