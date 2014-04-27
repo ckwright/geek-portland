@@ -64,6 +64,12 @@ projects[geofield][version] = "2.1"
 
 projects[geophp][version] = "1.7"
 
+libraries[geoPHP][type] = "libraries"
+libraries[geoPHP][download][type] = "git"
+libraries[geoPHP][download][url] = "git://github.com/phayes/geoPHP.git"
+libraries[geoPHP][download][branch] = "master"
+libraries[geoPHP][download][revision] = "0aae7c3"
+
 ; iCal
 projects[date_ical][version] = "3.1"
 
