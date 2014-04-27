@@ -205,10 +205,9 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_rrule']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_rrule']['field'] = 'field_event_date_rrule';
   $handler->display->display_options['filters']['field_event_date_rrule']['relationship'] = 'field_dates_value';
-  $handler->display->display_options['filters']['field_event_date_rrule']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_event_date_rrule']['value'] = 'FREQ=WEEKLY';
+  $handler->display->display_options['filters']['field_event_date_rrule']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_event_date_rrule']['value'] = 'FREQ=WEEKLY;INTERVAL=1';
   $handler->display->display_options['filters']['field_event_date_rrule']['group'] = 1;
-  $handler->display->display_options['filters']['field_event_date_rrule']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator_id'] = 'field_event_date_rrule_op';
   $handler->display->display_options['filters']['field_event_date_rrule']['expose']['label'] = 'Include weekly events?';
   $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator'] = 'field_event_date_rrule_op';
@@ -458,10 +457,9 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_rrule']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_rrule']['field'] = 'field_event_date_rrule';
   $handler->display->display_options['filters']['field_event_date_rrule']['relationship'] = 'field_dates_value';
-  $handler->display->display_options['filters']['field_event_date_rrule']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_event_date_rrule']['value'] = 'FREQ=WEEKLY';
+  $handler->display->display_options['filters']['field_event_date_rrule']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_event_date_rrule']['value'] = 'FREQ=WEEKLY;INTERVAL=1';
   $handler->display->display_options['filters']['field_event_date_rrule']['group'] = 1;
-  $handler->display->display_options['filters']['field_event_date_rrule']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator_id'] = 'field_event_date_rrule_op';
   $handler->display->display_options['filters']['field_event_date_rrule']['expose']['label'] = 'Include weekly events?';
   $handler->display->display_options['filters']['field_event_date_rrule']['expose']['operator'] = 'field_event_date_rrule_op';
