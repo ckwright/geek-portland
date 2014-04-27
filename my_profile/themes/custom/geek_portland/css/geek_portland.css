@@ -124,7 +124,7 @@ table.fc-header { border: 0; }
 .field-name-field-twitter a, .field-name-field-facebook a, .field-name-field-youtube a, .field-name-field-podcast-feed a { color: #000; }
 
 /* Search styles */
-.top-right-dropdown .region-two-50-second { position: absolute; z-index: 10; right: -20px; }
+.top-right-dropdown .region-two-50-second { position: absolute; z-index: 10; right: 0; }
 .top-right-dropdown .region-two-50-second fieldset { background: #fff; margin-top: -1em; }
 .top-right-dropdown .advanced-search { margin-bottom: 0; }
 .top-right-dropdown .advanced-search form { margin-bottom: 0; }
