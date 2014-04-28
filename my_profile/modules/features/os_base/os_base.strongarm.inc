@@ -335,5 +335,12 @@ function os_base_strongarm() {
   $strongarm->value = 'tiny_image';
   $export['user_picture_style'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_event';
+  $strongarm->value = 'needs_review';
+  $export['workbench_moderation_default_state_event'] = $strongarm;
+
   return $export;
 }

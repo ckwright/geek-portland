@@ -119,6 +119,13 @@ function os_base_user_default_permissions() {
     'module' => 'media',
   );
 
+  // Exported permission: 'administer workbench moderation'.
+  $permissions['administer workbench moderation'] = array(
+    'name' => 'administer workbench moderation',
+    'roles' => array(),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: 'bypass honeypot protection'.
   $permissions['bypass honeypot protection'] = array(
     'name' => 'bypass honeypot protection',
@@ -128,6 +135,13 @@ function os_base_user_default_permissions() {
       'site editor' => 'site editor',
     ),
     'module' => 'honeypot',
+  );
+
+  // Exported permission: 'bypass workbench moderation'.
+  $permissions['bypass workbench moderation'] = array(
+    'name' => 'bypass workbench moderation',
+    'roles' => array(),
+    'module' => 'workbench_moderation',
   );
 
   // Exported permission: 'create page content'.
@@ -206,6 +220,36 @@ function os_base_user_default_permissions() {
     'module' => 'media',
   );
 
+  // Exported permission: 'moderate content from draft to needs_review'.
+  $permissions['moderate content from draft to needs_review'] = array(
+    'name' => 'moderate content from draft to needs_review',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site editor' => 'site editor',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'moderate content from needs_review to draft'.
+  $permissions['moderate content from needs_review to draft'] = array(
+    'name' => 'moderate content from needs_review to draft',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site editor' => 'site editor',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'moderate content from needs_review to published'.
+  $permissions['moderate content from needs_review to published'] = array(
+    'name' => 'moderate content from needs_review to published',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site editor' => 'site editor',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
@@ -245,6 +289,53 @@ function os_base_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
+  );
+
+  // Exported permission: 'use workbench_moderation my drafts tab'.
+  $permissions['use workbench_moderation my drafts tab'] = array(
+    'name' => 'use workbench_moderation my drafts tab',
+    'roles' => array(),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'use workbench_moderation needs review tab'.
+  $permissions['use workbench_moderation needs review tab'] = array(
+    'name' => 'use workbench_moderation needs review tab',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site editor' => 'site editor',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'view all unpublished content'.
+  $permissions['view all unpublished content'] = array(
+    'name' => 'view all unpublished content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site editor' => 'site editor',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'view moderation history'.
+  $permissions['view moderation history'] = array(
+    'name' => 'view moderation history',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site editor' => 'site editor',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'view moderation messages'.
+  $permissions['view moderation messages'] = array(
+    'name' => 'view moderation messages',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site editor' => 'site editor',
+    ),
+    'module' => 'workbench_moderation',
   );
 
   return $permissions;
