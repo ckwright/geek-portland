@@ -100,6 +100,8 @@ projects[smart_trim][version] = "1.4"
 projects[views_bulk_operations][version] = "3.2"
 projects[viewfield][version] = "2.0"
 
+projects[views_infinite_scroll][version] = "1.1"
+
 ; Libraries
 
 ; Profiler
@@ -118,6 +120,10 @@ libraries[magnific-popup][download][url] = "https://github.com/dimsemenov/Magnif
 ; iCalcreator
 libraries[iCalcreator][download][type] = "git"
 libraries[iCalcreator][download][url] = "git://github.com/iCalcreator/iCalcreator.git"
+
+; Autopager
+libraries[autopager][download][type] = "get"
+libraries[autopager][download][url] = "http://jquery-autopager.googlecode.com/files/jquery.autopager-1.0.0.js"
 
 ;
 ; Theme
