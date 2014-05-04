@@ -35,6 +35,7 @@ dependencies[] = text
 dependencies[] = viewfield
 dependencies[] = views
 dependencies[] = views_content
+dependencies[] = views_infinite_scroll
 features[ctools][] = ds:ds:1
 features[ctools][] = facetapi:facetapi_defaults:1
 features[ctools][] = page_manager:pages_default:1

@@ -41,6 +41,12 @@ function geek_pages_views_default_views() {
   /* Display: All GeekPages */
   $handler = $view->new_display('panel_pane', 'All GeekPages', 'panel_pane_1');
   $handler->display->display_options['display_description'] = 'Shows all geek pages arranged alphabetically';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'infinite_scroll';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['inherit_panels_path'] = '1';
   $export['geekpages2'] = $view;
 
