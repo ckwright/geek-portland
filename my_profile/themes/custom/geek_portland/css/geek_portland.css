@@ -26,6 +26,7 @@ table.fc-header { border: 0; }
 
 #header .container { position: relative; }
 #header .container .region-header { position: absolute; bottom: 0; right: 0; text-align: right; }
+#header .container .region-header a { color: #6698cc; }
 
 #branding { width: 75%; margin-bottom: 0; }
 #branding #logo { padding: 0; max-width: 100%; }
