@@ -50,3 +50,7 @@
 *.png     drupalbinary
 *.phar    drupalbinary
 *.psd     drupalbinary
+*.eot     drupalbinary
+*.woff    drupalbinary
+*.ttf     drupalbinary
+*.svg     drupalbinary
