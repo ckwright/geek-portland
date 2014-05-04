@@ -425,6 +425,68 @@ function geek_pages_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-geek_page-field_tumblr'
+  $field_instances['node-geek_page-field_tumblr'] = array(
+    'bundle' => 'geek_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Add a link to this GeekPage\'s tumblr',
+    'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_tumblr',
+    'label' => 'Tumblr',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'value',
+      'title_maxlength' => 128,
+      'title_value' => 't',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-geek_page-field_twitter'
   $field_instances['node-geek_page-field_twitter'] = array(
     'bundle' => 'geek_page',
@@ -473,7 +535,7 @@ function geek_pages_field_default_field_instances() {
       'rel_remove' => 'default',
       'title' => 'value',
       'title_maxlength' => 128,
-      'title_value' => 't',
+      'title_value' => 'W',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -670,7 +732,7 @@ function geek_pages_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -801,6 +863,7 @@ function geek_pages_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add a link to this GeekPage\'s tumblr');
   t('Add any and all geeky tags here.');
   t('All geeky interests');
   t('Body');
@@ -818,6 +881,7 @@ function geek_pages_field_default_field_instances() {
   t('Pull in address, website, and phone information from an existing venue.');
   t('The Geek Page\'s official email address.');
   t('The link to this geek page\'s Facebook page');
+  t('Tumblr');
   t('Twitter');
   t('Upcoming Events');
   t('Venue');
