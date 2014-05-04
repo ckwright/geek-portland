@@ -121,8 +121,8 @@ table.fc-header { border: 0; }
 
 .field-name-ical-link a:before { content: '\43'; /* 'C' */ }
 
-.field-name-field-twitter, .field-name-field-facebook, .field-name-field-youtube, .field-name-field-podcast-feed { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; font-size: 2em; float: right; }
-.field-name-field-twitter a, .field-name-field-facebook a, .field-name-field-youtube a, .field-name-field-podcast-feed a { color: #000; }
+.field-name-field-tumblr, .field-name-field-twitter, .field-name-field-facebook, .field-name-field-youtube, .field-name-field-podcast-feed { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; font-size: 2em; float: right; }
+.field-name-field-tumblr a, .field-name-field-twitter a, .field-name-field-facebook a, .field-name-field-youtube a, .field-name-field-podcast-feed a { color: #000; }
 
 /* Search styles */
 .top-right-dropdown .region-two-50-second { position: absolute; z-index: 10; right: 0; }
