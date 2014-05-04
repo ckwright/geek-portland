@@ -72,6 +72,10 @@ function home_page_default_page_manager_pages() {
       'three_30_50_20_second' => NULL,
       'three_30_50_20_third' => NULL,
       'three_30_50_20_bottom' => NULL,
+      'two_25_75_top' => NULL,
+      'two_25_75_first' => NULL,
+      'two_25_75_second' => NULL,
+      'two_25_75_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -116,19 +120,16 @@ function home_page_default_page_manager_pages() {
     $display->content['new-73dcc91d-d48b-483f-8525-5158a4c72215'] = $pane;
     $display->panels['two_25_75_first'][0] = 'new-73dcc91d-d48b-483f-8525-5158a4c72215';
     $pane = new stdClass();
-    $pane->pid = 'new-0139a55e-7d7c-433e-8631-a04cdbe5d06d';
+    $pane->pid = 'new-17f24c59-85e0-4dc5-8ede-a9b4e3a5a9e0';
     $pane->panel = 'two_25_75_first';
     $pane->type = 'views_panes';
-    $pane->subtype = 'featured_content_slideshows-panel_pane_1';
+    $pane->subtype = 'featured_content_slideshows-panel_pane_3';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'arguments' => array(
-        'type' => 'blog_post',
-      ),
       'exposed' => array(
-        'sort_by' => 'created',
-        'sort_order' => 'DESC',
+        'sort_by' => 'random',
+        'sort_order' => 'ASC',
       ),
       'override_title' => 1,
       'override_title_text' => 'Featured GeekNews',
@@ -136,21 +137,20 @@ function home_page_default_page_manager_pages() {
     $pane->cache = array(
       'method' => 'simple',
       'settings' => array(
-        'lifetime' => '3600',
+        'lifetime' => '15',
         'granularity' => 'none',
       ),
     );
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '0139a55e-7d7c-433e-8631-a04cdbe5d06d';
-    $display->content['new-0139a55e-7d7c-433e-8631-a04cdbe5d06d'] = $pane;
-    $display->panels['two_25_75_first'][1] = 'new-0139a55e-7d7c-433e-8631-a04cdbe5d06d';
+    $pane->uuid = '17f24c59-85e0-4dc5-8ede-a9b4e3a5a9e0';
+    $display->content['new-17f24c59-85e0-4dc5-8ede-a9b4e3a5a9e0'] = $pane;
+    $display->panels['two_25_75_first'][1] = 'new-17f24c59-85e0-4dc5-8ede-a9b4e3a5a9e0';
     $pane = new stdClass();
     $pane->pid = 'new-80c6579c-e82f-46f3-adcb-fe966b0c74f5';
     $pane->panel = 'two_25_75_second';
