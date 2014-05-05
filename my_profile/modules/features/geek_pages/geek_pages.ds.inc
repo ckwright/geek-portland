@@ -43,7 +43,7 @@ function geek_pages_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '4',
+      'weight' => '6',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -63,7 +63,7 @@ function geek_pages_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '3',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -149,11 +149,11 @@ function geek_pages_ds_layout_settings_info() {
         3 => 'field_podcast_feed',
         4 => 'field_tumblr',
         5 => 'title',
-        6 => 'field_website',
-        7 => 'field_location',
+        7 => 'field_website',
+        8 => 'field_location',
       ),
       'two_25_75_first' => array(
-        8 => 'field_image',
+        6 => 'field_image',
       ),
       'two_25_75_second' => array(
         9 => 'body',
@@ -170,9 +170,9 @@ function geek_pages_ds_layout_settings_info() {
       'field_podcast_feed' => 'two_25_75_top',
       'field_tumblr' => 'two_25_75_top',
       'title' => 'two_25_75_top',
+      'field_image' => 'two_25_75_first',
       'field_website' => 'two_25_75_top',
       'field_location' => 'two_25_75_top',
-      'field_image' => 'two_25_75_first',
       'body' => 'two_25_75_second',
       'field_upcoming_events' => 'two_25_75_second',
       'field_all_geeky_interests' => 'two_25_75_bottom',
