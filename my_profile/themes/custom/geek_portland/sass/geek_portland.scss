@@ -48,7 +48,6 @@ table.fc-header {
 #header {
 
   .container {
-    position: relative;
 
     .region-header {
       position: absolute;
@@ -128,6 +127,10 @@ table.fc-header {
       }
     }
   }
+}
+
+.container {
+  position: relative;
 }
 
 #columns {
