@@ -97,7 +97,6 @@ function os_blog_ds_layout_settings_info() {
         0 => 'title',
         1 => 'ds_user_picture',
         2 => 'posted_by',
-        3 => 'field_blog_category',
         4 => 'post_date',
       ),
       'two_25_75_first' => array(
@@ -115,7 +114,6 @@ function os_blog_ds_layout_settings_info() {
       'title' => 'two_25_75_top',
       'ds_user_picture' => 'two_25_75_top',
       'posted_by' => 'two_25_75_top',
-      'field_blog_category' => 'two_25_75_top',
       'post_date' => 'two_25_75_top',
       'field_image' => 'two_25_75_first',
       'body' => 'two_25_75_second',
@@ -148,7 +146,6 @@ function os_blog_ds_layout_settings_info() {
     'regions' => array(
       'two_25_75_top' => array(
         0 => 'title',
-        1 => 'field_blog_category',
         2 => 'posted_by',
       ),
       'two_25_75_first' => array(
@@ -162,7 +159,6 @@ function os_blog_ds_layout_settings_info() {
     ),
     'fields' => array(
       'title' => 'two_25_75_top',
-      'field_blog_category' => 'two_25_75_top',
       'posted_by' => 'two_25_75_top',
       'field_image' => 'two_25_75_first',
       'body' => 'two_25_75_second',

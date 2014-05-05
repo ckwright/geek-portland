@@ -55,5 +55,3 @@ features[variable][] = pathauto_node_blog_post_pattern
 features[variable][] = pathauto_taxonomy_term_blog_categories_pattern
 features[views_view][] = blog
 features[views_view][] = os_blog_administer
-features_exclude[field][node-blog_post-body] = node-blog_post-body
-features_exclude[field][node-blog_post-field_blog_category] = node-blog_post-field_blog_category
