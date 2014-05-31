@@ -463,51 +463,53 @@ table.fc-header {
       }
     }
   }
-}
-.field-name-field-buy-tickets {
-  a {
-    &:before {
-      content: '\47'; /* 'G' */
+
+  .field-name-field-buy-tickets {
+    a {
+      &:before {
+        content: '\47'; /* 'G' */
+      }
+    }
+  }
+
+  .field-name-field-more-info {
+    a {
+      &:before {
+        content: '\49'; /* 'I' */
+      }
+    }
+  }
+  .field-name-map-link {
+    a {
+      &:before {
+        content: '\4D'; /* 'M' */
+      }
+    }
+  }
+
+  .field-name-ical-link {
+    a {
+      &:before {
+        content: '\43'; /* 'C' */
+      }
+    }
+  }
+
+  .field-name-field-tumblr,
+  .field-name-field-twitter,
+  .field-name-field-facebook,
+  .field-name-field-youtube,
+  .field-name-field-podcast-feed {
+    @include geek_font_prepare;
+    font-size: 2em;
+    float: right;
+
+    a {
+      color: #000;
     }
   }
 }
 
-.field-name-field-more-info {
-  a {
-    &:before {
-      content: '\49'; /* 'I' */
-    }
-  }
-}
-.field-name-map-link {
-  a {
-    &:before {
-      content: '\4D'; /* 'M' */
-    }
-  }
-}
-
-.field-name-ical-link {
-  a {
-    &:before {
-      content: '\43'; /* 'C' */
-    }
-  }
-}
-
-.field-name-field-tumblr,
-.field-name-field-twitter,
-.field-name-field-facebook,
-.field-name-field-youtube,
-.field-name-field-podcast-feed {
-  @include geek_font_prepare;
-  font-size: 2em;
-  float: right;
-
-  a {
-    color: #000;
-  }
-}
 
 /*
  * Search styles

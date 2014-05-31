@@ -114,17 +114,12 @@ table.fc-header { border: 0; }
 .node .field-name-field-admission ul, .node .field-name-field-admission li, .node .field-name-field-entrance-fee ul, .node .field-name-field-entrance-fee li, .node .field-name-field-age ul, .node .field-name-field-age li { margin: 0; padding: 0; list-style: none outside none; }
 .node .field-name-field-buy-tickets, .node .field-name-field-more-info, .node .field-name-map-link, .node .field-name-ical-link { float: right; padding-left: .5em; }
 .node .field-name-field-buy-tickets a:before, .node .field-name-field-more-info a:before, .node .field-name-map-link a:before, .node .field-name-ical-link a:before { color: #000; font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; }
-
-.field-name-field-buy-tickets a:before { content: '\47'; /* 'G' */ }
-
-.field-name-field-more-info a:before { content: '\49'; /* 'I' */ }
-
-.field-name-map-link a:before { content: '\4D'; /* 'M' */ }
-
-.field-name-ical-link a:before { content: '\43'; /* 'C' */ }
-
-.field-name-field-tumblr, .field-name-field-twitter, .field-name-field-facebook, .field-name-field-youtube, .field-name-field-podcast-feed { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; font-size: 2em; float: right; }
-.field-name-field-tumblr a, .field-name-field-twitter a, .field-name-field-facebook a, .field-name-field-youtube a, .field-name-field-podcast-feed a { color: #000; }
+.node .field-name-field-buy-tickets a:before { content: '\47'; /* 'G' */ }
+.node .field-name-field-more-info a:before { content: '\49'; /* 'I' */ }
+.node .field-name-map-link a:before { content: '\4D'; /* 'M' */ }
+.node .field-name-ical-link a:before { content: '\43'; /* 'C' */ }
+.node .field-name-field-tumblr, .node .field-name-field-twitter, .node .field-name-field-facebook, .node .field-name-field-youtube, .node .field-name-field-podcast-feed { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; font-size: 2em; float: right; }
+.node .field-name-field-tumblr a, .node .field-name-field-twitter a, .node .field-name-field-facebook a, .node .field-name-field-youtube a, .node .field-name-field-podcast-feed a { color: #000; }
 
 /* Search styles */
 .top-right-dropdown .region-two-50-second { position: absolute; z-index: 10; right: 0; }
