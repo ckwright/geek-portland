@@ -161,7 +161,7 @@ function geek_pages_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'How to use Geek pages',
       'title' => 'How to use Geek pages',
-      'body' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosq.</p>',
+      'body' => '<div class="block-content"><div>GeekPages feature Portlanders who are creating geeky content for all to enjoy! Whatever the geeky penchant, you can find tons of great creative contributions made by portland geeks!</div><div>&nbsp;</div><div>Search by single descriptors or combine multiple for more specific results:</div></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
