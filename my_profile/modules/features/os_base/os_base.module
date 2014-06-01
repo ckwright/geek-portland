@@ -284,3 +284,14 @@ function os_base_block_info_alter(&$blocks, $theme, $code_blocks) {
     $blocks['menu']['menu-useful-links']['status'] = '1';
   }
 }
+
+/**
+ * Implements hook_field_access().
+ *
+ * Hide group-audience fields from anonymous user's page.
+ */
+function os_base_field_access($op, $field, $entity_type, $entity, $account) {
+  if (user_is_anonymous() && $field['field_name'] == OG_AUDIENCE_FIELD) {
+    return false;
+  }
+}
