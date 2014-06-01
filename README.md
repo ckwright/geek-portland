@@ -6,9 +6,9 @@ Using OS_Event & OS_blog
 
 ### Deploying
 To deploy to the development server:
-1) Run `bin/deploy_to_production`
-2) SSH into Dreamhost.
-3) Log in as user 1 and run any updates. These can't be done through drush, because the CLI php runs out of memory.
+1. Run `bin/deploy_to_production`
+2. SSH into Dreamhost.
+3. Log in as user 1 and run any updates. These can't be done through drush, because the CLI php runs out of memory.
 
 Note: The server is set to run Drush 5.10. It also has the alias `geekdev`. So while still SSHed into the server you can run `drush @geekdev uli` to use the root user.
 
