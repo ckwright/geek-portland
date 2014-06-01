@@ -40,7 +40,8 @@ function geek_pages_node_info() {
       'description' => t('Geek pages highlight geeky locations around Portland.'),
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => '',
+      'help' => t('Please only submit GeekPages for yourself or groups you are associated with. 
+If you have a suggestion for a GeekPage or corrections/updates to current GeekPages, please email <a href="mailto:GeekPortand@gmail.com">GeekPortand@gmail.com</a>'),
     ),
   );
   return $items;
