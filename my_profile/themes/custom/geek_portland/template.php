@@ -72,7 +72,7 @@ function geek_portland_process_block(&$vars) {
  * a set of tabs.
  */
 function geek_portland_process_page(&$vars) {
-  if (isset($vars['theme_hook_suggestions']) && in_array('page__panels', $vars['theme_hook_suggestions'])) {
+  if (isset($vars['page']['content']['system_main']['content']['#markup']) && isset($vars['theme_hook_suggestions']) && in_array('page__panels', $vars['theme_hook_suggestions'])) {
     $vars['title'] = '';
     $vars['primary_local_tasks'] = '';
   }
