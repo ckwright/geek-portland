@@ -6,6 +6,7 @@ Using OS_Event & OS_blog
 
 ### Deploying
 To deploy to the development server:
+
 1. Run `bin/deploy_to_production`
 2. SSH into Dreamhost.
 3. Log in as user 1 and run any updates. These can't be done through drush, because the CLI php runs out of memory.
