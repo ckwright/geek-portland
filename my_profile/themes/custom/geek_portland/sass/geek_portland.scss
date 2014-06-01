@@ -55,8 +55,14 @@ table.fc-header {
       right: 0;
       text-align: right;
 
-      a {
-        color: $dark_blue;
+      .field-name-field-twitter,
+      .field-name-field-facebook {
+        @include geek_font_prepare;
+        font-size: 2em;
+
+        a {
+          color: $dark_blue;
+        }
       }
     }
   }
@@ -509,7 +515,6 @@ table.fc-header {
     }
   }
 }
-
 
 /*
  * Search styles

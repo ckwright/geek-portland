@@ -25,7 +25,8 @@ table.fc-header { border: 0; }
 .rounded-corner-panel { padding: 20px; background: #fff; margin-left: 0; margin-right: 0; }
 
 #header .container .region-header { position: absolute; bottom: 0; right: 0; text-align: right; }
-#header .container .region-header a { color: #6698cc; }
+#header .container .region-header .field-name-field-twitter, #header .container .region-header .field-name-field-facebook { font-family: "geek_portland"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; font-size: 2em; }
+#header .container .region-header .field-name-field-twitter a, #header .container .region-header .field-name-field-facebook a { color: #6698cc; }
 
 #branding { width: 75%; margin-bottom: 0; }
 #branding #logo { padding: 0; max-width: 100%; }
