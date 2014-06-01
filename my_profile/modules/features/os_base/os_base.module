@@ -58,11 +58,14 @@ function os_base_form_alter(&$form, $form_state, $form_id) {
   }
 
   // Add a variable to display revision information on node edit.
-  if (isset($form['revision_information']) && user_is_anonymous()) {
+  if (isset($form['revision_information'])) {
     // Hide the revision log input.
-    $form['revision_information']['#access'] = FALSE;
+    if(user_is_anonymous()) {
+      $form['revision_information']['#access'] = FALSE;
+    }
+    // Set revision information as the default tab.
+    $form['additional_settings']['#default_tab'] = 'edit-options';
   }
-
 }
 
 /**
