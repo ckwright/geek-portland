@@ -66,6 +66,7 @@ features[field_instance][] = node-geek_page-field_email
 features[field_instance][] = node-geek_page-field_facebook
 features[field_instance][] = node-geek_page-field_image
 features[field_instance][] = node-geek_page-field_location
+features[field_instance][] = node-geek_page-field_notes_for_geek_portland
 features[field_instance][] = node-geek_page-field_podcast_feed
 features[field_instance][] = node-geek_page-field_tumblr
 features[field_instance][] = node-geek_page-field_twitter

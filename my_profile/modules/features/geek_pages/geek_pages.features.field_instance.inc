@@ -371,6 +371,53 @@ function geek_pages_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-geek_page-field_notes_for_geek_portland'
+  $field_instances['node-geek_page-field_notes_for_geek_portland'] = array(
+    'bundle' => 'geek_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Leave a note about this GeekPage to Geek Portland. If your contact information differs from that given above, please add it here. This will not appear on the final event description.',
+    'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_notes_for_geek_portland',
+    'label' => 'Notes for Geek Portland',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 20,
+    ),
+  );
+
   // Exported field_instance: 'node-geek_page-field_podcast_feed'
   $field_instances['node-geek_page-field_podcast_feed'] = array(
     'bundle' => 'geek_page',
@@ -885,9 +932,11 @@ function geek_pages_field_default_field_instances() {
   t('Geek pages that this geek page should live "under" as a child page. Events for this geek page should also show up under its parent geek page events list.');
   t('Group');
   t('Image');
+  t('Leave a note about this GeekPage to Geek Portland. If your contact information differs from that given above, please add it here. This will not appear on the final event description.');
   t('Link to the Geek Page\'s youtube channel');
   t('Link to the podcast feed for this geek page. When you go to this link, you should see xml.');
   t('Main image will be resized to 350px wide by 250px tall and should be at least that large to begin with. Subsequent images on the page will be shown in a lightbox.');
+  t('Notes for Geek Portland');
   t('Parent geek pages');
   t('Podcast feed');
   t('The Geek Page\'s official email address.');
