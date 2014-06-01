@@ -66,8 +66,8 @@ rsync -azC --delete /tmp/$TIMESTAMP/ $USER@$HOST:$INSTALLROOT/releases/$TIMESTAM
 
 # Create links to settings and files. This is done locally, prior to upload,
 # even though locally they are broken links.
-ssh $USER@$HOST ln -s $INSTALLROOT/shared/files $DOCUMENTROOT/$TIMESTAMP/sites/default/files
-ssh $USER@$HOST ln -s $INSTALLROOT/shared/settings.local.php $DOCUMENTROOT/$TIMESTAMP/sites/default/settings.local.php
+ssh $USER@$HOST ln -s $INSTALLROOT/shared/files $INSTALLROOT/releases/$TIMESTAMP/sites/default/files
+ssh $USER@$HOST ln -s $INSTALLROOT/shared/settings.local.php $INSTALLROOT/releases/$TIMESTAMP/sites/default/settings.local.php
 
 
 # Remove old release link and link the new version
