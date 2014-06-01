@@ -320,7 +320,7 @@ function geek_pages_field_default_field_instances() {
     'bundle' => 'geek_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Pull in address, website, and phone information from an existing venue.',
+    'description' => 'Begin typing to find an address. If you don\'t see the venue, please enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.',
     'display' => array(
       'blurb' => array(
         'label' => 'above',
@@ -348,18 +348,25 @@ function geek_pages_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_location',
-    'label' => 'Venue',
+    'label' => 'Geek page location',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'entityreference',
       'settings' => array(
         'apply_chosen' => 1,
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'references_dialog_add' => 1,
+        'references_dialog_edit' => 0,
+        'references_dialog_search' => 0,
+        'references_dialog_search_view' => '',
+        'size' => 60,
       ),
-      'type' => 'options_select',
+      'type' => 'entityreference_autocomplete',
       'weight' => 11,
     ),
   );
@@ -868,11 +875,13 @@ function geek_pages_field_default_field_instances() {
   t('Add a link to this GeekPage\'s tumblr');
   t('Add any and all geeky tags here.');
   t('All geeky interests');
+  t('Begin typing to find an address. If you don\'t see the venue, please enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.');
   t('Body');
   t('Determine if this is an OG group.');
   t('Email');
   t('Enter the full url to your twitter home page, e.g. http://twitter.com/geekportland');
   t('Facebook');
+  t('Geek page location');
   t('Geek pages that this geek page should live "under" as a child page. Events for this geek page should also show up under its parent geek page events list.');
   t('Group');
   t('Image');
@@ -881,13 +890,11 @@ function geek_pages_field_default_field_instances() {
   t('Main image will be resized to 350px wide by 250px tall and should be at least that large to begin with. Subsequent images on the page will be shown in a lightbox.');
   t('Parent geek pages');
   t('Podcast feed');
-  t('Pull in address, website, and phone information from an existing venue.');
   t('The Geek Page\'s official email address.');
   t('The link to this geek page\'s Facebook page');
   t('Tumblr');
   t('Twitter');
   t('Upcoming Events');
-  t('Venue');
   t('Website');
   t('Youtube');
 
