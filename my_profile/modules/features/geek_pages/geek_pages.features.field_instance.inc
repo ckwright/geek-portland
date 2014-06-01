@@ -802,7 +802,7 @@ function geek_pages_field_default_field_instances() {
     'bundle' => 'geek_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Geek pages that this geek page should live "under" as a child page. Events for this geek page should also show up under its parent geek page events list.',
     'display' => array(
       'blurb' => array(
         'label' => 'above',
@@ -824,12 +824,14 @@ function geek_pages_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'div',
     'field_name' => 'og_group_ref',
-    'label' => 'Groups audience',
-    'required' => FALSE,
+    'label' => 'Parent geek pages',
+    'required' => 0,
     'settings' => array(
       'behaviors' => array(
         'og_widget' => array(
+          'access_override' => 0,
           'admin' => array(
             'widget_type' => 'entityreference_autocomplete',
           ),
@@ -871,12 +873,13 @@ function geek_pages_field_default_field_instances() {
   t('Email');
   t('Enter the full url to your twitter home page, e.g. http://twitter.com/geekportland');
   t('Facebook');
+  t('Geek pages that this geek page should live "under" as a child page. Events for this geek page should also show up under its parent geek page events list.');
   t('Group');
-  t('Groups audience');
   t('Image');
   t('Link to the Geek Page\'s youtube channel');
   t('Link to the podcast feed for this geek page. When you go to this link, you should see xml.');
   t('Main image will be resized to 350px wide by 250px tall and should be at least that large to begin with. Subsequent images on the page will be shown in a lightbox.');
+  t('Parent geek pages');
   t('Podcast feed');
   t('Pull in address, website, and phone information from an existing venue.');
   t('The Geek Page\'s official email address.');
