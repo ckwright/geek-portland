@@ -151,3 +151,16 @@ function adaptive_theme_helper_field_attach_view_alter(&$build, $context) {
     }
   }
 }
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ *
+ * Tells your template later that this page shows a node/add form via panel's
+ * context admin type. Otherwise, we couldn't see the help text each content
+ * type supplies under "submission guidelines."
+ */
+function adaptive_theme_helper_form_context_admin_node_form_wrapper_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['#node']->type)) {
+    drupal_static('node_type', $form['#node']->type);
+  }
+}
