@@ -71,7 +71,7 @@ libraries[geoPHP][download][branch] = "master"
 libraries[geoPHP][download][revision] = "0aae7c3"
 
 ; iCal
-projects[date_ical][version] = "3.1"
+projects[date_ical][version] = "3.2"
 
 ; JQuery Update
 projects[jquery_update][download][branch] = "7.x-2.x"
