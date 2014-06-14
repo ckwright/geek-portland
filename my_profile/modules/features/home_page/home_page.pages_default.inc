@@ -346,6 +346,8 @@ function home_page_default_page_manager_pages() {
         'sort_by' => 'random',
         'sort_order' => 'DESC',
       ),
+      'override_title' => 1,
+      'override_title_text' => 'Featured GeekPage',
     );
     $pane->cache = array(
       'method' => 'simple',
@@ -379,6 +381,8 @@ function home_page_default_page_manager_pages() {
         'sort_by' => 'created',
         'sort_order' => 'DESC',
       ),
+      'override_title' => 1,
+      'override_title_text' => 'Featured GeekNews',
     );
     $pane->cache = array(
       'method' => 'simple',
