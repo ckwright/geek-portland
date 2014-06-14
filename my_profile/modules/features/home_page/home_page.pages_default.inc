@@ -77,6 +77,9 @@ function home_page_default_page_manager_pages() {
       'two_25_75_second' => NULL,
       'two_25_75_bottom' => NULL,
     ),
+    'two_25_75_first' => array(
+      'style' => 'background',
+    ),
   );
   $display->cache = array();
   $display->title = 'Today\'s events';
@@ -318,6 +321,9 @@ function home_page_default_page_manager_pages() {
       'two_25_75_first' => NULL,
       'two_25_75_second' => NULL,
       'two_25_75_bottom' => NULL,
+    ),
+    'two_25_75_first' => array(
+      'style' => 'background',
     ),
   );
   $display->cache = array();

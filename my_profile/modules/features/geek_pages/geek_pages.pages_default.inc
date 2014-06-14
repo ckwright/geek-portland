@@ -126,6 +126,9 @@ function geek_pages_default_page_manager_pages() {
       'two_50_second' => NULL,
       'two_50_bottom' => NULL,
     ),
+    'two_50_second' => array(
+      'style' => 'background',
+    ),
   );
   $display->cache = array();
   $display->title = 'GeekPages';
