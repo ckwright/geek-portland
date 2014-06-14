@@ -12,7 +12,7 @@ h1.page-title { font-weight: bold; }
 
 .page-search h1#page-title:before { content: '\53'; /* 'S' */ }
 
-@font-face { font-family: "geek_portland"; src: url('../font/geek_portland.eot'); src: url('../font/geek_portland.eot?#iefix') format('eot'), url('../font/geek_portland.woff') format('woff'), url('../font/geek_portland.ttf') format('truetype'), url('../font/geek_portland.svg') format('svg'); }
+@font-face { font-family: "geek_portland"; src: url('../font/geek_portland.eot'); src: url('../font/geek_portland.eot?#iefix') format('embedded-opentype'), url('../font/geek_portland.woff') format('woff'), url('../font/geek_portland.ttf') format('truetype'), url('../font/geek_portland.svg') format('svg'); }
 
 html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right white; }
 
@@ -36,8 +36,8 @@ table.fc-header { border: 0; }
 #menu-bar.nav .block-menu li a.active { color: #1c6ea0; }
 #menu-bar .block-search { clear: none; float: right; width: 25%; min-width: 170px; text-align: right; line-height: 2em; height: 2em; }
 #menu-bar .block-search input { float: none; font-size: .9em; position: relative; top: -1px; }
-#menu-bar .menu-wrapper ul.menu li { width: 16%; text-align: center; }
-#menu-bar .menu-wrapper ul.menu li a { line-height: 2em; }
+#menu-bar .menu-wrapper ul.menu li { width: 13%; text-align: center; }
+#menu-bar .menu-wrapper ul.menu li a { line-height: 2em; padding: 0; }
 #menu-bar .menu-wrapper ul.menu li.last a { color: #000; }
 
 .container { position: relative; }
