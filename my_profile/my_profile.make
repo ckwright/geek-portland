@@ -81,7 +81,7 @@ projects[jquery_update][patch][] = "https://drupal.org/files/jquery_update-15480
 projects[jquery_update][patch][] = "https://drupal.org/files/issues/jquery_update-local-ui-effects-not-found-2149395.patch"
 
 ; Honeypot
-projects[honeypot][version] = "1.16"
+projects[honeypot][version] = "1.17"
 
 ; Libraries.
 projects[libraries][version] = "2.2"
