@@ -113,3 +113,14 @@ function adaptive_theme_helper_node_view($node, $view_mode, $langcode) {
     drupal_add_js(drupal_get_path('module', 'adaptive_theme_helper') .'/js/magnificPrep.js', 'file');
   }
 }
+
+/**
+ * Implements of hook_ctools_plugin_directory().
+ *
+ * Tells ctools I'm defining my own plugin.
+ */
+function adaptive_theme_helper_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'panels' && $plugin == 'styles') {
+    return 'plugins/' . $plugin;
+  }
+}
