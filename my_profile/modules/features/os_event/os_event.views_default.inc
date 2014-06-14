@@ -712,10 +712,68 @@ function os_event_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'date_ical';
   $handler->display->display_options['style_options']['cal_name'] = '';
-  $handler->display->display_options['row_plugin'] = 'date_ical';
-  $handler->display->display_options['row_options']['date_field'] = 'field_data_field_event_date.field_event_date_value';
-  $handler->display->display_options['row_options']['summary_field'] = 'default_title';
-  $handler->display->display_options['row_options']['location_field'] = 'field_data_field_address.field_address';
+  $handler->display->display_options['row_plugin'] = 'date_ical_fields';
+  $handler->display->display_options['row_options']['date_field'] = 'field_event_date';
+  $handler->display->display_options['row_options']['title_field'] = 'title';
+  $handler->display->display_options['row_options']['description_field'] = 'body';
+  $handler->display->display_options['row_options']['location_field'] = 'field_gmap';
+  $handler->display->display_options['row_options']['additional_settings'] = array(
+    'skip_blank_dates' => 0,
+  );
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Field collection item: Date */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['relationship'] = 'field_dates_value';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'hide',
+  );
+  $handler->display->display_options['fields']['field_event_date']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_event_date']['field_api_classes'] = TRUE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_type'] = '0';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
+  /* Field: Content: Gmap */
+  $handler->display->display_options['fields']['field_gmap']['id'] = 'field_gmap';
+  $handler->display->display_options['fields']['field_gmap']['table'] = 'field_data_field_gmap';
+  $handler->display->display_options['fields']['field_gmap']['field'] = 'field_gmap';
+  $handler->display->display_options['fields']['field_gmap']['label'] = '';
+  $handler->display->display_options['fields']['field_gmap']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_gmap']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_gmap']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_gmap']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_gmap']['click_sort_column'] = 'geom';
+  $handler->display->display_options['fields']['field_gmap']['type'] = 'geofield_latlon';
+  $handler->display->display_options['fields']['field_gmap']['settings'] = array(
+    'data' => 'full',
+    'format' => 'decimal_degrees',
+    'labels' => 1,
+  );
+  $handler->display->display_options['fields']['field_gmap']['field_api_classes'] = TRUE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
