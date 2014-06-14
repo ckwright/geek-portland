@@ -130,5 +130,5 @@ libraries[autopager][download][url] = "http://jquery-autopager.googlecode.com/fi
 ;
 ; Theme
 ;
-projects[adaptivetheme][version] = "3.1"
-projects[sky][version] = "3.0-rc1"
+projects[adaptivetheme][version] = "3.2"
+projects[sky][version] = "3.0"
