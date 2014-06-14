@@ -31,6 +31,10 @@ table.fc-header {
   border: 0;
 }
 
+article > header {
+  border: 0;
+}
+
 .rounded-corner {
   border: 1px solid #E6E4DE;
   @include border-radius(6px);
