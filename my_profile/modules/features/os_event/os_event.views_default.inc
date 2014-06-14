@@ -712,6 +712,12 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_address_locality']['field'] = 'field_address_locality';
   $handler->display->display_options['filters']['field_address_locality']['relationship'] = 'field_location_target_id';
   $handler->display->display_options['filters']['field_address_locality']['operator'] = '!=';
+  /* Filter criterion: Content: Gmap (field_gmap:geom) */
+  $handler->display->display_options['filters']['field_gmap_geom']['id'] = 'field_gmap_geom';
+  $handler->display->display_options['filters']['field_gmap_geom']['table'] = 'field_data_field_gmap';
+  $handler->display->display_options['filters']['field_gmap_geom']['field'] = 'field_gmap_geom';
+  $handler->display->display_options['filters']['field_gmap_geom']['relationship'] = 'field_location_target_id';
+  $handler->display->display_options['filters']['field_gmap_geom']['operator'] = '!=';
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
