@@ -140,7 +140,9 @@ function os_base_user_default_permissions() {
   // Exported permission: 'bypass workbench moderation'.
   $permissions['bypass workbench moderation'] = array(
     'name' => 'bypass workbench moderation',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'workbench_moderation',
   );
 
