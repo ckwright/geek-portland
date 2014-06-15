@@ -367,20 +367,13 @@ function home_page_default_page_manager_pages() {
     $display->content['new-4c95e985-b541-4b31-9e78-5db57bd87c57'] = $pane;
     $display->panels['two_25_75_first'][0] = 'new-4c95e985-b541-4b31-9e78-5db57bd87c57';
     $pane = new stdClass();
-    $pane->pid = 'new-34d1165b-26d5-4650-bc32-c629ab60dbf8';
+    $pane->pid = 'new-67bc57f0-d6f7-4608-82d0-6c4e56241bc9';
     $pane->panel = 'two_25_75_first';
     $pane->type = 'views_panes';
-    $pane->subtype = 'featured_content_slideshows-panel_pane_1';
+    $pane->subtype = 'featured_content_slideshows-panel_pane_3';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'arguments' => array(
-        'type' => 'blog_post',
-      ),
-      'exposed' => array(
-        'sort_by' => 'created',
-        'sort_order' => 'DESC',
-      ),
       'override_title' => 1,
       'override_title_text' => 'Featured GeekNews',
     );
@@ -398,9 +391,9 @@ function home_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '34d1165b-26d5-4650-bc32-c629ab60dbf8';
-    $display->content['new-34d1165b-26d5-4650-bc32-c629ab60dbf8'] = $pane;
-    $display->panels['two_25_75_first'][1] = 'new-34d1165b-26d5-4650-bc32-c629ab60dbf8';
+    $pane->uuid = '67bc57f0-d6f7-4608-82d0-6c4e56241bc9';
+    $display->content['new-67bc57f0-d6f7-4608-82d0-6c4e56241bc9'] = $pane;
+    $display->panels['two_25_75_first'][1] = 'new-67bc57f0-d6f7-4608-82d0-6c4e56241bc9';
     $pane = new stdClass();
     $pane->pid = 'new-81cf43a5-6ae1-488b-805b-b148a4348345';
     $pane->panel = 'two_25_75_second';
