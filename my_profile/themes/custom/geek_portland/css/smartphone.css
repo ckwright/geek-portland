@@ -40,6 +40,8 @@ ul.sf-menu { width: 100%; }
 
 .homepage-listing { height: auto; }
 
+#content .node .region-two-25-75-second .region-inner, #content .view-empty .region-two-25-75-second .region-inner { margin-left: 25px; }
+
 /* Search styles */
 .top-right-dropdown .region-two-50-first { height: auto; }
 .top-right-dropdown .region-two-50-second { position: static; }

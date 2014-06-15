@@ -119,6 +119,18 @@ ul.sf-menu {
   height: auto;
 }
 
+#content {
+  .node,
+  .view-empty {
+    .region-two-25-75-second {
+      .region-inner {
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+
 /*
  * Search styles
  */
