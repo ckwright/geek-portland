@@ -35,6 +35,12 @@ article > header {
   border: 0;
 }
 
+object,
+iframe,
+embed {
+  max-width: 100%;
+}
+
 .rounded-corner {
   border: 1px solid #E6E4DE;
   @include border-radius(6px);
