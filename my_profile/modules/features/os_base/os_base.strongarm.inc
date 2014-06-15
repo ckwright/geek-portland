@@ -234,7 +234,7 @@ function os_base_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'imagecrop_skip_preview';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['imagecrop_skip_preview'] = $strongarm;
 
   $strongarm = new stdClass();
