@@ -53,7 +53,7 @@ article > header { border: 0; }
 
 .rounded-corner .block-inner, .rounded-corner-panel .block-inner, .pane-region-background .block-inner, #content .node .block-inner, #content .view-empty .block-inner, .page-title .block-inner { margin-left: 0; }
 
-.pane-region-background { background: #e1f0d1; padding: .5em; margin: 0 20px 0 2%; }
+.pane-region-background { background: #d1e1c2; padding: .5em; margin: 0 20px 0 2%; }
 .pane-region-background section { margin: 0; }
 .pane-region-background section .block-inner { margin: 0; }
 .pane-region-background .panel-separator { height: 20px; }
