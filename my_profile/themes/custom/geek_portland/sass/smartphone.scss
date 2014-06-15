@@ -130,3 +130,23 @@ ul.sf-menu {
     position: static;
   }
 }
+
+/*
+ * Geek pages
+ */
+.region-two-50-bottom {
+  .view-geekpages2 {
+    .views-row {
+      float: none;
+      width: 100%;
+    }
+
+    .views-row-even {
+      margin: 0;
+    }
+
+    .views-row-odd {
+      margin: 0;
+    }
+  }
+}

@@ -43,3 +43,8 @@ ul.sf-menu { width: 100%; }
 /* Search styles */
 .top-right-dropdown .region-two-50-first { height: auto; }
 .top-right-dropdown .region-two-50-second { position: static; }
+
+/* Geek pages */
+.region-two-50-bottom .view-geekpages2 .views-row { float: none; width: 100%; }
+.region-two-50-bottom .view-geekpages2 .views-row-even { margin: 0; }
+.region-two-50-bottom .view-geekpages2 .views-row-odd { margin: 0; }
