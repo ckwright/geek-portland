@@ -820,7 +820,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['relationship'] = 'field_dates_value';
   $handler->display->display_options['filters']['field_event_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_date_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'last day of last month';
   $handler->display->display_options['path'] = 'events/ical';
 
   /* Display: Upcoming events by geekpage */
