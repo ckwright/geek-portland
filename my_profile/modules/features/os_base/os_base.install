@@ -193,3 +193,10 @@ function os_base_update_7003(&$sandbox) {
     'home_page' => array('views_view'),
   ));
 }
+
+/**
+ * Enables geek donations page.
+ */
+function os_base_update_7004(&$sandbox) {
+  module_enable(array('geek_donate'));
+}

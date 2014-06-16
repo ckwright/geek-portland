@@ -1,0 +1,16 @@
+name = Geek donate
+description = Donation page for Geek Portland
+core = 7.x
+package = geek portland
+dependencies[] = adaptive_theme_helper
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = page_manager
+dependencies[] = panels_mini
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = panels_mini:panels_default:1
+features[features_api][] = api:2
+features[menu_links][] = main-menu_donate:donate
+features[page_manager_pages][] = donations_page
+features[panels_mini][] = donation_types

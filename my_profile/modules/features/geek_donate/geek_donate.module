@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Geek donate feature.
+ */
+
+include_once 'geek_donate.features.inc';
