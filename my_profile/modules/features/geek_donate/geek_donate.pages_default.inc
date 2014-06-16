@@ -118,7 +118,7 @@ function geek_donate_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'Donation text',
-      'title' => '',
+      'title' => 'Donate',
       'body' => '<p>Love Geek Portland? Want to help keep the site live?</p>',
       'format' => 'full_html',
       'substitute' => TRUE,
@@ -157,8 +157,8 @@ function geek_donate_default_page_manager_pages() {
     $pane->uuid = '9918f944-449c-421c-b6c5-784a02a339f9';
     $display->content['new-9918f944-449c-421c-b6c5-784a02a339f9'] = $pane;
     $display->panels['two_20_80_top'][1] = 'new-9918f944-449c-421c-b6c5-784a02a339f9';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
+  $display->hide_title = PANELS_TITLE_PANE;
+  $display->title_pane = 'new-adaae971-2f20-4c2b-a057-c6ac31994cfb';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['donations_page'] = $page;
