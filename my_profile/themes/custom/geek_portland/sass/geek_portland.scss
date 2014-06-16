@@ -794,3 +794,13 @@ embed {
     }
   }
 }
+
+/*
+ * Donate page
+ */
+.blue-boxes {
+  @extend .rounded-corner;
+  border: 1px solid $dark_blue;
+  margin: 0 0 0 20px;
+  padding: 1em;
+}

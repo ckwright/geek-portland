@@ -26,7 +26,7 @@ article > header { border: 0; }
 
 object, iframe, embed { max-width: 100%; }
 
-.rounded-corner, .rounded-corner-panel, .pane-region-background, #content .node, #content .view-empty { border: 1px solid #E6E4DE; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0px 0px 5px #e6e4de; -moz-box-shadow: 0px 0px 5px #e6e4de; box-shadow: 0px 0px 5px #e6e4de; }
+.rounded-corner, .rounded-corner-panel, .pane-region-background, #content .node, #content .view-empty, .blue-boxes { border: 1px solid #E6E4DE; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0px 0px 5px #e6e4de; -moz-box-shadow: 0px 0px 5px #e6e4de; box-shadow: 0px 0px 5px #e6e4de; }
 
 .rounded-corner-panel { padding: 20px; background: white; margin-left: 0; margin-right: 0; }
 
@@ -55,7 +55,7 @@ object, iframe, embed { max-width: 100%; }
 .block-geek-social ul { list-style: none outside none; padding: 0; margin: 0; }
 .block-geek-social ul li { list-style: none outside none; display: inline; padding: 0; margin: 0 0 0 10px; }
 
-.rounded-corner .block-inner, .rounded-corner-panel .block-inner, .pane-region-background .block-inner, #content .node .block-inner, #content .view-empty .block-inner, .page-title .block-inner { margin-left: 0; }
+.rounded-corner .block-inner, .rounded-corner-panel .block-inner, .pane-region-background .block-inner, #content .node .block-inner, #content .view-empty .block-inner, .blue-boxes .block-inner, .page-title .block-inner { margin-left: 0; }
 
 .pane-region-background { background: white; padding: .5em; margin: 0 20px 0 2%; }
 .pane-region-background section { margin: 0; }
@@ -91,7 +91,7 @@ object, iframe, embed { max-width: 100%; }
 
 .page-home .pane-page-tabs ul.tabs li { float: right; }
 
-.region-inner > .rounded-corner, .region-inner > .rounded-corner-panel, .region-inner > .pane-region-background, #content .region-inner > .node, #content .region-inner > .view-empty { margin-bottom: 20px; }
+.region-inner > .rounded-corner, .region-inner > .rounded-corner-panel, .region-inner > .pane-region-background, #content .region-inner > .node, #content .region-inner > .view-empty, .region-inner > .blue-boxes { margin-bottom: 20px; }
 
 .region .field-name-field-event-category, .region .field-name-field-all-geeky-interests { float: left; }
 .region .field-name-field-event-category ul, .region .field-name-field-all-geeky-interests ul { margin: 0; }
@@ -189,3 +189,6 @@ object, iframe, embed { max-width: 100%; }
 
 .node-type-geek-page .field-name-field-event-category { clear: right; }
 .node-type-geek-page .region-two-25-75-bottom .field { float: left; padding-right: .5em; }
+
+/* Donate page */
+.blue-boxes { border: 1px solid #6698cc; margin: 0 0 0 20px; padding: 1em; }
