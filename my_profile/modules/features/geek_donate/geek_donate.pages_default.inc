@@ -21,7 +21,7 @@ function geek_donate_default_page_manager_pages() {
     'type' => 'normal',
     'title' => 'Donate',
     'name' => 'main-menu',
-    'weight' => '0',
+    'weight' => '-45',
     'parent' => array(
       'type' => 'none',
       'title' => '',

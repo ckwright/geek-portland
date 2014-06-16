@@ -24,8 +24,8 @@ function geek_donate_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -45,
+    'customized' => 1,
   );
   // Translatables
   // Included for use with string extractors like potx.
