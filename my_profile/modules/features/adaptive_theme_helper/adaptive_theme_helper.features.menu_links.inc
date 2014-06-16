@@ -24,7 +24,7 @@ function adaptive_theme_helper_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -49,
     'customized' => 1,
   );
   // Exported menu link: main-menu_geeknews:blog
@@ -41,7 +41,7 @@ function adaptive_theme_helper_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -47,
     'customized' => 1,
   );
   // Exported menu link: main-menu_geekpages:geeks
@@ -58,7 +58,7 @@ function adaptive_theme_helper_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: main-menu_home:home
@@ -95,7 +95,7 @@ function adaptive_theme_helper_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -40,
+    'weight' => -44,
     'customized' => 1,
   );
   // Exported menu link: menu-footer-menu_about:node/1
