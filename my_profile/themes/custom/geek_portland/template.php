@@ -99,3 +99,16 @@ function geek_portland_html_head_alter(&$head_elements) {
     $head_elements['adaptivetheme_meta_viewport']['#attributes']['content'] = "width=980";
   }
 }
+
+/**
+ * Implements template_process_field().
+ *
+ * Disables the link to "See listing details" (node id = 73).
+ */
+function geek_portland_preprocess_field(&$vars) {
+  $node_id = 73;
+  if(isset($vars['element']['#field_name']) && isset($vars['element']['#items'][0]['target_id']) && $vars['element']['#field_name'] == 'field_location' && $vars['element']['#items'][0]['target_id'] == $node_id) {
+    $node = node_load($node_id);
+    $vars['items'] = array(array('#markup' => $node->title));
+  }
+}
