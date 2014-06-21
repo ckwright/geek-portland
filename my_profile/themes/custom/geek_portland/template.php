@@ -108,7 +108,6 @@ function geek_portland_html_head_alter(&$head_elements) {
 function geek_portland_preprocess_field(&$vars) {
   $node_id = 73;
   if(isset($vars['element']['#field_name']) && isset($vars['element']['#items'][0]['target_id']) && $vars['element']['#field_name'] == 'field_location' && $vars['element']['#items'][0]['target_id'] == $node_id) {
-    $node = node_load($node_id);
-    $vars['items'] = array(array('#markup' => $node->title));
+    $vars['items'] = array();
   }
 }
