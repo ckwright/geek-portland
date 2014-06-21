@@ -119,7 +119,7 @@ function geek_donate_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Donation text',
       'title' => 'Donate',
-      'body' => '<p>Love Geek Portland? Want to help keep the site live?</p>',
+      'body' => 'Love Geek Portland? Want to help keep the site live?',
       'format' => 'full_html',
       'substitute' => TRUE,
     );

@@ -83,7 +83,7 @@ function geek_donate_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => 'Ongoing support',
       'title' => 'Ongoing support',
-      'body' => '[[{"fid":"210","view_mode":"teaser","fields":{"format":"teaser","field_file_image_alt_text[und][0][value]":"Support Geek Portland on Patreon","field_file_image_title_text[und][0][value]":"Support Geek Portland on Patreon"},"type":"media","attributes":{"class":"media-element file-teaser"}}]]',
+      'body' => '<p><a href="http://patreon.com/geekportland">[[{"fid":"210","view_mode":"default","fields":{"format":"default","field_file_image_alt_text[und][0][value]":"Donate to Geek Portland on Patreon","field_file_image_title_text[und][0][value]":"Donate to Geek Portland on Patreon"},"type":"media","attributes":{"height":30,"width":131,"class":"media-element file-default"}}]]</a></p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
