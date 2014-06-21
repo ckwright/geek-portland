@@ -52,3 +52,5 @@ ul.sf-menu { width: 100%; }
 .region-two-50-bottom .view-geekpages2 .views-row { float: none; width: 100%; }
 .region-two-50-bottom .view-geekpages2 .views-row-even { margin: 0; }
 .region-two-50-bottom .view-geekpages2 .views-row-odd { margin: 0; }
+
+.facetapi-facet-field-all-geeky-interests { -webkit-columns: 3em 2; -moz-columns: 3em 2; -ms-columns: 3em 2; -o-columns: 3em 2; columns: 3em 2; }

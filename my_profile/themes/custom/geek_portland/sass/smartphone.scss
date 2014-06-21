@@ -1,3 +1,5 @@
+@import 'compass/css3';
+
 body {
   padding: 0 5px;
 }
@@ -173,4 +175,8 @@ ul.sf-menu {
       margin: 0;
     }
   }
+}
+
+.facetapi-facet-field-all-geeky-interests {
+  @include columns(3em 2);
 }
