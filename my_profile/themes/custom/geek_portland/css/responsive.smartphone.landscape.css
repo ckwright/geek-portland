@@ -50,6 +50,8 @@ ul.sf-menu { width: 100%; }
 .top-right-dropdown .region-two-50-first { height: auto; }
 .top-right-dropdown .region-two-50-second { position: static; }
 
+#menu-bar .block-search input { max-width: 150px; }
+
 /* Geek pages */
 .region-two-50-bottom .view-geekpages2 .views-row { float: none; width: 100%; }
 .region-two-50-bottom .view-geekpages2 .views-row-even { margin: 0; }

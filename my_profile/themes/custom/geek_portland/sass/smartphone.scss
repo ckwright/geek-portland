@@ -171,6 +171,14 @@ div.messages {
   }
 }
 
+#menu-bar {
+  .block-search {
+    input {
+      max-width: 150px;
+    }
+  }
+}
+
 /*
  * Geek pages
  */
