@@ -1,150 +1,77 @@
 #!/bin/bash
 
+# $Id$
+
 ##
 # @file
-# OpenSourcery Drupal Deployment Script
+# OpenSourcery Drupal Deployment Script.
 #
-# @todo This currently won't work for initial deployment to a Drupal
-# host. Several things still need to be done manually the first time
-# around--creating directory structure: releases, shared/files,
-# modifying/uploading settings.php
 
-# Load config
-if [ ! -e bin/.config ]; then
-  echo "Error: could not find configuration file. Please run make-install-profile."
-  exit 2
-fi
-source bin/.config
-
-# Change $SUBDOMAIN accordingly, e.g. <mountain name>
-# Rather than set $USER, use the user we were run as.
-SUBDOMAIN=
-HOST=gargravarr
-INSTALLROOT=/var/www/$SUBDOMAIN
-
-# Default behavior: Don't touch the test host's database.
-#
-# Two other (mutually exclusive) behaviors:
-# - SITEINSTALL=1 # Run `drush site-install`.
-# - RELOADDB=1    # Reload the latest production database.
-# Uncomment one, if applicable:
-#SITEINSTALL=1
-#RELOADDB=1
-
-# Branch to deploy from
-BRANCH=.
+# Deploy to typical shared hosting.
+USER=devgp
+HOST=spalding.dreamhost.com
+INSTALLROOT=/home/$USER
+DOCUMENTROOT=/home/$USER/test
 
 ##### Things below here generally won't need to be changed #####
 
-if [ -n "$RELOADDB" ] && [ -n "$SITEINSTALL" ]; then
-  echo "ERROR: Both RELOADDB and SITEINSTALL options specified. Specify one, the other, or neither."
+if [[ -z "$HOST" || -z "$USER" ]]; then
+  echo "This script must be configured before use."
   exit 1
 fi
 
-if [ ! -n "$RELOADDB" ] && [ ! -n "$SITEINSTALL" ]; then
-  echo "WARNING: Both RELOADDB and SITEINSTALL options are disabled!"
-  echo "If you are building a new project that has not yet been deployed, please enable SITEINSTALL."
-  echo "If you are working on an existing project that has been deployed, please update database at db/production_current.sql.gz and enable RELOADDB."
-fi
+# Initial run? Set up some stuff.
+if ssh $USER@$HOST "[ ! -d $INSTALLROOT/releases ]"; then
+  echo -n "It appears this is the first deployment. Perform initial setup? (y/n): "
+  read CONFIRM
+  if [ "$CONFIRM" != "y" ]; then
+    echo "Aborted."
+    exit 2
+  fi
 
-# If SUBDOMAIN isn't set, INSTALLROOT would become /var/www// and we'd blow
-# away the permissions of every test host on the test server.
-if [ -z "$SUBDOMAIN" ]; then
-  echo "ERROR: You must set SUBDOMAIN (within $0) before running this script."
-  exit 1
-fi
+  scp -q ./drupal/sites/default/settings.local.php $USER@$HOST:settings.local.php
 
-if [ ! -d ./drupal ]; then
-  echo "ERROR: ./drupal directory does not exist; nothing to deploy."
-  exit 1
-fi
-
-# Test that this drush alias exists.
-ALIAS=`drush sa @$SUBDOMAIN`
-if [ -z "$ALIAS" ]; then
-  echo "Didn't find a drush alias for $SUBDOMAIN"
-  exit 1
+  # Create our directories, place the settings.php file, archive existing
+  # "public_html" directory and create initial documentroot symlink.
+  REMOTE_HOME=$(dirname $DOCUMENTROOT)
+  ARCHIVED_DOCUMENTROOT=$REMOTE_HOME/old_public_html
+  ssh $USER@$HOST "mkdir -p $INSTALLROOT/{releases,shared/files};
+    mv \$HOME/settings.local.php $INSTALLROOT/shared/settings.local.php;
+    chmod 700 $INSTALLROOT $INSTALLROOT/{releases,shared};
+    chmod 400 $INSTALLROOT/shared/settings.local.php;
+    mv $DOCUMENTROOT $ARCHIVED_DOCUMENTROOT;
+    ln -s $ARCHIVED_DOCUMENTROOT $DOCUMENTROOT"
+  echo "Setup complete. Run again to deploy."
+  exit 0
 fi
 
 # Deploy into a meaningfully named directory inside of the releases directory.
 TIMESTAMP=`date +%Y-%m-%d.%H-%M-%S`.`git log -n 1 --format=%h`
 
+# Values below here shouldn't need to be modified for standard OS Drupal deployments
+
+mkdir /tmp/$TIMESTAMP
+
 # Add -L to copy symlinks' referent files, so that we'll bring along our install profile
-cp -Rp $INSTALLROOT/current/ $INSTALLROOT/releases/$TIMESTAMP
-rsync -LazC --exclude=sites/all/files --exclude=sites/default/files --exclude=sites/default/settings.local.php --exclude=backup --delete $BRANCH/drupal/ $INSTALLROOT/releases/$TIMESTAMP/
+rsync -LazC --exclude=sites/all/files --exclude=sites/default/files --exclude=sites/default/settings.local.php --exclude=backup ./drupal/ /tmp/$TIMESTAMP/
 
-# Create links to settings and files.
-if [ ! -h $INSTALLROOT/releases/$TIMESTAMP/sites/default/files ]; then
-  ln -s $INSTALLROOT/shared/files $INSTALLROOT/releases/$TIMESTAMP/sites/default/files
-fi
-if [ ! -h $INSTALLROOT/releases/$TIMESTAMP/sites/default/settings.local.php ]; then
-  ln -s $INSTALLROOT/shared/settings.local.php $INSTALLROOT/releases/$TIMESTAMP/sites/default/settings.local.php
-fi
+# We don't automate deploying files.
+rm -Rf /tmp/$TIMESTAMP/sites/default/files
+
+ssh $USER@$HOST cp -Rp $DOCUMENTROOT/ $INSTALLROOT/releases/$TIMESTAMP
+rsync -azC --delete /tmp/$TIMESTAMP/ $USER@$HOST:$INSTALLROOT/releases/$TIMESTAMP/
+
+# Change group to PHP's user
+#ssh $USER@$HOST chgrp -R www-data $INSTALLROOT
+
+# Create links to settings and files. This is done locally, prior to upload,
+# even though locally they are broken links.
+ssh $USER@$HOST ln -s $INSTALLROOT/shared/files $INSTALLROOT/releases/$TIMESTAMP/sites/default/files
+ssh $USER@$HOST ln -s $INSTALLROOT/shared/settings.test.local.php $INSTALLROOT/releases/$TIMESTAMP/sites/default/settings.local.php
 
 
-# Remove old release link and link the new version.
-if [ -h $INSTALLROOT/current ]; then
-  rm $INSTALLROOT/current
-fi
-ln -s $INSTALLROOT/releases/$TIMESTAMP $INSTALLROOT/current
+# Remove old release link and link the new version
+ssh $USER@$HOST "rm -f $INSTALLROOT/current_tmp 2>/dev/null; ln -s $INSTALLROOT/releases/$TIMESTAMP $INSTALLROOT/current_tmp && mv -Tf $INSTALLROOT/current_tmp $DOCUMENTROOT"
 
-if [ -n "$SITEINSTALL" ]; then
-  # Re-install the site.
-  drush @$SUBDOMAIN site-install -y --uri=default $PROFILE
-  if [ $? -gt 0 ]; then
-    exit 1
-  fi
-fi
-
-if [ -n "$RELOADDB" ]; then
-  # Reload database from latest production dump.
-  drush @$SUBDOMAIN sql-drop -y
-  if [ -f $WORKSPACE/db/production_current.sql.gz ]; then
-    gunzip -c $WORKSPACE/db/production_current.sql.gz | drush @$SUBDOMAIN sql-cli
-  else
-    echo "ERROR: Database dump not found."
-    exit 1
-  fi
-fi
-
-# Run any update hooks.
-drush @$SUBDOMAIN updatedb -y
-
-# TODO this is a bug in drush: need to manually remove command cache,
-# or the features command isn't found until after the bash script
-# completes.
-rm -rf ~/.drush/cache/default/*
-
-# Features revert.
-drush @$SUBDOMAIN fra -y
-
-# Clear caches.
-drush @$SUBDOMAIN cc all
-
-# Enable the environment indicator module.
-echo "Enabling environment indicator module."
-drush @$SUBDOMAIN en -y environment_indicator
-drush @$SUBDOMAIN role-add-perm "anonymous user" "access environment indicator"
-drush @$SUBDOMAIN role-add-perm "authenticated user" "access environment indicator"
-
-# Enable stage file proxy module.
-if [ "$PRODUCTIONURL" != "http://" ]; then
-  echo "Enabling Stage File Proxy and configuring origin as '$PRODUCTIONURL'."
-  drush @$SUBDOMAIN en -y stage_file_proxy
-  drush @$SUBDOMAIN vset stage_file_proxy_origin $PRODUCTIONURL
-fi
-
-# Enable the os_testing helper module.
-drush @$SUBDOMAIN en -y os_testing
-
-# Fix file directory ownership to www-data.
-chown -R :www-data $INSTALLROOT/shared/files
-
-# Remove all but the last 4 builds in the releases directory.
-cd $INSTALLROOT/releases
-# Fix 7.x perms to sites/default directory.
-chmod u+w */sites/default
-rm -rf `ls -1r | tail -n +5`
-cd -
-
-echo "Deployment complete"
+# Clean up local machine
+rm -Rf /tmp/$TIMESTAMP
