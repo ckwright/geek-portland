@@ -44,6 +44,8 @@ ul.sf-menu { width: 100%; }
 #content .grouping-content .grouping-title { float: none; }
 #content .grouping-content .node .at-panel { margin-left: 5%; }
 
+#main-content, .block-inner, .pane-inner, .menu-wrapper, .branding-elements, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, .block-panels-mini > .block-title, div.messages { margin-left: 10px; margin-right: 10px; }
+
 /* Search styles */
 .top-right-dropdown .region-two-50-first { height: auto; }
 .top-right-dropdown .region-two-50-second { position: static; }
