@@ -208,6 +208,49 @@ function geek_pages_default_page_manager_pages() {
     $display->content['new-23a0d296-fd25-4a78-9d45-77397a189b36'] = $pane;
     $display->panels['two_50_first'][1] = 'new-23a0d296-fd25-4a78-9d45-77397a189b36';
     $pane = new stdClass();
+    $pane->pid = 'new-ad254224-22be-490d-9552-c6a936894648';
+    $pane->panel = 'two_50_first';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'path_visibility',
+          'settings' => array(
+            'visibility_setting' => '1',
+            'paths' => 'geeks',
+          ),
+          'context' => 'empty',
+          'not' => TRUE,
+        ),
+      ),
+    );
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<a class="button" href="/geeks">Clear</a>',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array(
+      'method' => 'simple',
+      'settings' => array(
+        'lifetime' => '604800',
+        'granularity' => 'none',
+      ),
+    );
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = 'ad254224-22be-490d-9552-c6a936894648';
+    $display->content['new-ad254224-22be-490d-9552-c6a936894648'] = $pane;
+    $display->panels['two_50_first'][2] = 'new-ad254224-22be-490d-9552-c6a936894648';
+    $pane = new stdClass();
     $pane->pid = 'new-0a3b1911-bedc-4a5b-9af6-8844ec1df960';
     $pane->panel = 'two_50_second';
     $pane->type = 'views_panes';
