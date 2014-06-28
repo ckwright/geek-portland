@@ -6,7 +6,7 @@ api = 2
 ;projects[facetapi][version] = "1.3"
 
 ; Facet API Pretty Paths
-;projects[facetapi_pretty_paths][version] = "1.0"
+;projects[facetapi_pretty_paths][version] = "1.1"
 
 ; Search API
 projects[search_api][version] = "1.9"
