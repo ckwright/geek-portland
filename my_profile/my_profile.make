@@ -93,6 +93,9 @@ projects[link][version] = "1.2"
 projects[references_dialog][download][branch] = "7.x-1.x"
 projects[references_dialog][download][revision] = "c2457782"
 
+; Rules
+projects[rules][version] = "2.7"
+
 ; Smart trim
 projects[smart_trim][version] = "1.4"
 
