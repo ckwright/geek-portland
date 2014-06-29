@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Geek messages feature.
+ */
+
+include_once 'geek_messages.features.inc';
