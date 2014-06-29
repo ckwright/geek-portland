@@ -33,6 +33,9 @@ includes[search] = "search.make"
 ; Organic Groups.
 includes[og] = "og.make"
 
+; Message digest.
+includes[digest] = "digest.make"
+
 ; Project-specific modules, and overrides.
 
 ; Address Field
