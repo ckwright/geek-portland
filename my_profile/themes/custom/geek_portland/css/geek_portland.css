@@ -113,6 +113,10 @@ object, iframe, embed { max-width: 100%; }
 
 .pane-featured-content-slideshows-panel-pane-1 h2 { color: #000; }
 
+.two-25-75 > .region-two-25-75-first-front { margin-left: -100%; }
+
+.two-25-75 > .region-two-25-75-second-front { margin-left: 25%; }
+
 /* General styles for node display */
 .node .field-name-post-date, .node .field-name-title { display: block; }
 .node .field-name-field-location .field-name-title, .node .field-name-field-location *, .node .field-name-field-address .field-name-title, .node .field-name-field-address * { display: inline; }

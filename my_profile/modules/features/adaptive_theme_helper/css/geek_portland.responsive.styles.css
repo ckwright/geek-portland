@@ -45,9 +45,24 @@ ul.sf-menu { width: 100%; }
 
 .homepage-listing { height: auto; }
 
+#content .node .region-two-25-75-second .region-inner, #content .view-empty .region-two-25-75-second .region-inner { margin-left: 25px; }
+#content .grouping-content .grouping-title { float: none; }
+#content .grouping-content .node .at-panel { margin-left: 5%; }
+
+#main-content, .block-inner, .pane-inner, .menu-wrapper, .branding-elements, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, .block-panels-mini > .block-title, div.messages { margin-left: 10px; margin-right: 10px; }
+
 /* Search styles */
 .top-right-dropdown .region-two-50-first { height: auto; }
 .top-right-dropdown .region-two-50-second { position: static; }
+
+#menu-bar .block-search input { max-width: 150px; }
+
+/* Geek pages */
+.region-two-50-bottom .view-geekpages2 .views-row { float: none; width: 100%; }
+.region-two-50-bottom .view-geekpages2 .views-row-even { margin: 0; }
+.region-two-50-bottom .view-geekpages2 .views-row-odd { margin: 0; }
+
+.facetapi-facet-field-all-geeky-interests { -webkit-columns: 3em 2; -moz-columns: 3em 2; -ms-columns: 3em 2; -o-columns: 3em 2; columns: 3em 2; }
 
 }
 @media only screen and (min-width:321px) and (max-width:480px) {
@@ -93,9 +108,24 @@ ul.sf-menu { width: 100%; }
 
 .homepage-listing { height: auto; }
 
+#content .node .region-two-25-75-second .region-inner, #content .view-empty .region-two-25-75-second .region-inner { margin-left: 25px; }
+#content .grouping-content .grouping-title { float: none; }
+#content .grouping-content .node .at-panel { margin-left: 5%; }
+
+#main-content, .block-inner, .pane-inner, .menu-wrapper, .branding-elements, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, .block-panels-mini > .block-title, div.messages { margin-left: 10px; margin-right: 10px; }
+
 /* Search styles */
 .top-right-dropdown .region-two-50-first { height: auto; }
 .top-right-dropdown .region-two-50-second { position: static; }
+
+#menu-bar .block-search input { max-width: 150px; }
+
+/* Geek pages */
+.region-two-50-bottom .view-geekpages2 .views-row { float: none; width: 100%; }
+.region-two-50-bottom .view-geekpages2 .views-row-even { margin: 0; }
+.region-two-50-bottom .view-geekpages2 .views-row-odd { margin: 0; }
+
+.facetapi-facet-field-all-geeky-interests { -webkit-columns: 3em 2; -moz-columns: 3em 2; -ms-columns: 3em 2; -o-columns: 3em 2; columns: 3em 2; }
 
 }
 @media only screen and (min-width:481px) and (max-width:768px) {

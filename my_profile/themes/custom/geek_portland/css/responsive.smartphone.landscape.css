@@ -2,6 +2,8 @@ body { padding: 0 5px; }
 
 body.admin-menu { margin-top: 0 !important; }
 
+.two-25-75 > .region-two-25-75-first-front, .two-25-75 > .region-two-25-75-second-front { margin-left: 0; }
+
 #admin-menu { display: none; }
 
 #branding, .region-header { float: none; margin: 0 0 10px; width: 100%; clear: both; text-align: center; max-width: 100%; overflow: hidden; }
