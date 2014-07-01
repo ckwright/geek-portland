@@ -318,7 +318,7 @@ function geek_pages_field_default_field_instances() {
   // Exported field_instance: 'node-geek_page-field_location'
   $field_instances['node-geek_page-field_location'] = array(
     'bundle' => 'geek_page',
-    'default_value' => array(),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Begin typing to find an address. If you don\'t see the venue, please enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.',
     'display' => array(
@@ -361,7 +361,7 @@ function geek_pages_field_default_field_instances() {
         'match_operator' => 'CONTAINS',
         'path' => '',
         'references_dialog_add' => 1,
-        'references_dialog_edit' => 0,
+        'references_dialog_edit' => 1,
         'references_dialog_search' => 0,
         'references_dialog_search_view' => '',
         'size' => 60,

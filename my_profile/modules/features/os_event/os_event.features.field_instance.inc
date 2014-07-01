@@ -638,7 +638,7 @@ function os_event_field_default_field_instances() {
         'match_operator' => 'CONTAINS',
         'path' => '',
         'references_dialog_add' => 1,
-        'references_dialog_edit' => 0,
+        'references_dialog_edit' => 1,
         'references_dialog_search' => 0,
         'references_dialog_search_view' => '',
         'size' => 60,
