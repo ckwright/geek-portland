@@ -17,6 +17,9 @@ function geek_portland_location_references_dialog_widgets_alter(&$widgets) {
   if (isset($widgets['node_reference_autocomplete']['operations']['add']['function'])) {
     $widgets['node_reference_autocomplete']['operations']['add']['function'] = '_geek_portland_location_references_dialog_node_reference_add_link';
   }
+  if (isset($widgets['entityreference_autocomplete']['operations']['add']['function'])) {
+    $widgets['entityreference_autocomplete']['operations']['add']['function'] = '_geek_portland_location_references_dialog_entityreference_add_link';
+  }
 }
 
 /**
@@ -25,4 +28,12 @@ function geek_portland_location_references_dialog_widgets_alter(&$widgets) {
 function _geek_portland_location_references_dialog_node_reference_add_link($element, $widget_settings, $field, $instance) {
   $element['#value'] = $element['#default_value'] = FALSE;
   return references_dialog_node_reference_add_link($element, $widget_settings, $field, $instance);
+}
+
+/**
+ * Helper function to ensure the 'Create' button always shows up.
+ */
+function _geek_portland_location_references_dialog_entityreference_add_link($element, $widget_settings, $field, $instance) {
+  $element['#value'] = $element['#default_value'] = FALSE;
+  return references_dialog_entityreference_add_link($element, $widget_settings, $field, $instance);
 }
