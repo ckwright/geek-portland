@@ -5,6 +5,7 @@ package = OpenSourcery
 version = 7.x-2.0-alpha1
 project = os_base
 dependencies[] = adaptive_theme_helper
+dependencies[] = authcache
 dependencies[] = chosen
 dependencies[] = contact
 dependencies[] = contextual
