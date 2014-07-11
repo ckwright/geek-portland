@@ -142,6 +142,8 @@ function os_base_user_default_permissions() {
     'name' => 'bypass workbench moderation',
     'roles' => array(
       'administrator' => 'administrator',
+      'event administrator' => 'event administrator',
+      'site editor' => 'site editor',
     ),
     'module' => 'workbench_moderation',
   );
@@ -315,6 +317,7 @@ function os_base_user_default_permissions() {
     'name' => 'view all unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'event administrator' => 'event administrator',
       'site editor' => 'site editor',
     ),
     'module' => 'workbench_moderation',

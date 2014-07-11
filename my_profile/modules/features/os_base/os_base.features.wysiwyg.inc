@@ -29,6 +29,9 @@ function os_base_wysiwyg_default_profiles() {
           'numlist' => 1,
           'link' => 1,
         ),
+        'paste' => array(
+          'pasteword' => 1,
+        ),
       ),
       'toolbar_loc' => 'top',
       'toolbar_align' => 'left',
@@ -42,6 +45,7 @@ function os_base_wysiwyg_default_profiles() {
       'paste_auto_cleanup_on_paste' => 1,
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
       'css_setting' => 'theme',
+      'css_theme' => '',
       'css_path' => '',
       'css_classes' => '',
     ),
@@ -73,6 +77,7 @@ function os_base_wysiwyg_default_profiles() {
           'link' => 1,
           'anchor' => 1,
           'image' => 1,
+          'cleanup' => 1,
           'formatselect' => 1,
           'blockquote' => 1,
           'hr' => 1,
@@ -86,6 +91,9 @@ function os_base_wysiwyg_default_profiles() {
         ),
         'advlink' => array(
           'advlink' => 1,
+        ),
+        'paste' => array(
+          'pasteword' => 1,
         ),
         'table' => array(
           'tablecontrols' => 1,
