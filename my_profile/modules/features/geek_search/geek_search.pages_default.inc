@@ -109,7 +109,7 @@ function geek_search_default_page_manager_handlers() {
     $pane->cache = array(
       'method' => 'simple',
       'settings' => array(
-        'lifetime' => '1800',
+        'lifetime' => '60',
         'granularity' => 'args',
       ),
     );
@@ -144,7 +144,7 @@ function geek_search_default_page_manager_handlers() {
     $pane->cache = array(
       'method' => 'simple',
       'settings' => array(
-        'lifetime' => '1800',
+        'lifetime' => '60',
         'granularity' => 'args',
       ),
     );
