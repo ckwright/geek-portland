@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Geek authcache feature.
+ */
+
+include_once 'geek_authcache.features.inc';

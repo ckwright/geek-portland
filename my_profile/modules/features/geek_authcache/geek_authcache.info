@@ -1,0 +1,16 @@
+name = Geek Portland authcache
+description = Authcaching features
+core = 7.x
+package = geek portland
+dependencies[] = authcache
+dependencies[] = authcache_ajax
+dependencies[] = authcache_builtin
+dependencies[] = authcache_form
+dependencies[] = authcache_p13n
+dependencies[] = authcache_views
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = authcache_mimetype
+features[variable][] = authcache_roles
