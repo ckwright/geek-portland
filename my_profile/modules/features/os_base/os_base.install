@@ -200,3 +200,10 @@ function os_base_update_7003(&$sandbox) {
 function os_base_update_7004(&$sandbox) {
   module_enable(array('geek_donate'));
 }
+
+/**
+ * Enables authcaching.
+ */
+function os_base_update_7005(&$sandbox) {
+  module_enable(array('geek_authcache'));
+}
