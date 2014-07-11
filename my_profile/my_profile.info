@@ -49,6 +49,7 @@ dependencies[] = os_base
 dependencies[] = os_blog
 dependencies[] = os_event
 dependencies[] = adaptive_theme_helper
+dependencies[] = geek_authcache
 dependencies[] = geek_portland_location
 dependencies[] = geek_pages
 dependencies[] = home_page
