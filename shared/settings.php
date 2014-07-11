@@ -556,4 +556,5 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 require dirname(__FILE__) . '/settings.local.php';
 
 $conf['install_profile'] = 'my_profile';
-
+$conf['cache_backends'][] = 'profiles/my_profile/modules/contrib/authcache/authcache.cache.inc';
+$conf['cache_backends'][] = 'profiles/my_profile/modules/contrib/authcache/modules/authcache_builtin/authcache_builtin.cache.inc';
