@@ -38,6 +38,9 @@ includes[og] = "og.make"
 ; Address Field
 projects[addressfield][version] = "1.0-beta5"
 
+; Admin Views
+projects[admin_views][version] = "1.3"
+
 ; Authcache
 projects[authcache][version] = "2.0-beta3"
 

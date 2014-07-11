@@ -205,5 +205,5 @@ function os_base_update_7004(&$sandbox) {
  * Enables authcaching.
  */
 function os_base_update_7005(&$sandbox) {
-  module_enable(array('geek_authcache'));
+  module_enable(array('geek_authcache', 'admin_views'));
 }
