@@ -234,7 +234,7 @@ function home_page_default_page_manager_pages() {
     $pane->cache = array(
       'method' => 'simple',
       'settings' => array(
-        'lifetime' => '1800',
+        'lifetime' => '60',
         'granularity' => 'none',
       ),
     );
