@@ -589,7 +589,7 @@ function os_event_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Begin typing to find a venue. If you don\'t see the venue, please choose "See listing details" and enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.',
+    'description' => 'Begin typing to find a venue. <b>If you don\'t see the venue, please choose "See listing details" and enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.</b>',
     'display' => array(
       'blurb' => array(
         'label' => 'hidden',
@@ -902,7 +902,7 @@ function os_event_field_default_field_instances() {
   t('A link to buy tickets online.');
   t('Admission');
   t('Age');
-  t('Begin typing to find a venue. If you don\'t see the venue, please choose "See listing details" and enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.');
+  t('Begin typing to find a venue. <b>If you don\'t see the venue, please choose "See listing details" and enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.</b>');
   t('Briefly explain any costs associated with this event, if known.');
   t('Buy tickets');
   t('Click "Add another item" to add more days for this event.');

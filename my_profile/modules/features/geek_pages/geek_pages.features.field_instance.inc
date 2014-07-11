@@ -320,7 +320,7 @@ function geek_pages_field_default_field_instances() {
     'bundle' => 'geek_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Begin typing to find an address. If you don\'t see the venue, please enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.',
+    'description' => 'Begin typing to find an address. <b>If you don\'t see the venue, please enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.</b>',
     'display' => array(
       'blurb' => array(
         'label' => 'above',
@@ -922,7 +922,7 @@ function geek_pages_field_default_field_instances() {
   t('Add a link to this GeekPage\'s tumblr');
   t('Add any and all geeky tags here.');
   t('All geeky interests');
-  t('Begin typing to find an address. If you don\'t see the venue, please enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.');
+  t('Begin typing to find an address. <b>If you don\'t see the venue, please enter information about this venue in the "Notes for Geek Portland" section below, so an admin can add it.</b>');
   t('Body');
   t('Determine if this is an OG group.');
   t('Email');
