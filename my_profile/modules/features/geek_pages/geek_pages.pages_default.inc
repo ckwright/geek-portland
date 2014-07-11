@@ -58,6 +58,48 @@ function geek_pages_default_page_manager_pages() {
     'submitted_context' => 'empty',
     'context_admin_options_items' => 'geek_page',
     'context_admin_use_node_edit' => 0,
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'perm',
+          'settings' => array(
+            'perm' => 'edit own geek_page content',
+          ),
+          'context' => 'logged-in-user',
+          'not' => TRUE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_geek_page_add_http_response';
+  $handler->task = 'page';
+  $handler->subtask = 'geek_page_add';
+  $handler->handler = 'http_response';
+  $handler->weight = 1;
+  $handler->conf = array(
+    'title' => 'Logged in geek page add',
+    'contexts' => array(),
+    'relationships' => array(),
+    'code' => '301',
+    'destination' => 'node/add/geek-page',
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'perm',
+          'settings' => array(
+            'perm' => 'edit own geek_page content',
+          ),
+          'context' => 'logged-in-user',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
   $page->default_handlers[$handler->name] = $handler;
   $pages['geek_page_add'] = $page;

@@ -368,6 +368,48 @@ function os_event_default_page_manager_pages() {
     'context_admin_options' => 'node_create_menu',
     'submitted_context' => 'empty',
     'context_admin_options_items' => 'event',
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'perm',
+          'settings' => array(
+            'perm' => 'edit own event content',
+          ),
+          'context' => 'logged-in-user',
+          'not' => TRUE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_os_event_node_add_http_response';
+  $handler->task = 'page';
+  $handler->subtask = 'os_event_node_add';
+  $handler->handler = 'http_response';
+  $handler->weight = 1;
+  $handler->conf = array(
+    'title' => 'Logged in user add',
+    'contexts' => array(),
+    'relationships' => array(),
+    'code' => '301',
+    'destination' => 'node/add/event',
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'perm',
+          'settings' => array(
+            'perm' => 'edit own event content',
+          ),
+          'context' => 'logged-in-user',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
   $page->default_handlers[$handler->name] = $handler;
   $pages['os_event_node_add'] = $page;
