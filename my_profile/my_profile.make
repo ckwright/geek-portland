@@ -122,7 +122,7 @@ libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profi
 
 ; Full Calendar (js)
 libraries[fullcalendar][download][type] = "get"
-libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
+libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v2.0.2/fullcalendar-2.0.2.zip"
 
 ; Magnific Popup
 libraries[magnific-popup][download][type] = "git"
