@@ -62,7 +62,10 @@ projects[entityreference][version] = "1.1"
 projects[field_collection][version] = "1.0-beta7"
 
 ; Full Calendar
-projects[fullcalendar][version] = "2.0"
+projects[fullcalendar][download][branch] = "7.x-2.x"
+projects[fullcalendar][download][revision] = "e416e71"
+; Make compatiblish with 2.0.2. https://www.drupal.org/node/2299383
+projects[fullcalendar][patch][] = "http://www.drupal.org/files/issues/fullcalendar-support_202-2299383-1.patch"
 
 projects[geocoder][version] = "1.2"
 
