@@ -386,6 +386,57 @@ function os_event_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-event-field_email'
+  $field_instances['node-event-field_email'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'This is only used for follow-up questions and will not be displayed on the event.',
+    'display' => array(
+      'blurb' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_email',
+    'label' => 'Your email address',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'html5_tools',
+      'settings' => array(),
+      'type' => 'emailwidget',
+      'weight' => 17,
+    ),
+  );
+
   // Exported field_instance: 'node-event-field_entrance_fee'
   $field_instances['node-event-field_entrance_fee'] = array(
     'bundle' => 'event',
@@ -919,6 +970,7 @@ function os_event_field_default_field_instances() {
   t('Notes for Geek Portland');
   t('Related Geek Pages');
   t('Short title');
+  t('This is only used for follow-up questions and will not be displayed on the event.');
   t('This will display on the calendar grid page, so keep it short!');
   t('Venue');
   t('What Geeky Pages, if any, relate to this event?');
@@ -926,6 +978,7 @@ function os_event_field_default_field_instances() {
   t('What fees are required for this event?');
   t('What sort of geeky interests are covered by this event?');
   t('Where to find out more about this event.');
+  t('Your email address');
 
   return $field_instances;
 }
