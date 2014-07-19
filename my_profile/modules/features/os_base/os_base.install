@@ -207,3 +207,12 @@ function os_base_update_7004(&$sandbox) {
 function os_base_update_7005(&$sandbox) {
   module_enable(array('geek_authcache', 'admin_views'));
 }
+
+/**
+ * Adds email to Events page.
+ */
+function os_base_update_7006(&$sandbox) {
+  features_revert(array(
+    'os_event' => array('field_instance'),
+  ));
+}
