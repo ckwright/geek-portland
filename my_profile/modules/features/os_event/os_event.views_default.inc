@@ -284,6 +284,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'fullcalendar';
+  $handler->display->display_options['style_options']['right'] = 'month basicWeek basicDay';
   $handler->display->display_options['style_options']['timeformat'] = 'h:mmt';
   $handler->display->display_options['style_options']['fields']['title_field'] = 'field_short_title';
   $handler->display->display_options['style_options']['fields']['url_field'] = 'path';
