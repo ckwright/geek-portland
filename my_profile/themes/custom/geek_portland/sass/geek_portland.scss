@@ -701,6 +701,10 @@ embed {
   border: $dark_blue;
 }
 
+.fc-event-odd {
+  @include opacity(.7);
+}
+
 /*
  * Blog listing styles
  */

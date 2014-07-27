@@ -17,21 +17,21 @@ Drupal.fullcalendar.plugins.os_event = {
         return false;
       },
       eventAfterAllRender: function ( view ) {
-        $('.fc-day-content').each(function() {
+        $('.fc-day').each(function() {
           var top = $(this).offset().top;
           var left = $(this).offset().left;
           var bottom = top + $(this).height();
           var right = left + $(this).width();
 
           var todayEvents = $(".fc-event").filter(function(i) {
-            return
-              $(this).offset().top >= top
-              && $(this).offset().top < bottom
-              && $(this).offset().left >= left
-              && $(this).offset().left < right;
+            return $(this).offset().top >= top - 1 && $(this).offset().top < bottom && $(this).offset().left >= left - 1 && $(this).offset().left < right;
           });
 
-          todayEvents.css('background', '#000');
+          todayEvents.each(function(i) {
+            if (i % 2 == 1) {
+              $(this).addClass('fc-event-odd');
+            }
+          });
         });
       }
     }
