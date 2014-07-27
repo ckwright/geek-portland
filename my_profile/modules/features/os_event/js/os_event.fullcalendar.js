@@ -17,23 +17,13 @@ Drupal.fullcalendar.plugins.os_event = {
         return false;
       },
       eventAfterAllRender: function ( view ) {
-        $('.fc-day').each(function() {
-          var top = $(this).offset().top;
-          var left = $(this).offset().left;
-          var bottom = top + $(this).height();
-          var right = left + $(this).width();
+        var eventsPerWeekDay = sortResults($(".fc-event"), 'offsetTop', 1);
+        eventsPerWeekDay = sortResults(eventsPerWeekDay, 'offsetLeft', 1);
 
-          var todayEvents = $(".fc-event").filter(function(i) {
-            return $(this).offset().top >= top - 1 && $(this).offset().top < bottom && $(this).offset().left >= left - 1 && $(this).offset().left < right;
-          });
-
-          todayEvents = sortResults(todayEvents, 'offsetTop', 1);
-
-          todayEvents.each(function(i) {
-            if (i % 2 === 1) {
-              $(this).addClass('fc-event-odd');
-            }
-          });
+        $(eventsPerWeekDay).each(function(i) {
+          if (i % 2 === 1) {
+            $(this).addClass('fc-event-odd');
+          }
         });
       }
     };
