@@ -17,8 +17,8 @@ Drupal.fullcalendar.plugins.os_event = {
         return false;
       },
       eventAfterAllRender: function ( view ) {
-        var eventsPerWeekDay = sortResults($(".fc-event"), 'offsetTop', 1);
-        eventsPerWeekDay = sortResults(eventsPerWeekDay, 'offsetLeft', 1);
+        var eventsPerWeekDay = Drupal.fullcalendar.plugins.os_event.sortResults($(".fc-event"), 'offsetTop', 1);
+        eventsPerWeekDay = Drupal.fullcalendar.plugins.os_event.sortResults(eventsPerWeekDay, 'offsetLeft', 1);
 
         $(eventsPerWeekDay).each(function(i) {
           if (i % 2 === 1) {
@@ -27,12 +27,12 @@ Drupal.fullcalendar.plugins.os_event = {
         });
       }
     };
-  }
-};
-function sortResults(arr, prop, asc) {
+  },
+  sortResults: function (arr, prop, asc) {
     return arr.sort(function(a, b) {
         if (asc) return (a[prop] > b[prop]);
         else return (b[prop] > a[prop]);
     });
-}
+  }
+};
 }(jQuery));
