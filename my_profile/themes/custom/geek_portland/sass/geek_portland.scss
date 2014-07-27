@@ -701,8 +701,13 @@ embed {
   border: $dark_blue;
 }
 
-.fc-event-odd {
-  @include opacity(.7);
+a.fc-event-odd {
+  background: #d3e8eb;
+  span,
+  span.fc-event-time{
+    background: #d3e8eb;
+    color: #000;
+  }
 }
 
 /*

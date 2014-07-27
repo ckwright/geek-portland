@@ -27,14 +27,22 @@ Drupal.fullcalendar.plugins.os_event = {
             return $(this).offset().top >= top - 1 && $(this).offset().top < bottom && $(this).offset().left >= left - 1 && $(this).offset().left < right;
           });
 
+          todayEvents = sortResults(todayEvents, 'offsetTop', 1);
+
           todayEvents.each(function(i) {
-            if (i % 2 == 1) {
+            if (i % 2 === 1) {
               $(this).addClass('fc-event-odd');
             }
           });
         });
       }
-    }
+    };
   }
+};
+function sortResults(arr, prop, asc) {
+    return arr.sort(function(a, b) {
+        if (asc) return (a[prop] > b[prop]);
+        else return (b[prop] > a[prop]);
+    });
 }
 }(jQuery));

@@ -170,7 +170,8 @@ object, iframe, embed { max-width: 100%; }
 /* Fullcalendar */
 .fc-event-default, .fc-event-default .fc-event-skin, .fc-event-default .fc-event-time, .fc-event-default a { background: #6698cc; border: #6698cc; }
 
-.fc-event-odd { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+a.fc-event-odd { background: #d3e8eb; }
+a.fc-event-odd span, a.fc-event-odd span.fc-event-time { background: #d3e8eb; color: #000; }
 
 /* Blog listing styles */
 .pane-views-exp-blog-page { margin: 0; }
