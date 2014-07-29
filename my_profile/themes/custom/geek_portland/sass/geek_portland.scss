@@ -221,7 +221,8 @@ embed {
   }
 
   .node,
-  .view-empty {
+  .view-empty,
+  .user-profile {
     background: $white;
     @extend .rounded-corner;
     padding: 1em;
@@ -331,6 +332,10 @@ embed {
     }
   }
 
+}
+
+article.user-profile {
+  margin-bottom: 3em;
 }
 
 .pane-page-tabs {
