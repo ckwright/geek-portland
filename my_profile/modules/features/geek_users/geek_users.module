@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Geek users feature.
+ */
+
+include_once 'geek_users.features.inc';

@@ -1,0 +1,17 @@
+name = Geek users
+description = Geek Portland About Us page
+core = 7.x
+package = geek portland
+dependencies[] = features
+dependencies[] = page_manager
+dependencies[] = text
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = field_bio
+features[field_instance][] = user-user-field_bio
+features[page_manager_pages][] = about_us
+features[views_view][] = about_geek_portland
+features_exclude[dependencies][ctools] = ctools

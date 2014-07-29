@@ -54,6 +54,7 @@ dependencies[] = geek_portland_location
 dependencies[] = geek_pages
 dependencies[] = home_page
 dependencies[] = geek_search
+dependencies[] = geek_users
 
 ;
 ; Users
