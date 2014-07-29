@@ -216,3 +216,10 @@ function os_base_update_7006(&$sandbox) {
     'os_event' => array('field_instance'),
   ));
 }
+
+/**
+ * Enables Geek User feature.
+ */
+function os_base_update_7007(&$sandbox) {
+  module_enable(array('geek_users'));
+}
