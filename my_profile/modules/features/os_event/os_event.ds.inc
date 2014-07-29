@@ -276,6 +276,7 @@ function os_event_ds_view_modes_info() {
   $ds_view_mode->label = 'blurb';
   $ds_view_mode->entities = array(
     'node' => 'node',
+    'user' => 'user',
   );
   $export['blurb'] = $ds_view_mode;
 
