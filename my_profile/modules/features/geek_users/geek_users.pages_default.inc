@@ -21,7 +21,7 @@ function geek_users_default_page_manager_pages() {
     'settings' => NULL,
   );
   $page->menu = array(
-    'type' => 'normal',
+    'type' => 'none',
     'title' => 'About',
     'name' => 'main-menu',
     'weight' => '0',
