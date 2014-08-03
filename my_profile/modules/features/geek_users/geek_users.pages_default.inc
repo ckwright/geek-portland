@@ -16,7 +16,10 @@ function geek_users_default_page_manager_pages() {
   $page->admin_title = 'About us';
   $page->admin_description = '';
   $page->path = 'about-us';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'About',
