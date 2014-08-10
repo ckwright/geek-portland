@@ -17,22 +17,24 @@ Drupal.fullcalendar.plugins.os_event = {
         return false;
       },
       eventAfterAllRender: function ( view ) {
-        var eventsPerWeekDay = Drupal.fullcalendar.plugins.os_event.sortResults($(".fc-event"), 'offsetTop', 1);
-        eventsPerWeekDay = Drupal.fullcalendar.plugins.os_event.sortResults(eventsPerWeekDay, 'offsetLeft', 1);
+        var eventsPerWeekDay = {};
+        var arrayKeys = [];
 
-        $(eventsPerWeekDay).each(function(i) {
-          if (i % 2 === 1) {
-            $(this).addClass('fc-event-odd');
-          }
+        $(".fc-event").each(function(i){
+          var keyValue = $(this).prop('offsetTop') + ($(this).prop('offsetLeft') * 100);
+          eventsPerWeekDay[keyValue] = $(this);
+          arrayKeys.push(keyValue);
         });
-      }
+
+        arrayKeys.sort();
+
+        for(var i=0; i < arrayKeys.length; i++) {
+          if (i % 2 === 1) {
+            eventsPerWeekDay[arrayKeys[i]].addClass('fc-event-odd');
+          }
+        };
+      },
     };
   },
-  sortResults: function (arr, prop, asc) {
-    return arr.sort(function(a, b) {
-        if (asc) return (a[prop] > b[prop]);
-        else return (b[prop] > a[prop]);
-    });
-  }
 };
 }(jQuery));
