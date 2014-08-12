@@ -15,7 +15,7 @@ projects[ctools][patch][] = "https://drupal.org/files/ctools-views-content-custo
 
 projects[chosen][version] = "2.0-beta4"
 
-projects[date][version] = "2.7"
+projects[date][version] = "2.8"
 ; Nested field values don't display correctly. https://drupal.org/node/1854378
 projects[date][patch][] = "https://drupal.org/files/date-repeat-field-nested-2065747-1.patch"
 
@@ -23,7 +23,7 @@ projects[entitycache][version] = "1.2"
 
 projects[elements][version] = "1.4"
 
-projects[features][version] = "2.0"
+projects[features][version] = "2.2"
 ; PDO exception if permissions are set in same feature as module creating them. http://drupal.org/node/1063204#comment-6350488
 projects[features][patch][] = "http://drupal.org/files/features_static_caches-1063204-32.patch"
 
@@ -44,8 +44,7 @@ projects[strongarm][version] = "2.0"
 
 projects[token][version] = "1.5"
 
-projects[views][download][branch] = "7.x-3.x"
-projects[views][download][revision] = "19ad19f4"
+projects[views][version] = "3.8"
 ; Exposed Sort By and Sort Order view pane settings not retained https://drupal.org/node/2037469
 projects[views][patch][] = "https://drupal.org/files/views-exposed-sorts-2037469-1.patch"
 
