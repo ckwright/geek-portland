@@ -44,6 +44,7 @@ function geek_pages_node_info() {
 If you have a suggestion for a GeekPage or corrections/updates to current GeekPages, please email <a href="mailto:GeekPortand@gmail.com">GeekPortand@gmail.com</a>'),
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
 
@@ -84,7 +85,11 @@ function geek_pages_default_search_api_index() {
         "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "0", "settings" : [] }
       },
       "processors" : {
-        "search_api_case_ignore" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } },
+        "search_api_case_ignore" : {
+          "status" : 1,
+          "weight" : "0",
+          "settings" : { "fields" : { "title" : true } }
+        },
         "search_api_html_filter" : {
           "status" : 0,
           "weight" : "10",
@@ -101,12 +106,12 @@ function geek_pages_default_search_api_index() {
           "settings" : { "fields" : [], "spaces" : "[^[:alnum:]]", "ignorable" : "[\\u0027]" }
         },
         "search_api_stopwords" : {
-          "status" : 0,
+          "status" : 1,
           "weight" : "30",
           "settings" : {
-            "fields" : [],
+            "fields" : { "title" : true },
             "file" : "",
-            "stopwords" : "but\\r\\ndid\\r\\nthe this that those\\r\\netc"
+            "stopwords" : "but\\r\\ndid\\r\\nthe this that those\\r\\netc\\r\\na"
           }
         },
         "search_api_highlighting" : {
@@ -117,6 +122,7 @@ function geek_pages_default_search_api_index() {
             "suffix" : "\\u003C\\/strong\\u003E",
             "excerpt" : 1,
             "excerpt_length" : "256",
+            "exclude_fields" : [],
             "highlight" : "always"
           }
         }
