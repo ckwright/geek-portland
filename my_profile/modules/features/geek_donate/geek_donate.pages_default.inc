@@ -110,6 +110,34 @@ function geek_donate_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-be077a38-beff-48f0-8a53-9bdcb5c0b2a3';
+    $pane->panel = 'two_20_80_bottom';
+    $pane->type = 'node';
+    $pane->subtype = 'node';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'nid' => '347',
+      'links' => 0,
+      'leave_node_title' => 0,
+      'identifier' => '',
+      'build_mode' => 'full',
+      'link_node_title' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'be077a38-beff-48f0-8a53-9bdcb5c0b2a3';
+    $display->content['new-be077a38-beff-48f0-8a53-9bdcb5c0b2a3'] = $pane;
+    $display->panels['two_20_80_bottom'][0] = 'new-be077a38-beff-48f0-8a53-9bdcb5c0b2a3';
+    $pane = new stdClass();
     $pane->pid = 'new-adaae971-2f20-4c2b-a057-c6ac31994cfb';
     $pane->panel = 'two_20_80_top';
     $pane->type = 'custom';
