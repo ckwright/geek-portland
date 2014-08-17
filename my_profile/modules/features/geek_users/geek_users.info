@@ -2,6 +2,7 @@ name = Geek users
 description = Geek Portland About Us page
 core = 7.x
 package = geek portland
+dependencies[] = draggableviews
 dependencies[] = ds
 dependencies[] = features
 dependencies[] = page_manager
