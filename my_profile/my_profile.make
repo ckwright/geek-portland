@@ -105,6 +105,10 @@ projects[link][version] = "1.2"
 projects[references_dialog][download][branch] = "7.x-1.x"
 projects[references_dialog][download][revision] = "c2457782"
 
+; Realname
+projects[realname][download][branch] = "1.x"
+projects[realname][download][revision] = "9d65522"
+
 ; Rules
 projects[rules][version] = "2.7"
 
