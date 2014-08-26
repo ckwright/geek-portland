@@ -33,7 +33,20 @@ function geek_users_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'googleanalytics' => array(
+          'weight' => '2',
+        ),
+        'redirect' => array(
+          'weight' => '5',
+        ),
+        'account' => array(
+          'weight' => '0',
+        ),
+        'timezone' => array(
+          'weight' => '3',
+        ),
+      ),
       'display' => array(
         'summary' => array(
           'default' => array(
