@@ -304,14 +304,14 @@ function os_base_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_dimensions';
-  $strongarm->value = '85x85';
+  $strongarm->value = '120x120';
   $export['user_picture_dimensions'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_file_size';
-  $strongarm->value = '30';
+  $strongarm->value = '100';
   $export['user_picture_file_size'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -332,7 +332,7 @@ function os_base_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_style';
-  $strongarm->value = 'tiny_image';
+  $strongarm->value = 'medium_image';
   $export['user_picture_style'] = $strongarm;
 
   $strongarm = new stdClass();
