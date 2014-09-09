@@ -8,4 +8,4 @@ projects[facetapi][version] = "1.5"
 projects[facetapi_pretty_paths][version] = "1.1"
 
 projects[search_api][version] = "1.13"
-projects[search_api_db][version] = "1.3"
+projects[search_api_db][version] = "1.4"
