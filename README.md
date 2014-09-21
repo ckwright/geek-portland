@@ -24,11 +24,11 @@ Rendered entities should always conform to a given pattern:
 Here is the list of what it means to sticky, based on content types, and what it means to promote to front page, for reference:
 
 #### Geek Page:
-- Sticky: Will randomly show up on http://geek-portland.dev/geeks under "Featured GeekPages"
-- Front page: Will randomly show up at http://geek-portland.dev/ under "Featured Geekpage"
+- Sticky: Will randomly show up on http://geekportland.com/geeks under "Featured GeekPages"
+- Front page: Will randomly show up at http://geekportland.com/ under "Featured Geekpage"
 
 #### Blog:
-- Sticky: Will put the blog post at the top of the list on http://geek-portland.dev/blog
-- Front page: Will randomly show up at http://geek-portland.dev/ under "Featured GeekNews"
+- Sticky: Will put the blog post at the top of the list on http://geekportland.com/blog
+- Front page: Will randomly show up at http://geekportland.com/ under "Featured GeekNews"
 
 All other content types sticky has no current implementation.
