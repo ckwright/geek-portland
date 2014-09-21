@@ -20,3 +20,15 @@ Rendered entities should always conform to a given pattern:
  * Search results or listings: Display mode: 'Teaser'
  * Grouped search results (where each item is grouped by a header): Display mode: 'blurb'
  * Rendered entity links: Display mode: 'Location link' (only applies to content with an address field).
+
+Here is the list of what it means to sticky, based on content types, and what it means to promote to front page, for reference:
+
+#### Geek Page:
+- Sticky: Will randomly show up on http://geek-portland.dev/geeks under "Featured GeekPages"
+- Front page: Will randomly show up at http://geek-portland.dev/ under "Featured Geekpage"
+
+#### Blog:
+- Sticky: Will put the blog post at the top of the list on http://geek-portland.dev/blog
+- Front page: Will randomly show up at http://geek-portland.dev/ under "Featured GeekNews"
+
+All other content types sticky has no current implementation.
