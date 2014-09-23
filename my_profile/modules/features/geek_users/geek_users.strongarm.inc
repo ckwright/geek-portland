@@ -41,7 +41,7 @@ function geek_users_strongarm() {
           'weight' => '5',
         ),
         'account' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'timezone' => array(
           'weight' => '3',
