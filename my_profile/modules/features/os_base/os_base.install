@@ -223,3 +223,13 @@ function os_base_update_7006(&$sandbox) {
 function os_base_update_7007(&$sandbox) {
   module_enable(array('geek_users'));
 }
+
+
+/**
+ * Updates users page, enables youtube and vimeo.
+ */
+function os_base_update_7008(&$sandbox) {
+  features_revert(array('geek_users' => 'page_manager_pages'));
+
+  module_enable(array('media_vimeo', 'media_youtube'));
+}
