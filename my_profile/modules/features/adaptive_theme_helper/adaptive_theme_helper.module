@@ -108,7 +108,7 @@ function _adaptive_theme_helper_check_status() {
  */
 function adaptive_theme_helper_node_view($node, $view_mode, $langcode) {
   // Add Magnific Popup library to page.
-  if ($view_mode == 'full') {
+  if ($view_mode == 'full' && !path_is_admin(current_path())) {
     drupal_add_library('adaptive_theme_helper', 'magnific_popup', FALSE);
     drupal_add_js(drupal_get_path('module', 'adaptive_theme_helper') .'/js/magnificPrep.js', 'file');
   }
