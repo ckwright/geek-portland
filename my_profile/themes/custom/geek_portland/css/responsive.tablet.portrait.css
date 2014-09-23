@@ -16,3 +16,5 @@ h1#site-name { font-size: 2em; }
 /* Search styles */
 .top-right-dropdown .region-two-50-first { height: auto; }
 .top-right-dropdown .region-two-50-second { position: static; }
+
+.narrow-window .region-two-20-80-first { min-width: 120px; }
