@@ -126,6 +126,7 @@ features[variable][] = imagecrop_show_cancel_button
 features[variable][] = imagecrop_skip_preview
 features[variable][] = imagecrop_theme
 features[variable][] = imagecrop_ui_controls
+features[variable][] = media__wysiwyg_browser_plugins
 features[variable][] = node_options_page
 features[variable][] = node_submitted_page
 features[variable][] = pathauto_node_page_pattern
