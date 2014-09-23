@@ -2,7 +2,6 @@ name = Geek users
 description = Geek Portland About Us page
 core = 7.x
 package = geek portland
-dependencies[] = ctools
 dependencies[] = draggableviews
 dependencies[] = ds
 dependencies[] = entityreference

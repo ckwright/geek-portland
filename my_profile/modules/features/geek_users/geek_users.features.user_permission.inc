@@ -24,7 +24,9 @@ function geek_users_user_default_permissions() {
   // Exported permission: 'administer realname'.
   $permissions['administer realname'] = array(
     'name' => 'administer realname',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'realname',
   );
 
