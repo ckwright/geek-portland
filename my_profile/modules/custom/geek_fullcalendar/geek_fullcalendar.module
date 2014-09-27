@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Defines custom pager method that takes a start and end date.
+ */
+
+/**
+ * Implements hook_views_api().
+ *
+ * Allows us to call in our custom views plugins.
+ */
+function geek_fullcalendar_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'geek_fullcalendar') . '/includes',
+  );
+}
