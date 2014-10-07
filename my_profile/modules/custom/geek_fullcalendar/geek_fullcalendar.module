@@ -55,7 +55,7 @@ function geek_fullcalendar_library() {
     ),
     'css' => array(
       libraries_get_path('fullcalendar') . '/fullcalendar.css' => array(),
-      libraries_get_path('fullcalendar') . '/fullcalendar.print.css' => array(),
+      libraries_get_path('fullcalendar') . '/fullcalendar.print.css' => array('media' => 'print'),
     ),
     'dependencies' => array(
       array('system', 'ui.draggable'),
