@@ -15,3 +15,54 @@ function geek_fullcalendar_views_api() {
     'path' => drupal_get_path('module', 'geek_fullcalendar') . '/includes',
   );
 }
+
+/**
+ * Implements hook_menu().
+ *
+ * Adds a json-fueled events page.
+ */
+function geek_fullcalendar_menu() {
+  $items['json_events'] = array(
+    'page callback' => 'geek_fullcalendar_page',
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback for full calendar.
+ */
+function geek_fullcalendar_page() {
+  drupal_add_js(drupal_get_path('module', 'geek_fullcalendar') . '/js/geek_fullcalendar.fullcalendar.js');
+  drupal_add_library('geek_fullcalendar', 'fullcalendar');
+
+  return "<div id='loading'>loading...</div><div id='calendar'></div>";
+}
+
+
+/**
+ * Implements hook_library().
+ */
+function geek_fullcalendar_library() {
+  $libraries['fullcalendar'] = array(
+    'title' => 'FullCalendar',
+    'website' => 'http://arshaw.com/fullcalendar',
+    'version' => '1.4.10',
+    'js' => array(
+      libraries_get_path('fullcalendar') . '/lib/moment.min.js' => array(),
+      libraries_get_path('fullcalendar') . '/fullcalendar.min.js' => array(),
+    ),
+    'css' => array(
+      libraries_get_path('fullcalendar') . '/fullcalendar.css' => array(),
+      libraries_get_path('fullcalendar') . '/fullcalendar.print.css' => array(),
+    ),
+    'dependencies' => array(
+      array('system', 'ui.draggable'),
+      array('system', 'ui.droppable'),
+      array('system', 'ui.resizable'),
+      array('system', 'effects.highlight'),
+    ),
+  );
+  return $libraries;
+}
