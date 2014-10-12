@@ -124,7 +124,7 @@ function os_base_install() {
  */
 function os_base_update_7001(&$sandbox) {
   module_enable(array('field_collection'));
-  features_revert(array('os_event' => array('field_base','field_instance')));
+  features_revert(array('os_event' => array('field_base', 'field_instance')));
   $node_dates = db_select('field_data_field_event_date', 'fe')
       ->fields('fe')
       ->condition('entity_type', 'node')
@@ -133,7 +133,7 @@ function os_base_update_7001(&$sandbox) {
 
   foreach ($node_dates as $date) {
     $node = node_load($date->entity_id);
-    // Create and save field collection for node
+    // Create and save field collection for node.
     $field_collection_item = entity_create('field_collection_item', array('field_name' => 'field_dates'));
     $field_collection_item->setHostEntity('node', $node);
     $field_collection_item->field_event_date[LANGUAGE_NONE][0]['value'] = $date->field_event_date_value;
@@ -152,7 +152,13 @@ function os_base_update_7001(&$sandbox) {
  * Combines field_geek_page_type_s_ and field_event_category into field_all_geeky_interests.
  */
 function os_base_update_7002(&$sandbox) {
-  features_revert(array('geek_pages' => array('field_base','field_instance', 'search_api_index')));
+  features_revert(array(
+    'geek_pages' => array(
+      'field_base',
+      'field_instance',
+      'search_api_index',
+    )
+  ));
 
   $geek_pages = db_select('node', 'node')
       ->fields('node')
@@ -224,7 +230,6 @@ function os_base_update_7007(&$sandbox) {
   module_enable(array('geek_users'));
 }
 
-
 /**
  * Updates users page, enables youtube and vimeo.
  */
@@ -232,4 +237,11 @@ function os_base_update_7008(&$sandbox) {
   features_revert(array('geek_users' => array('page_manager_pages', 'variable')));
 
   module_enable(array('media_vimeo', 'media_youtube'));
+}
+
+/**
+ * Enable node_clone module.
+ */
+function os_base_update_7009(&$sandbox) {
+  module_enable(array('node_clone'));
 }

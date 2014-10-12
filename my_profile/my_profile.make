@@ -101,6 +101,9 @@ projects[libraries][version] = "2.2"
 ; Link
 projects[link][version] = "1.2"
 
+; Node clone
+projects[node_clone][version] = "1.0-rc2"
+
 ; References dialog
 projects[references_dialog][download][branch] = "7.x-1.x"
 projects[references_dialog][download][revision] = "c2457782"
