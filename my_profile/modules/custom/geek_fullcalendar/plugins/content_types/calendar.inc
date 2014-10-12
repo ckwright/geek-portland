@@ -17,9 +17,20 @@ $plugin = array(
  * CTools content type output function.
  */
 function geek_fullcalendar_calendar_content_type_render($subtype, $conf, $panels_args, $context) {
-  drupal_add_js(drupal_get_path('module', 'geek_fullcalendar') . '/js/geek_fullcalendar.fullcalendar.js');
-  drupal_add_library('geek_fullcalendar', 'fullcalendar');
-  $content = "<div id='loading'>loading...</div><div id='calendar'></div>";
+  $content = array(
+    'calendar' => array(
+      '#markup' => "<div id='loading'>loading...</div><div id='calendar'></div>",
+      '#attached' => array(
+        'library' => array(
+          array('geek_fullcalendar', 'fullcalendar'),
+        ),
+        'js' => array(
+          drupal_get_path('module', 'geek_fullcalendar') . '/js/geek_fullcalendar.fullcalendar.js',
+        ),
+      ),
+    ),
+  );
+
   // Build the custom content pane.
   $pane = new stdClass();
   $pane->module  = 'geek_fullcalendar';
