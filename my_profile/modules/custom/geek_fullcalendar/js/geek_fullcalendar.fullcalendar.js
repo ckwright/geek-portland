@@ -13,7 +13,7 @@
 				right: 'month,agendaWeek,agendaDay'
         },
         events: {
-          url: 'events.json',
+          url: '/events.json' + window.location.search,
           error: function() {
             $('#script-warning').show();
           }
