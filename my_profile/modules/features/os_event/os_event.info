@@ -85,6 +85,7 @@ features[field_instance][] = node-event-og_group_ref
 features[node][] = event
 features[page_manager_pages][] = events
 features[page_manager_pages][] = events_calendar
+features[page_manager_pages][] = events_new
 features[page_manager_pages][] = os_event_node_add
 features[page_manager_pages][] = weekly_events
 features[taxonomy][] = admission

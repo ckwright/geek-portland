@@ -322,6 +322,121 @@ function os_event_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
+  $page->name = 'events_new';
+  $page->task = 'page';
+  $page->admin_title = 'Events - new';
+  $page->admin_description = 'This calendar page is fed by json.';
+  $page->path = 'events/new';
+  $page->access = array();
+  $page->menu = array(
+    'type' => 'tab',
+    'title' => 'New',
+    'name' => 'navigation',
+    'weight' => '0',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_events_new_panel_context';
+  $handler->task = 'page';
+  $handler->subtask = 'events_new';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Panel',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'top-right-dropdown',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+  );
+  $display = new panels_display();
+  $display->layout = 'two_50';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'two_50_top' => NULL,
+      'two_50_first' => NULL,
+      'two_50_second' => NULL,
+      'two_50_bottom' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = 'Calendar';
+  $display->uuid = 'ccf5fd18-d90f-4fcb-af26-5e313a8bc88f';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
+    $pane->panel = 'two_50_first';
+    $pane->type = 'page_tabs';
+    $pane->subtype = 'page_tabs';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'type' => 'both',
+      'id' => 'tabs',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '051beebc-ad13-498c-a41e-d42910c529c5';
+    $display->content['new-051beebc-ad13-498c-a41e-d42910c529c5'] = $pane;
+    $display->panels['two_50_first'][0] = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
+    $pane = new stdClass();
+    $pane->pid = 'new-83fc68f1-b13c-4b8b-9960-b07446dd0f89';
+    $pane->panel = 'two_50_second';
+    $pane->type = 'block';
+    $pane->subtype = 'views--exp-events_json-page';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '83fc68f1-b13c-4b8b-9960-b07446dd0f89';
+    $display->content['new-83fc68f1-b13c-4b8b-9960-b07446dd0f89'] = $pane;
+    $display->panels['two_50_second'][0] = 'new-83fc68f1-b13c-4b8b-9960-b07446dd0f89';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['events_new'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
   $page->name = 'os_event_node_add';
   $page->task = 'page';
   $page->admin_title = 'Events: add';
