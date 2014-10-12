@@ -1224,7 +1224,7 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_category_tid']['vocabulary'] = 'event_categories';
 
   /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
+  $handler = $view->new_display('page', 'Page', 'panel_pane_calendar');
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['path'] = 'events.json';
   $export['events_json'] = $view;

@@ -382,6 +382,26 @@ function os_event_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-2437fd4f-16ac-4ef8-80a4-7ee3ab21f697';
+    $pane->panel = 'two_50_bottom';
+    $pane->type = 'calendar';
+    $pane->subtype = 'calendar';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+      'style' => 'rounded_corners',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '2437fd4f-16ac-4ef8-80a4-7ee3ab21f697';
+    $display->content['new-2437fd4f-16ac-4ef8-80a4-7ee3ab21f697'] = $pane;
+    $display->panels['two_50_bottom'][0] = 'new-2437fd4f-16ac-4ef8-80a4-7ee3ab21f697';
+    $pane = new stdClass();
     $pane->pid = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
     $pane->panel = 'two_50_first';
     $pane->type = 'page_tabs';
@@ -406,10 +426,10 @@ function os_event_default_page_manager_pages() {
     $display->content['new-051beebc-ad13-498c-a41e-d42910c529c5'] = $pane;
     $display->panels['two_50_first'][0] = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
     $pane = new stdClass();
-    $pane->pid = 'new-83fc68f1-b13c-4b8b-9960-b07446dd0f89';
+    $pane->pid = 'new-1e26f876-cba0-4076-98f8-414e8c9c3a24';
     $pane->panel = 'two_50_second';
     $pane->type = 'block';
-    $pane->subtype = 'views--exp-events_json-page';
+    $pane->subtype = 'views-f7c58694850d5d360a06257870fb5eea';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -425,9 +445,9 @@ function os_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '83fc68f1-b13c-4b8b-9960-b07446dd0f89';
-    $display->content['new-83fc68f1-b13c-4b8b-9960-b07446dd0f89'] = $pane;
-    $display->panels['two_50_second'][0] = 'new-83fc68f1-b13c-4b8b-9960-b07446dd0f89';
+    $pane->uuid = '1e26f876-cba0-4076-98f8-414e8c9c3a24';
+    $display->content['new-1e26f876-cba0-4076-98f8-414e8c9c3a24'] = $pane;
+    $display->panels['two_50_second'][0] = 'new-1e26f876-cba0-4076-98f8-414e8c9c3a24';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
   $handler->conf['display'] = $display;
@@ -530,7 +550,7 @@ function os_event_default_page_manager_pages() {
   $pages['os_event_node_add'] = $page;
 
   $page = new stdClass();
-  $page->disabled = TRUE; /* Edit this to true to make a default page disabled initially */
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
   $page->name = 'weekly_events';
   $page->task = 'page';
