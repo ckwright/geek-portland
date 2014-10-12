@@ -48,6 +48,7 @@
             }
           };
         },
+        timeFormat: 'h:mmt',
       });
     }
   };
