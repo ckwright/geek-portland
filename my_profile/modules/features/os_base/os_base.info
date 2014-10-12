@@ -8,6 +8,7 @@ dependencies[] = adaptive_theme_helper
 dependencies[] = admin_views
 dependencies[] = authcache
 dependencies[] = chosen
+dependencies[] = clone
 dependencies[] = contact
 dependencies[] = contextual
 dependencies[] = ctools

@@ -243,5 +243,5 @@ function os_base_update_7008(&$sandbox) {
  * Enable node_clone module.
  */
 function os_base_update_7009(&$sandbox) {
-  module_enable(array('node_clone'));
+  module_enable(array('clone'));
 }
