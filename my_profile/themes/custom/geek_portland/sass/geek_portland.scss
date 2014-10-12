@@ -33,6 +33,13 @@ h5 {
 
 table.fc-header {
   border: 0;
+  margin: 0;
+
+  tbody,
+  tr,
+  td {
+    border: 0;
+  }
 }
 
 article > header {
@@ -705,13 +712,29 @@ article.user-profile {
 /*
  * Fullcalendar
  */
-.fc-event-default, .fc-event-default .fc-event-skin, .fc-event-default .fc-event-time, .fc-event-default a {
+.fc-header .fc-button {
+  margin: 0;
+}
+
+.fc-event-default,
+.fc-event-default .fc-event-skin,
+.fc-event-default .fc-event-time,
+.fc-event-default a {
   background: $dark_blue;
   border: $dark_blue;
 }
 
-a.fc-event-odd {
+a.fc-event,
+a.fc-event:visited,
+a.fc-event:focus {
+  color: #fff;
+}
+
+a.fc-event-odd,
+a.fc-event-odd:visited,
+a.fc-event-odd:focus {
   background: #d3e8eb;
+  border: #d3e8eb;
   span,
   span.fc-event-time{
     background: #d3e8eb;
