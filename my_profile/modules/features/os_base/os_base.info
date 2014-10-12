@@ -24,7 +24,6 @@ dependencies[] = media
 dependencies[] = media_internet
 dependencies[] = menu
 dependencies[] = node
-dependencies[] = node_clone
 dependencies[] = overlay
 dependencies[] = page_manager
 dependencies[] = rules
