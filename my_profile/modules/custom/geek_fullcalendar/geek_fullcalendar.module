@@ -16,30 +16,15 @@ function geek_fullcalendar_views_api() {
   );
 }
 
-/**
- * Implements hook_menu().
- *
- * Adds a json-fueled events page.
- */
-function geek_fullcalendar_menu() {
-  $items['json_events'] = array(
-    'page callback' => 'geek_fullcalendar_page',
-    'access callback' => TRUE,
-  );
-
-  return $items;
-}
 
 /**
- * Page callback for full calendar.
+ * Implements hook_ctools_plugin_directory().
  */
-function geek_fullcalendar_page() {
-  drupal_add_js(drupal_get_path('module', 'geek_fullcalendar') . '/js/geek_fullcalendar.fullcalendar.js');
-  drupal_add_library('geek_fullcalendar', 'fullcalendar');
-
-  return "<div id='loading'>loading...</div><div id='calendar'></div>";
+function geek_fullcalendar_ctools_plugin_directory($module, $type) {
+  if ($module == 'ctools') {
+    return 'plugins/' . $type;
+  }
 }
-
 
 /**
  * Implements hook_library().
