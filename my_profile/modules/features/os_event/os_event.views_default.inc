@@ -1146,7 +1146,6 @@ function os_event_views_default_views() {
   $handler->display->display_options['filters']['field_age_tid']['table'] = 'field_data_field_age';
   $handler->display->display_options['filters']['field_age_tid']['field'] = 'field_age_tid';
   $handler->display->display_options['filters']['field_age_tid']['relationship'] = 'field_dates_node';
-  $handler->display->display_options['filters']['field_age_tid']['value'] = '';
   $handler->display->display_options['filters']['field_age_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_age_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_age_tid']['expose']['operator_id'] = 'field_age_tid_op';
@@ -1160,6 +1159,7 @@ function os_event_views_default_views() {
     4 => 0,
     5 => 0,
   );
+  $handler->display->display_options['filters']['field_age_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_age_tid']['vocabulary'] = 'age';
   /* Filter criterion: Content: Admission (field_admission) */
   $handler->display->display_options['filters']['field_admission_tid']['id'] = 'field_admission_tid';
