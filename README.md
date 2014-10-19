@@ -11,7 +11,7 @@ To deploy to the development server:
 2. SSH into Dreamhost.
 3. Log in as user 1 and run any updates. These can't be done through drush, because the CLI php runs out of memory.
 
-Note: The server is set to run Drush 5.11, because the host keeps its CLI version of php at 5.2. It also has the alias `geeklive` and `geektest`. So while still SSHed into the server you can run `drush @geeklive uli` to use the root user.
+Note: The server is set to run Drush 5.11, ~~because the host keeps its CLI version of php at 5.2. It also has the alias `geeklive` and `geektest`. So while still SSHed into the server you can run `drush @geeklive uli` to use the root user.~~ because I haven't updated it to whatever version of drush works with 5.4. This is a TODO.
 
 ### How content is organized
 Rendered entities should always conform to a given pattern:
