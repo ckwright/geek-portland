@@ -8,9 +8,9 @@
     attach: function (context, settings) {
       $('#calendar').fullCalendar({
         header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,basicWeek,basicDay'
         },
         events: {
           url: '/events.json' + window.location.search,
