@@ -120,6 +120,7 @@ projects[smart_trim][version] = "1.4"
 
 ; Views Bulk Operations
 projects[views_bulk_operations][version] = "3.2"
+projects[views_data_export_json][version] = "1.0-beta1"
 projects[viewfield][version] = "2.0"
 
 projects[views_infinite_scroll][version] = "1.1"
