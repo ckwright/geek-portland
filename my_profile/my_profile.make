@@ -9,7 +9,7 @@ defaults[projects][subdir] = "contrib"
 ; Drupal core.
 core = "7.x"
 projects[drupal][type] = "core"
-projects[drupal][version] = "7.31"
+projects[drupal][version] = "7.32"
 ; Ensure plain text fields evaluate line breaks.
 projects[drupal][patch][] = "http://drupal.org/files/text-plain-1152216-24.patch"
 ; Resolve php notice thrown by the way PHP 5.4 handles array indexes vs 5.3. https://drupal.org/node/1824820#comment-6656728
@@ -66,7 +66,7 @@ projects[field_collection][version] = "1.0-beta7"
 
 ; Full Calendar
 projects[fullcalendar][download][branch] = "7.x-2.x"
-projects[fullcalendar][download][revision] = "e416e71"
+projects[fullcalendar][download][revision] = "d41c651"
 ; Make compatiblish with 2.0.2. https://www.drupal.org/node/2299383
 projects[fullcalendar][patch][] = "http://www.drupal.org/files/issues/fullcalendar-support_202-2299383-1.patch"
 
@@ -100,6 +100,9 @@ projects[libraries][version] = "2.2"
 
 ; Link
 projects[link][version] = "1.2"
+
+; Node clone
+projects[node_clone][version] = "1.0-rc2"
 
 ; References dialog
 projects[references_dialog][download][branch] = "7.x-1.x"
