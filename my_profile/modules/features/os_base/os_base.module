@@ -36,6 +36,10 @@ function os_base_menu_alter(&$items) {
 
   // Renames search results page.
   $items['search']['title'] = 'Search Results';
+
+  if (isset($items['node/%node/clone/%clone_token'])) {
+    $items['node/%node/clone/%clone_token']['type']  = MENU_LOCAL_TASK;
+  }
 }
 
 /**
@@ -60,7 +64,7 @@ function os_base_form_alter(&$form, $form_state, $form_id) {
   // Add a variable to display revision information on node edit.
   if (isset($form['revision_information'])) {
     // Hide the revision log input.
-    if(user_is_anonymous()) {
+    if (user_is_anonymous()) {
       $form['revision_information']['#access'] = FALSE;
     }
     // Set revision information as the default tab.
@@ -199,12 +203,12 @@ function os_base_entity_info_alter(&$info) {
  * Enables the social media links block.
  */
 function os_base_block_info() {
-    return array(
-      'geek_social' => array (
-        'info' => 'Social media links',
-        'cache' => DRUPAL_CACHE_GLOBAL,
-      ),
-    );
+  return array(
+    'geek_social' => array(
+      'info' => 'Social media links',
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
+  );
 }
 
 /**
@@ -256,9 +260,6 @@ function os_base_block_view($delta = '') {
 
 /**
  * Determines the os custom block body variable.
- *
- * @param string $delta
- * @return string
  */
 function _os_block_variable_get($delta) {
 
@@ -273,10 +274,10 @@ function _os_block_variable_get($delta) {
 }
 
 /**
-* Implements hook_block_info_alter().
-*
-* Guarantees certain blocks are always in certain regions.
-*/
+ * Implements hook_block_info_alter().
+ *
+ * Guarantees certain blocks are always in certain regions.
+ */
 function os_base_block_info_alter(&$blocks, $theme, $code_blocks) {
   if (isset($blocks['menu']['menu-useful-links'])) {
     $blocks['menu']['menu-useful-links']['theme'] = $theme;
@@ -292,6 +293,6 @@ function os_base_block_info_alter(&$blocks, $theme, $code_blocks) {
  */
 function os_base_field_access($op, $field, $entity_type, $entity, $account) {
   if (user_is_anonymous() && $field['field_name'] == OG_AUDIENCE_FIELD) {
-    return false;
+    return FALSE;
   }
 }
