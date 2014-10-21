@@ -327,7 +327,10 @@ function os_event_default_page_manager_pages() {
   $page->admin_title = 'Events - new';
   $page->admin_description = 'This calendar page is fed by json.';
   $page->path = 'events/new';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'tab',
     'title' => 'New',

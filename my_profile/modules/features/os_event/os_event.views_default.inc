@@ -1072,22 +1072,6 @@ function os_event_views_default_views() {
   $handler->display->display_options['fields']['path']['field'] = 'path';
   $handler->display->display_options['fields']['path']['relationship'] = 'field_dates_node';
   $handler->display->display_options['fields']['path']['label'] = 'url';
-  /* Field: Field collection item: Date */
-  $handler->display->display_options['fields']['field_event_date_1']['id'] = 'field_event_date_1';
-  $handler->display->display_options['fields']['field_event_date_1']['table'] = 'field_data_field_event_date';
-  $handler->display->display_options['fields']['field_event_date_1']['field'] = 'field_event_date';
-  $handler->display->display_options['fields']['field_event_date_1']['label'] = 'end';
-  $handler->display->display_options['fields']['field_event_date_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_event_date_1']['settings'] = array(
-    'format_type' => 'html5_tools_iso8601',
-    'fromto' => 'value2',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-    'show_repeat_rule' => 'hide',
-  );
-  $handler->display->display_options['fields']['field_event_date_1']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_event_date_1']['delta_offset'] = '0';
   /* Field: Content: Short title */
   $handler->display->display_options['fields']['field_short_title']['id'] = 'field_short_title';
   $handler->display->display_options['fields']['field_short_title']['table'] = 'field_data_field_short_title';
