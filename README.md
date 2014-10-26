@@ -4,14 +4,20 @@ Geek Portland 2.0
 Based on the OpenSourcery's Turnip build
 Using OS_Event & OS_blog
 
+### Deploying to test.
+1. While sshed into the server, pull down the latest production database to the test server `drush sql-sync @geeklive @geektest`
+2. Run `bin/deploy_to_test`
+3. SSH into Dreamhost.
+4. Run `drush updb`
+
 ### Deploying
 To deploy to the development server:
 
 1. Run `bin/deploy_to_production`
 2. SSH into Dreamhost.
-3. Log in as user 1 and run any updates. These can't be done through drush, because the CLI php runs out of memory.
+3. Run `drush updb`
 
-Note: The server is set to run Drush 5.11, ~~because the host keeps its CLI version of php at 5.2. It also has the alias `geeklive` and `geektest`. So while still SSHed into the server you can run `drush @geeklive uli` to use the root user.~~ because I haven't updated it to whatever version of drush works with 5.4. This is a TODO.
+Note: The server has the aliases `geeklive` and `geektest`. So while still SSHed into the server you can run `drush @geeklive uli` to use the root user.
 
 ### How content is organized
 Rendered entities should always conform to a given pattern:
