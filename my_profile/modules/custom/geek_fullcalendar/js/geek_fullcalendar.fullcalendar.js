@@ -14,6 +14,7 @@
         },
         events: {
           url: '/events.json' + window.location.search,
+          cache: true,
           error: function() {
             $('#script-warning').show();
           }
