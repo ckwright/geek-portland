@@ -322,6 +322,157 @@ function os_event_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
+  $page->name = 'events_new';
+  $page->task = 'page';
+  $page->admin_title = 'Events - new';
+  $page->admin_description = 'This calendar page is fed by json.';
+  $page->path = 'events/new';
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+    'plugins' => array(
+      0 => array(
+        'name' => 'role',
+        'settings' => array(
+          'rids' => array(
+            0 => 1,
+          ),
+        ),
+        'context' => 'logged-in-user',
+        'not' => TRUE,
+      ),
+    ),
+    'logic' => 'and',
+  );
+  $page->menu = array(
+    'type' => 'tab',
+    'title' => 'New',
+    'name' => 'navigation',
+    'weight' => '0',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_events_new_panel_context';
+  $handler->task = 'page';
+  $handler->subtask = 'events_new';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Panel',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'top-right-dropdown',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+  );
+  $display = new panels_display();
+  $display->layout = 'two_50';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'two_50_top' => NULL,
+      'two_50_first' => NULL,
+      'two_50_second' => NULL,
+      'two_50_bottom' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = 'Calendar';
+  $display->uuid = 'ccf5fd18-d90f-4fcb-af26-5e313a8bc88f';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-2437fd4f-16ac-4ef8-80a4-7ee3ab21f697';
+    $pane->panel = 'two_50_bottom';
+    $pane->type = 'calendar';
+    $pane->subtype = 'calendar';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+      'style' => 'rounded_corners',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '2437fd4f-16ac-4ef8-80a4-7ee3ab21f697';
+    $display->content['new-2437fd4f-16ac-4ef8-80a4-7ee3ab21f697'] = $pane;
+    $display->panels['two_50_bottom'][0] = 'new-2437fd4f-16ac-4ef8-80a4-7ee3ab21f697';
+    $pane = new stdClass();
+    $pane->pid = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
+    $pane->panel = 'two_50_first';
+    $pane->type = 'page_tabs';
+    $pane->subtype = 'page_tabs';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'type' => 'both',
+      'id' => 'tabs',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '051beebc-ad13-498c-a41e-d42910c529c5';
+    $display->content['new-051beebc-ad13-498c-a41e-d42910c529c5'] = $pane;
+    $display->panels['two_50_first'][0] = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
+    $pane = new stdClass();
+    $pane->pid = 'new-1e26f876-cba0-4076-98f8-414e8c9c3a24';
+    $pane->panel = 'two_50_second';
+    $pane->type = 'block';
+    $pane->subtype = 'views-f7c58694850d5d360a06257870fb5eea';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '1e26f876-cba0-4076-98f8-414e8c9c3a24';
+    $display->content['new-1e26f876-cba0-4076-98f8-414e8c9c3a24'] = $pane;
+    $display->panels['two_50_second'][0] = 'new-1e26f876-cba0-4076-98f8-414e8c9c3a24';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-051beebc-ad13-498c-a41e-d42910c529c5';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['events_new'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
   $page->name = 'os_event_node_add';
   $page->task = 'page';
   $page->admin_title = 'Events: add';
@@ -415,7 +566,7 @@ function os_event_default_page_manager_pages() {
   $pages['os_event_node_add'] = $page;
 
   $page = new stdClass();
-  $page->disabled = TRUE; /* Edit this to true to make a default page disabled initially */
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
   $page->name = 'weekly_events';
   $page->task = 'page';
@@ -425,6 +576,8 @@ function os_event_default_page_manager_pages() {
   $page->access = array(
     'plugins' => array(),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'tab',

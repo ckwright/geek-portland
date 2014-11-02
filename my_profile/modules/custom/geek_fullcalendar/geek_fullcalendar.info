@@ -1,0 +1,7 @@
+name = Fullcalendar Views
+description = Views pager that works with Fullcalendar.
+package = Date/Time
+dependencies[] = date_api
+dependencies[] = views
+core = 7.x
+files[] = includes/geek_fullcalendar_plugin_pager.inc

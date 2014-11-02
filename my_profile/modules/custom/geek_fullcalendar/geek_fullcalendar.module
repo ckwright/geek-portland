@@ -1,0 +1,53 @@
+<?php
+/**
+ * @file
+ * Defines custom pager method that takes a start and end date.
+ */
+
+/**
+ * Implements hook_views_api().
+ *
+ * Allows us to call in our custom views plugins.
+ */
+function geek_fullcalendar_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'geek_fullcalendar') . '/includes',
+  );
+}
+
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function geek_fullcalendar_ctools_plugin_directory($module, $type) {
+  if ($module == 'ctools') {
+    return 'plugins/' . $type;
+  }
+}
+
+/**
+ * Implements hook_library().
+ */
+function geek_fullcalendar_library() {
+  $libraries['fullcalendar'] = array(
+    'title' => 'FullCalendar',
+    'website' => 'http://arshaw.com/fullcalendar',
+    'version' => '1.4.10',
+    'js' => array(
+      libraries_get_path('fullcalendar') . '/lib/moment.min.js' => array(),
+      libraries_get_path('fullcalendar') . '/fullcalendar.min.js' => array(),
+    ),
+    'css' => array(
+      libraries_get_path('fullcalendar') . '/fullcalendar.css' => array(),
+      libraries_get_path('fullcalendar') . '/fullcalendar.print.css' => array('media' => 'print'),
+    ),
+    'dependencies' => array(
+      array('system', 'ui.draggable'),
+      array('system', 'ui.droppable'),
+      array('system', 'ui.resizable'),
+      array('system', 'effects.highlight'),
+    ),
+  );
+  return $libraries;
+}

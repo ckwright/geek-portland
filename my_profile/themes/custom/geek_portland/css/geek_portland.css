@@ -20,7 +20,8 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right #f6f
 
 h1, h2, h3, h4, h5 { margin: 0; line-height: 120%; font-family: Arial, Helvetica, san-serif; }
 
-table.fc-header { border: 0; }
+table.fc-header { border: 0; margin: 0; }
+table.fc-header tbody, table.fc-header tr, table.fc-header td { border: 0; }
 
 article > header { border: 0; }
 
@@ -172,10 +173,14 @@ article.user-profile { margin-bottom: 3em; }
 .node-full .date-repeat-rule { color: #5E5247; }
 
 /* Fullcalendar */
+.fc-header .fc-button { margin: 0; }
+
 .fc-event-default, .fc-event-default .fc-event-skin, .fc-event-default .fc-event-time, .fc-event-default a { background: #6698cc; border: #6698cc; }
 
-a.fc-event-odd { background: #d3e8eb; }
-a.fc-event-odd span, a.fc-event-odd span.fc-event-time { background: #d3e8eb; color: #000; }
+a.fc-event, a.fc-event:visited, a.fc-event:focus { color: #fff; }
+
+a.fc-event-odd, a.fc-event-odd:visited, a.fc-event-odd:focus { background: #d3e8eb; border: #d3e8eb; }
+a.fc-event-odd span, a.fc-event-odd span.fc-event-time, a.fc-event-odd:visited span, a.fc-event-odd:visited span.fc-event-time, a.fc-event-odd:focus span, a.fc-event-odd:focus span.fc-event-time { background: #d3e8eb; color: #000; }
 
 /* Blog listing styles */
 .pane-views-exp-blog-page { margin: 0; }
