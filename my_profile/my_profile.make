@@ -63,6 +63,7 @@ projects[entityreference][version] = "1.1"
 
 ; Field collection
 projects[field_collection][version] = "1.0-beta7"
+projects[field_collection_node_clone][version] = "1.0-beta1"
 
 ; Full Calendar
 projects[fullcalendar][download][branch] = "7.x-2.x"
