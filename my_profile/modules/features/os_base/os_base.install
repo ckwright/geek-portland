@@ -245,3 +245,10 @@ function os_base_update_7008(&$sandbox) {
 function os_base_update_7009(&$sandbox) {
   module_enable(array('clone'));
 }
+
+/**
+ * Enable node_clone module.
+ */
+function os_base_update_7010(&$sandbox) {
+  module_enable(array('field_collection_node_clone'));
+}
