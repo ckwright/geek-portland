@@ -20,6 +20,8 @@ html, body, .bb-n { background: url("images/bg.gif") no-repeat bottom right #f6f
 
 h1, h2, h3, h4, h5 { margin: 0; line-height: 120%; font-family: Arial, Helvetica, san-serif; }
 
+p { margin: 0; }
+
 table.fc-header { border: 0; margin: 0; }
 table.fc-header tbody, table.fc-header tr, table.fc-header td { border: 0; }
 
