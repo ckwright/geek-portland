@@ -13,6 +13,16 @@ Using OS_Event & OS_blog
 ### Deploying
 To deploy to the development server:
 
+1. While sshed into the server, pull down the latest production database: 
+```
+ssh geekportland
+drush @geeklive sql-dump --result-file=production_current.sql --gzip
+exit
+scp geekportland:~/devgp/production_current.sql.gz db/production_current.sql.gz
+ssh geekportland 'rm ~/devgp/production_current.sql.gz'
+bin/install
+```
+
 1. Run `bin/deploy_to_production`
 2. SSH into Dreamhost.
 3. Run `drush updb`
