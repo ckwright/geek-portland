@@ -209,4 +209,6 @@ a.fc-event-odd span, a.fc-event-odd span.fc-event-time, a.fc-event-odd:visited s
 .node-type-geek-page .region-two-25-75-bottom .field { float: left; padding-right: .5em; }
 
 /* Donate page */
-.blue-boxes { border: 1px solid #6698cc; margin: 0 0 0 20px; padding: 1em; }
+.blue-boxes { border: 1px solid #6698CC; margin: 0 0 0 20px; padding: 1em; }
+
+body#tinymce { font-size: 87.5%; background: #fff; }
