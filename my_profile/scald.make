@@ -11,6 +11,13 @@ projects[scald][subdir] = ""
 projects[scald_flickr][version] = 1.2
 
 ; Libraries
+
+; WYSIWYG (ckeditor)
+libraries[ckeditor][download][type] = get
+libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2/ckeditor_4.2_standard.zip
+libraries[ckeditor][directory_name] = ckeditor
+libraries[ckeditor][destination] = libraries
+
 libraries[plupload][download][type] = get
 libraries[plupload][download][url] = https://github.com/moxiecode/plupload/archive/v1.5.8.zip
 libraries[plupload][directory_name] = plupload
