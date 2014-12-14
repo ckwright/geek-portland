@@ -29,7 +29,7 @@ projects[features][patch][] = "http://drupal.org/files/features_static_caches-10
 
 projects[fences][version] = "1.0"
 
-projects[google_analytics][version] = "2.0"
+projects[google_analytics][version] = "2.1"
 
 projects[html5_tools][download][branch] = "7.x-1.x"
 projects[html5_tools][download][revision] = "11e0c28"
