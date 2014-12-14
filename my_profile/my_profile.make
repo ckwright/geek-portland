@@ -120,8 +120,8 @@ projects[smart_trim][version] = "1.4"
 
 ; Views Bulk Operations
 projects[views_bulk_operations][version] = "3.2"
-projects[views_datasource][download][branch] = "master"
-projects[views_datasource][download][revision] = "a707e70"
+projects[views_datasource][download][branch] = "7.x-1.x"
+projects[views_datasource][download][revision] = "b17317e"
 projects[viewfield][version] = "2.0"
 
 projects[views_infinite_scroll][version] = "1.1"
