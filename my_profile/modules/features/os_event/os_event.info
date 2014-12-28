@@ -1,7 +1,7 @@
 name = Events
 description = OpenSourcery event feature
 core = 7.x
-package = Features
+package = geek portland
 dependencies[] = adaptive_theme_helper
 dependencies[] = conditional_fields
 dependencies[] = context_admin

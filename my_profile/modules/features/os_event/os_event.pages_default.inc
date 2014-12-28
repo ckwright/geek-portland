@@ -330,18 +330,7 @@ function os_event_default_page_manager_pages() {
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
-    'plugins' => array(
-      0 => array(
-        'name' => 'role',
-        'settings' => array(
-          'rids' => array(
-            0 => 1,
-          ),
-        ),
-        'context' => 'logged-in-user',
-        'not' => TRUE,
-      ),
-    ),
+    'plugins' => array(),
     'logic' => 'and',
   );
   $page->menu = array(
