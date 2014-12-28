@@ -19,6 +19,7 @@ text/javascript
 text/plain
 application/xml
 application/atom+xml
+application/json
 ';
   $export['authcache_mimetype'] = $strongarm;
 
