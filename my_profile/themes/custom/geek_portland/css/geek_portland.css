@@ -178,7 +178,7 @@ article.user-profile { margin-bottom: 3em; }
 
 .fc-event-default, .fc-event-default .fc-event-skin, .fc-event-default .fc-event-time, .fc-event-default a { background: #6698CC; border: #6698CC; }
 
-a.fc-event, a.fc-event:visited, a.fc-event:focus { color: #fff; transition: none; }
+a.fc-event, a.fc-event:visited, a.fc-event:focus { background: #6698CC; color: #fff; transition: none; }
 
 a.fc-event-odd, a.fc-event-odd:visited, a.fc-event-odd:focus { background: #d3e8eb; border: #d3e8eb; }
 a.fc-event-odd span, a.fc-event-odd span.fc-event-time, a.fc-event-odd:visited span, a.fc-event-odd:visited span.fc-event-time, a.fc-event-odd:focus span, a.fc-event-odd:focus span.fc-event-time { background: #d3e8eb; color: #000; }
