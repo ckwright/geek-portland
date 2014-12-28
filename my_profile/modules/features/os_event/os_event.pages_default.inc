@@ -169,13 +169,13 @@ function os_event_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Events: Calendar';
   $page->admin_description = '';
-  $page->path = 'events/calendar';
+  $page->path = 'events/calendar/old';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
   );
   $page->menu = array(
-    'type' => 'default tab',
+    'type' => 'none',
     'title' => 'Calendar',
     'name' => 'navigation',
     'weight' => '0',
@@ -326,7 +326,7 @@ function os_event_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Events - new';
   $page->admin_description = 'This calendar page is fed by json.';
-  $page->path = 'events/new';
+  $page->path = 'events/calendar';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
@@ -345,14 +345,14 @@ function os_event_default_page_manager_pages() {
     'logic' => 'and',
   );
   $page->menu = array(
-    'type' => 'tab',
-    'title' => 'New',
+    'type' => 'default tab',
+    'title' => 'Calendar',
     'name' => 'navigation',
     'weight' => '0',
     'parent' => array(
-      'type' => 'none',
-      'title' => '',
-      'name' => 'navigation',
+      'type' => 'normal',
+      'title' => 'Calendar',
+      'name' => 'main-menu',
       'weight' => '0',
     ),
   );
