@@ -46,7 +46,7 @@ projects[draggableviews][version] = "2.0"
 projects[authcache][version] = "2.0-beta3"
 
 ; Context
-projects[context][version] = "3.2"
+projects[context][version] = "3.6"
 projects[context_query_param][version] = "1.3"
 
 ; Display Suite
