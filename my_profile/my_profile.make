@@ -9,7 +9,7 @@ defaults[projects][subdir] = "contrib"
 ; Drupal core.
 core = "7.x"
 projects[drupal][type] = "core"
-projects[drupal][version] = "7.34"
+projects[drupal][version] = "7.35"
 ; Ensure plain text fields evaluate line breaks.
 projects[drupal][patch][] = "http://drupal.org/files/text-plain-1152216-24.patch"
 
