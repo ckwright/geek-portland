@@ -44,7 +44,7 @@ projects[strongarm][version] = "2.0"
 
 projects[token][version] = "1.5"
 
-projects[views][version] = "3.8"
+projects[views][version] = "3.10"
 ; Exposed Sort By and Sort Order view pane settings not retained https://drupal.org/node/2037469
 projects[views][patch][] = "https://drupal.org/files/views-exposed-sorts-2037469-1.patch"
 
