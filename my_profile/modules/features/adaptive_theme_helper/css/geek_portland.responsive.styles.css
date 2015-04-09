@@ -7,6 +7,8 @@ body { padding: 0 5px; }
 
 body.admin-menu { margin-top: 0 !important; }
 
+.two-25-75 > .region-two-25-75-first-front, .two-25-75 > .region-two-25-75-second-front { margin-left: 0; }
+
 #admin-menu { display: none; }
 
 #branding, .region-header { float: none; margin: 0 0 10px; width: 100%; clear: both; text-align: center; max-width: 100%; overflow: hidden; }
@@ -62,7 +64,7 @@ ul.sf-menu { width: 100%; }
 .region-two-50-bottom .view-geekpages2 .views-row-even { margin: 0; }
 .region-two-50-bottom .view-geekpages2 .views-row-odd { margin: 0; }
 
-.facetapi-facet-field-all-geeky-interests { -webkit-columns: 3em 2; -moz-columns: 3em 2; -ms-columns: 3em 2; -o-columns: 3em 2; columns: 3em 2; }
+.facetapi-facet-field-all-geeky-interests { -moz-columns: 3em 2; -webkit-columns: 3em 2; columns: 3em 2; }
 
 }
 @media only screen and (min-width:321px) and (max-width:480px) {
@@ -70,6 +72,8 @@ body { padding: 0 5px; }
 
 body.admin-menu { margin-top: 0 !important; }
 
+.two-25-75 > .region-two-25-75-first-front, .two-25-75 > .region-two-25-75-second-front { margin-left: 0; }
+
 #admin-menu { display: none; }
 
 #branding, .region-header { float: none; margin: 0 0 10px; width: 100%; clear: both; text-align: center; max-width: 100%; overflow: hidden; }
@@ -125,7 +129,7 @@ ul.sf-menu { width: 100%; }
 .region-two-50-bottom .view-geekpages2 .views-row-even { margin: 0; }
 .region-two-50-bottom .view-geekpages2 .views-row-odd { margin: 0; }
 
-.facetapi-facet-field-all-geeky-interests { -webkit-columns: 3em 2; -moz-columns: 3em 2; -ms-columns: 3em 2; -o-columns: 3em 2; columns: 3em 2; }
+.facetapi-facet-field-all-geeky-interests { -moz-columns: 3em 2; -webkit-columns: 3em 2; columns: 3em 2; }
 
 }
 @media only screen and (min-width:481px) and (max-width:768px) {
@@ -148,6 +152,8 @@ h1#site-name { font-size: 2em; }
 .top-right-dropdown .region-two-50-first { height: auto; }
 .top-right-dropdown .region-two-50-second { position: static; }
 
+.narrow-window .region-two-20-80-first { min-width: 120px; }
+
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
 h1#site-name { font-size: 2.8em; }
@@ -158,5 +164,6 @@ h1#site-name { font-size: 2.8em; }
 
 }
 @media only screen and (min-width:1025px) {
+#content .narrow-window { width: 75%; margin: 0 auto; }
 
 }
