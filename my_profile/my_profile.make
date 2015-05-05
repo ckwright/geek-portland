@@ -60,7 +60,7 @@ projects[entity][download][revision] = "d9baed7"
 projects[entityreference][version] = "1.1"
 
 ; Field collection
-projects[field_collection][version] = "1.0-beta7"
+projects[field_collection][version] = "1.0-beta8"
 projects[field_collection_node_clone][version] = "1.0-beta1"
 
 ; Full Calendar
