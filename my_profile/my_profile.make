@@ -98,7 +98,7 @@ projects[honeypot][version] = "1.17"
 projects[libraries][version] = "2.2"
 
 ; Link
-projects[link][version] = "1.2"
+projects[link][version] = "1.3"
 
 ; Node clone
 projects[node_clone][version] = "1.0-rc2"
