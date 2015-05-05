@@ -37,7 +37,7 @@ includes[og] = "og.make"
 projects[addressfield][version] = "1.1"
 
 ; Admin Views
-projects[admin_views][version] = "1.3"
+projects[admin_views][version] = "1.4"
 
 ; Draggable views
 projects[draggableviews][version] = "2.0"
