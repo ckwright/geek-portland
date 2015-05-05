@@ -40,7 +40,7 @@ projects[addressfield][version] = "1.1"
 projects[admin_views][version] = "1.4"
 
 ; Draggable views
-projects[draggableviews][version] = "2.0"
+projects[draggableviews][version] = "2.1"
 
 ; Authcache
 projects[authcache][version] = "2.0-beta5"
