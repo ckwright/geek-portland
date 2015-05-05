@@ -34,7 +34,7 @@ includes[og] = "og.make"
 ; Project-specific modules, and overrides.
 
 ; Address Field
-projects[addressfield][version] = "1.0-beta5"
+projects[addressfield][version] = "1.1"
 
 ; Admin Views
 projects[admin_views][version] = "1.3"
