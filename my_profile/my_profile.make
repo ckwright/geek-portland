@@ -112,7 +112,7 @@ projects[realname][download][branch] = "1.x"
 projects[realname][download][revision] = "9d65522"
 
 ; Rules
-projects[rules][version] = "2.7"
+projects[rules][version] = "2.9"
 
 ; Smart trim
 projects[smart_trim][version] = "1.4"
