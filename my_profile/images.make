@@ -2,7 +2,7 @@
 core = "7.x"
 api = 2
 
-projects[file_entity][version] = "2.0-alpha3"
+projects[file_entity][version] = "2.0-beta1"
 
 projects[imagecrop][download][branch] = "7.x-1.x"
 projects[imagecrop][download][revision] = "98d1faa"
