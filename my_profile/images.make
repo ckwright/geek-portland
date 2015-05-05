@@ -15,7 +15,7 @@ projects[image_resize_filter][patch][] = https://drupal.org/files/image_resize_f
 ; MEDIA NOTE: Media can't be updated to a later version than commit aed50be until
 ; https://drupal.org/node/2192981 is resolved.
 ;
-projects[media][version] = "2.0-alpha3"
+projects[media][version] = "2.0-alpha4"
 ; http://drupal.org/node/1278180#comment-5085370
 projects[media][patch][] = "http://drupal.org/files/media-embed-library-resize.patch"
 ; Image resize filter fails with media https://drupal.org/node/1411340
