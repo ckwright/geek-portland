@@ -50,7 +50,7 @@ projects[context][version] = "3.6"
 projects[context_query_param][version] = "1.3"
 
 ; Display Suite
-projects[ds][version] = "2.6"
+projects[ds][version] = "2.8"
 
 ; Entity
 projects[entity][download][branch] = "7.x-1.x"
