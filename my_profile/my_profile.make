@@ -71,7 +71,7 @@ projects[fullcalendar][patch][] = "http://www.drupal.org/files/issues/fullcalend
 
 projects[geocoder][version] = "1.2"
 
-projects[geofield][version] = "2.1"
+projects[geofield][version] = "2.3"
 
 projects[geophp][version] = "1.7"
 
