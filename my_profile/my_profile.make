@@ -85,11 +85,7 @@ libraries[geoPHP][download][revision] = "0aae7c3"
 projects[date_ical][version] = "3.3"
 
 ; JQuery Update
-projects[jquery_update][download][branch] = "7.x-2.x"
-projects[jquery_update][download][revision] = "65eecb0"
-; Allow core jquery on admin: https://drupal.org/comment/7983779#comment-7983779
-projects[jquery_update][patch][] = "https://drupal.org/files/jquery_update-1548028-25-default-jquery.patch"
-projects[jquery_update][patch][] = "https://drupal.org/files/issues/jquery_update-local-ui-effects-not-found-2149395.patch"
+projects[jquery_update][download][branch] = "2.6"
 
 ; Honeypot
 projects[honeypot][version] = "1.17"
