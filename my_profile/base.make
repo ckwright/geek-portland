@@ -7,11 +7,11 @@ api = 2
 ;;;;;;;;;;;;; (alphabetical order) ;;;;;;;;;;;;;;;
 projects[context_admin][version] = "1.2"
 
-projects[ctools][version] = "1.7"
+projects[ctools][version] = "1.9"
 ; http://drupal.org/node/1120028#comment-5792282
-projects[ctools][patch][] = "http://drupal.org/files/page-manager-admin-paths-1120028-08.patch"
-; https://drupal.org/node/1417630#comment-6810906
-projects[ctools][patch][] = "https://drupal.org/files/ctools-views-content-custom-url-1417630-06.patch"
+projects[ctools][patch][] = "https://www.drupal.org/files/page-manager-admin-paths-1120028-14.patch"
+; https://www.drupal.org/node/2401635
+projects[ctools][patch][] = "https://www.drupal.org/files/issues/ctools-views-content-custom-url-1417630-06.patch"
 
 projects[chosen][version] = "2.0-beta4"
 
