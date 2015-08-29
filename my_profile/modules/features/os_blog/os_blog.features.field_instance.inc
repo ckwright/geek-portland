@@ -181,46 +181,6 @@ function os_blog_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_long_display_'
-  $field_instances['node-blog_post-field_long_display_'] = array(
-    'bundle' => 'blog_post',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Blog entries with a long display show certain fields (currently only author name) to the end user.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_long_display_',
-    'label' => 'Long display?',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => '',
-      ),
-      'type' => 'options_select',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'node-blog_post-og_group_ref'
   $field_instances['node-blog_post-og_group_ref'] = array(
     'bundle' => 'blog_post',
@@ -286,10 +246,8 @@ function os_blog_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('An image associated with this blog post. Required if you want this item to appear on the front page under Featured news.');
   t('Blog Post');
-  t('Blog entries with a long display show certain fields (currently only author name) to the end user.');
   t('Geeky interests');
   t('Image');
-  t('Long display?');
   t('Related Geek Pages');
   t('What Geeky Pages, if any, relate to this blog post?');
   t('What geeky interests are discussed in this post?');
