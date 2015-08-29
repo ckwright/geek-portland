@@ -53,7 +53,7 @@ projects[context_query_param][version] = "1.3"
 projects[ds][version] = "2.8"
 
 ; Entity
-projects[entity][download][branch] = "1.6"
+projects[entity][version] = "1.6"
 
 ; Entity Reference
 projects[entityreference][version] = "1.1"
@@ -84,7 +84,7 @@ libraries[geoPHP][download][revision] = "0aae7c3"
 projects[date_ical][version] = "3.3"
 
 ; JQuery Update
-projects[jquery_update][download][branch] = "2.6"
+projects[jquery_update][version] = "2.6"
 
 ; Honeypot
 projects[honeypot][version] = "1.17"
