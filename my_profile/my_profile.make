@@ -118,7 +118,7 @@ projects[rules][version] = "2.9"
 projects[smart_trim][version] = "1.5"
 
 ; Views Bulk Operations
-projects[views_bulk_operations][version] = "3.2"
+projects[views_bulk_operations][version] = "3.3"
 projects[views_datasource][download][branch] = "7.x-1.x"
 projects[views_datasource][download][revision] = "b17317e"
 projects[viewfield][version] = "2.0"
