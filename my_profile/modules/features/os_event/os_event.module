@@ -177,12 +177,3 @@ function os_event_ds_field_format_summary($field) {
 function os_event_ds_field_settings_form($field) {
   return ds_ds_field_settings_form($field);
 }
-
-/**
- * Implements hook_views_data_alter().
- *
- * Overrides the text filter with my custom function.
- */
-function os_event_views_data_alter(&$data) {
-  $data['field_data_field_event_date']['field_event_date_rrule']['filter']['handler'] = 'os_event_handler_filter_string';
-}
