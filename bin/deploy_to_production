@@ -9,7 +9,7 @@
 
 # Deploy to typical shared hosting.
 USER=devgp
-HOST=spalding.dreamhost.com
+HOST=geekportland.com
 INSTALLROOT=/home/$USER
 DOCUMENTROOT=/home/$USER/devgp
 
