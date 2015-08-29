@@ -53,8 +53,7 @@ projects[context_query_param][version] = "1.3"
 projects[ds][version] = "2.8"
 
 ; Entity
-projects[entity][download][branch] = "7.x-1.x"
-projects[entity][download][revision] = "d9baed7"
+projects[entity][download][branch] = "1.6"
 
 ; Entity Reference
 projects[entityreference][version] = "1.1"
