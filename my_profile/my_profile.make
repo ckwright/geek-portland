@@ -115,7 +115,7 @@ projects[realname][download][revision] = "9d65522"
 projects[rules][version] = "2.9"
 
 ; Smart trim
-projects[smart_trim][version] = "1.4"
+projects[smart_trim][version] = "1.5"
 
 ; Views Bulk Operations
 projects[views_bulk_operations][version] = "3.2"
