@@ -43,7 +43,7 @@ projects[admin_views][version] = "1.5"
 projects[draggableviews][version] = "2.1"
 
 ; Authcache
-projects[authcache][version] = "2.0-beta5"
+projects[authcache][version] = "2.0-beta7"
 
 ; Context
 projects[context][version] = "3.6"
