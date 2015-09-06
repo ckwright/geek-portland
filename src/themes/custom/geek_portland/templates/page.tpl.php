@@ -1,3 +1,9 @@
+<?php
+/**
+ * @file
+ * Taken from adaptive theme's page.tpl.php.
+ */
+?>
 <div id="page" class="<?php print $classes; ?>">
 
   <?php print render($page['top_menu']); ?>
@@ -39,7 +45,7 @@
 
   </header>
   <div class="container">
-  <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '' ;?>>
+  <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '';?>>
     <div class="columns-inner clearfix">
 
       <?php print $messages; ?>
