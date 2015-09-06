@@ -22,6 +22,22 @@
     "projFiles": ["README*", "bin/**"]
   },
   "phpcs": {
+    "dir": [
+      [
+        "<%= config.srcPaths.drupal %>/**/*.php",
+        "<%= config.srcPaths.drupal %>/**/*.module",
+        "<%= config.srcPaths.drupal %>/**/*.inc",
+        "<%= config.srcPaths.drupal %>/**/*.install",
+        "<%= config.srcPaths.drupal %>/**/*.profile",
+        "!<%= config.srcPaths.drupal %>/sites/**",
+        "!<%= config.srcPaths.drupal %>/**/*.box.inc",
+        "!<%= config.srcPaths.drupal %>/**/*.features.*inc",
+        "!<%= config.srcPaths.drupal %>/**/*.pages_default.inc",
+        "!<%= config.srcPaths.drupal %>/**/*.panelizer.inc",
+        "!<%= config.srcPaths.drupal %>/**/*.strongarm.inc",
+        "!<%= config.buildPaths.custom_theme %>/css/**"
+      ]
+    ],
     "path": "vendor/bin/phpcs"
   },
   "phpmd": {
