@@ -1,8 +1,11 @@
 <?php
-
 /**
  * @file
- * Implementation of hook_panels_layouts
+ * Adds 20x80% column layout.
+ */
+
+/**
+ * Implements hook_panels_layouts().
  */
 function geek_portland_two_20_80_panels_layouts() {
   $items['two_20_80'] = array(
@@ -18,7 +21,7 @@ function geek_portland_two_20_80_panels_layouts() {
       'two_20_80_second' => t('Right'),
       'two_20_80_bottom' => t('Bottom (conditional)'),
     ),
-    // AT Core
+    // AT Core.
     'type' => 'two',
     'options' => array(
       'two-20-80' => 'default',
@@ -43,7 +46,7 @@ function geek_portland_two_20_80_panels_layouts() {
 }
 
 /**
- * Preprocess variables for two-20-80.tpl.php
+ * Preprocess variables for two-20-80.tpl.php.
  */
 function template_preprocess_two_20_80(&$vars) {
   $vars['panel_prefix'] = '';
