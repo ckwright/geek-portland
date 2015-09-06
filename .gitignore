@@ -2,6 +2,7 @@
 .DS_Store
 .sass-cache
 node_modules
+build
 vendor
 /db/local.sql.gz
 /db/production_current.sql.gz

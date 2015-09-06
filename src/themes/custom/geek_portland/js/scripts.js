@@ -11,7 +11,7 @@ Drupal.behaviors.skyCollapsRegionToggle = {
       return false;
     });
   }
-}
+};
 
 Drupal.behaviors.skyCollapsMenuToggle = {
   attach: function (context, settings) {
@@ -20,7 +20,7 @@ Drupal.behaviors.skyCollapsMenuToggle = {
       return false;
     });
   }
-}
+};
 
 /**
  * CSS Help for IE.
@@ -34,16 +34,16 @@ Drupal.behaviors.skyPosts = {
     if (!jQuery.support.leadingWhitespace) {
       $('.article-content p:first-child').addClass('first-child');
       $('.article-content img, context').parent(':not(.field-item, .user-picture)').each(function(index) {
-        var stripe = (index/2) ? 'even' : 'odd';
-        $(this).wrap('<div class="content-image-' + stripe  + '"></div>');
+        var stripe = (index / 2) ? 'even' : 'odd';
+        $(this).wrap('<div class="content-image-' + stripe + '"></div>');
       });
     }
-    // Comment link copy promt.
+    // Comment link copy prompt.
     $("time span a").click( function() {
       prompt('Link to this comment:', this.href);
       return false;
     });
   }
-}
+};
 
 })(jQuery);
