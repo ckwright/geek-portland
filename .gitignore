@@ -5,3 +5,6 @@ node_modules
 vendor
 /db/local.sql.gz
 /db/production_current.sql.gz
+src/sites/*/settings.local.php
+src/sites/*/files
+src/sites/*/private
