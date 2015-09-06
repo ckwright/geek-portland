@@ -1,0 +1,34 @@
+<?php
+/**
+ * @file
+ * Developer utilities.
+ */
+/**
+ * Implements hook_menu().
+ */
+function os_devel_menu() {
+  $items = array();
+
+  $items['typography'] = array(
+    'title' => 'Typography Test Page',
+    'description' => 'Configure settings',
+    'page callback' => 'theme',
+    'page arguments' => array('typography_test_page'),
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function os_devel_theme() {
+  $items = array();
+
+  $items['typography_test_page'] = array(
+    'template' => 'typography-test-page',
+  );
+
+  return $items;
+}

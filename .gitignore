@@ -1,12 +1,7 @@
 .idea
 .DS_Store
 .sass-cache
-*.swp
-*~
-.#*
-*#
-/drupal
-.vagrant
-Vagrantfile.local
+node_modules
+vendor
 /db/local.sql.gz
 /db/production_current.sql.gz
