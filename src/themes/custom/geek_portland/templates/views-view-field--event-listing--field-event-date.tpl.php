@@ -21,18 +21,18 @@
  * regardless of any changes in the aliasing that might happen if
  * the view is modified.
  */
-if (isset($row->nid) && isset($view->display_handler->options['row_plugin']) && $view->display_handler->options['row_plugin'] == 'fields') {
+if (isset($row->nid) && isset($view->display_handler->options['row_plugin']) && $view->display_handler->options['row_plugin'] == 'fields'):
   $node = node_load($row->nid);
   $node_view = node_view($node, 'teaser');
 
-  if (isset($node_view['field_dates'][0])) {
+  if (isset($node_view['field_dates'][0])):
     $stripped_fields = $node_view['field_dates'][0];
     $stripped_fields['entity']['field_collection_item'] = array();
     $stripped_fields['entity']['field_collection_item'][$row->field_collection_item_field_data_field_dates_item_id]['field_event_date'][0]['#markup'] = $output;
     $node_view['field_dates'] = $stripped_fields;
     $output = render($node_view);
-  }
-}
+  endif;
+endif;
 ?>
 
 <?php print $output; ?>
