@@ -1,5 +1,23 @@
-#panels-dnd-main .region {margin-bottom: 5px}
-#panels-dnd-main .region-three-30-50-20-first {float: left; width: 24.5%}
-#panels-dnd-main .region-three-30-50-20-second {float: left; width: 50%; margin-left: 0.5%}
-#panels-dnd-main .region-three-30-50-20-third {float: right; width: 24.5%}
-#panels-dnd-main .region-three-30-50-20-bottom {clear: both}
+#panels-dnd-main .region {
+  margin-bottom: 5px;
+}
+
+#panels-dnd-main .region-three-30-50-20-first {
+  float: left;
+  width: 24.5%;
+}
+
+#panels-dnd-main .region-three-30-50-20-second {
+  float: left;
+  width: 50%;
+  margin-left: 0.5%;
+}
+
+#panels-dnd-main .region-three-30-50-20-third {
+  float: right;
+  width: 24.5%;
+}
+
+#panels-dnd-main .region-three-30-50-20-bottom {
+  clear: both;
+}

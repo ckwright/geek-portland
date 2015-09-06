@@ -1,8 +1,11 @@
 <?php
-
 /**
  * @file
- * Implementation of hook_panels_layouts
+ * Adds 30x50x20% column layout.
+ */
+
+/**
+ * Implements hook_panels_layouts().
  */
 function geek_portland_three_30_50_20_panels_layouts() {
   $items['three_30_50_20'] = array(
@@ -19,7 +22,7 @@ function geek_portland_three_30_50_20_panels_layouts() {
       'three_30_50_20_third'  => t('Right'),
       'three_30_50_20_bottom' => t('Bottom (conditional)'),
     ),
-    // AT Core
+    // AT Core.
     'type' => 'three',
     'options' => array(
       'three-30-50-20' => 'default',
@@ -61,7 +64,7 @@ function geek_portland_three_30_50_20_panels_layouts() {
 }
 
 /**
- * Preprocess variables for three-30-50-20.tpl.php
+ * Preprocess variables for three-30-50-20.tpl.php.
  */
 function template_preprocess_three_30_50_20(&$vars) {
   $vars['panel_prefix'] = '';
