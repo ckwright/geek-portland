@@ -1,6 +1,6 @@
 {
   "srcPaths": {
-    "make": "src/project.make",
+    "make": "src/my_profile.make",
     "drupal": "src"
   },
   "buildPaths": {
