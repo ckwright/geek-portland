@@ -2,7 +2,11 @@
 
 /**
  * @file
- * Implementation of hook_panels_layouts
+ * Adds a 25x75% layout.
+ */
+
+/**
+ * Implements hook_panels_layouts().
  */
 function geek_portland_two_25_75_front_panels_layouts() {
   $items['two_25_75_front'] = array(
@@ -18,7 +22,7 @@ function geek_portland_two_25_75_front_panels_layouts() {
       'two_25_75_front_second' => t('Right'),
       'two_25_75_bottom' => t('Bottom (conditional)'),
     ),
-    // AT Core
+    // AT Core.
     'type' => 'two',
     'options' => array(
       'two-25-75' => 'default',
@@ -43,7 +47,7 @@ function geek_portland_two_25_75_front_panels_layouts() {
 }
 
 /**
- * Preprocess variables for two-25-75.tpl.php
+ * Preprocess variables for two-25-75.tpl.php.
  */
 function template_preprocess_two_25_75_front(&$vars) {
   $vars['panel_prefix'] = '';
