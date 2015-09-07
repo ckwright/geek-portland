@@ -42,7 +42,7 @@ function adaptive_theme_helper_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_geek_portland_files_directory';
-  $strongarm->value = 'profiles/my_profile/modules/features/adaptive_theme_helper/css';
+  $strongarm->value = 'sites/all/modules/custom/features/adaptive_theme_helper/css';
   $export['theme_geek_portland_files_directory'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -58,10 +58,10 @@ function adaptive_theme_helper_strongarm() {
     'toggle_comment_user_verification' => '1',
     'toggle_favicon' => 1,
     'default_logo' => 0,
-    'logo_path' => 'profiles/my_profile/modules/features/adaptive_theme_helper/images/header.gif',
+    'logo_path' => 'sites/all/modules/custom/features/adaptive_theme_helper/images/header.gif',
     'logo_upload' => '',
     'default_favicon' => 0,
-    'favicon_path' => 'profiles/my_profile/modules/features/adaptive_theme_helper/images/GPfavicon.ico',
+    'favicon_path' => 'sites/all/modules/custom/features/adaptive_theme_helper/images/GPfavicon.ico',
     'favicon_upload' => '',
     'bigscreen_layout' => 'three_col_grail',
     'bigscreen_sidebar_unit' => '%',
@@ -173,7 +173,7 @@ function adaptive_theme_helper_strongarm() {
     'global_default_layout' => 'smalltouch-portrait',
     'disable_responsive_styles' => 0,
     'global_files_path' => 'custom_path',
-    'custom_files_path' => 'profiles/my_profile/modules/features/adaptive_theme_helper/css',
+    'custom_files_path' => 'sites/all/modules/custom/features/adaptive_theme_helper/css',
     'combine_css_files' => 0,
     'combine_js_files' => 0,
     'enable_custom_media_queries' => 1,
