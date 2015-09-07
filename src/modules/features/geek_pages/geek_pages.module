@@ -11,7 +11,10 @@ include_once 'geek_pages.features.inc';
  * Renders an upcoming events link.
  *
  * @param array $field
+ *   The field array.
+ *
  * @return string
+ *   The upcoming events link markdown.
  */
 function geek_pages_render_related_link($field) {
   $settings = isset($field['formatter_settings']) ? $field['formatter_settings'] : array();

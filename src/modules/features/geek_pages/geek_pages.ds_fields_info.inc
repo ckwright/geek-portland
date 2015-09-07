@@ -20,7 +20,7 @@ function geek_pages_ds_fields_info($entity_type) {
         'link text' => array('type' => 'textfield'),
       ),
       'default' => array('link text' => 'Upcoming Events'),
-    )
+    ),
   );
 
   return $fields;
