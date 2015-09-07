@@ -33,6 +33,7 @@
         "!<%= config.srcPaths.drupal %>/**/*.box.inc",
         "!<%= config.srcPaths.drupal %>/**/*.features.*inc",
         "!<%= config.srcPaths.drupal %>/**/*.pages_default.inc",
+        "!<%= config.srcPaths.drupal %>/**/*.panels_default.inc",
         "!<%= config.srcPaths.drupal %>/**/*.panelizer.inc",
         "!<%= config.srcPaths.drupal %>/**/*.strongarm.inc",
         "!<%= config.buildPaths.custom_theme %>/css/**",
