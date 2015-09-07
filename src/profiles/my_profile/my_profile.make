@@ -150,3 +150,4 @@ libraries[autopager][download][url] = "http://jquery-autopager.googlecode.com/fi
 ;
 projects[adaptivetheme][version] = "3.2"
 projects[sky][version] = "3.0"
+

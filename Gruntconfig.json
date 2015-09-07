@@ -1,6 +1,6 @@
 {
   "srcPaths": {
-    "make": "src/my_profile.make",
+    "make": "src/profiles/my_profile/my_profile.make",
     "drupal": "src"
   },
   "buildPaths": {
@@ -9,7 +9,7 @@
     "package": "build/packages",
     "reports": "build/reports",
     "temp": "build/temp",
-    "profile": "src/profiles",
+    "profile": "src/profiles/my_profile",
     "custom_theme": "src/themes/custom/geek_portland",
     "patternlab": "src/themes/custom/geek_portland/pattern-lab",
     "modules": "build/html/sites/all/modules",

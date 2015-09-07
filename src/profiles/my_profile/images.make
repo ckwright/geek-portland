@@ -21,7 +21,7 @@ projects[media][patch][] = "http://drupal.org/files/media-embed-library-resize.p
 ; Image resize filter fails with media https://drupal.org/node/1411340
 projects[media][patch][] = "http://drupal.org/files/media-resize_images_in_wysiwyg-1411340-71.patch"
 ; Fix media browser: https://drupal.org/node/2048359
-projects[media][patch][] = "patches/add-media-browser-access-permission-2048359-LOCAL.patch"
+projects[media][patch][] = "../../patches/add-media-browser-access-permission-2048359-LOCAL.patch"
 
 projects[media_youtube][version] = "3.0"
 projects[media_vimeo][version] = "2.0"
