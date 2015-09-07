@@ -35,7 +35,7 @@
           var eventsPerWeekDay = {};
           var arrayKeys = [];
 
-          $(".fc-event").each(function(i){
+          $(".fc-event").each(function(j){
             var keyValue = $(this).prop('offsetTop') + ($(this).prop('offsetLeft') * 100);
             eventsPerWeekDay[keyValue] = $(this);
             arrayKeys.push(keyValue);
@@ -43,13 +43,13 @@
 
           arrayKeys.sort();
 
-          for(var i=0; i < arrayKeys.length; i++) {
+          for(var i = 0; i < arrayKeys.length; i++) {
             if (i % 2 === 1) {
               eventsPerWeekDay[arrayKeys[i]].addClass('fc-event-odd');
             }
-          };
+          }
         },
-        timeFormat: 'h:mmt',
+        timeFormat: 'h:mmt'
       });
     }
   };
