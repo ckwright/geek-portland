@@ -31,7 +31,7 @@ function adaptive_theme_helper_ds_fields_info($entity_type) {
     'properties' => array(
       'formatters' => array(
         'author' => t('Author'),
-        'author_linked' => t('Author linked to profile')
+        'author_linked' => t('Author linked to profile'),
       ),
     ),
   );
@@ -42,7 +42,7 @@ function adaptive_theme_helper_ds_fields_info($entity_type) {
 /**
  * Function that adds 'Posted by' before the name of the author.
  */
-function adaptive_theme_helper_ds_render_author_field ($field) {
+function adaptive_theme_helper_ds_render_author_field($field) {
   $author = ds_render_author_field($field);
 
   return t('Posted by !author', array('!author' => $author));
@@ -87,16 +87,7 @@ function adaptive_theme_helper_library() {
 function _adaptive_theme_helper_check_status() {
   $jquery = drupal_get_library('system', 'jquery');
   if (empty($jquery) || empty($jquery['version'])) {
-    // jQuery not available?  Totally an error condition.
-    // @todo We should watchdog this, and/or report it on site status screen.
     return FALSE;
-  }
-  // Check if the available jQuery version is 1.7.2+.
-  // @see http://dimsemenov.com/plugins/magnific-popup/documentation.html
-  if (version_compare($jquery['version'], '1.7.2') < 0) {
-    // $jquery['version'] is lower than 1.7.2.
-    // @todo We should watchdog this, and/or report it on site status screen.
-    //return FALSE;
   }
   return TRUE;
 }
@@ -110,12 +101,12 @@ function adaptive_theme_helper_node_view($node, $view_mode, $langcode) {
   // Add Magnific Popup library to page.
   if ($view_mode == 'full' && !path_is_admin(current_path())) {
     drupal_add_library('adaptive_theme_helper', 'magnific_popup', FALSE);
-    drupal_add_js(drupal_get_path('module', 'adaptive_theme_helper') .'/js/magnificPrep.js', 'file');
+    drupal_add_js(drupal_get_path('module', 'adaptive_theme_helper') . '/js/magnificPrep.js', 'file');
   }
 }
 
 /**
- * Implements of hook_ctools_plugin_directory().
+ * Implements hook_ctools_plugin_directory().
  *
  * Tells ctools I'm defining my own plugin.
  */

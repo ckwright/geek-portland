@@ -1,18 +1,17 @@
 <?php
 /**
-* @file
-* Definition of the 'background' panel style.
-*/
-
+ * @file
+ * Definition of the 'background' panel style.
+ */
 
 /**
-* Implementation of hook_panels_style_info().
-*/
+ * Implements hook_panels_style_info().
+ */
 function adaptive_theme_helper_background_panels_styles() {
   return array(
-      'title' => t('Region with background'),
-      'description' => t('Display the pane in a background color.'),
-      'render region' => 'adaptive_theme_helper_background_style_render_region',
+    'title' => t('Region with background'),
+    'description' => t('Display the pane in a background color.'),
+    'render region' => 'adaptive_theme_helper_background_style_render_region',
   );
 }
 

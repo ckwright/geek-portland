@@ -7,7 +7,7 @@
 
 
 /**
- * Implement hook_field_formatter_info().
+ * Implements hook_field_formatter_info().
  *
  * Creates a new formatter for OG entity references.
  */
@@ -143,10 +143,10 @@ function adaptive_theme_helper_field_formatter_settings_summary($field, $instanc
  * Hides the default h1 (preserves the meta title) if ds shows the title.
  */
 function adaptive_theme_helper_field_attach_view_alter(&$build, $context) {
-  if(isset($build['#bundle']) && $context['entity_type'] == 'node' && $context['view_mode'] == 'full') {
+  if (isset($build['#bundle']) && $context['entity_type'] == 'node' && $context['view_mode'] == 'full') {
     $field_values = ds_get_field_settings($context['entity_type'], $build['#bundle'], $context['view_mode']);
 
-    if(isset($field_values['title'])) {
+    if (isset($field_values['title'])) {
       drupal_static('hide_title', TRUE);
     }
   }
