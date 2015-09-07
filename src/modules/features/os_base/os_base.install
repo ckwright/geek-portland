@@ -149,7 +149,9 @@ function os_base_update_7001(&$sandbox) {
 }
 
 /**
- * Combines field_geek_page_type_s_ and field_event_category into field_all_geeky_interests.
+ * Combines field_geek_page_type_s_ and field_event_category.
+ *
+ * Creates new field_all_geeky_interests from results.
  */
 function os_base_update_7002(&$sandbox) {
   features_revert(array(
@@ -157,7 +159,7 @@ function os_base_update_7002(&$sandbox) {
       'field_base',
       'field_instance',
       'search_api_index',
-    )
+    ),
   ));
 
   $geek_pages = db_select('node', 'node')
