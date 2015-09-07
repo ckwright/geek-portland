@@ -4,13 +4,13 @@
  * Code for the Events feature.
  */
 
-include_once('os_event.features.inc');
+include_once 'os_event.features.inc';
 
 /**
  * Post-render function that adds a fieldset around .
  */
 function _os_event_add_fieldset($children, $elements) {
-  // Default collapsed
+  // Default collapsed.
   $collapsed = TRUE;
   $class = array('collapsible', 'collapsed');
 
@@ -47,7 +47,7 @@ function _os_event_add_fieldset($children, $elements) {
 function os_event_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
   global $base_url;
 
-  if(isset($form_state['view']->current_display) && $form_state['view']->current_display == 'panel_pane_calendar') {
+  if (isset($form_state['view']->current_display) && $form_state['view']->current_display == 'panel_pane_calendar') {
     // 1. Add fieldset dropdown.
     $form['#post_render'][] = '_os_event_add_fieldset';
     $form['#attached']['js'][] = $base_url . '/misc/form.js';
@@ -56,16 +56,17 @@ function os_event_form_views_exposed_form_alter(&$form, &$form_state, $form_id) 
 }
 
 /**
-* Implements hook_fullcalendar_api().
-*/
+ * Implements hook_fullcalendar_api().
+ */
 function os_event_fullcalendar_api() {
   return array(
     'api' => fullcalendar_api_version(),
   );
 }
+
 /**
-* Implements hook_fullcalendar_options_info().
-*/
+ * Implements hook_fullcalendar_options_info().
+ */
 function os_event_fullcalendar_options_info() {
   return array(
     'os_event' => array(
@@ -80,14 +81,17 @@ function os_event_fullcalendar_options_info() {
  * Renders a map link.
  *
  * @param array $field
+ *   The field array.
+ *
  * @return string
+ *   The markup for the map link.
  */
 function os_event_render_map_link($field) {
   $output = '';
   $settings = isset($field['formatter_settings']) ? $field['formatter_settings'] : array();
   $settings += $field['properties']['default'];
 
-  if(isset($field['entity']->field_location['und'][0]['entity']->field_address['und'][0])) {
+  if (isset($field['entity']->field_location['und'][0]['entity']->field_address['und'][0])) {
     $map = $field['entity']->field_location['und'][0]['entity']->field_address['und'][0];
     $address = $map['thoroughfare'] . '+' . $map['postal_code'];
     $output = l($settings['link text'], 'http://maps.google.com?q=' . $address);
@@ -100,7 +104,10 @@ function os_event_render_map_link($field) {
  * Renders an iCal link.
  *
  * @param array $field
+ *   The field array.
+ *
  * @return string
+ *   The markup for the events ical link.
  */
 function os_event_render_ical_link($field) {
   $settings = isset($field['formatter_settings']) ? $field['formatter_settings'] : array();

@@ -20,7 +20,7 @@ function os_event_ds_fields_info($entity_type) {
         'link text' => array('type' => 'textfield'),
       ),
       'default' => array('link text' => 'iCal'),
-    )
+    ),
   );
 
   $fields['node']['map_link'] = array(
@@ -32,7 +32,7 @@ function os_event_ds_fields_info($entity_type) {
         'link text' => array('type' => 'textfield'),
       ),
       'default' => array('link text' => 'Map'),
-    )
+    ),
   );
 
   return $fields;
