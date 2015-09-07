@@ -36,6 +36,7 @@
         "!<%= config.srcPaths.drupal %>/**/*.panels_default.inc",
         "!<%= config.srcPaths.drupal %>/**/*.panelizer.inc",
         "!<%= config.srcPaths.drupal %>/**/*.strongarm.inc",
+        "!<%= config.srcPaths.drupal %>/**/geek_fullcalendar_plugin_pager.inc",
         "!<%= config.buildPaths.custom_theme %>/css/**",
         "!<%= config.buildPaths.custom_theme %>/color/**"
       ]
