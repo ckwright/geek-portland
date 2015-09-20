@@ -1,0 +1,12 @@
+{
+  "fonts": [
+    {
+      "name": "$font--family--regular",
+      "value": "'Lato', sans-serif"
+    },
+    {
+      "name": "$font--family--alternate",
+      "value": "'Tisa Pro', sans-serif"
+    }
+  ]
+}

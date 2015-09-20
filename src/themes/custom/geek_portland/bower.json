@@ -1,0 +1,25 @@
+{
+  "name": "pattern-lab-starter",
+  "version": "0.0.0",
+  "description": "Components for PL work via Bower",
+  "keywords": [
+    "js"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "jquery-migrate": "~1.2.1",
+    "drupal": "http://cgit.drupalcode.org/drupal/plain/misc/drupal.js?h=7.x",
+    "lodash": "~3.6.0",
+    "modernizr": "~2.8.3"
+  }
+}

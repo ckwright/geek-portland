@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    {% pattern-lab-head %}
+    <!-- End Pattern Lab -->
+
+    <!-- bower:css -->
+    <!-- endbower -->
+
+    <!-- injector:css -->
+    <link rel="stylesheet" href="../../../../css/style.css" media="all" />
+    <!-- endinjector -->
+
+    <!-- bower:js -->
+    <script src="../../../../bower_components/modernizr/modernizr.js"></script>
+    <script src="../../../../bower_components/jquery/jquery.js"></script>
+    <script src="../../../../bower_components/jquery-migrate/jquery-migrate.js"></script>
+    <script src="../../../../bower_components/drupal/index.js"></script>
+    <script src="../../../../bower_components/lodash/lodash.js"></script>
+    <!-- endbower -->
+    
+    <!-- injector:js -->
+    <script src="../../../../js/compiled-from-es6.js"></script>
+    <script src="../../../../js/script.js"></script>
+    <!-- endinjector -->
+    
+    
+  </head>
+  <body class="{{ bodyClass }}">
