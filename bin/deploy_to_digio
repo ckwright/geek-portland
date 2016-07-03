@@ -9,7 +9,7 @@
 
 # Deploy to typical shared hosting.
 USER=root
-HOST=104.236.113.128
+HOST=159.203.235.39
 INSTALLROOT=/var/www
 DOCUMENTROOT=/var/www/html
 
