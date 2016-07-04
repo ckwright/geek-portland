@@ -23,7 +23,7 @@ projects[entitycache][version] = "1.2"
 
 projects[elements][version] = "1.4"
 
-projects[features][version] = "2.5"
+projects[features][version] = "2.10"
 
 projects[fences][version] = "1.0"
 
