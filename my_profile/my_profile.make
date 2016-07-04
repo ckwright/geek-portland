@@ -84,7 +84,7 @@ libraries[geoPHP][download][revision] = "0aae7c3"
 projects[date_ical][version] = "3.3"
 
 ; JQuery Update
-projects[jquery_update][version] = "2.6"
+projects[jquery_update][version] = "2.7"
 
 ; Honeypot
 projects[honeypot][version] = "1.17"
