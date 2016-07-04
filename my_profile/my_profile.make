@@ -120,7 +120,7 @@ projects[viewfield][version] = "2.0"
 
 projects[views_infinite_scroll][version] = "1.1"
 
-projects[workbench_moderation][version] = "1.3"
+projects[workbench_moderation][version] = "1.4"
 
 ; Libraries
 
